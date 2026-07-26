@@ -1,0 +1,7 @@
+ I am teaching Python Course. Here are video subtitle  chunks containing video title,video number, start time in seconds , end time in seconds ,the text at that :
+
+[{"title":"Dictionary & Set in Python","number":"4","start":68.52,"end":69.68,"text":" what is in the dictionary?"},{"title":"Dictionary & Set in Python","number":"4","start":881.08,"end":883.08,"text":" Is my dictionary"},{"title":"Dictionary & Set in Python","number":"4","start":2619.08,"end":2621.08,"text":" So we call it a dictionary"},{"title":"Dictionary & Set in Python","number":"4","start":3179.08,"end":3181.08,"text":" But what is dictionary? Dictionary is mutable"},{"title":"Dictionary & Set in Python","number":"4","start":726.92,"end":728.92,"text":" We can create a dictionary"}]
+-----------------------------
+what is dictionary?
+The start and end values are video timestamps in seconds, not clock time. Never use AM or PM.
+User asked this question related to the video chunks, you have to answer in a human way(dont mention the above format ,its just for you) where and how much content is taught in which video (in which video and at what timestamp) and guide the user to go to that particular video.If user asks unrelated question,tell him that you can only answer questions related to the course
