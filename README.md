@@ -1,16 +1,28 @@
 # how to use this RAG AI Teaching assistant on your own data
-## Step 1 -Collect your videos
-Move all your video files to the videos folder
+## Step 1: Collect Video Data
+Collect all the required educational video files.
+Store the videos inside the videos/ directory
 
-## Step 2- Convert to mp3
-Convert all video files to mp3 by running video_to_mp3
+## Step 2: Convert Video to Audio
+Extract audio from all video files.
+Run the video_to_mp3.py script to convert videos into MP3 format.
+The generated audio files are stored in the audios/ directory.
 
-## Step 3 - Convert mp3 to json
-Convert all the mp3 files to json by running mp3_to_json
+## Convert Audio to JSON Transcripts
+Convert MP3 audio files into structured JSON files using the mp3_to_json.py script.
+Speech-to-text conversion is performed to generate transcripts with timestamps.
+The generated JSON files are stored in the jsons/ directory.
 
-## Step 4 - Convert the json files to victor
-Use the files preprocess_json to convert the json files to a dataframe with Embedding
+## Generate Embeddings
+Process the JSON transcript files using preprocess_json.py.
+Convert text chunks into vector embeddings using the embedding model.
+Store embeddings for semantic search and retrieval.
 
-## Step 5- Prompt generation and feeding to LLM
-
-Read the joblib file and load it into the memory.Then create a relevant prompt  as per the user query and feed it to the LLM
+## Prompt Generation and LLM Response
+Load the generated embedding file into memory.
+When a user submits a query:
+Convert the query into an embedding.
+Perform similarity search to retrieve relevant context.
+Generate a contextual prompt.
+Send the prompt to the Large Language Model (LLM).
+Return the final AI-generated response.
