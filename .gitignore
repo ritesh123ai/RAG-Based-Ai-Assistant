@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+
+videos/
+audios/
+jsons/
+embeddings.joblib
