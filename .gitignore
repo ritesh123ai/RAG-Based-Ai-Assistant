@@ -1,7 +1,12 @@
 __pycache__/
 *.pyc
 
-videos/
+.vscode/
+
 audios/
-jsons/
+videos/
+
+response.txt
+
 embeddings.joblib
+embeddings_compressed.joblib

@@ -1,0 +1,2630 @@
+{
+    "chunks": [
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 0.0,
+            "end": 23.0,
+            "text": "Hi everyone and welcome to the complete Python series in which we are going to read chapter 5 In chapter 5 we will be covering loops in detail For loop, while loop, break, continue pass, like keywords We will cover all the things in the loops in detail with a lot of practice questions Now we will read the theory concepts, write the code along with practice questions"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 23.0,
+            "end": 40.0,
+            "text": "Also the slides of our class will be in the description box We can download them from there If we want to read any other topic related to Python, it is available on this channel We can go and see So let's start with chapter 5"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 46.0,
+            "end": 67.0,
+            "text": "Hi everyone and now we are going to start with chapter 5 We are going to read the concept of loops in detail Now in English, loops means something that is repeated For example, we listen to songs on Spotify or on YouTube Music Player So in songs, there is an option to repeat the same song again and again"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 67.0,
+            "end": 83.0,
+            "text": "So what we say is that we have put the song on loop, we are playing it on loop Similarly, there are some things in programming that are called loops Loops are used to repeat instructions Some work that we want to set number of times again and again So we can loop that work"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 83.0,
+            "end": 98.0,
+            "text": "For example, we are making a website We have a list and we have a data of 1 lakh users So if we want to send 1 lakh users an email So there is a way to use loops We will talk about how loops work"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 98.0,
+            "end": 115.0,
+            "text": "And the second way is to send an email to the first user Then send an email to the second user Then send an email to the third user So for 1 lakh users, we have to write the same code again and again So we have to write the same code"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 115.0,
+            "end": 131.0,
+            "text": "So this is understood through a very simple example Before starting loops, we have two types of loops One is our while loops and one is our for loops python Both are important and we will read them in detail in this lecture Now let's start with a simple example"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 131.0,
+            "end": 144.0,
+            "text": "For example, we have a string called hello And we have to print this string 5 times on our screen So now we are thinking about what we should do We will write print in python file And then we can simply write hello"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 144.0,
+            "end": 160.0,
+            "text": "And we will do the same line 5 times So we will print hello 5 times on our screen But if we want to print hello 100 times Or if we want to print it 1 lakh times Then how many times we will copy paste it"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 160.0,
+            "end": 173.0,
+            "text": "So that is a tedious process Whenever we copy paste it and write 1 lakh line code Then our file will be completely filled So the readability of our file That we can understand our code easily"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 173.0,
+            "end": 185.0,
+            "text": "That will be over Secondly, what will be the problem? Secondly, this problem will be that we are doing a tedious work The work in which python already has simple methods And the simple method is loop"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 185.0,
+            "end": 196.0,
+            "text": "First of all, we will read about while loop How does while loop work? In while loop, we simply write while Which is a reserved keyword We have already talked about reserved keywords"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 196.0,
+            "end": 210.0,
+            "text": "While we cannot name any variable as while While means in English That until the condition remains true Till then, whatever work is written by the colon Repeat that work"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 210.0,
+            "end": 225.0,
+            "text": "We have to repeat that work until the condition remains true That is, its value is finally evaluated True or equal For example, if I want to print hello 5 times Then what can we do for that?"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 225.0,
+            "end": 236.0,
+            "text": "We can use while loop And if we write while true Till the time it is true Till the time it is true Till then, we want to print hello"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 236.0,
+            "end": 245.0,
+            "text": "So how many times will the hello print? The hello will keep printing infinitely Why? Because till the time the value of true is true The value of true will always be true"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 245.0,
+            "end": 254.0,
+            "text": "So how many times will the hello print? The hello will keep printing and will never stop Let's see an example of this I ran this code What is happening?"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 254.0,
+            "end": 264.0,
+            "text": "The hello is being printed There is no stop to it That is why we have to kill the terminal So basically, we take a condition That falls at some point"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 264.0,
+            "end": 275.0,
+            "text": "Otherwise, this loop will keep running And the hello will keep running on the print That is why we generally make a count variable Or some other variable Which we can initialize with one"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 275.0,
+            "end": 290.0,
+            "text": "For example, what is our count now? Our count is 1 And we have to print the hello until our count reaches 5 So till the time the value of the count is less than equal to 5 Till then, what do we want to do?"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 290.0,
+            "end": 299.0,
+            "text": "Till then, we want to print the hello So let's understand this code once What will actually happen in this code? First, we have taken the value of the count The value of 1 is equal"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 299.0,
+            "end": 307.0,
+            "text": "Now, it is count 1 Can we say that 1 is less than equal to 5? What will it do? Will it give true? So in that case, we will print the hello"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 307.0,
+            "end": 317.0,
+            "text": "Here, the value of the count should increase Because if the count remains 1 The count will always be less than equal to 5 So what we will do here? We will increase the value of the count by 1"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 317.0,
+            "end": 328.0,
+            "text": "So the count will be count plus 1 Or what can we say that it can be plus equal to 1 So the count will increase from 1 Count increases from 1 Now, it is 2"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 328.0,
+            "end": 337.0,
+            "text": "Even 2 is less than equal to 5 So we will print the hello again Then the count will increase again 3 will be less than equal to 5 If it is less than equal to 5"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 337.0,
+            "end": 346.0,
+            "text": "Then we will print the hello again Count increases to 4 4 will also be less than equal to 5 Then it will be less than equal to 5 Then the count increases to 5"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 346.0,
+            "end": 353.0,
+            "text": "What is 5 less than equal to 5? Yes So what will happen again? It will come in this line And it will be less than equal to 6"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 353.0,
+            "end": 361.0,
+            "text": "Then the value of the count will be 6 And as the value of the count is 6 Will it be less than equal to 5? No So what we will do?"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 361.0,
+            "end": 369.0,
+            "text": "We will come out of the loop In fact, if we print this much part If we run the code What will we have to print? On the screen, we will have the hello"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 369.0,
+            "end": 379.0,
+            "text": "We will print 5 times And here in the last If I have to verify What is the value of the count in the last So I know in the last"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 379.0,
+            "end": 389.0,
+            "text": "The value of my count will be equal to 6 This value is equal to 6 So in this way, our loops work So how does the flow of loops stay First we check the condition"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 389.0,
+            "end": 398.0,
+            "text": "Then we get the work done After that, some updations are there In some of our variables We can say that there is no updation After that, we check the condition again"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 398.0,
+            "end": 408.0,
+            "text": "Until the condition is true Then the condition will be checked Then the condition will be checked So in this way, in a loop In a circle, we repeat the same work"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 408.0,
+            "end": 418.0,
+            "text": "And if we have to stop That work Then it is necessary to have false condition And generally to have false We take some variable"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 418.0,
+            "end": 428.0,
+            "text": "And this variable is our count variable We call these as iterators We call them as iterators And to run in a loop We call this process"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 428.0,
+            "end": 438.0,
+            "text": "Iteration I.e. once we put the loop Second Iteration Second time we put the loop Third Iteration"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 438.0,
+            "end": 448.0,
+            "text": "Third time we put the loop And the variable we put We call it as Iterator And generally we don't have count variable We take a small variable"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 448.0,
+            "end": 458.0,
+            "text": "We call it I variable We call it J, X, Y So let's start with some small variable For example, if I want to write the same loop In a different way"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 458.0,
+            "end": 468.0,
+            "text": "Then we take I is equal to 1 What would have happened if I was our iterator While I is less than equal to 5 Print Hello"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 468.0,
+            "end": 478.0,
+            "text": "What would this loop do? It will do the same work And we will save I plus equal to 1 And we will run So here we have printed hello 5 more times"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 478.0,
+            "end": 488.0,
+            "text": "Or in fact we will print some other string here 5 times So what is this? This is our college written 5 times Now as we have written the code to print 5 times"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 488.0,
+            "end": 498.0,
+            "text": "The same code will be printed 100 times What we will have to do? Simply where the loop is ending We will have to change it For example, if I write 100"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 498.0,
+            "end": 508.0,
+            "text": "Then our college will print 100 times You can scroll on the screen And you can see that this is printed 100 times Similarly If we want to print it"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 508.0,
+            "end": 518.0,
+            "text": "We can do 1 lakh Save and run What is this? We have printed 1 lakh times If we want to print the count"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 518.0,
+            "end": 528.0,
+            "text": "For example, if we print this With our college We can print I Save and run What is the last value?"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 528.0,
+            "end": 538.0,
+            "text": "1 lakh Before that 99,999 99,998 Where did this counting start? It started with our number 1"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 538.0,
+            "end": 548.0,
+            "text": "So in this way We can run our loops No matter how many times we have done Similarly, if I don't have to print any string What I have to do?"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 548.0,
+            "end": 558.0,
+            "text": "I want to print numbers From 1 to 5 What we will do to print it? Simply we will take our iterator We can start with 1"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 558.0,
+            "end": 568.0,
+            "text": "We will write while Till the time my iterator value is less than equal to 5 Till then I have to print my I I means my number So first of all, what will be I's value?"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 568.0,
+            "end": 578.0,
+            "text": "After that We will increase the I Then the I value will be 2 Here Then we will increase the I again"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 578.0,
+            "end": 588.0,
+            "text": "Then the I value will be 3 Then we will increase it till the I value will be 6 And in the last We can print Loop"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 588.0,
+            "end": 598.0,
+            "text": "Ended And let's run it So we have got 1,2,3,4,5 Print and our loop ended Similarly, we can print 5 to 1"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 598.0,
+            "end": 608.0,
+            "text": "We can run our loop in reverse How? We can start our loop from 5 We have to end here Start from there"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 608.0,
+            "end": 618.0,
+            "text": "And the condition will be reversed 5,4,3,2,1 We have to print all this Till then we will print Till the time I value is greater than equal to 1"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 618.0,
+            "end": 628.0,
+            "text": "Now it has started from 5 It will be 4, then 3, then 2, then 1 Till then we have to print And here we will do Minus equal to"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 628.0,
+            "end": 638.0,
+            "text": "So first it was 5, then 4 And in this way our values will be printed Let's print our values So we have got 5,4,3,2,1 And our loop ended"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 638.0,
+            "end": 648.0,
+            "text": "So in this way our while loop runs In python When we see the while loop for the first time It can be that we are confused We took some time to understand the syntax"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 648.0,
+            "end": 658.0,
+            "text": "To understand the logic Which is completely normal if we are reading a programming language But in this lecture We will ask so many questions That our strong command will come on the loops"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 658.0,
+            "end": 668.0,
+            "text": "And we will actually start understanding the loops In this one more thing For example, our loops One is that the normal loop And generally in programming"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 668.0,
+            "end": 678.0,
+            "text": "All the loops are always in a stopping condition Always in a stopping condition If we create an infinite loop Infinite loop Which never stops"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 678.0,
+            "end": 688.0,
+            "text": "For example here I should be less than 6 So if we start with 5 And we are always decreasing the i"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 688.0,
+            "end": 698.0,
+            "text": "So first 5, then 4, then 3 Then 2, then 1, then 0 Then minus 1, minus 2 And we have put a condition That i should be 6 to smaller"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 698.0,
+            "end": 708.0,
+            "text": "So iterator will always be 6 to smaller Because it started from 5 And it is decreasing So what is this? An infinite loop"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 708.0,
+            "end": 718.0,
+            "text": "In real life programming We never have to create an infinite loop Because it halts the programming It halts the execution And there is no practical use of infinite loops"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 718.0,
+            "end": 728.0,
+            "text": "So if we write a loop by mistake Then we have to double check That we have not created an infinite loop For example, if this is a loop This will work so many times"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 728.0,
+            "end": 738.0,
+            "text": "That our last print statement Will never execute For example, if i try to execute it What are the numbers? They are being printed in very negative value"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 738.0,
+            "end": 748.0,
+            "text": "They are being printed So generally in real life programming If there is a website in which there is an infinite loop Then a point will come When our browser will crash"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 748.0,
+            "end": 758.0,
+            "text": "We will not be able to open it We will not be able to open the website So from this situation We have to save, we will never create an infinite loop Now next we are going to solve"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 758.0,
+            "end": 768.0,
+            "text": "These questions We are going to solve all these questions With our while loop So in each question We will level up little by little"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 768.0,
+            "end": 778.0,
+            "text": "And we will solve all our questions The first question is Print numbers from 1 to 100 Now to print numbers from 1 to 100 We know that we have to start with an iterator"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 778.0,
+            "end": 788.0,
+            "text": "We can start with i We can start with this variable With 1 We will put loop while Our i value is less than equal to 100"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 788.0,
+            "end": 798.0,
+            "text": "Till then Till then I have to print My number i So first i will be 1, then 2, then 3 And in the last we will do"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 798.0,
+            "end": 808.0,
+            "text": "In the last we have to update the i So plus equal to We will update it from 1 to 100 Then we will print numbers from 1 to 100 So basically we are going to write this loop"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 808.0,
+            "end": 818.0,
+            "text": "In python So let's start with our question 1 There is an iterator We have started with i Till the time i value is less than equal to 100"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 818.0,
+            "end": 828.0,
+            "text": "Till then Till then we have to print i And i plus equal to 1 We will save it"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 828.0,
+            "end": 838.0,
+            "text": "And run So we have all these numbers printed From 1 to 100 With the loop we are doing We can try to solve all the questions"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 838.0,
+            "end": 848.0,
+            "text": "If not If we are having problems in making logic Then there is no problem We can solve them together Let's come to the second question"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 848.0,
+            "end": 858.0,
+            "text": "The second question is We have to print the numbers from 100 to 1 Means we have to print numbers in reverse order So for that we have to do nothing"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 858.0,
+            "end": 868.0,
+            "text": "Where will be the starting Because we should print 100 first So starting from 100 And what will be the condition First condition is 100, 99, 98"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 868.0,
+            "end": 878.0,
+            "text": "So in the last one we should print How to print? Stopping We call this a stopping condition I will write"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 878.0,
+            "end": 888.0,
+            "text": "This is our Stopping condition What should be the stopping condition Till the time the loop is running Till the time i value is greater than equal to"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 888.0,
+            "end": 898.0,
+            "text": "1 And we will do i every time We will save and run So this time 1, 2, 3, 4 Till 100 we have printed"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 898.0,
+            "end": 908.0,
+            "text": "The numbers in reverse order Actually By copying this code What we will do is We will repeat it"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 908.0,
+            "end": 918.0,
+            "text": "And we will write it as question Let's come to the next question Next question we are asking Print the multiplication table Of a number N"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 918.0,
+            "end": 928.0,
+            "text": "We will give any number N Which we have to print For example we take 3 for N N is equal to 3 We have to print the table"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 928.0,
+            "end": 938.0,
+            "text": "What will be the method of printing I know first I have to print 3 Then 6, then 9, then 12 Then 15, then 18 In this way till 30"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 938.0,
+            "end": 948.0,
+            "text": "So if we think What is 3? Can I say 3 is 3 into 1 Can I say 6 is 3 into 2 Can I say 9 is 3 into 3"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 948.0,
+            "end": 958.0,
+            "text": "Can I say 12 is 3 into 4 This is 3 into 5 And in the last we have to go 3 into 10 And in this way"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 958.0,
+            "end": 968.0,
+            "text": "Here 3 will be here 7 will come here So in this way we print The multiplication table The logic of multiplication table"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 968.0,
+            "end": 978.0,
+            "text": "If we do not strike it It is completely normal As a first programming language Generally we are learning That this logic of multiplication is in the loops"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 978.0,
+            "end": 988.0,
+            "text": "So now I know That any number We have to print the table The value that should be first That should always be the number"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 988.0,
+            "end": 998.0,
+            "text": "And what I have to do second I have to multiply that number from 1 Then multiply from 2 Then multiply from 3, 4, 5 Till 10 I have to multiply"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 998.0,
+            "end": 1008.0,
+            "text": "So can I say What is the variable here The condition of the loop What is the condition of the loop It depends on the variable value"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 1008.0,
+            "end": 1018.0,
+            "text": "The variable which can be changed It will never change 3 will always be 3 So can the role of 3 Be in stopping our loop"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 1018.0,
+            "end": 1028.0,
+            "text": "There will be no important role In stopping our loop of 3 or n Where should the loop go From loop to 10 It should go from 1 to 10"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 1028.0,
+            "end": 1038.0,
+            "text": "The first value should be 1, 2, 3 Then it should be 4 And in the loop we will calculate N and I What we will calculate"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 1038.0,
+            "end": 1048.0,
+            "text": "So if we summarize this We can basically take A variable I which we will start from 1 And run a loop Which will run from 1 to 10"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 1048.0,
+            "end": 1058.0,
+            "text": "Till I is less than equal to 10 Till then what I have to do Till then I have to print First we would normally print I That 1 should be printed"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 1058.0,
+            "end": 1068.0,
+            "text": "2 should be printed, 3 should be printed But now what we have to print Now we have to print N multiplied by I So we will print N multiplied by I And we will increase I every time"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 1068.0,
+            "end": 1078.0,
+            "text": "By 1 So this is supposed to be Our loop Let's run this once Let's comment"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 1078.0,
+            "end": 1088.0,
+            "text": "This out And here we go On question 3 What we have to do We will start with I, I is equal to 1"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 1088.0,
+            "end": 1098.0,
+            "text": "Till I's value is less than equal to 10 It doesn't remain Till then we simply Let's print I And I is equal to 1"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 1098.0,
+            "end": 1108.0,
+            "text": "What we did We printed the values till 10 And this time we are going to print For now Let's print 3 into I"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 1108.0,
+            "end": 1118.0,
+            "text": "So we have We have value 3, 6, 9, 12 15, 18 And in this way we have printed 30 tables If we had written"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 1118.0,
+            "end": 1128.0,
+            "text": "4 here What do we do? We have printed 30 tables We didn't have to write New logic for new number"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 1128.0,
+            "end": 1138.0,
+            "text": "We didn't have to write new code These 4 lines of code We have made it magic Whatever we write here We will print that table"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 1138.0,
+            "end": 1148.0,
+            "text": "For example we don't know the table of 17 So what we did? We printed 17 tables Now here What is our N"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 1148.0,
+            "end": 1158.0,
+            "text": "Basically this value This will be an integer number We take input from the user Enter Number"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 1158.0,
+            "end": 1168.0,
+            "text": "Save and run Now we have to enter the number Let's suppose I have to print 15 tables What we have here? We have printed 15 tables"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 1168.0,
+            "end": 1178.0,
+            "text": "If I have to print 21 tables We have printed 21 tables So in this way we can print The multiplication table of any number Just by writing these 4 lines"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 1178.0,
+            "end": 1188.0,
+            "text": "Let's move to the next question Next question we are asking Print the elements Of the following list using a loop What is the list here?"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 1188.0,
+            "end": 1198.0,
+            "text": "We have given this list First of all let's create this list Normally Let's comment this out And start"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 1198.0,
+            "end": 1208.0,
+            "text": "With our Question 4 In question 4 we have Some numbers In this list"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 1208.0,
+            "end": 1218.0,
+            "text": "And they look like the Square of all the numbers 16, 25 36 49"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 1218.0,
+            "end": 1228.0,
+            "text": "64 81 And 100 We have some list of numbers Now in this list we have to"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 1228.0,
+            "end": 1238.0,
+            "text": "Print all the elements Now there is one way We know how to print the elements We can print the numbers of 0 After that we will copy"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 1238.0,
+            "end": 1248.0,
+            "text": "We can paste it Then we will print the numbers of 1 Then we will print the numbers of 2 Then we will print the numbers of 3 And we will keep printing it till where we will keep printing"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 1248.0,
+            "end": 1258.0,
+            "text": "Basically We will keep printing until Till the last index We have 0, 1, 2, 3 Basically these are 10 numbers"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 1258.0,
+            "end": 1268.0,
+            "text": "So for 10 numbers We should have the last index 9 numbers Or we can say the last index Will be"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 1268.0,
+            "end": 1278.0,
+            "text": "Length of Numbs What is the length of the whole list Length of Numbs"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 1278.0,
+            "end": 1288.0,
+            "text": "Length of Numbs is going to be 10 And length of numbs minus 1 is going to be 9 So what is the last index Length of numbs minus 1 So what I have to do"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 1288.0,
+            "end": 1298.0,
+            "text": "Instead of doing this manually We have to do the same thing in a loop To make it in a loop Let's see the variable first What value is changing"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 1298.0,
+            "end": 1308.0,
+            "text": "Whenever we print a list Or a tuple's value What is the change Our index changes The index is 0, 1, 2, 3"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 1308.0,
+            "end": 1318.0,
+            "text": "And how long it goes Length of list minus 1 We have already read all these things In the list and tuples The index starts from 0"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 1318.0,
+            "end": 1328.0,
+            "text": "And goes to minus 1 So can we say that the index is our variable Which will run our loop on its basis So we can make our index Variable"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 1328.0,
+            "end": 1338.0,
+            "text": "We can call it idx Which we will start with 0 And how long we will run the loop Till the time we run the loop Till the time our index value is"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 1338.0,
+            "end": 1348.0,
+            "text": "That is less than equal to Let's shift these things in the right That is less than equal to My length of list Is this the condition"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 1348.0,
+            "end": 1358.0,
+            "text": "What condition That the index value Should be less than equal to Length of list minus 1 Which is also equal to 9"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 1358.0,
+            "end": 1368.0,
+            "text": "There will be another better way to write this Less than Length of list That is length of list will be 10 equals"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 1368.0,
+            "end": 1378.0,
+            "text": "So first index will be 0, then 1, then 2, then 3 Then 4, then 5 6, then 7, then 8 9 will be So 9 is less than 10"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 1378.0,
+            "end": 1388.0,
+            "text": "But it won't work in 10 cases So from 0 to 9 For all the values our loop will run So this is the logic of our loop And the main thing in loop is"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 1388.0,
+            "end": 1398.0,
+            "text": "The condition is the same That what final condition will you set When your loop stops So the loop will start with index And where will it stop, index is equal to"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 1398.0,
+            "end": 1408.0,
+            "text": "9 will be going to my loop And what I have to do every time Is to print list of Index So first list of index will be"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 1408.0,
+            "end": 1420.0,
+            "text": "List of 0 Then list of index will be List of 1 and like this So let's see this in code I have taken an index variable"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 1420.0,
+            "end": 1430.0,
+            "text": "Index always starts with 0 What we did then, we have put a loop Until my index value is less than My length of numbers Till then what we have to do"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 1430.0,
+            "end": 1440.0,
+            "text": "Is to print Or first we print index only Let's see which index value is less And what we will do every time We will do index plus equal to 1"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 1440.0,
+            "end": 1450.0,
+            "text": "Let's Save it and execute So we have all the values From 0 to 9 As soon as we come here"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 1450.0,
+            "end": 1460.0,
+            "text": "We will come out of loop Now what I have to do is Print numbers So we want to print numbers of index Which we want to print"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 1460.0,
+            "end": 1470.0,
+            "text": "Whose value will be first numbers of 0 Then numbers of 1 Then numbers of 2 And so on Let's save and run"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 1470.0,
+            "end": 1480.0,
+            "text": "So we have 1, 4, 9, 16 And in this way All the list of members are printed In this way If we had any other list"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 1480.0,
+            "end": 1490.0,
+            "text": "For example we have written the name of our heroes First we have Ironman Then we probably have Thor Then we have Superman We have Batman"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 1490.0,
+            "end": 1500.0,
+            "text": "And so on So what we can do Is to print all the names of the heroes So that will be the same logic Take an index variable"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 1500.0,
+            "end": 1510.0,
+            "text": "The value of index will start from 0 Put a loop until the index value is less Then length of heroes Is not there The list is at the end"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 1510.0,
+            "end": 1520.0,
+            "text": "And what we have to print Heroes of index Index And we will do the value of index Plus equal to 1"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 1520.0,
+            "end": 1530.0,
+            "text": "Let's save it And execute it First Ironman, Thor, Superman, Batman In this way all the elements Of our list are printed"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 1530.0,
+            "end": 1540.0,
+            "text": "We want to print index of idx Simply we can take it as i So it will be smaller Variable but this loop will work The logic will work for us"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 1540.0,
+            "end": 1550.0,
+            "text": "So in this way When we go over the list of items Or on a table What we call it in programming We call it traverse"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 1550.0,
+            "end": 1560.0,
+            "text": "Traverse means travel On any list On the table, on the dictionary It means going over it So when I say traverse"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 1560.0,
+            "end": 1570.0,
+            "text": "It means we are traveling And we are going over each element And we can go and perform some action Or simply print that element Next we are going to talk"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 1570.0,
+            "end": 1580.0,
+            "text": "About one more last practice question This question Search for a number x In this tuple Using loop"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 1580.0,
+            "end": 1590.0,
+            "text": "So the list What should we have instead of tuple We should have parenthesis So this will become a tuple In this I have to search an element"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 1590.0,
+            "end": 1600.0,
+            "text": "Number x Anything can be And search using loops So whenever we search What is the simplest way to search"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 1600.0,
+            "end": 1610.0,
+            "text": "If I give you a list Of many names For example, many roll numbers Many names are written This thing is A, B, C"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 1610.0,
+            "end": 1620.0,
+            "text": "D, F, G K, L, X Z, many names are given So for searching For example I have to search L"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 1620.0,
+            "end": 1630.0,
+            "text": "The best way is Go to the first item Is it L? No Next item Next item"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 1630.0,
+            "end": 1640.0,
+            "text": "And here I got it So by doing this We will go over each item And check if it is equal to X Here X is equal to L"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 1640.0,
+            "end": 1650.0,
+            "text": "So I have to search my number Before searching Let's take an example of a tuple Let's copy this And in fact we can delete all these"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 1650.0,
+            "end": 1660.0,
+            "text": "We can take any number And write it in a tuple form This is our tuple First of all let's print all the elements So I is equal to 0"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 1660.0,
+            "end": 1670.0,
+            "text": "So we will start while I is less than length of Nums We will print Nums of I"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 1670.0,
+            "end": 1680.0,
+            "text": "And I is equal to 1 As we used to print in the list We will print all these items Let's suppose I want to search for"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 1680.0,
+            "end": 1690.0,
+            "text": "36 For example I want to search for 36 Which exists in the list So I can say Instead of printing the elements"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 1690.0,
+            "end": 1700.0,
+            "text": "We can check Is my element equal to X And wherever we get The element X is equal We will print it there"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 1700.0,
+            "end": 1710.0,
+            "text": "Like here Every time This condition will be the same Update will be the same Condition will be the same"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 1710.0,
+            "end": 1720.0,
+            "text": "We started with this value What will be the change? Our work will be changed Work will be done if We are using conditional statements"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 1720.0,
+            "end": 1730.0,
+            "text": "If Nums of I Means my number is on the Ith index If its value is equal to Of this X"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 1730.0,
+            "end": 1740.0,
+            "text": "Then what I have to do at that point I have to print it at that point Found We can print the index At index"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 1740.0,
+            "end": 1750.0,
+            "text": "And here we will print the value of I Found at index I Let's save it And run it Found at index 5"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 1750.0,
+            "end": 1760.0,
+            "text": "Where is 36? This is index 0, 1, 2, 3, 4 and 5 So this is our value of 36 On index 5 How will this loop work? First of all in the loop"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 1760.0,
+            "end": 1770.0,
+            "text": "We must have gone to 0 We must have checked if it is equal to 136 Not equal to 136 So what we did? We did plus 1"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 1770.0,
+            "end": 1780.0,
+            "text": "Then we saw that it is equal to 436 Not equal to 436 Then we did plus 1 again Then we saw that it is equal to 936 Or 9 is equal to 36"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 1780.0,
+            "end": 1790.0,
+            "text": "So we did not go to if We did plus 1 again As soon as we came here We saw that it is equal to 3636 Then we printed that"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 1790.0,
+            "end": 1800.0,
+            "text": "But still we did plus 1 again And we went to every index So in the other We can print Finding"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 1800.0,
+            "end": 1810.0,
+            "text": "And after finding We will keep on printing For example, we are finding Until 4-5 index Finally we got 36"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 1810.0,
+            "end": 1820.0,
+            "text": "And we are also finding on next index If it was 36 twice Then we would have printed it twice If we run it Then we printed it twice"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 1820.0,
+            "end": 1830.0,
+            "text": "Where we got it once On index number 10 So logically we have to understand How the loop is going on It will keep on running until it gets it"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 1830.0,
+            "end": 1840.0,
+            "text": "When it gets it, it will print it But it will not stop Where the loop will go The loop will go to the whole circle Until the length of the circle comes"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 1840.0,
+            "end": 1850.0,
+            "text": "Till then our loop will keep on running So in this way our loops work Especially in all the while loops In python So I hope that we understood"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 1850.0,
+            "end": 1860.0,
+            "text": "In the loop we are reading Two more important keywords Which are our break and continue keyword Whenever we use loops Break and continue we have two important keywords"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 1860.0,
+            "end": 1870.0,
+            "text": "First we will talk about break keyword Wherever we write Break keyword Our loop will terminate That means it will stop"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 1870.0,
+            "end": 1880.0,
+            "text": "For example Let's create a normal loop A small loop Here we create a normal loop Which is printing numbers till 5"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 1880.0,
+            "end": 1890.0,
+            "text": "So I is equal to 1 While I is less than equal to 5 We have to print I And every time we are increasing I by 1"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 1890.0,
+            "end": 1900.0,
+            "text": "So in this way our loop will run Now if we Write break on anywhere For example we are checking here Here we have written"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 1900.0,
+            "end": 1910.0,
+            "text": "If I's value is 3 Then what should we do? We just write break like this Which is a result keyword So what will happen in loop?"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 1910.0,
+            "end": 1920.0,
+            "text": "In loop first the value of I is 1 Then 1 will be printed Then if we increase again it will be 2 Then 2 will be printed 3 will be printed"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 1920.0,
+            "end": 1930.0,
+            "text": "But after that we will check that the value of I is 3 And as soon as value of I is 3 Our loop will break That means we will come out of this loop In fact here we will print in the end"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 1930.0,
+            "end": 1940.0,
+            "text": "End of loop Till 5 we will never print We will run again We printed 1,2,3 And as soon as we reach 3"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 1940.0,
+            "end": 1950.0,
+            "text": "The loop will break So in this way our break keyword works Now we can use the break keyword Here For example if we look at"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 1950.0,
+            "end": 1960.0,
+            "text": "Our search code In which we were searching for our number X In our stuple So what happens in that?"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 1960.0,
+            "end": 1970.0,
+            "text": "We can implement this way We can print where we got Which index we got And we will break from this loop Break means we will come out of the loop"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 1970.0,
+            "end": 1980.0,
+            "text": "And after that there will be no other execution That means finding After that the index will not be there So here we will simply print End of"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 1980.0,
+            "end": 1990.0,
+            "text": "Loop We will do this Save and run So first we are finding And as soon as we get number 36"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 1990.0,
+            "end": 2000.0,
+            "text": "On index number 5 We printed the index 5 And our loop ended Before that If we don't use this break"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 2000.0,
+            "end": 2010.0,
+            "text": "So once we got our number We are searching after that And if we get the second time number We are printing and searching Till the time the stuple is complete"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 2010.0,
+            "end": 2020.0,
+            "text": "But we don't want the stuple to be complete We want to get the number once That's why we want to break So for such cases we can use the break We have a similar keyword"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 2020.0,
+            "end": 2030.0,
+            "text": "Continuum The opposite of break is the work Which is called Continuum Continuum is only the current iteration Current iteration means the current"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 2030.0,
+            "end": 2040.0,
+            "text": "Which is running through the loop Terminates it and then it goes towards next iteration For example If we take an example of a simple loop Like we took before"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 2042.0,
+            "end": 2054.0,
+            "text": "Let's start the i again Till the time i is less than It is equal to 5 Till then we have to print i And i is equal to 1"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 2054.0,
+            "end": 2064.0,
+            "text": "And we will check If the value of i is equal to 3 Then what we have to do in that case We will continue in that case In fact, the print statement"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 2064.0,
+            "end": 2074.0,
+            "text": "We will shift it to last So what will happen with this As soon as the value of i is 3 We don't want to print it We will simply do"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 2074.0,
+            "end": 2084.0,
+            "text": "We will do i plus 1 We want to do i plus 4 And continue These two statements will be completely missed And we will come back here"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 2084.0,
+            "end": 2094.0,
+            "text": "So from 0 to 5 All the numbers will be printed There will be no 3 prints We will save it and run And we will get 0, 1, 2, 3 prints"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 2094.0,
+            "end": 2104.0,
+            "text": "4 and 5 prints How did this happen? The value of i was zero at the beginning We checked if 0 is less than equal to 5 Yes, less than equal to 5 is true"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 2104.0,
+            "end": 2114.0,
+            "text": "We checked if the value of i is 3 If it is not 3 We printed 0 and made i equal to 1 1 less than equal to 5 We checked again if the value of 1 is equal to 3"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 2114.0,
+            "end": 2124.0,
+            "text": "We printed 1 again And made 2 2 less than equal to 5 is true Then we saw that 2 is equal to 2 and not 3 We printed 2"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 2124.0,
+            "end": 2134.0,
+            "text": "And made i equal to 3 3 less than equal to 5 is yes 3 is equal to 3 And then we did i plus 1 We made i equal to 4"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 2134.0,
+            "end": 2144.0,
+            "text": "And continued For this iteration All the steps ahead will be skipped And again this i4 We will check for 4"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 2144.0,
+            "end": 2154.0,
+            "text": "Is it 4 equal to 5? Is it 4 equal to 3? No We will print 4 here So we skipped the 3 prints So basically"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 2154.0,
+            "end": 2164.0,
+            "text": "Continue acts as Skip If we want to skip anything in current iteration Then we will skip all the things After that"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 2164.0,
+            "end": 2174.0,
+            "text": "So it works like this For example if we are printing 10 to 10 numbers And what we want We want to print odd numbers"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 2174.0,
+            "end": 2184.0,
+            "text": "For even numbers We want to skip We can put it in a simple condition As soon as the value of i is even For even value"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 2184.0,
+            "end": 2194.0,
+            "text": "We will check i modulo 2 equal to 0 All the even numbers If we divide it from 2 Then its remainder is equal to 0 So in that case we will skip"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 2194.0,
+            "end": 2204.0,
+            "text": "And print all the other cases So all the odd numbers Will come to us by printing For example 1 is printed 3 is printed"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 2204.0,
+            "end": 2214.0,
+            "text": "5 is printed 7 is printed All the odd numbers Will come to us by printing So skip all the odd numbers"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 2214.0,
+            "end": 2224.0,
+            "text": "Save So in this way Our break and continue keyword Will come in python Now next we will talk about our for loop"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 2224.0,
+            "end": 2234.0,
+            "text": "For loops are generally used for Sequential traversal First one thing is coming Second thing is coming Third thing is coming"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 2234.0,
+            "end": 2244.0,
+            "text": "So when we travel in a sequence For example when we travel in a list We will do it with sequence First element will come Second will come"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 2244.0,
+            "end": 2254.0,
+            "text": "Then we will travel in sequence So where we have index Index wise Where any particular sequence All elements are there"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 2254.0,
+            "end": 2264.0,
+            "text": "For sequential traversal For example for traversing a list String, tuples etc For example we have made a list We have to go to all the elements of this list"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 2264.0,
+            "end": 2274.0,
+            "text": "And we don't want to go in index In the while loop So we can use for loop We write for And then we can write any variable"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 2274.0,
+            "end": 2284.0,
+            "text": "We can write element, item We can write value And these are our keywords Then we write the name of our list And then in this variable"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 2284.0,
+            "end": 2294.0,
+            "text": "Automatically all the elements Come in each of them So we can print those elements So for loop syntax It looks like this, for keyword"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 2294.0,
+            "end": 2304.0,
+            "text": "Then we take an element in our list And then we perform some work on that item For example let's create a list Where we have some numbers Now we have to print these numbers"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 2304.0,
+            "end": 2314.0,
+            "text": "In for So we will write for Now we write num Num in list So what is this list"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 2314.0,
+            "end": 2324.0,
+            "text": "This is our structure Or we call it numbers Numbers And instead of num we call it value So by doing each and every value"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 2324.0,
+            "end": 2334.0,
+            "text": "First we will have value 1, then value 2 Then value 3, 4, 5 And we can print our value Every time We run it"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 2334.0,
+            "end": 2344.0,
+            "text": "So we will get our numbers 1, 2, 3, 4, 5 And similarly if in this list Numbers are not present For example we have If we have some vegetables"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 2344.0,
+            "end": 2354.0,
+            "text": "Potato Uh Uh Rindle We"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 2354.0,
+            "end": 2364.0,
+            "text": "Might also have Lady finger And Cucumber So in this way"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 2364.0,
+            "end": 2374.0,
+            "text": "We have multiple vegetables And value in We have to change the name of our list So by doing each and every value All the values will come"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 2374.0,
+            "end": 2384.0,
+            "text": "In this value variable Which we can print We saved, run All the values will come By printing"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 2384.0,
+            "end": 2394.0,
+            "text": "So in this way Our for loop works Now we can use for loop on any Double For example we create a double"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 2394.0,
+            "end": 2404.0,
+            "text": "In the double we can take any random numbers We can take them And for Number in Double"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 2404.0,
+            "end": 2414.0,
+            "text": "We have to print our number So we save it, run We have all the numbers We will print in the same sequence So if we have to work on an"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 2414.0,
+            "end": 2424.0,
+            "text": "Iterator We have a variable with which we are updating the value Then we have a stopping condition We will do all those things with while loop And if we have to traverse"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 2424.0,
+            "end": 2434.0,
+            "text": "On some data type Like the double, the list, the string So how will we do all those things We will do all those things with for loop Here we take the string example"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 2434.0,
+            "end": 2444.0,
+            "text": "For example we have a string Called apna college So here if I have to put a loop In string We want to print every time"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 2444.0,
+            "end": 2454.0,
+            "text": "We will save our character and run So we will print all the individual characters With string Now whenever we use for loop Or while loop"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 2454.0,
+            "end": 2464.0,
+            "text": "With that we can use an optional else This is completely optional It is not for us to use The meaning of using else For example we did some work in loop"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 2464.0,
+            "end": 2474.0,
+            "text": "If we want as soon as the loop Is finished If we want to print something Or something else So we can do all those things with an optional"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 2474.0,
+            "end": 2484.0,
+            "text": "Else So in this simple way we write our loop And then we write an else And then we can do our work With it"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 2484.0,
+            "end": 2494.0,
+            "text": "For example we have printed All the characters Now after printing these characters We can print in else End"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 2494.0,
+            "end": 2504.0,
+            "text": "We saved And run All the characters are printed And we have the end print Now in this we can ask a question"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 2504.0,
+            "end": 2514.0,
+            "text": "Why did I need this else For example if we write End in this last Then we also have the same output So what is the need for else"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 2514.0,
+            "end": 2524.0,
+            "text": "We need else in those Specific cases where we Use break For example this is our code We want"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 2524.0,
+            "end": 2534.0,
+            "text": "In our characters In our string I want to search Where does my character O come So we can"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 2534.0,
+            "end": 2544.0,
+            "text": "Search wherever The value of my character Whether it is O or O Wherever the value of the character is O We will print"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 2544.0,
+            "end": 2554.0,
+            "text": "O found And we will do the break We have written some code like this And in the rest of the cases We will keep printing"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 2554.0,
+            "end": 2564.0,
+            "text": "So in this case if we save And run We searched for A but we don't know O Then we went to P Then we went to N"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 2564.0,
+            "end": 2574.0,
+            "text": "Then we printed A Then we printed C Then finally we got O And we got O So we printed O found"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 2574.0,
+            "end": 2584.0,
+            "text": "And then we broke from loop Now when we broke from loop In that case We didn't write else We just did end"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 2584.0,
+            "end": 2594.0,
+            "text": "So our end would be printed So in any case we want When the loop is done We can write it in else The work of else"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 2594.0,
+            "end": 2604.0,
+            "text": "Will not execute in the cases of break But whatever we do outside Will execute in every case So the work which we want To complete the end of loop"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 2604.0,
+            "end": 2614.0,
+            "text": "We can write them in else Next we are going to practice Using for So to do the same work We will use our for loop"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 2614.0,
+            "end": 2624.0,
+            "text": "First question We have to pause here once We have to try to solve the question So the question is Print the elements of the following list using a loop"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 2624.0,
+            "end": 2634.0,
+            "text": "Let's make a list first Let's create a list called Numbers Inside this we will have Numbers 1, 4, 9,"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 2634.0,
+            "end": 2644.0,
+            "text": "16, 25, 36, 40 9, 64, 81 and 100 Now What we have to do We have to print these numbers"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 2644.0,
+            "end": 2654.0,
+            "text": "For loop So first we will write For some element I have written el Short for element"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 2654.0,
+            "end": 2664.0,
+            "text": "In numbers And we will print every element Save it All your elements Are printed to us"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 2664.0,
+            "end": 2674.0,
+            "text": "Next question Search for a number X in this using loop Here we will take a number X is equal to"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 2674.0,
+            "end": 2684.0,
+            "text": "36 We will take 49 And we will write 49 twice We will write 49 at last So we are going to every element"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 2684.0,
+            "end": 2694.0,
+            "text": "of the numbers We will convert it to a tuple And we will check every time If element We will have to check"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 2694.0,
+            "end": 2704.0,
+            "text": "If element is equal to X We will print Number Found At index"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 2704.0,
+            "end": 2714.0,
+            "text": "We can't print index here For index We will have to make a variable Index is equal to 0 And we will have to"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 2714.0,
+            "end": 2724.0,
+            "text": "Do the value In addition we will create Index plus equal to 1 We will create index So that we can track our index"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 2724.0,
+            "end": 2734.0,
+            "text": "Save it We have Number found at index 6 and index 10 This is my index 6 where I got 49 This is my index 10 where I got"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 2734.0,
+            "end": 2744.0,
+            "text": "49 for the second time If we get number once Then we can quit We can use a break statement Let's try to run it again"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 2744.0,
+            "end": 2754.0,
+            "text": "Number found at index 6 So in this way We will do our for loops With our built in data types Next we are going to talk"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 2754.0,
+            "end": 2764.0,
+            "text": "About range function Range is an important function Whenever we are using loops What does range function do We return a sequence of number"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 2764.0,
+            "end": 2774.0,
+            "text": "Sequence means that the list is returning But it is not the form of the list data type It is returning a normal list of numbers Return sequence And this sequence"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 2774.0,
+            "end": 2784.0,
+            "text": "It always starts from 0 by default And it increases by 1 by default For example If I write range of 5"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 2784.0,
+            "end": 2794.0,
+            "text": "What will I return I will return 0, 1, 2, 3 And 4 So in this way I will return Sequence from 0 to 4"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 2794.0,
+            "end": 2804.0,
+            "text": "Where did it start It starts from 0 by default What is step size Step size is How much you want to increase"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 2804.0,
+            "end": 2814.0,
+            "text": "Generally what is step size We take plus 1 We increase it by plus 1 Generally in loops Step size by default is 1"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 2814.0,
+            "end": 2824.0,
+            "text": "And what is the ending condition Where is the ending condition End it before 5 These are our 3 variables On which our range function works"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 2824.0,
+            "end": 2834.0,
+            "text": "Let's see an example For example I try to print Range of 5 We will print range from 0 to 5"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 2834.0,
+            "end": 2844.0,
+            "text": "Now range of 5 If we print it from this way We will not print numbers But we can print index For example"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 2844.0,
+            "end": 2854.0,
+            "text": "We made a sequence of range of 5 And now we have numbers in this sequence How to print We can print sequence of 0"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 2854.0,
+            "end": 2864.0,
+            "text": "Then we can print sequence of 1 Then we can print sequence of 2 Then we can print sequence of 3 Like this"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 2864.0,
+            "end": 2874.0,
+            "text": "So sequence of 0 is 0 We have different numbers Now if we want to run loop on this sequence How can we run We can write"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 2874.0,
+            "end": 2884.0,
+            "text": "For I in Sequence Print I So all the elements of sequence"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 2884.0,
+            "end": 2894.0,
+            "text": "Number i We will print it From 0 to 4 all the numbers are printed If we want Our sequence to go to 10"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 2894.0,
+            "end": 2904.0,
+            "text": "Then we can print From 0 to 9 So our Ending condition The number of ending is not included"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 2904.0,
+            "end": 2914.0,
+            "text": "Instead of saving in sequence What we can do is We can write range of 10 That will be completely logical And many times in syntax"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 2914.0,
+            "end": 2924.0,
+            "text": "Generally if we look at the code Of Python we are working in same syntax So from 0 to 9 All the numbers are printed Now we have 3 ways"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 2924.0,
+            "end": 2934.0,
+            "text": "To write our range function Like in range function There are 3 different values One is our starting value Which is optional"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 2934.0,
+            "end": 2944.0,
+            "text": "The question mark means optional If we don't give starting value Then nothing will happen One is our stopping value Which is compulsory"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 2944.0,
+            "end": 2954.0,
+            "text": "And one is our step size Step size is also optional If we don't give then nothing will happen By default it will start from 1 For example if we make a loop like this"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 2954.0,
+            "end": 2964.0,
+            "text": "If we write only one number Then we know That we have sent Our stop condition in range This is my stopping condition"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 2964.0,
+            "end": 2974.0,
+            "text": "But here If I create another loop Which I write 2 to 10 This means I am giving"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 2974.0,
+            "end": 2984.0,
+            "text": "Start and stop condition It means we have given start And we have passed stop This means this loop will start from 2 And will print up to 10"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 2984.0,
+            "end": 2994.0,
+            "text": "Start is included Stop is not included We will save it And let's try to execute it From 2 to 9"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 2994.0,
+            "end": 3004.0,
+            "text": "All the numbers are printed This time we didn't print 0 or 1 And if we write By executing this We write something like this"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 3004.0,
+            "end": 3014.0,
+            "text": "This means the first number is start The second number is stop And the third number is step size Step size means how much we have to increase So this time start is coming from 2"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 3014.0,
+            "end": 3024.0,
+            "text": "So first it will be 2 Then it will be increased from 2 Then it will be 4 Then it will be increased from 2 Then it will be 8"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 3024.0,
+            "end": 3034.0,
+            "text": "And then it will be increased to 10 So we don't include 10 We will print it With a step size of 2 We will save it and run it"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 3034.0,
+            "end": 3044.0,
+            "text": "First we will have 2, then 4, then 6 Then it will be 8 So if I have to print From 1 to 10 How can we do it"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 3044.0,
+            "end": 3054.0,
+            "text": "We can take For I in Range In fact we can start our range from 2"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 3054.0,
+            "end": 3064.0,
+            "text": "We want to go to 10 Or we can take 100 We want to go to 100 So we will print all the even numbers from 2 And we want to increase it every time"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 3064.0,
+            "end": 3074.0,
+            "text": "From 2 We will print it So all the even numbers From 2 We will print it"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 3074.0,
+            "end": 3084.0,
+            "text": "We want to include 100 So we will just do 100 and 1 So in the end 100 will also be printed If we want to print more numbers Then we will start from 1"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 3084.0,
+            "end": 3094.0,
+            "text": "We saved it Let's run it So all the odd numbers We will print it So this is a basic thing"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 3094.0,
+            "end": 3104.0,
+            "text": "But after that how to make logic How to print even numbers How to print multiplication table How can we search any element All those things are logical"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 3104.0,
+            "end": 3114.0,
+            "text": "Which we are actually making a good programmer One more thing That I wanted to tell you What we performed Searching"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 3114.0,
+            "end": 3124.0,
+            "text": "In a tappel or in a list And the method we used To search the number We call it linear search Linear search"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 3124.0,
+            "end": 3134.0,
+            "text": "We will go over the values We will check if there are any values So search on the next one Not search on the next one The process which is the way to search"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 3134.0,
+            "end": 3144.0,
+            "text": "We call it linear search Linear means Search in a single line What to know so that we get familiar With the terminology of programming"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 3144.0,
+            "end": 3154.0,
+            "text": "Next thing we are going to do Is some practice questions We will solve these three practice questions With the help of the four and range First of all the question is"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 3154.0,
+            "end": 3164.0,
+            "text": "Print the numbers from one to 100 So it will be very simple For i in Range We will use the for loop"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 3164.0,
+            "end": 3174.0,
+            "text": "We will write 101 And print our numbers We will start from 1 We will start from 1 And go to 100 and 1"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 3174.0,
+            "end": 3184.0,
+            "text": "So what will happen? We will start from 1 And end from 100 Second question is Print numbers from 100 to 1"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 3184.0,
+            "end": 3194.0,
+            "text": "What we will have to do for 100 to 1 We can start the loop from 100 And where we will stop We will stop when we reach 0 or 1"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 3194.0,
+            "end": 3204.0,
+            "text": "And what we will do this time We will decrease the number By 1 We will save it and run From where the loop started"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 3204.0,
+            "end": 3214.0,
+            "text": "From 100 to 1 So step size can be negative If we want to take it in decreasing order Then we can also negative the step size On the third question"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 3214.0,
+            "end": 3224.0,
+            "text": "Print the multiplication table of a number N It will be very simple In fact if we have understood the for loop We can do it ourselves"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 3224.0,
+            "end": 3234.0,
+            "text": "For the multiplication table Before any number N Take input from the user Enter number And then for i in"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 3234.0,
+            "end": 3244.0,
+            "text": "Range What we have to do is Start from 1 And we want to go till 11 We want to print every time"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 3244.0,
+            "end": 3254.0,
+            "text": "N multiplied by i We will arrange it Save and run Let's suppose we want to print 12 tables So we have printed the whole table"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 3254.0,
+            "end": 3264.0,
+            "text": "Of 12 So in this way our code Works using range Next one more interesting thing Which is my pass statement"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 3264.0,
+            "end": 3274.0,
+            "text": "Pass means Null statement If we want to write a loop In which we don't have to do anything But still we have got a great"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 3274.0,
+            "end": 3284.0,
+            "text": "Our situation is in the code That we have to write a loop In which we don't have to do anything So we use the pass statement First let's see"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 3284.0,
+            "end": 3294.0,
+            "text": "Why we needed a pass statement For example I want to create a loop For i In range 5 I have made a loop and I don't have to do anything"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 3294.0,
+            "end": 3304.0,
+            "text": "What I have to do is I have to leave empty So can I leave empty Let's suppose we print last Some useful work"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 3304.0,
+            "end": 3314.0,
+            "text": "After this loop we have some useful work Save it and run What will be the error This print statement was expected In an indented block"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 3314.0,
+            "end": 3324.0,
+            "text": "That means you have left this block For loop And after that you are working So basically python is saying Do this work in loop"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 3324.0,
+            "end": 3334.0,
+            "text": "But we want to do nothing in loop So we can simply Write pass Skip But this is different from continue"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 3334.0,
+            "end": 3344.0,
+            "text": "This means we don't have to do anything in loop Now we will run So all the things will work perfectly Now why pass is needed Pass is used when we want to write some"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 3344.0,
+            "end": 3354.0,
+            "text": "Null statement that does nothing It is used as a place holder for future code For example we know we have to write some code But for now we don't write that code So we will simply write pass"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 3354.0,
+            "end": 3364.0,
+            "text": "And then we will complete this loop After that we can use pass in if else For example if Some variable i is greater than 5 So here we can write pass"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 3364.0,
+            "end": 3374.0,
+            "text": "So here we can write pass We don't have to do anything We will do it later Generally what we have Is used in python in exceptions"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 3374.0,
+            "end": 3384.0,
+            "text": "Or in try catch But for now it is out of our scope Because we are starting to learn our loops But yes there are some practical use cases In which we need pass"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 3384.0,
+            "end": 3394.0,
+            "text": "But we don't use pass so frequently In general cases we are making loop Only when we have something to do in loop We have some work Next we are going to solve"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 3394.0,
+            "end": 3404.0,
+            "text": "Two more practice questions First we are asking a practice question You must have noticed that in the loop chapter We have asked more practice questions Because one is that loops are"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 3404.0,
+            "end": 3414.0,
+            "text": "A bit complex as a beginner To learn in python So the more we solve the practice questions The more our strong command will be The more our logic will be strong"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 3414.0,
+            "end": 3424.0,
+            "text": "Second thing is that loops Have an interesting concept As a beginner So I tried to solve A lot of different varieties"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 3424.0,
+            "end": 3434.0,
+            "text": "Of questions in this lecture So that our understanding Will be in our mind First question is Write a program to find the sum"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 3434.0,
+            "end": 3444.0,
+            "text": "Of first n numbers That is The n natural numbers should be From 1 to n Let's suppose n is equal to 5"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 3444.0,
+            "end": 3454.0,
+            "text": "So 1, 2, 3, 4, 5 All these numbers We have to calculate the sum And print it So in the beginning"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 3454.0,
+            "end": 3464.0,
+            "text": "For example Let's take n as 5 So to print all the numbers What we will do is We can make a sum variable"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 3464.0,
+            "end": 3474.0,
+            "text": "We will add 1 in the sum After that we will add 2 in the sum Then we will add 3, then 4 Then we will add 5 So the sum variable"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 3474.0,
+            "end": 3484.0,
+            "text": "Will come to us From 5 to 5 Or to print numbers from 1 to n So for i in Range of n"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 3484.0,
+            "end": 3494.0,
+            "text": "Which means we are going to the range Of this number Or we can write n plus 1 Print i"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 3494.0,
+            "end": 3504.0,
+            "text": "Let's save it and run it From 0 to 5 Let's start from 1 So from 1 to 5 All these numbers came to us"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 3504.0,
+            "end": 3514.0,
+            "text": "Let's take a sum variable And start with 0 So in the sum We will add our i Every time"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 3514.0,
+            "end": 3524.0,
+            "text": "So in the sum first we will add 1 Then 2, then 3 And finally we will print Total sum Is equal to"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 3526.0,
+            "end": 3536.0,
+            "text": "Sum Save it and run Total sum is equal to 15 The sum of 5 numbers at the beginning Is 15"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 3536.0,
+            "end": 3546.0,
+            "text": "What are the 6 numbers 21 came to us by printing 7 will come to us by printing 28 And we can calculate the total n numbers"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 3546.0,
+            "end": 3556.0,
+            "text": "The value of n can be anything This is our first question Let's come to the second question Second question is To find the factorial"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 3556.0,
+            "end": 3566.0,
+            "text": "Of first n natural numbers In the question Please mention that we have to solve this question With a while loop So no one writes the same logic with a while loop"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 3566.0,
+            "end": 3576.0,
+            "text": "How will we solve it These two values will remain the same Here we come While Let's take some number"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 3576.0,
+            "end": 3586.0,
+            "text": "i is equal to 1 Until i's value is less than equal to n Till then I have to Add my i in the sum"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 3586.0,
+            "end": 3596.0,
+            "text": "And Finally I will print my sum Same code Similarly Here we have to update the i"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 3596.0,
+            "end": 3606.0,
+            "text": "By mistake I created an infinite loop If you notice We will not create an infinite loop We will run it"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 3606.0,
+            "end": 3616.0,
+            "text": "Total sum will come to us Next question Write a program to find The factorial Of first n natural numbers using a for loop"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 3616.0,
+            "end": 3626.0,
+            "text": "What is factorial We have to read the factorial in math Otherwise it is not a problem It is a simple thing Let's calculate the sum"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 3626.0,
+            "end": 3638.0,
+            "text": "Similarly if I say n is equal to 5 I have to calculate 1 into 2 into 3 into 4 into 5 What will we say with this Whose factorial is the factorial of 5 Of any number"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 3638.0,
+            "end": 3648.0,
+            "text": "A factorial of number n Is equal to From 1 Till n When we multiply all the numbers"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 3648.0,
+            "end": 3658.0,
+            "text": "The final value We call it factorial of n This means factorial So what will be factorial of n is equal to 1 1"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 3658.0,
+            "end": 3668.0,
+            "text": "What will be factorial of n is equal to 2 1 into 2 will be 2 What will be factorial of n is equal to 3 3 into 2 will be 6 Similarly"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 3668.0,
+            "end": 3678.0,
+            "text": "What will be n is equal to 4 24 will be 6 into 4 What will be n is equal to 5 I think it will be 120 24 into 5"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 3678.0,
+            "end": 3688.0,
+            "text": "So in this way we keep calculating our factorial Generally for very big numbers We don't calculate factorial Till 9 till 8 Generally we calculate our factorial"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 3688.0,
+            "end": 3698.0,
+            "text": "Otherwise the number becomes very big To calculate factorial Simply replace the buses with some multiply If I multiply here Suppose I have to calculate"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 3698.0,
+            "end": 3708.0,
+            "text": "factorial of 5 Here we will take factorial In some place n is equal to 5 What will be factorial of n"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 3708.0,
+            "end": 3718.0,
+            "text": "If we initialize factorial from 0 Then all the values will be multiplied from 0 And the answer will always be 0 So to calculate factorial"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 3718.0,
+            "end": 3728.0,
+            "text": "Always initialize variable from 1 Let's initialize from 1 i is equal to 1 Here factorial Multiplied equal to i"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 3728.0,
+            "end": 3738.0,
+            "text": "So let's do this factorial is equal to my factorial variable saved and run"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 3738.0,
+            "end": 3748.0,
+            "text": "So factorial is equal to 120 factorial of 4 will be equal to 24 That will be printed factorial of 3 will be equal to 6"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 3748.0,
+            "end": 3758.0,
+            "text": "That will be printed So in this way we can calculate our factorial and print it This is done through the while loop So what we will do is"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 3758.0,
+            "end": 3768.0,
+            "text": "First we take n number Then we take factorial variable which we initialize with 1 After that for i in range"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 3768.0,
+            "end": 3778.0,
+            "text": "Let's start from 1 to i and go to n plus 1 And always in factorial multiply equal to i And finally we will print"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 3778.0,
+            "end": 3788.0,
+            "text": "factorial is equal to factorial value Save it Let's run it The factorial of 5 turns out to be"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 3788.0,
+            "end": 3798.0,
+            "text": "120 So in this way We have covered different concepts In all the majority important concepts in Python"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 3798.0,
+            "end": 3808.0,
+            "text": "We have covered all the questions in this chapter And even now we are doubting in the loops So this same question if you will write it yourself"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 3808.0,
+            "end": 3818.0,
+            "text": "Write it on paper Try to understand the logic So we will definitely clear the concept of loops Because we don't need to solve more questions than this"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 3818.0,
+            "end": 3828.0,
+            "text": "To understand loops as a beginner These questions were more than good enough To understand loops in Python So that's all for today The link to the notes is in the description box"
+        },
+        {
+            "number": "5",
+            "title": "Loops in Python",
+            "start": 3828.0,
+            "end": 3832.0,
+            "text": "See you in the next lecture Till then keep learning and keep practicing"
+        }
+    ],
+    "text": " Hi everyone and welcome to the complete Python series in which we are going to read chapter 5 In chapter 5 we will be covering loops in detail For loop, while loop, break, continue pass, like keywords We will cover all the things in the loops in detail with a lot of practice questions Now we will read the theory concepts, write the code along with practice questions Also the slides of our class will be in the description box We can download them from there If we want to read any other topic related to Python, it is available on this channel We can go and see So let's start with chapter 5 Hi everyone and now we are going to start with chapter 5 We are going to read the concept of loops in detail Now in English, loops means something that is repeated For example, we listen to songs on Spotify or on YouTube Music Player So in songs, there is an option to repeat the same song again and again So what we say is that we have put the song on loop, we are playing it on loop Similarly, there are some things in programming that are called loops Loops are used to repeat instructions Some work that we want to set number of times again and again So we can loop that work For example, we are making a website We have a list and we have a data of 1 lakh users So if we want to send 1 lakh users an email So there is a way to use loops We will talk about how loops work And the second way is to send an email to the first user Then send an email to the second user Then send an email to the third user So for 1 lakh users, we have to write the same code again and again So we have to write the same code So this is understood through a very simple example Before starting loops, we have two types of loops One is our while loops and one is our for loops python Both are important and we will read them in detail in this lecture Now let's start with a simple example For example, we have a string called hello And we have to print this string 5 times on our screen So now we are thinking about what we should do We will write print in python file And then we can simply write hello And we will do the same line 5 times So we will print hello 5 times on our screen But if we want to print hello 100 times Or if we want to print it 1 lakh times Then how many times we will copy paste it So that is a tedious process Whenever we copy paste it and write 1 lakh line code Then our file will be completely filled So the readability of our file That we can understand our code easily That will be over Secondly, what will be the problem? Secondly, this problem will be that we are doing a tedious work The work in which python already has simple methods And the simple method is loop First of all, we will read about while loop How does while loop work? In while loop, we simply write while Which is a reserved keyword We have already talked about reserved keywords While we cannot name any variable as while While means in English That until the condition remains true Till then, whatever work is written by the colon Repeat that work We have to repeat that work until the condition remains true That is, its value is finally evaluated True or equal For example, if I want to print hello 5 times Then what can we do for that? We can use while loop And if we write while true Till the time it is true Till the time it is true Till then, we want to print hello So how many times will the hello print? The hello will keep printing infinitely Why? Because till the time the value of true is true The value of true will always be true So how many times will the hello print? The hello will keep printing and will never stop Let's see an example of this I ran this code What is happening? The hello is being printed There is no stop to it That is why we have to kill the terminal So basically, we take a condition That falls at some point Otherwise, this loop will keep running And the hello will keep running on the print That is why we generally make a count variable Or some other variable Which we can initialize with one For example, what is our count now? Our count is 1 And we have to print the hello until our count reaches 5 So till the time the value of the count is less than equal to 5 Till then, what do we want to do? Till then, we want to print the hello So let's understand this code once What will actually happen in this code? First, we have taken the value of the count The value of 1 is equal Now, it is count 1 Can we say that 1 is less than equal to 5? What will it do? Will it give true? So in that case, we will print the hello Here, the value of the count should increase Because if the count remains 1 The count will always be less than equal to 5 So what we will do here? We will increase the value of the count by 1 So the count will be count plus 1 Or what can we say that it can be plus equal to 1 So the count will increase from 1 Count increases from 1 Now, it is 2 Even 2 is less than equal to 5 So we will print the hello again Then the count will increase again 3 will be less than equal to 5 If it is less than equal to 5 Then we will print the hello again Count increases to 4 4 will also be less than equal to 5 Then it will be less than equal to 5 Then the count increases to 5 What is 5 less than equal to 5? Yes So what will happen again? It will come in this line And it will be less than equal to 6 Then the value of the count will be 6 And as the value of the count is 6 Will it be less than equal to 5? No So what we will do? We will come out of the loop In fact, if we print this much part If we run the code What will we have to print? On the screen, we will have the hello We will print 5 times And here in the last If I have to verify What is the value of the count in the last So I know in the last The value of my count will be equal to 6 This value is equal to 6 So in this way, our loops work So how does the flow of loops stay First we check the condition Then we get the work done After that, some updations are there In some of our variables We can say that there is no updation After that, we check the condition again Until the condition is true Then the condition will be checked Then the condition will be checked So in this way, in a loop In a circle, we repeat the same work And if we have to stop That work Then it is necessary to have false condition And generally to have false We take some variable And this variable is our count variable We call these as iterators We call them as iterators And to run in a loop We call this process Iteration I.e. once we put the loop Second Iteration Second time we put the loop Third Iteration Third time we put the loop And the variable we put We call it as Iterator And generally we don't have count variable We take a small variable We call it I variable We call it J, X, Y So let's start with some small variable For example, if I want to write the same loop In a different way Then we take I is equal to 1 What would have happened if I was our iterator While I is less than equal to 5 Print Hello What would this loop do? It will do the same work And we will save I plus equal to 1 And we will run So here we have printed hello 5 more times Or in fact we will print some other string here 5 times So what is this? This is our college written 5 times Now as we have written the code to print 5 times The same code will be printed 100 times What we will have to do? Simply where the loop is ending We will have to change it For example, if I write 100 Then our college will print 100 times You can scroll on the screen And you can see that this is printed 100 times Similarly If we want to print it We can do 1 lakh Save and run What is this? We have printed 1 lakh times If we want to print the count For example, if we print this With our college We can print I Save and run What is the last value? 1 lakh Before that 99,999 99,998 Where did this counting start? It started with our number 1 So in this way We can run our loops No matter how many times we have done Similarly, if I don't have to print any string What I have to do? I want to print numbers From 1 to 5 What we will do to print it? Simply we will take our iterator We can start with 1 We will write while Till the time my iterator value is less than equal to 5 Till then I have to print my I I means my number So first of all, what will be I's value? After that We will increase the I Then the I value will be 2 Here Then we will increase the I again Then the I value will be 3 Then we will increase it till the I value will be 6 And in the last We can print Loop Ended And let's run it So we have got 1,2,3,4,5 Print and our loop ended Similarly, we can print 5 to 1 We can run our loop in reverse How? We can start our loop from 5 We have to end here Start from there And the condition will be reversed 5,4,3,2,1 We have to print all this Till then we will print Till the time I value is greater than equal to 1 Now it has started from 5 It will be 4, then 3, then 2, then 1 Till then we have to print And here we will do Minus equal to So first it was 5, then 4 And in this way our values will be printed Let's print our values So we have got 5,4,3,2,1 And our loop ended So in this way our while loop runs In python When we see the while loop for the first time It can be that we are confused We took some time to understand the syntax To understand the logic Which is completely normal if we are reading a programming language But in this lecture We will ask so many questions That our strong command will come on the loops And we will actually start understanding the loops In this one more thing For example, our loops One is that the normal loop And generally in programming All the loops are always in a stopping condition Always in a stopping condition If we create an infinite loop Infinite loop Which never stops For example here I should be less than 6 So if we start with 5 And we are always decreasing the i So first 5, then 4, then 3 Then 2, then 1, then 0 Then minus 1, minus 2 And we have put a condition That i should be 6 to smaller So iterator will always be 6 to smaller Because it started from 5 And it is decreasing So what is this? An infinite loop In real life programming We never have to create an infinite loop Because it halts the programming It halts the execution And there is no practical use of infinite loops So if we write a loop by mistake Then we have to double check That we have not created an infinite loop For example, if this is a loop This will work so many times That our last print statement Will never execute For example, if i try to execute it What are the numbers? They are being printed in very negative value They are being printed So generally in real life programming If there is a website in which there is an infinite loop Then a point will come When our browser will crash We will not be able to open it We will not be able to open the website So from this situation We have to save, we will never create an infinite loop Now next we are going to solve These questions We are going to solve all these questions With our while loop So in each question We will level up little by little And we will solve all our questions The first question is Print numbers from 1 to 100 Now to print numbers from 1 to 100 We know that we have to start with an iterator We can start with i We can start with this variable With 1 We will put loop while Our i value is less than equal to 100 Till then Till then I have to print My number i So first i will be 1, then 2, then 3 And in the last we will do In the last we have to update the i So plus equal to We will update it from 1 to 100 Then we will print numbers from 1 to 100 So basically we are going to write this loop In python So let's start with our question 1 There is an iterator We have started with i Till the time i value is less than equal to 100 Till then Till then we have to print i And i plus equal to 1 We will save it And run So we have all these numbers printed From 1 to 100 With the loop we are doing We can try to solve all the questions If not If we are having problems in making logic Then there is no problem We can solve them together Let's come to the second question The second question is We have to print the numbers from 100 to 1 Means we have to print numbers in reverse order So for that we have to do nothing Where will be the starting Because we should print 100 first So starting from 100 And what will be the condition First condition is 100, 99, 98 So in the last one we should print How to print? Stopping We call this a stopping condition I will write This is our Stopping condition What should be the stopping condition Till the time the loop is running Till the time i value is greater than equal to 1 And we will do i every time We will save and run So this time 1, 2, 3, 4 Till 100 we have printed The numbers in reverse order Actually By copying this code What we will do is We will repeat it And we will write it as question Let's come to the next question Next question we are asking Print the multiplication table Of a number N We will give any number N Which we have to print For example we take 3 for N N is equal to 3 We have to print the table What will be the method of printing I know first I have to print 3 Then 6, then 9, then 12 Then 15, then 18 In this way till 30 So if we think What is 3? Can I say 3 is 3 into 1 Can I say 6 is 3 into 2 Can I say 9 is 3 into 3 Can I say 12 is 3 into 4 This is 3 into 5 And in the last we have to go 3 into 10 And in this way Here 3 will be here 7 will come here So in this way we print The multiplication table The logic of multiplication table If we do not strike it It is completely normal As a first programming language Generally we are learning That this logic of multiplication is in the loops So now I know That any number We have to print the table The value that should be first That should always be the number And what I have to do second I have to multiply that number from 1 Then multiply from 2 Then multiply from 3, 4, 5 Till 10 I have to multiply So can I say What is the variable here The condition of the loop What is the condition of the loop It depends on the variable value The variable which can be changed It will never change 3 will always be 3 So can the role of 3 Be in stopping our loop There will be no important role In stopping our loop of 3 or n Where should the loop go From loop to 10 It should go from 1 to 10 The first value should be 1, 2, 3 Then it should be 4 And in the loop we will calculate N and I What we will calculate So if we summarize this We can basically take A variable I which we will start from 1 And run a loop Which will run from 1 to 10 Till I is less than equal to 10 Till then what I have to do Till then I have to print First we would normally print I That 1 should be printed 2 should be printed, 3 should be printed But now what we have to print Now we have to print N multiplied by I So we will print N multiplied by I And we will increase I every time By 1 So this is supposed to be Our loop Let's run this once Let's comment This out And here we go On question 3 What we have to do We will start with I, I is equal to 1 Till I's value is less than equal to 10 It doesn't remain Till then we simply Let's print I And I is equal to 1 What we did We printed the values till 10 And this time we are going to print For now Let's print 3 into I So we have We have value 3, 6, 9, 12 15, 18 And in this way we have printed 30 tables If we had written 4 here What do we do? We have printed 30 tables We didn't have to write New logic for new number We didn't have to write new code These 4 lines of code We have made it magic Whatever we write here We will print that table For example we don't know the table of 17 So what we did? We printed 17 tables Now here What is our N Basically this value This will be an integer number We take input from the user Enter Number Save and run Now we have to enter the number Let's suppose I have to print 15 tables What we have here? We have printed 15 tables If I have to print 21 tables We have printed 21 tables So in this way we can print The multiplication table of any number Just by writing these 4 lines Let's move to the next question Next question we are asking Print the elements Of the following list using a loop What is the list here? We have given this list First of all let's create this list Normally Let's comment this out And start With our Question 4 In question 4 we have Some numbers In this list And they look like the Square of all the numbers 16, 25 36 49 64 81 And 100 We have some list of numbers Now in this list we have to Print all the elements Now there is one way We know how to print the elements We can print the numbers of 0 After that we will copy We can paste it Then we will print the numbers of 1 Then we will print the numbers of 2 Then we will print the numbers of 3 And we will keep printing it till where we will keep printing Basically We will keep printing until Till the last index We have 0, 1, 2, 3 Basically these are 10 numbers So for 10 numbers We should have the last index 9 numbers Or we can say the last index Will be Length of Numbs What is the length of the whole list Length of Numbs Length of Numbs is going to be 10 And length of numbs minus 1 is going to be 9 So what is the last index Length of numbs minus 1 So what I have to do Instead of doing this manually We have to do the same thing in a loop To make it in a loop Let's see the variable first What value is changing Whenever we print a list Or a tuple's value What is the change Our index changes The index is 0, 1, 2, 3 And how long it goes Length of list minus 1 We have already read all these things In the list and tuples The index starts from 0 And goes to minus 1 So can we say that the index is our variable Which will run our loop on its basis So we can make our index Variable We can call it idx Which we will start with 0 And how long we will run the loop Till the time we run the loop Till the time our index value is That is less than equal to Let's shift these things in the right That is less than equal to My length of list Is this the condition What condition That the index value Should be less than equal to Length of list minus 1 Which is also equal to 9 There will be another better way to write this Less than Length of list That is length of list will be 10 equals So first index will be 0, then 1, then 2, then 3 Then 4, then 5 6, then 7, then 8 9 will be So 9 is less than 10 But it won't work in 10 cases So from 0 to 9 For all the values our loop will run So this is the logic of our loop And the main thing in loop is The condition is the same That what final condition will you set When your loop stops So the loop will start with index And where will it stop, index is equal to 9 will be going to my loop And what I have to do every time Is to print list of Index So first list of index will be List of 0 Then list of index will be List of 1 and like this So let's see this in code I have taken an index variable Index always starts with 0 What we did then, we have put a loop Until my index value is less than My length of numbers Till then what we have to do Is to print Or first we print index only Let's see which index value is less And what we will do every time We will do index plus equal to 1 Let's Save it and execute So we have all the values From 0 to 9 As soon as we come here We will come out of loop Now what I have to do is Print numbers So we want to print numbers of index Which we want to print Whose value will be first numbers of 0 Then numbers of 1 Then numbers of 2 And so on Let's save and run So we have 1, 4, 9, 16 And in this way All the list of members are printed In this way If we had any other list For example we have written the name of our heroes First we have Ironman Then we probably have Thor Then we have Superman We have Batman And so on So what we can do Is to print all the names of the heroes So that will be the same logic Take an index variable The value of index will start from 0 Put a loop until the index value is less Then length of heroes Is not there The list is at the end And what we have to print Heroes of index Index And we will do the value of index Plus equal to 1 Let's save it And execute it First Ironman, Thor, Superman, Batman In this way all the elements Of our list are printed We want to print index of idx Simply we can take it as i So it will be smaller Variable but this loop will work The logic will work for us So in this way When we go over the list of items Or on a table What we call it in programming We call it traverse Traverse means travel On any list On the table, on the dictionary It means going over it So when I say traverse It means we are traveling And we are going over each element And we can go and perform some action Or simply print that element Next we are going to talk About one more last practice question This question Search for a number x In this tuple Using loop So the list What should we have instead of tuple We should have parenthesis So this will become a tuple In this I have to search an element Number x Anything can be And search using loops So whenever we search What is the simplest way to search If I give you a list Of many names For example, many roll numbers Many names are written This thing is A, B, C D, F, G K, L, X Z, many names are given So for searching For example I have to search L The best way is Go to the first item Is it L? No Next item Next item And here I got it So by doing this We will go over each item And check if it is equal to X Here X is equal to L So I have to search my number Before searching Let's take an example of a tuple Let's copy this And in fact we can delete all these We can take any number And write it in a tuple form This is our tuple First of all let's print all the elements So I is equal to 0 So we will start while I is less than length of Nums We will print Nums of I And I is equal to 1 As we used to print in the list We will print all these items Let's suppose I want to search for 36 For example I want to search for 36 Which exists in the list So I can say Instead of printing the elements We can check Is my element equal to X And wherever we get The element X is equal We will print it there Like here Every time This condition will be the same Update will be the same Condition will be the same We started with this value What will be the change? Our work will be changed Work will be done if We are using conditional statements If Nums of I Means my number is on the Ith index If its value is equal to Of this X Then what I have to do at that point I have to print it at that point Found We can print the index At index And here we will print the value of I Found at index I Let's save it And run it Found at index 5 Where is 36? This is index 0, 1, 2, 3, 4 and 5 So this is our value of 36 On index 5 How will this loop work? First of all in the loop We must have gone to 0 We must have checked if it is equal to 136 Not equal to 136 So what we did? We did plus 1 Then we saw that it is equal to 436 Not equal to 436 Then we did plus 1 again Then we saw that it is equal to 936 Or 9 is equal to 36 So we did not go to if We did plus 1 again As soon as we came here We saw that it is equal to 3636 Then we printed that But still we did plus 1 again And we went to every index So in the other We can print Finding And after finding We will keep on printing For example, we are finding Until 4-5 index Finally we got 36 And we are also finding on next index If it was 36 twice Then we would have printed it twice If we run it Then we printed it twice Where we got it once On index number 10 So logically we have to understand How the loop is going on It will keep on running until it gets it When it gets it, it will print it But it will not stop Where the loop will go The loop will go to the whole circle Until the length of the circle comes Till then our loop will keep on running So in this way our loops work Especially in all the while loops In python So I hope that we understood In the loop we are reading Two more important keywords Which are our break and continue keyword Whenever we use loops Break and continue we have two important keywords First we will talk about break keyword Wherever we write Break keyword Our loop will terminate That means it will stop For example Let's create a normal loop A small loop Here we create a normal loop Which is printing numbers till 5 So I is equal to 1 While I is less than equal to 5 We have to print I And every time we are increasing I by 1 So in this way our loop will run Now if we Write break on anywhere For example we are checking here Here we have written If I's value is 3 Then what should we do? We just write break like this Which is a result keyword So what will happen in loop? In loop first the value of I is 1 Then 1 will be printed Then if we increase again it will be 2 Then 2 will be printed 3 will be printed But after that we will check that the value of I is 3 And as soon as value of I is 3 Our loop will break That means we will come out of this loop In fact here we will print in the end End of loop Till 5 we will never print We will run again We printed 1,2,3 And as soon as we reach 3 The loop will break So in this way our break keyword works Now we can use the break keyword Here For example if we look at Our search code In which we were searching for our number X In our stuple So what happens in that? We can implement this way We can print where we got Which index we got And we will break from this loop Break means we will come out of the loop And after that there will be no other execution That means finding After that the index will not be there So here we will simply print End of Loop We will do this Save and run So first we are finding And as soon as we get number 36 On index number 5 We printed the index 5 And our loop ended Before that If we don't use this break So once we got our number We are searching after that And if we get the second time number We are printing and searching Till the time the stuple is complete But we don't want the stuple to be complete We want to get the number once That's why we want to break So for such cases we can use the break We have a similar keyword Continuum The opposite of break is the work Which is called Continuum Continuum is only the current iteration Current iteration means the current Which is running through the loop Terminates it and then it goes towards next iteration For example If we take an example of a simple loop Like we took before Let's start the i again Till the time i is less than It is equal to 5 Till then we have to print i And i is equal to 1 And we will check If the value of i is equal to 3 Then what we have to do in that case We will continue in that case In fact, the print statement We will shift it to last So what will happen with this As soon as the value of i is 3 We don't want to print it We will simply do We will do i plus 1 We want to do i plus 4 And continue These two statements will be completely missed And we will come back here So from 0 to 5 All the numbers will be printed There will be no 3 prints We will save it and run And we will get 0, 1, 2, 3 prints 4 and 5 prints How did this happen? The value of i was zero at the beginning We checked if 0 is less than equal to 5 Yes, less than equal to 5 is true We checked if the value of i is 3 If it is not 3 We printed 0 and made i equal to 1 1 less than equal to 5 We checked again if the value of 1 is equal to 3 We printed 1 again And made 2 2 less than equal to 5 is true Then we saw that 2 is equal to 2 and not 3 We printed 2 And made i equal to 3 3 less than equal to 5 is yes 3 is equal to 3 And then we did i plus 1 We made i equal to 4 And continued For this iteration All the steps ahead will be skipped And again this i4 We will check for 4 Is it 4 equal to 5? Is it 4 equal to 3? No We will print 4 here So we skipped the 3 prints So basically Continue acts as Skip If we want to skip anything in current iteration Then we will skip all the things After that So it works like this For example if we are printing 10 to 10 numbers And what we want We want to print odd numbers For even numbers We want to skip We can put it in a simple condition As soon as the value of i is even For even value We will check i modulo 2 equal to 0 All the even numbers If we divide it from 2 Then its remainder is equal to 0 So in that case we will skip And print all the other cases So all the odd numbers Will come to us by printing For example 1 is printed 3 is printed 5 is printed 7 is printed All the odd numbers Will come to us by printing So skip all the odd numbers Save So in this way Our break and continue keyword Will come in python Now next we will talk about our for loop For loops are generally used for Sequential traversal First one thing is coming Second thing is coming Third thing is coming So when we travel in a sequence For example when we travel in a list We will do it with sequence First element will come Second will come Then we will travel in sequence So where we have index Index wise Where any particular sequence All elements are there For sequential traversal For example for traversing a list String, tuples etc For example we have made a list We have to go to all the elements of this list And we don't want to go in index In the while loop So we can use for loop We write for And then we can write any variable We can write element, item We can write value And these are our keywords Then we write the name of our list And then in this variable Automatically all the elements Come in each of them So we can print those elements So for loop syntax It looks like this, for keyword Then we take an element in our list And then we perform some work on that item For example let's create a list Where we have some numbers Now we have to print these numbers In for So we will write for Now we write num Num in list So what is this list This is our structure Or we call it numbers Numbers And instead of num we call it value So by doing each and every value First we will have value 1, then value 2 Then value 3, 4, 5 And we can print our value Every time We run it So we will get our numbers 1, 2, 3, 4, 5 And similarly if in this list Numbers are not present For example we have If we have some vegetables Potato Uh Uh Rindle We Might also have Lady finger And Cucumber So in this way We have multiple vegetables And value in We have to change the name of our list So by doing each and every value All the values will come In this value variable Which we can print We saved, run All the values will come By printing So in this way Our for loop works Now we can use for loop on any Double For example we create a double In the double we can take any random numbers We can take them And for Number in Double We have to print our number So we save it, run We have all the numbers We will print in the same sequence So if we have to work on an Iterator We have a variable with which we are updating the value Then we have a stopping condition We will do all those things with while loop And if we have to traverse On some data type Like the double, the list, the string So how will we do all those things We will do all those things with for loop Here we take the string example For example we have a string Called apna college So here if I have to put a loop In string We want to print every time We will save our character and run So we will print all the individual characters With string Now whenever we use for loop Or while loop With that we can use an optional else This is completely optional It is not for us to use The meaning of using else For example we did some work in loop If we want as soon as the loop Is finished If we want to print something Or something else So we can do all those things with an optional Else So in this simple way we write our loop And then we write an else And then we can do our work With it For example we have printed All the characters Now after printing these characters We can print in else End We saved And run All the characters are printed And we have the end print Now in this we can ask a question Why did I need this else For example if we write End in this last Then we also have the same output So what is the need for else We need else in those Specific cases where we Use break For example this is our code We want In our characters In our string I want to search Where does my character O come So we can Search wherever The value of my character Whether it is O or O Wherever the value of the character is O We will print O found And we will do the break We have written some code like this And in the rest of the cases We will keep printing So in this case if we save And run We searched for A but we don't know O Then we went to P Then we went to N Then we printed A Then we printed C Then finally we got O And we got O So we printed O found And then we broke from loop Now when we broke from loop In that case We didn't write else We just did end So our end would be printed So in any case we want When the loop is done We can write it in else The work of else Will not execute in the cases of break But whatever we do outside Will execute in every case So the work which we want To complete the end of loop We can write them in else Next we are going to practice Using for So to do the same work We will use our for loop First question We have to pause here once We have to try to solve the question So the question is Print the elements of the following list using a loop Let's make a list first Let's create a list called Numbers Inside this we will have Numbers 1, 4, 9, 16, 25, 36, 40 9, 64, 81 and 100 Now What we have to do We have to print these numbers For loop So first we will write For some element I have written el Short for element In numbers And we will print every element Save it All your elements Are printed to us Next question Search for a number X in this using loop Here we will take a number X is equal to 36 We will take 49 And we will write 49 twice We will write 49 at last So we are going to every element of the numbers We will convert it to a tuple And we will check every time If element We will have to check If element is equal to X We will print Number Found At index We can't print index here For index We will have to make a variable Index is equal to 0 And we will have to Do the value In addition we will create Index plus equal to 1 We will create index So that we can track our index Save it We have Number found at index 6 and index 10 This is my index 6 where I got 49 This is my index 10 where I got 49 for the second time If we get number once Then we can quit We can use a break statement Let's try to run it again Number found at index 6 So in this way We will do our for loops With our built in data types Next we are going to talk About range function Range is an important function Whenever we are using loops What does range function do We return a sequence of number Sequence means that the list is returning But it is not the form of the list data type It is returning a normal list of numbers Return sequence And this sequence It always starts from 0 by default And it increases by 1 by default For example If I write range of 5 What will I return I will return 0, 1, 2, 3 And 4 So in this way I will return Sequence from 0 to 4 Where did it start It starts from 0 by default What is step size Step size is How much you want to increase Generally what is step size We take plus 1 We increase it by plus 1 Generally in loops Step size by default is 1 And what is the ending condition Where is the ending condition End it before 5 These are our 3 variables On which our range function works Let's see an example For example I try to print Range of 5 We will print range from 0 to 5 Now range of 5 If we print it from this way We will not print numbers But we can print index For example We made a sequence of range of 5 And now we have numbers in this sequence How to print We can print sequence of 0 Then we can print sequence of 1 Then we can print sequence of 2 Then we can print sequence of 3 Like this So sequence of 0 is 0 We have different numbers Now if we want to run loop on this sequence How can we run We can write For I in Sequence Print I So all the elements of sequence Number i We will print it From 0 to 4 all the numbers are printed If we want Our sequence to go to 10 Then we can print From 0 to 9 So our Ending condition The number of ending is not included Instead of saving in sequence What we can do is We can write range of 10 That will be completely logical And many times in syntax Generally if we look at the code Of Python we are working in same syntax So from 0 to 9 All the numbers are printed Now we have 3 ways To write our range function Like in range function There are 3 different values One is our starting value Which is optional The question mark means optional If we don't give starting value Then nothing will happen One is our stopping value Which is compulsory And one is our step size Step size is also optional If we don't give then nothing will happen By default it will start from 1 For example if we make a loop like this If we write only one number Then we know That we have sent Our stop condition in range This is my stopping condition But here If I create another loop Which I write 2 to 10 This means I am giving Start and stop condition It means we have given start And we have passed stop This means this loop will start from 2 And will print up to 10 Start is included Stop is not included We will save it And let's try to execute it From 2 to 9 All the numbers are printed This time we didn't print 0 or 1 And if we write By executing this We write something like this This means the first number is start The second number is stop And the third number is step size Step size means how much we have to increase So this time start is coming from 2 So first it will be 2 Then it will be increased from 2 Then it will be 4 Then it will be increased from 2 Then it will be 8 And then it will be increased to 10 So we don't include 10 We will print it With a step size of 2 We will save it and run it First we will have 2, then 4, then 6 Then it will be 8 So if I have to print From 1 to 10 How can we do it We can take For I in Range In fact we can start our range from 2 We want to go to 10 Or we can take 100 We want to go to 100 So we will print all the even numbers from 2 And we want to increase it every time From 2 We will print it So all the even numbers From 2 We will print it We want to include 100 So we will just do 100 and 1 So in the end 100 will also be printed If we want to print more numbers Then we will start from 1 We saved it Let's run it So all the odd numbers We will print it So this is a basic thing But after that how to make logic How to print even numbers How to print multiplication table How can we search any element All those things are logical Which we are actually making a good programmer One more thing That I wanted to tell you What we performed Searching In a tappel or in a list And the method we used To search the number We call it linear search Linear search We will go over the values We will check if there are any values So search on the next one Not search on the next one The process which is the way to search We call it linear search Linear means Search in a single line What to know so that we get familiar With the terminology of programming Next thing we are going to do Is some practice questions We will solve these three practice questions With the help of the four and range First of all the question is Print the numbers from one to 100 So it will be very simple For i in Range We will use the for loop We will write 101 And print our numbers We will start from 1 We will start from 1 And go to 100 and 1 So what will happen? We will start from 1 And end from 100 Second question is Print numbers from 100 to 1 What we will have to do for 100 to 1 We can start the loop from 100 And where we will stop We will stop when we reach 0 or 1 And what we will do this time We will decrease the number By 1 We will save it and run From where the loop started From 100 to 1 So step size can be negative If we want to take it in decreasing order Then we can also negative the step size On the third question Print the multiplication table of a number N It will be very simple In fact if we have understood the for loop We can do it ourselves For the multiplication table Before any number N Take input from the user Enter number And then for i in Range What we have to do is Start from 1 And we want to go till 11 We want to print every time N multiplied by i We will arrange it Save and run Let's suppose we want to print 12 tables So we have printed the whole table Of 12 So in this way our code Works using range Next one more interesting thing Which is my pass statement Pass means Null statement If we want to write a loop In which we don't have to do anything But still we have got a great Our situation is in the code That we have to write a loop In which we don't have to do anything So we use the pass statement First let's see Why we needed a pass statement For example I want to create a loop For i In range 5 I have made a loop and I don't have to do anything What I have to do is I have to leave empty So can I leave empty Let's suppose we print last Some useful work After this loop we have some useful work Save it and run What will be the error This print statement was expected In an indented block That means you have left this block For loop And after that you are working So basically python is saying Do this work in loop But we want to do nothing in loop So we can simply Write pass Skip But this is different from continue This means we don't have to do anything in loop Now we will run So all the things will work perfectly Now why pass is needed Pass is used when we want to write some Null statement that does nothing It is used as a place holder for future code For example we know we have to write some code But for now we don't write that code So we will simply write pass And then we will complete this loop After that we can use pass in if else For example if Some variable i is greater than 5 So here we can write pass So here we can write pass We don't have to do anything We will do it later Generally what we have Is used in python in exceptions Or in try catch But for now it is out of our scope Because we are starting to learn our loops But yes there are some practical use cases In which we need pass But we don't use pass so frequently In general cases we are making loop Only when we have something to do in loop We have some work Next we are going to solve Two more practice questions First we are asking a practice question You must have noticed that in the loop chapter We have asked more practice questions Because one is that loops are A bit complex as a beginner To learn in python So the more we solve the practice questions The more our strong command will be The more our logic will be strong Second thing is that loops Have an interesting concept As a beginner So I tried to solve A lot of different varieties Of questions in this lecture So that our understanding Will be in our mind First question is Write a program to find the sum Of first n numbers That is The n natural numbers should be From 1 to n Let's suppose n is equal to 5 So 1, 2, 3, 4, 5 All these numbers We have to calculate the sum And print it So in the beginning For example Let's take n as 5 So to print all the numbers What we will do is We can make a sum variable We will add 1 in the sum After that we will add 2 in the sum Then we will add 3, then 4 Then we will add 5 So the sum variable Will come to us From 5 to 5 Or to print numbers from 1 to n So for i in Range of n Which means we are going to the range Of this number Or we can write n plus 1 Print i Let's save it and run it From 0 to 5 Let's start from 1 So from 1 to 5 All these numbers came to us Let's take a sum variable And start with 0 So in the sum We will add our i Every time So in the sum first we will add 1 Then 2, then 3 And finally we will print Total sum Is equal to Sum Save it and run Total sum is equal to 15 The sum of 5 numbers at the beginning Is 15 What are the 6 numbers 21 came to us by printing 7 will come to us by printing 28 And we can calculate the total n numbers The value of n can be anything This is our first question Let's come to the second question Second question is To find the factorial Of first n natural numbers In the question Please mention that we have to solve this question With a while loop So no one writes the same logic with a while loop How will we solve it These two values will remain the same Here we come While Let's take some number i is equal to 1 Until i's value is less than equal to n Till then I have to Add my i in the sum And Finally I will print my sum Same code Similarly Here we have to update the i By mistake I created an infinite loop If you notice We will not create an infinite loop We will run it Total sum will come to us Next question Write a program to find The factorial Of first n natural numbers using a for loop What is factorial We have to read the factorial in math Otherwise it is not a problem It is a simple thing Let's calculate the sum Similarly if I say n is equal to 5 I have to calculate 1 into 2 into 3 into 4 into 5 What will we say with this Whose factorial is the factorial of 5 Of any number A factorial of number n Is equal to From 1 Till n When we multiply all the numbers The final value We call it factorial of n This means factorial So what will be factorial of n is equal to 1 1 What will be factorial of n is equal to 2 1 into 2 will be 2 What will be factorial of n is equal to 3 3 into 2 will be 6 Similarly What will be n is equal to 4 24 will be 6 into 4 What will be n is equal to 5 I think it will be 120 24 into 5 So in this way we keep calculating our factorial Generally for very big numbers We don't calculate factorial Till 9 till 8 Generally we calculate our factorial Otherwise the number becomes very big To calculate factorial Simply replace the buses with some multiply If I multiply here Suppose I have to calculate factorial of 5 Here we will take factorial In some place n is equal to 5 What will be factorial of n If we initialize factorial from 0 Then all the values will be multiplied from 0 And the answer will always be 0 So to calculate factorial Always initialize variable from 1 Let's initialize from 1 i is equal to 1 Here factorial Multiplied equal to i So let's do this factorial is equal to my factorial variable saved and run So factorial is equal to 120 factorial of 4 will be equal to 24 That will be printed factorial of 3 will be equal to 6 That will be printed So in this way we can calculate our factorial and print it This is done through the while loop So what we will do is First we take n number Then we take factorial variable which we initialize with 1 After that for i in range Let's start from 1 to i and go to n plus 1 And always in factorial multiply equal to i And finally we will print factorial is equal to factorial value Save it Let's run it The factorial of 5 turns out to be 120 So in this way We have covered different concepts In all the majority important concepts in Python We have covered all the questions in this chapter And even now we are doubting in the loops So this same question if you will write it yourself Write it on paper Try to understand the logic So we will definitely clear the concept of loops Because we don't need to solve more questions than this To understand loops as a beginner These questions were more than good enough To understand loops in Python So that's all for today The link to the notes is in the description box See you in the next lecture Till then keep learning and keep practicing"
+}

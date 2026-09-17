@@ -18,7 +18,7 @@ def create_embedding(text_list):
 
 def inference(prompt):
     r = requests.post("http://localhost:11434/api/generate", json={
-            "model": "deepseek-r1",
+            "model": "llama3.2",
             "prompt": prompt,
             "stream":False
         })
@@ -28,7 +28,8 @@ def inference(prompt):
     return response
 
 
-df = joblib.load('embeddings.joblib')
+#df = joblib.load('embeddings.joblib')
+df = joblib.load('embeddings_float32.joblib')
 
 
 incoming_query = input("Ask a Question: ")

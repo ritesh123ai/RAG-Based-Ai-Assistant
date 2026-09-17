@@ -1,0 +1,2210 @@
+{
+    "chunks": [
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 0.0,
+            "end": 17.48,
+            "text": "Hi everyone and welcome to the complete Python series in which we will cover chapter 4 in which we will read dictionaries and sets Dictionary and sets are very important data structures or they are built in data types in Python which we use very frequently in coding in Python"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 17.48,
+            "end": 40.04,
+            "text": "So we will cover all the things related to their special properties and methods in today's chapter and we will not only read topics but also code related things but also we will use all the concepts and solve some practice questions for a better understanding Along with that, you will find our lecture notes in the description box where we can download them"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 40.04,
+            "end": 57.04,
+            "text": "and if we want to read any other topic related to Python then all the chapters will be available on this playlist where we can go and see So let's start with chapter 4 Dictionaries and sets"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 57.04,
+            "end": 69.68,
+            "text": "Hi everyone, now we will start with chapter 4 in which we will read dictionaries and sets First, let's talk about dictionaries in Python The way in which our real life is dictionary what is in the dictionary?"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 69.68,
+            "end": 86.92,
+            "text": "In the dictionary, we have pairs of word meanings meaning we have a specific word and then all the meanings that can be written in one place and then the next word, then the meanings, then the next word, then the meaning So in this way, our dictionary works in pairs"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 86.92,
+            "end": 104.32,
+            "text": "meaning in a combination where one word and one meaning Now in the dictionary, our words act like keys It means that whenever I have to search for a word we will simply search for that word in our dictionary Generally, we don't search for meaning"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 104.32,
+            "end": 121.67999999999999,
+            "text": "We start searching through words So we say that it is the key of our pair Key means important thing and meaning basically, this key has a value So in the same way, if we have to store the pair type information in Python"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 121.67999999999999,
+            "end": 136.76,
+            "text": "then we store it in the form of dictionary data values Now before this, we have read about lists and tuples which are built-in in Python Similarly, dictionaries and sets are built-in in Python So dictionaries are used to store data values"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 137.72,
+            "end": 154.68,
+            "text": "meaning a key will be the value of a ferrous So to create a dictionary, first we write the name of our dictionary like a normal variable then we write equal to and in curly braces, we write our key value pairs For example, here, this is a single key value pair in which the key is a name"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 154.68,
+            "end": 166.68,
+            "text": "which is our string, in between we divided it with a colon and this is the value, whatever is a string After that, this is our second key value pair in which this is our key, a string and this is our value, a floating value"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 166.8,
+            "end": 179.72,
+            "text": "So in this way, we can create multiple key value pairs Let's make our own dictionary For example, we are storing some information We are storing some information and to store it in the form of dictionary, we just have to write curly braces"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 179.72,
+            "end": 194.76000000000002,
+            "text": "and then we have to start writing our key value pairs For example, this is our string key and this is its value We can make a name like this What is our name and value"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 194.84,
+            "end": 209.79999999999998,
+            "text": "We can add any name in the value We have one more key and we have one more value So in this way, this is our dictionary We can print our dictionary if we want"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 209.79999999999998,
+            "end": 220.44,
+            "text": "We have given the name and information, let's run it We have our dictionary print and the key value pairs are separated with a comma This is a single key value pair and this is a single key value pair"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 220.44,
+            "end": 232.76,
+            "text": "We want, these values are not string We can store other data types in this For example, if I take a key Age We can store value in this"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 232.76,
+            "end": 247.79999999999998,
+            "text": "Let's suppose 35, 35 is an integer If we make a key called isAdult We can store it in this What is true? It is a boolean value Or if we make a key called marks"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 247.79999999999998,
+            "end": 260.84000000000003,
+            "text": "We can store value in this 94.4 So what is this? It is a floating value All values in this way are acceptable in a dictionary We can store lists and tuples"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 260.84000000000003,
+            "end": 276.12,
+            "text": "Let's remove these values and add a name again We will get a string value in the name Apart from that, we can create another key We will call it subjects"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 276.12,
+            "end": 286.36,
+            "text": "And we can store our list in subjects We will write Python in this We will write C in this We will write Java in this and so on"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 286.36,
+            "end": 298.04,
+            "text": "So what is this? This is a list Apart from this, we can create a tuple For example, if we want to store topics today We can store them in a tuple Dictionary"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 298.04,
+            "end": 307.96000000000004,
+            "text": "and set Let's do this safe and run So our different data types will be printed on the screen Now the values in the dictionary"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 307.96000000000004,
+            "end": 323.15999999999997,
+            "text": "Almost all the data types are acceptable in it But we can't use the list and dictionary in the keys We can make a string We can make a number of our keys For example, our key can be 12"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 323.15999999999997,
+            "end": 331.71999999999997,
+            "text": "This will also be completely acceptable We can make a floating value of our keys Save Rerun This floating value can be"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 331.71999999999997,
+            "end": 344.44,
+            "text": "This boolean value can be Or we can make a tuple Basically, there should be a value If we assign it once, then we can't change it later Like the list can be added, removed, removed"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 344.44,
+            "end": 353.48,
+            "text": "It can be changed Similarly, dictionary is also mutable We can add elements in the dictionary We can remove it and the dictionary changes But because tuple doesn't change"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 353.48,
+            "end": 365.88,
+            "text": "We can only make a tuple We generally keep our perimeter types In fact, the many times we see our dictionaries We will generally encounter strings in it We won't go into complexity"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 365.88,
+            "end": 375.96,
+            "text": "We are making a tuple in the dictionary We are making floating values in the key We are making integers in the key We will keep our normal key values in the strings only Because in majority scenarios"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 375.96,
+            "end": 391.96,
+            "text": "As a beginner, dictionaries make sense for us Now we can print the type of the dictionary For example, if I try to print type of info We will get a dictionary type We have some properties of the dictionary"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 391.96,
+            "end": 402.03999999999996,
+            "text": "First of all, dictionaries are unordered Unordered means there is no fixed rule We can see which things will come first Which things will come last That is, our strings"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 402.03999999999996,
+            "end": 412.03999999999996,
+            "text": "Or our list Or our tuple What happens in all of them Common thing is that they have index If the index is 0, 1, 2, or value"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 412.03999999999996,
+            "end": 422.03999999999996,
+            "text": "We will know which value comes first Which value comes later But in dictionaries As such, there is no index So there is no order in dictionaries"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 422.03999999999996,
+            "end": 432.12,
+            "text": "Apart from that, dictionaries are mutable We can change them For example, we can't change the tuple Tuple was immutable We can change the list"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 432.12,
+            "end": 442.12,
+            "text": "For example, the list is mutable We also have a dictionary And we can't create duplicate keys If we want 2 keys One key has a name"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 442.12,
+            "end": 452.12,
+            "text": "The other key has a name Then that is not possible in the dictionary Like in real life dictionary When we store word meanings So one word is written once"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 452.2,
+            "end": 462.2,
+            "text": "We can write different meanings together But we write one word once It is not like after 10 pages There will be definition of apple Or cat definition"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 462.2,
+            "end": 472.2,
+            "text": "Similarly, in dictionaries We don't repeat keys If we have created any dictionary If we want to access values In the place of index"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 472.2,
+            "end": 482.28,
+            "text": "We can write the name of the dictionary And write the name of the key And through the name of the key We can access its value For example, this is our information dictionary"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 482.28,
+            "end": 492.28,
+            "text": "Or give them a better name We can call it dictionary Let's call it dict For our information dictionary If we want to access its values"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 492.28,
+            "end": 502.28,
+            "text": "We can print In the information In the square brackets And if I want to print the name We can simply write name"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 502.28,
+            "end": 512.36,
+            "text": "Similarly, if we want to print our topics We can write topics We can print our subjects We can write subjects And we can write"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 512.36,
+            "end": 522.36,
+            "text": "H, let's run it We can print all these individual values Let's make it up to college And we can print all the values Now here"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 522.36,
+            "end": 532.36,
+            "text": "If we write a key like this Instead of name If I write Sir name Sir name because it doesn't exist"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 532.36,
+            "end": 542.44,
+            "text": "In this information dictionary We will have an error We will have an error We will have an error Sir name key is not present in this dictionary"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 542.44,
+            "end": 552.44,
+            "text": "For example, we try to Access an index like this In the string, in the list, in the tuple Which doesn't exist, which is bigger than its size Or smaller than its size"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 552.44,
+            "end": 562.44,
+            "text": "In that case, as we have an error Similarly, if we do this key Which doesn't exist We will have an error If we want to change our name"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 562.44,
+            "end": 572.5200000000001,
+            "text": "And assign some other value We can write name in the information And to assign a new value We can write equal to Assignment operator"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 572.5200000000001,
+            "end": 582.5200000000001,
+            "text": "And let's suppose I assign this value Save it And let's print our information once again Let's refresh So here we have changed the value of our name"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 582.5200000000001,
+            "end": 592.5200000000001,
+            "text": "And in this way We can add a new value For example, if I want In name We will add this thing"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 592.6,
+            "end": 602.6,
+            "text": "We can take a sir name value We can take a sir name value Let's save it And run The value of the name was already replaced"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 602.6,
+            "end": 612.6,
+            "text": "The name was our college But we re-assigned its value So the new value came here Along with that, we added another key value pair The way we assign"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 612.6,
+            "end": 622.6800000000001,
+            "text": "We can also add a new key value pair In the dictionary So from all these actions, we get That dictionaries in python are mutable Now we will create another name"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 622.6800000000001,
+            "end": 632.6800000000001,
+            "text": "Like this With a new value Because in that case The old value Will be overwritten"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 632.6800000000001,
+            "end": 642.6800000000001,
+            "text": "Instead of creating a new key value pair With the same key Python overwrites the old key value And it is not necessary to assign a string We can assign a number"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 642.6800000000001,
+            "end": 652.76,
+            "text": "Or assign some other value So here we will have name 23 Just like this If we want, we can create an empty dictionary For example"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 652.76,
+            "end": 662.76,
+            "text": "I want to create a null dictionary Null means empty So we can write This way, we will have a parenthesis This will create an empty dictionary"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 662.76,
+            "end": 672.76,
+            "text": "If we want We can print this This is going to be my null dictionary Let's remove this part Let's save it and run it"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 672.76,
+            "end": 682.84,
+            "text": "So a null dictionary came And if we want, we can add values In this null dictionary I want the name To be equal to"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 682.84,
+            "end": 692.84,
+            "text": "My college Let's save and run it In this dictionary, we have a value So we will have code scenarios In which we will start an empty dictionary"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 692.84,
+            "end": 702.84,
+            "text": "With a null dictionary And then we will add values Now we will talk about nested dictionaries In dictionaries When we read the conditional statements"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 702.84,
+            "end": 712.9200000000001,
+            "text": "If we know If we write any conditional Then we can create another block If we write any conditional We can create another block"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 712.9200000000001,
+            "end": 722.9200000000001,
+            "text": "We can create a nesting So these are nested conditional statements As we said earlier Nesting is not only in conditional statements It can also be in other data structures"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 722.9200000000001,
+            "end": 732.9200000000001,
+            "text": "So in this dictionary What can we do to bring nestedness We can create a dictionary We can create a value We can create a value"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 733.0,
+            "end": 743.0,
+            "text": "For example For example We have a dictionary Called student We are storing the student's value"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 743.0,
+            "end": 753.0,
+            "text": "Here we can store the student's name In the name The name is Rahul Kumar And we can store their subject When we store the subject"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 753.0,
+            "end": 763.08,
+            "text": "Because a student has multiple subjects Either we can store it in a list That the subject is physics The subject is chemistry The subject is chemistry"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 763.08,
+            "end": 773.08,
+            "text": "But if I have to store the student's marks Along with the subject Then we can choose That here I have to store the key value That there are so many marks in this subject"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 773.08,
+            "end": 783.08,
+            "text": "So we can create another dictionary With some curly braces So we can specify What will be physics What will be our key"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 783.08,
+            "end": 793.1600000000001,
+            "text": "And we will write marks in it Then we will write chemistry We will write marks in chemistry We will write marks in math And in this way we can store"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 793.1600000000001,
+            "end": 803.1600000000001,
+            "text": "All the values in the form of a dictionary So what happened In the dictionary We created another dictionary So we call it"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 803.1600000000001,
+            "end": 813.1600000000001,
+            "text": "Nested dictionary We can print it We can print our student We saved and ran So we have the student's value"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 813.1600000000001,
+            "end": 823.24,
+            "text": "And we can print the subject In the student If I have to print only the subject Then I have to access it Subjects in the student"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 823.24,
+            "end": 833.24,
+            "text": "So all the subjects are here The subjects are in the dictionary And in the dictionary Let's suppose I have to print the chemistry marks So what can we do for that"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 833.24,
+            "end": 843.24,
+            "text": "We put another square bracket here And then we write The one more Save it and let's run it So we have the chemistry marks"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 843.24,
+            "end": 853.32,
+            "text": "If we have the data in the nested form Then we can put another square bracket After one square bracket And then we can take out our relevant information From nested dictionaries"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 853.32,
+            "end": 863.32,
+            "text": "Now next As we read the methods in the list We read the methods in the tuples We read the methods in the strings We are going to read some special methods of dictionaries"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 863.32,
+            "end": 873.32,
+            "text": "The first of these Is the dot keys method In our dictionary If we want to take all the keys So we can write"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 873.4000000000001,
+            "end": 883.4000000000001,
+            "text": "The whole collection of keys is returned to us For example This is my dictionary If I have to print all the keys So I can simply write"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 883.4000000000001,
+            "end": 893.4000000000001,
+            "text": "Student.keys And in this way Let's save the parenthesis And run it So what we have here"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 893.4000000000001,
+            "end": 903.48,
+            "text": "We get something called a dict keys It means the keys of the dictionary So this is a list format We have it In this dictionary"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 903.48,
+            "end": 913.48,
+            "text": "How many keys are there One is name and one is subject We don't get the keys of the nested one Which are the keys of the outer layer That will come to us"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 913.48,
+            "end": 923.48,
+            "text": "So we got the name and subject Now this data type If we want it We can convert it into a normal list We can convert it into a normal tuple"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 923.48,
+            "end": 933.5600000000001,
+            "text": "For that we can use typecasting We have seen typecasting for string, integer or float For typecasting For that we write list And in parenthesis"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 933.5600000000001,
+            "end": 943.5600000000001,
+            "text": "Pass our value For example if I want to typecast float I will simply write float And pass the value So here the value is student.keys"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 943.5600000000001,
+            "end": 953.5600000000001,
+            "text": "And in which we want to typecast We want to do it in the list So let's save it and run So what we have here We have this list"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 953.5600000000001,
+            "end": 963.64,
+            "text": "In which we have name and subject If I want to take out the total number of keys Or we can print length of student Which will be the length of dictionary Which is going to be 2"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 963.64,
+            "end": 973.64,
+            "text": "Which is the total number of key value So we can do it directly through length Or we can take out the length of this list In this way We added another layer of length"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 973.64,
+            "end": 983.64,
+            "text": "So we will get the answer of this We will get 2 So basically what we have to do here First we took out all the keys of the dictionary Then we casted it in the list"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 983.64,
+            "end": 993.72,
+            "text": "Now the final length Now we have the final list We are trying to take out the length of it So this is possible In python"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 993.72,
+            "end": 1003.72,
+            "text": "In one function In the other function But this concept is a little difficult to understand So if we don't do any other coding language Then we don't have to worry"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 1003.72,
+            "end": 1013.72,
+            "text": "Our function chapter will come In which we will understand this in complete detail I am just giving you a little overview In the beginning So that we get a good flavour"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 1013.8000000000001,
+            "end": 1023.8000000000001,
+            "text": "Next method we can use This is our values method With values we get a collection return Of all the values in the dictionary Like here"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 1023.8000000000001,
+            "end": 1033.8,
+            "text": "We can write .values Once If I write .values Save it So this is our first value"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 1033.8,
+            "end": 1043.8799999999999,
+            "text": "The value of the name Rahul Kumar And all of our subjects came What is the type here We have to do dict values We can convert it into our list"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 1043.8799999999999,
+            "end": 1053.8799999999999,
+            "text": "Let's try to convert it into a list So our list is The first value in the list is X string And the second value is A dictionary in the list"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 1053.8799999999999,
+            "end": 1063.8799999999999,
+            "text": "So the type of data Can be stored in a different type of data We can store dictionary in the list We can store the list in the dictionary So this is how our data is stored"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 1063.8799999999999,
+            "end": 1073.96,
+            "text": "Next method We will talk about is our .items method What is .items In any dictionary All the key values return to pairs as tuples"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 1073.96,
+            "end": 1083.96,
+            "text": "Like If I write Student .items means basically"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 1083.96,
+            "end": 1093.96,
+            "text": "All the pairs will return So this is our first pair How is the pair coming In parenthesis In the form of tuples"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 1093.96,
+            "end": 1104.04,
+            "text": "So this is our tuple The first value is in the tuple In the second tuple The key is in it And the value is in it"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 1104.04,
+            "end": 1114.04,
+            "text": "So this is how the tuples return We can type it We can type it To some list Let's save and run it"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 1114.04,
+            "end": 1124.04,
+            "text": "So we have a proper list In the list, our first tuple Is our second tuple We can access the tuples individually Like this is our list"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 1124.04,
+            "end": 1134.12,
+            "text": "Of all the items We can give the name Pairs is equal to this value And in pairs If I want to access the first pair"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 1134.12,
+            "end": 1144.12,
+            "text": "I can simply write Pairs of 0 We can run it We can get a tuple In which the name and value are stored"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 1144.12,
+            "end": 1154.12,
+            "text": "So name was name Rahul Kumar We can get the first tuple And we can print our second tuple In pairs of 1"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 1154.1999999999998,
+            "end": 1164.1999999999998,
+            "text": "We can pass it We should not double quote So if we pass any key What is the method we are returning The method returns the key's value"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 1164.1999999999998,
+            "end": 1174.1999999999998,
+            "text": "Now there are two ways to return the value One is If we have a dictionary We have written the key's value So what will be the return"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 1174.1999999999998,
+            "end": 1184.28,
+            "text": "We will get the value Or we can simply write D.get And our key So we can get the value"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 1184.28,
+            "end": 1194.28,
+            "text": "So there are two ways And one is method We need two ways to get the value To understand that First we write both"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 1194.28,
+            "end": 1206.28,
+            "text": "Let's suppose I want to print The name of the student In it And I can also print"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 1206.28,
+            "end": 1216.28,
+            "text": "student.get Name We will get the same value Save And we have printed the same thing"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 1216.28,
+            "end": 1226.28,
+            "text": "But if I write the name To by mistake What will happen in that case So in this case, this line It returns an error"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 1226.28,
+            "end": 1236.28,
+            "text": "Which we have already seen And this line Will not return any error It will simply return The non value for me"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 1236.28,
+            "end": 1246.28,
+            "text": "For example, let's see this line What will this line do? It will print none Because this line doesn't exist So what will return"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 1246.28,
+            "end": 1256.28,
+            "text": "Nothing But if we use this line What will it do? It will give us an error So what happened here? We have an error here"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 1256.28,
+            "end": 1266.28,
+            "text": "So this difference is When we normally try to access The value with the square bracket notation We have an error And we don't have an error in the method"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 1266.28,
+            "end": 1276.28,
+            "text": "It will look small So what happened? There was an error So we will keep in mind What is wrong in this But as a programmer"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 1276.28,
+            "end": 1286.28,
+            "text": "We have to deal with a lot of data We have to write long programs And in that case it is very difficult To track and check Which keys exist in the dictionary"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 1286.28,
+            "end": 1296.28,
+            "text": "In fact, many times For example, if we are building a website We are doing it back in Python So what will happen? We have data return in the form of a dictionary"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 1296.28,
+            "end": 1306.28,
+            "text": "So we don't know exactly What keys will exist in it So we can make a mistake That is completely possible But what is the meaning of error"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 1306.28,
+            "end": 1316.28,
+            "text": "I will explain it to you If we write some line in the code Which if something goes wrong And there is an error in it So what will happen in that case?"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 1316.28,
+            "end": 1326.28,
+            "text": "In that case, in our code Which will write all the statements Like I print here Here I print Here I print"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 1326.28,
+            "end": 1336.28,
+            "text": "My college And here we write We are Learning Coding"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 1336.28,
+            "end": 1346.28,
+            "text": "I have written 5-6 lines Like this These lines Obviously there is no error in them I have printed these things"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 1346.28,
+            "end": 1356.28,
+            "text": "And in this way, there can be many long codes Like number, age, B Which can be 2 Sum in which we are Summing A and B"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 1356.28,
+            "end": 1366.28,
+            "text": "This can be a very long code Now this code There is no error in it But if there is an error in a line in the middle Then what happens in the program"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 1366.28,
+            "end": 1376.28,
+            "text": "As soon as we run this program And as soon as we have an error After error, that code In which there should be no error The correct code is not executed"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 1376.28,
+            "end": 1386.28,
+            "text": "And this is a problematic thing by programming Whenever we work in real life Practical work We work in companies So errors keep coming"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 1386.28,
+            "end": 1396.28,
+            "text": "Problems keep coming But that doesn't mean our code stops This means that if there is an error on the website Then the entire website stopped working So that is not a good stable system"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 1396.28,
+            "end": 1406.28,
+            "text": "So that is why we always prefer In real time practical scenarios That we don't write this type of code directly If there is any error in it Then the correct code is not running"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 1406.28,
+            "end": 1416.28,
+            "text": "The correct code is not running For that we definitely have try-catch Blocks of different ways To manage such situations in programming But on a very small level"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 1416.28,
+            "end": 1426.28,
+            "text": "On a basic level, there will be a way to manage this situation That instead of this format If we write a practical code in Python Not right now, we are just learning So what we will do in that"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 1426.28,
+            "end": 1436.28,
+            "text": "We will try to use methods That are not error-throwing If there is an error, then we are able to manage it well There will be another way to explain this There will be another basic way to do this"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 1436.28,
+            "end": 1446.28,
+            "text": "That I simply write here Print before And here I write After So the after code will never be executed"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 1446.28,
+            "end": 1456.28,
+            "text": "We will save and run Before it was printed But in the output window, it never was after printed That means after the error, nothing worked So to avoid this kind of situation"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 1456.28,
+            "end": 1466.28,
+            "text": "We have methods That is why we need methods Next comes to our next method Update method In the update method"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 1466.28,
+            "end": 1476.28,
+            "text": "We can pass any additional dictionary Or any key value pair In the form of these curly braces Which will add any key value pairs Into our old dictionary"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 1476.28,
+            "end": 1486.28,
+            "text": "Now let's see an example of this For example, this is our Student dictionary We want to add its city So we can simply write"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 1486.28,
+            "end": 1496.28,
+            "text": "Student.update We will update it with some new key value pair City We will store the value in the city Save it"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 1496.28,
+            "end": 1506.28,
+            "text": "And in fact print it Save Run So what value did we get in the student This value of city and deli"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 1506.28,
+            "end": 1516.28,
+            "text": "Was stored extra Now we want this city deli To give it a new dictionary New dictionary We could store it in the new dictionary"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 1516.28,
+            "end": 1526.28,
+            "text": "And if we pass the new dictionary We would have the same output That is, the original dictionary Changes into new dictionary Adds to new dictionary"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 1526.28,
+            "end": 1536.28,
+            "text": "We want to keep multiple key value pairs For example, city and deli Or age And here we write Let's write 16"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 1536.28,
+            "end": 1546.28,
+            "text": "Save it and run So these multiple values Go into our dictionary And it is updated Now here, if we pass this new dictionary"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 1546.28,
+            "end": 1556.28,
+            "text": "If we add an old key For example, I added a name And in the name I added a name of Rahul Kumar So in that case"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 1556.28,
+            "end": 1566.28,
+            "text": "The old value Like the value of the name, it will be updated That is, it is not like if we pass The same key in the new dictionary Then a new key will be created"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 1566.28,
+            "end": 1576.28,
+            "text": "Because we have already said that There are no duplicate keys allowed in dictionaries So that is why this value Will be overwritten So we are creating a new duplicate key"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 1576.28,
+            "end": 1586.28,
+            "text": "So we have searched The most commonly used dictionary methods Generally when we use dictionaries There will be many rare cases When we have to use methods from them"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 1586.28,
+            "end": 1596.28,
+            "text": "But if we do it well Then I don't think we will have A lot of problems using new methods Because simply We can write"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 1596.28,
+            "end": 1606.28,
+            "text": "A dictionary name And dot something So these are all different methods So there are many easy methods But the most commonly used"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 1606.28,
+            "end": 1616.28,
+            "text": "We have already covered them Which we will be coding in the Python In day to day life Now the next data structure Or the next data type"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 1616.28,
+            "end": 1626.28,
+            "text": "They are called Sets in Python Now if we are coming from the math background We had studied math in 9th and 10th We had studied math in 11th and 12th So there are sets in the Maths"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 1626.28,
+            "end": 1636.28,
+            "text": "The sets of Python Are based on the properties of the sets The set in Maths Means a collection In which all the unique values are stored"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 1636.28,
+            "end": 1646.28,
+            "text": "If we store numbers Then the numbers are unique For example if I have stored 1, 2, 3, 4 Then it is not like that We can store 2 times"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 1646.28,
+            "end": 1656.28,
+            "text": "2 will be stored in our set once So we call it a set in Maths Similarly in Python The set is the collection of unordered items Like in dictionary"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 1656.28,
+            "end": 1666.28,
+            "text": "There is no order It means basically there is no index Similarly there is no order in the set No index Any value can come first or any value can come later"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 1666.28,
+            "end": 1676.28,
+            "text": "And each collection in the set Must be unique and immutable All the items in the set are unique It is not like that We have stored a number, value, string twice"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 1676.28,
+            "end": 1686.28,
+            "text": "And all the items in the set Are immutable Means we can store numbers We can store integers We can store float"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 1686.28,
+            "end": 1696.28,
+            "text": "Because the number 1 The value of 1 is not like that It will change into 2 in Math Or the value of 1 will be 1.777 1 will always remain 1"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 1696.28,
+            "end": 1706.28,
+            "text": "Universal is 1 Similarly if float is 2.9 Then it will not remain 2.9 It will be 3.14 Or if we take the example of string"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 1706.28,
+            "end": 1716.28,
+            "text": "If we create a string ABC in Python Then it is immutable There can be no changes in it Or if we take the example of tuple We can store it"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 1716.28,
+            "end": 1726.28,
+            "text": "Because we have created a tuple Now there can be no changes in this tuple Or if we take the example of boolean True or false True will always remain true and false will always remain false"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 1726.28,
+            "end": 1736.28,
+            "text": "All these values It is possible to store them in the set But we cannot store them in the list We cannot store them in the dictionary Because both these values are mutable"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 1736.28,
+            "end": 1746.28,
+            "text": "We can change the list We can change the dictionary That is why in the set There is no list and dictionary In the dictionary"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 1746.28,
+            "end": 1756.28,
+            "text": "These are acceptable values We have studied till now That we can store in the set To create the set We simply write nums"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 1756.28,
+            "end": 1766.28,
+            "text": "And we start the dictionary We start the set with curly braces And simply we start writing Our values For example if I want to create a set"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 1766.28,
+            "end": 1776.28,
+            "text": "I can simply write Let's call it a collection Collection is equal to My collection is a set In which I have stored my 4 values"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 1776.28,
+            "end": 1786.28,
+            "text": "We can print the collection value Or we can print Type of The collection Save it and run"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 1786.28,
+            "end": 1796.28,
+            "text": "So this is our collection value Type is equal to the set This is recognized as a valid set Like a dictionary There is no key value"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 1796.28,
+            "end": 1806.28,
+            "text": "It is stored only in the value In the set We can store our string values Save and run String values are also in the set"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 1806.28,
+            "end": 1816.28,
+            "text": "But if we want We store the value of one value twice In this way We store it 3 times Or we store the world twice"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 1816.28,
+            "end": 1826.28,
+            "text": "So what does the set do In that case the set ignores the duplicate values There is no error It will be ignored When we print the set"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 1826.28,
+            "end": 1836.28,
+            "text": "Or we will use our collection The world will come once Hello once One once And you will notice an interesting thing"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 1836.28,
+            "end": 1846.28,
+            "text": "Even though I have written the world here It is not like this The world will come here Or if I write 4 randomly Where is the 4?"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 1846.28,
+            "end": 1856.28,
+            "text": "The set that was printed this time Is completely different It means that it was printed before 1,2 Before this The world came together"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 1856.28,
+            "end": 1866.28,
+            "text": "So we call the set unordered There is no such thing as The thing that we wrote in the code That will come later There is no order follow"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 1866.28,
+            "end": 1876.28,
+            "text": "And secondly, duplicate values are ignored In fact If we want to print the length of the collection Then the length can be printed The length will be"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 1876.28,
+            "end": 1888.28,
+            "text": "Total number of items If we save Then the length will be 5k What did the length do? It ignored the duplicate items"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 1888.28,
+            "end": 1898.28,
+            "text": "Even though we have included 4, 4 plus 3, 7 8 items But we will get 5 items from the final length Because duplicate values Are not allowed in the sets"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 1898.28,
+            "end": 1908.28,
+            "text": "We have to make this a guard It is very important Whether we make the sets in python Whether we make them in another language Even there we always have unique values"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 1908.28,
+            "end": 1918.28,
+            "text": "In the sets How do we create a set? How do we duplicate or set repeated elements Just store one thing Now we know how we can create an empty set"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 1918.28,
+            "end": 1928.28,
+            "text": "How can we create an empty set If we think That in the set We will create an empty set In some way"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 1928.28,
+            "end": 1938.28,
+            "text": "So we should remember That the syntax Is a syntax of an empty dictionary This is not an empty set This is an empty dictionary"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 1938.28,
+            "end": 1948.28,
+            "text": "In fact, we can print this If I type Type of collection What will come? This is a dictionary This is not a set"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 1948.28,
+            "end": 1958.28,
+            "text": "So to create an empty set We have to write a set And then parenthesis So this is the syntax The correct way to write code"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 1958.28,
+            "end": 1968.28,
+            "text": "So if I have to create an empty set Then we will write this syntax As we write this Our collection Will be converted into a set"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 1968.28,
+            "end": 1978.28,
+            "text": "So what is in the class this time We have printed a set Now we will talk about Some methods of sets The first method is"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 1978.28,
+            "end": 1988.28,
+            "text": "Add method Whatever element we write in the add It goes into our set and adds And as it adds, it is removed method We write the element after removing the set"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 1988.28,
+            "end": 1998.28,
+            "text": "It gets removed from our set One thing We have to notice here What are sets? Sets"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 1998.28,
+            "end": 2008.28,
+            "text": "Are mutable Mutable means New element can be added and removed But the elements of the set Are"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 2008.28,
+            "end": 2018.28,
+            "text": "Those elements Are immutable There is a difference Because many times We read in the definition"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 2018.28,
+            "end": 2028.28,
+            "text": "Each element in the set must be immutable So many times we ask in an interview We say immutable Set is mutable Mutable can be changed"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 2028.28,
+            "end": 2038.28,
+            "text": "Only then we can add and remove But we cannot change the value of the elements So That is why the elements are immutable So in .add"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 2038.28,
+            "end": 2048.2799999999997,
+            "text": "We can pass the tuple But we cannot pass the list or dictionary So the set is mutable But its elements are immutable Now let's look at the methods"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 2048.2799999999997,
+            "end": 2058.28,
+            "text": "Let's suppose we created an empty set Our empty set is now Collection Now if we want to add some values In the collection"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 2058.28,
+            "end": 2068.28,
+            "text": "Let's print our collection here And start adding some values Let's suppose I add some value Collection.add1 Collection.add"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 2068.28,
+            "end": 2078.28,
+            "text": "Value2 is done Let's suppose if I write again Collection.add value2 What will be the print in that case? In that case we will have only one or two"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 2078.28,
+            "end": 2092.28,
+            "text": "Because this duplicate value will ignore our set Similarly We can remove the values Like here Let's remove the collection.remove"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 2092.28,
+            "end": 2102.28,
+            "text": "If we remove one Then only one value will be left in our set Which is equal to two If we want to remove a value That does not exist in the set"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 2102.28,
+            "end": 2112.28,
+            "text": "Like 7 does not exist in the set So what will happen in that case? We will have an error in that It is basically the same key error Key error means like in dictionary"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 2112.28,
+            "end": 2122.28,
+            "text": "Key error means that key does not exist Here the value is the key That means the key value is the same In the pair The value is the same, that means our single element"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 2122.28,
+            "end": 2132.28,
+            "text": "If that element does not exist Then we will have an error here Now in our collection We can store different types of values If we want we can pass a string here"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 2132.28,
+            "end": 2142.28,
+            "text": "If we want If we want We can pass a tuple here Like we have a tuple But we cannot pass a list"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 2142.28,
+            "end": 2152.28,
+            "text": "Like if we run Then there is no problem Our set is created But similarly if we try to Pass a list here"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 2152.28,
+            "end": 2162.28,
+            "text": "So what is the list? The list can be changed with time New elements can be added, removed As soon as we write this line What will happen in it? Error will come"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 2162.28,
+            "end": 2172.28,
+            "text": "Save it and run Error came Unhashable type list That we are trying to add a list Which is an unhashable type"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 2172.28,
+            "end": 2182.28,
+            "text": "What does unhashable type mean? I will give you a small overview Basically whatever values are immutable Immutable That means that they cannot be changed"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 2182.28,
+            "end": 2192.28,
+            "text": "We can add them in the set No problem Because these values can be a hash value Hashing basically A specific algorithm"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 2192.28,
+            "end": 2202.28,
+            "text": "In which we Change the original value And convert it to something else Like if I have one value And the other value is one"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 2202.28,
+            "end": 2212.28,
+            "text": "The final hashing value Will be same That is why Python detects Like this same thing But if we take an example of a list"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 2212.28,
+            "end": 2222.28,
+            "text": "This is my list, this is the second list Now it can be changed If it is 1,2,3 then its hash value will be different So what will happen? A mutable thing will happen"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 2222.28,
+            "end": 2232.28,
+            "text": "The moment the original value is changed The hash value will be changed So what will happen? The implementation of the set will be ruined So the values in the set"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 2232.28,
+            "end": 2242.28,
+            "text": "Are all such Hasheable values That means immutable values In the lifetime The value assigned to them"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 2242.28,
+            "end": 2252.28,
+            "text": "Like the double is double The value assigned to the double Is not possible to get So what will happen? The hash value will not change"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 2252.28,
+            "end": 2262.28,
+            "text": "So in the same way Our sets are implemented in Python So whenever we read this Unhashable Unhashable means"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 2262.28,
+            "end": 2272.28,
+            "text": "The values that change, mutate The hashing value will be different In this we are talking about Dictionaries Or we are talking about the list"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 2272.28,
+            "end": 2282.28,
+            "text": "Or in fact we are talking about sets Where we can empty the set For example Here If I try to print"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 2282.28,
+            "end": 2292.28,
+            "text": "The length of my set Let's save it Let's run it Because there are 4 elements in it 1,2, then the string"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 2292.28,
+            "end": 2302.28,
+            "text": "The third element and then the double The fourth element Now in this if I want to clear this set We can simply write Collection.clear"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 2302.28,
+            "end": 2312.28,
+            "text": "And in the length Next time we will print and it will be zero We run it and we will get the value Zero K equal Apart from this we have a"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 2312.28,
+            "end": 2322.28,
+            "text": "Pop method in the set Which removes a random value Which we create a collection For which we create a collection We store some random strings in the collection"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 2322.28,
+            "end": 2332.28,
+            "text": "Let's write hello Let's write our college Let's write world Let's write Let's suppose coding"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 2332.28,
+            "end": 2342.28,
+            "text": "We have Python So there are some random values in this way What are we going to do? We are going to"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 2342.28,
+            "end": 2352.28,
+            "text": "Collection.pop So when we run it We have our own college value So it's not like our college first index Or there is an order in this way"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 2352.28,
+            "end": 2362.28,
+            "text": "So in random order Our elements can be our pop Similarly if we want to pop another value So this time Two values have been popped, Python and Hello"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 2362.28,
+            "end": 2372.28,
+            "text": "It's not like our college is popping Before again So this time Python has picked randomly And then Hello has picked randomly So we are also getting random values"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 2372.28,
+            "end": 2382.28,
+            "text": "Now its practical scenario is that We have a lot of unique values From which we want to generate Random value Next we have two more important methods"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 2382.28,
+            "end": 2392.28,
+            "text": "Related to the set The first one is union method Intersection method The way sets work in math In the same way"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 2392.28,
+            "end": 2402.28,
+            "text": "In the same way Our union and intersection of Python works In sets There is a meaning of union When we take one set"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 2402.28,
+            "end": 2412.28,
+            "text": "And take another set And in both the sets The total unique values We create a new set By combining those values"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 2412.28,
+            "end": 2422.28,
+            "text": "That is the union method combines Both set values and returns a new set For example We have a set 1 In set 1 we have values"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 2422.28,
+            "end": 2432.28,
+            "text": "1, 2 and 3 In set 2 we have values 3, 4 and 5 So can we visualize The 1, 2, 3 that we have"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 2432.28,
+            "end": 2442.28,
+            "text": "1 will come here, 2 will come here 3 will come here And in the same way 4, 5 will come here And 3 we have written only once Because 3 is common in set 1"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 2442.28,
+            "end": 2452.28,
+            "text": "So what are the total unique values That will come out of the final set What will be the values There will be values 1, 2, 3, 4 and 5"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 2452.28,
+            "end": 2462.28,
+            "text": "It is not that 3 will come in it 2 times So the duplicate values They are counted only in single time So we call it the union of our set"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 2462.28,
+            "end": 2472.28,
+            "text": "The union of two sets In the same way our union works in Python For example if we have our set 1 In set 1 we have values 1, 2, 3 and we also have"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 2472.28,
+            "end": 2482.28,
+            "text": "Set 2, set 2 We have values 2, 3, 4 We can work with these values And if we want to print"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 2482.28,
+            "end": 2492.28,
+            "text": "What is set 1 dot union set 2 going to be So what should this come We should have this 1, 2, 3 and"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 2492.28,
+            "end": 2502.28,
+            "text": "4 K equal Because in this 2 is repeated twice So it will be 1 time So our answer is 1, 2, 3 and 4 K equal"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 2502.28,
+            "end": 2512.28,
+            "text": "Now here this set 1 dot union set 2 it returns a new set It doesn't change anything in the old sets After that If we print set 1 and set 2"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 2512.28,
+            "end": 2522.28,
+            "text": "They will return their original values This was our set 1 And this was our set 2 So this is how union works in set And apart from that if we talk about intersection"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 2522.28,
+            "end": 2532.28,
+            "text": "Intersection means Common elements That means that combining both the sets Their common values will return In the form of a new set"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 2532.28,
+            "end": 2542.28,
+            "text": "For example this is set 1, 1, 2, 3 This is set 2, 3, 4, 5 Common values are only 3 So their intersection will be equal to 3"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 2542.28,
+            "end": 2552.28,
+            "text": "So if we have In the sets our intersection Is common area We highlight it from this area So here we have set 1"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 2552.28,
+            "end": 2562.28,
+            "text": "In which 1, 2, 3 and 4 We need an intersection So that intersection is going to be 2 and 3 equal Which we can print"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 2562.28,
+            "end": 2572.28,
+            "text": "If we execute it we have values 2 and 3 So we covered most common methods in the sets Next we are going to read some practice questions In practice questions"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 2572.28,
+            "end": 2582.28,
+            "text": "It is the same thing that we have to See and understand the practice questions And after that we have to pause Our lecture and try to solve The questions ourselves"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 2582.28,
+            "end": 2592.28,
+            "text": "If we are unable to solve the questions We can come and see the solution First of all let's talk about the first question Store the following word meanings In a python dictionary"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 2592.28,
+            "end": 2602.28,
+            "text": "So the first word is a table For the table we have the first meaning A piece of furniture, the second meaning A list of facts and figures The second word is a cat"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 2602.28,
+            "end": 2612.28,
+            "text": "We have a small animal So in this way we have to Store these words along with their meanings Now I know if I have made a dictionary So what is the cat in it?"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 2612.28,
+            "end": 2622.28,
+            "text": "It is a simple key value pair It is the value of the cat I don't think it should be difficult to store So we call it a dictionary This dictionary"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 2622.28,
+            "end": 2632.28,
+            "text": "Is going to be the first meaning of the cat Store it A small animal We have stored it, there is no problem Now when we store the meaning of the table"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 2632.28,
+            "end": 2642.28,
+            "text": "So here the key is 1 But what are the values? This is value 1 and this is value 2 How to store both the values together Now we can store the values In any way"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 2642.28,
+            "end": 2652.28,
+            "text": "We can store them in a list Or we can store them in a double form Or we can store them in a list Or we can store them in a double form Let's opt for a list"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 2652.28,
+            "end": 2662.28,
+            "text": "So here our word will be a table There are two meanings of the table The first meaning will be a piece of furniture The second meaning will be A list of"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 2662.28,
+            "end": 2672.28,
+            "text": "Facts and Figures Figures We can print our dictionary and print it"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 2672.28,
+            "end": 2682.28,
+            "text": "Let's save it and run So we have a proper dictionary This is our first key and this is our second key Let's move on to the second question"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 2682.28,
+            "end": 2692.28,
+            "text": "The second question is We are given a list of subjects For students We have to assume That we need a classroom"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 2692.28,
+            "end": 2702.28,
+            "text": "To take a subject class For example, a subject is Python We need one classroom to study Python We need a second classroom To study C++"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 2702.28,
+            "end": 2712.28,
+            "text": "C1 is Classroom 1, Classroom 2 And so on We have to tell how many classrooms are needed by all the students Now subject wise, there will be a classroom"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 2712.28,
+            "end": 2722.28,
+            "text": "In one classroom, how many students can come We have to assume this We have different students These are limited students We have to tell how many"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 2722.28,
+            "end": 2732.28,
+            "text": "total number of classrooms are needed Let's solve it on paper The first subject is Python We need one classroom for Python"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 2732.28,
+            "end": 2742.28,
+            "text": "This student This student will come in a single classroom After that, Java We need one classroom for Java"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 2742.28,
+            "end": 2752.28,
+            "text": "All the students of Java will come in a single classroom For C++ We need one classroom All the students of C++"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 2752.28,
+            "end": 2762.28,
+            "text": "will come there, then there is JavaScript We need one classroom for JavaScript And then for C We need one classroom for C How many classrooms are needed"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 2762.28,
+            "end": 2772.28,
+            "text": "1, 2, 3, 4 and 5 We need to know How can we reach this 5 value We have counted on paper But logically, if we have given"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 2772.28,
+            "end": 2782.28,
+            "text": "all this data How can we find out the total number of classrooms If you look carefully Can we say The subjects we have"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 2782.28,
+            "end": 2792.28,
+            "text": "are as many classrooms as we have We need as many unique subjects as we have Can we say that If we store all this data"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 2792.28,
+            "end": 2802.28,
+            "text": "in a set And we take out the length of the set So whatever the length of the set means the unique values count"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 2802.28,
+            "end": 2812.28,
+            "text": "What will be the count? It will be the total number of classrooms We need to store all this data And then take out the length of the set So for ourselves"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 2812.28,
+            "end": 2822.28,
+            "text": "Let's create a set or let's call it Subjects We will have different values in the subjects"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 2822.28,
+            "end": 2832.28,
+            "text": "We will have one value Python Then we have Java Then we have C++"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 2832.28,
+            "end": 2842.28,
+            "text": "We have Python again Java script Java Java Python"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 2842.28,
+            "end": 2852.28,
+            "text": "Java C++ And finally C Remember one thing That we have to"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 2852.28,
+            "end": 2862.28,
+            "text": "remember this C++ And this C++ What Python will do Treats like different strings For example, if we print"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 2862.28,
+            "end": 2872.28,
+            "text": "Subjects Let's save it and run What happened here? C++ was returned twice So in this set"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 2872.28,
+            "end": 2882.28,
+            "text": "We have to remember the case It is written in a smaller case And we want to repeat the same thing So we have to write it in a lower case again Let's delete it and run again"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 2882.28,
+            "end": 2892.28,
+            "text": "So we have got all the individual unique subjects And how many classrooms do we need Whatever the length of the subjects We saved and run"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 2892.28,
+            "end": 2902.28,
+            "text": "We need 5 classrooms To take all the students' classes So in this practical Scenarios, although it is not that practical But in the same scenarios"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 2902.28,
+            "end": 2912.28,
+            "text": "The properties of the set Are our work Let's solve the next question Next question is We will start with an empty dictionary"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 2912.28,
+            "end": 2922.28,
+            "text": "In the beginning We will add subjects In the end We will add the name of the subject If we have a chemistry"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 2922.28,
+            "end": 2932.28,
+            "text": "We will write the key And then the marks We will write the value Then we will write the physics And then we will write the marks"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 2932.28,
+            "end": 2942.28,
+            "text": "And in this way We will complete the dictionary First of all, let's take an empty dictionary Let's call it marks We initialized it"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 2942.28,
+            "end": 2952.28,
+            "text": "Now we will take input from the user First of all Let's suppose we will take the marks of our physics Input Or simply here the physics is okay"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 2952.28,
+            "end": 2962.28,
+            "text": "And we will convert these marks To some integer value Let's call this value X, we will get our marks And here we will use"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 2962.28,
+            "end": 2972.28,
+            "text": "Which method to add In our dictionary We suggest the method But we use the update method To update our dictionary"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 2972.28,
+            "end": 2982.28,
+            "text": "We will pass a new key value That we will have physics in key And what will be the value This value is x, which the user has input These will be the marks of our physics"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 2982.28,
+            "end": 2992.28,
+            "text": "These are our math These are our chemistry Here we write math And this could be chemistry It could be English, it could be any subject"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 2992.28,
+            "end": 3002.28,
+            "text": "And in the end We will take our marks Let's save it and run First we have to enter the physics Then we have to enter the math"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 3002.28,
+            "end": 3012.28,
+            "text": "Then we have to enter the chemistry So this is our final dictionary We have created Let's move towards the next question The next question is"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 3012.28,
+            "end": 3022.28,
+            "text": "Figuring out a way to store 9 and 9.0 As separate values In the set You can take help of built-in data types First let's understand this question"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 3022.28,
+            "end": 3032.28,
+            "text": "In the set I want a way To store 9 and 9.0 I can store both the values So without external data types"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 3032.28,
+            "end": 3042.28,
+            "text": "We will store these values And see in the set For example we create Some set called values We are creating values"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 3042.28,
+            "end": 3052.28,
+            "text": "And in this I have stored 9 and 9.0 Now we are going to print The set Let's run it"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 3052.28,
+            "end": 3062.28,
+            "text": "What we have? We have value 99 in the set Because python is made in this way That it treats 9 and 9.0 Like the same values"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 3062.28,
+            "end": 3072.28,
+            "text": "If 9.25 is here And we run Then these are different values But because 9 and 9.0 are the same Let's take another example"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 3072.28,
+            "end": 3082.28,
+            "text": "For example 8 and 8.0 What will happen in that? 8 will be stored in the set Because 8 and 8.0 The hash that comes out"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 3082.28,
+            "end": 3092.28,
+            "text": "The final value on which we store The values on which we store It comes out the same So python works in this way We can't change this"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 3092.28,
+            "end": 3102.28,
+            "text": "Now interestingly If we save 9 As 9.0 Like a string Then it is possible to save both"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 3102.28,
+            "end": 3112.28,
+            "text": "Separately So we have one possible solution Whenever we have a situation In which we save a number But in floating format"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 3112.28,
+            "end": 3122.28,
+            "text": "In a set We can make one string and save So both values will be saved Or if reverse For example 9 has a string"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 3122.28,
+            "end": 3132.28,
+            "text": "But 9.0 The value comes So in that case 9.0 It comes in the floating value set And in the string we can save this 3"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 3132.28,
+            "end": 3142.28,
+            "text": "We have one possible solution The second possible solution Which we will discuss is We can use built in data types Like directly"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 3142.28,
+            "end": 3152.28,
+            "text": "What is 9? 9 is an integer What is 9.0? It is a floating value We can't save both integer and floating values"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 3152.28,
+            "end": 3162.28,
+            "text": "What we have done? Save this data type How? Or we can save pairs In pairs"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 3162.28,
+            "end": 3172.28,
+            "text": "And after that we will save 9.0 And we will save a second tuple In which there is an integer And after that 9 value So this value will be saved"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 3172.28,
+            "end": 3182.28,
+            "text": "This value will be saved We can save both in our set Now we are hearing key pairs We might be getting dictionary But what is dictionary?"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 3182.28,
+            "end": 3192.28,
+            "text": "Dictionary is mutable We can't add dictionary in the set So in tuple we can store our pairs So this is the second possible solution We will make a set of values"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 3192.28,
+            "end": 3202.28,
+            "text": "Which is float What is the value of float? 9.0 And then we will save Int"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 3202.28,
+            "end": 3212.28,
+            "text": "What is value of value? 9 So in this way We can create a set for ourselves What is this? This is the first value"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 3212.28,
+            "end": 3222.28,
+            "text": "And in this way we can save 9 and 9.0 separately So there is a possible solution When we save one in the form of strings There is a possible solution"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 3222.28,
+            "end": 3232.28,
+            "text": "When we make pairs in the form of tuples So I hope that in this chapter We will get to learn a lot of things About dictionaries and sets Which we will implement in future chapters"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 3232.28,
+            "end": 3242.28,
+            "text": "Which means there are many methods In dictionary sets Which we can't explore as well Because we haven't studied the concept of loops But in the next coming chapters"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 3242.28,
+            "end": 3252.28,
+            "text": "We will study loops and functions We will know the type of Class print in the form of a dictionary What is the meaning of that class Or how do we work with methods"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 3252.28,
+            "end": 3262.28,
+            "text": "How do we work with functions There are many different things We will study more in our Python series But I hope that from today's chapter The topics we covered"
+        },
+        {
+            "number": "4",
+            "title": "Dictionary & Set in Python",
+            "start": 3262.28,
+            "end": 3272.28,
+            "text": "We will have clarity in our mind Notes you will get in the description box To download That's all for today Till then keep learning and keep practicing"
+        }
+    ],
+    "text": " Hi everyone and welcome to the complete Python series in which we will cover chapter 4 in which we will read dictionaries and sets Dictionary and sets are very important data structures or they are built in data types in Python which we use very frequently in coding in Python So we will cover all the things related to their special properties and methods in today's chapter and we will not only read topics but also code related things but also we will use all the concepts and solve some practice questions for a better understanding Along with that, you will find our lecture notes in the description box where we can download them and if we want to read any other topic related to Python then all the chapters will be available on this playlist where we can go and see So let's start with chapter 4 Dictionaries and sets Hi everyone, now we will start with chapter 4 in which we will read dictionaries and sets First, let's talk about dictionaries in Python The way in which our real life is dictionary what is in the dictionary? In the dictionary, we have pairs of word meanings meaning we have a specific word and then all the meanings that can be written in one place and then the next word, then the meanings, then the next word, then the meaning So in this way, our dictionary works in pairs meaning in a combination where one word and one meaning Now in the dictionary, our words act like keys It means that whenever I have to search for a word we will simply search for that word in our dictionary Generally, we don't search for meaning We start searching through words So we say that it is the key of our pair Key means important thing and meaning basically, this key has a value So in the same way, if we have to store the pair type information in Python then we store it in the form of dictionary data values Now before this, we have read about lists and tuples which are built-in in Python Similarly, dictionaries and sets are built-in in Python So dictionaries are used to store data values meaning a key will be the value of a ferrous So to create a dictionary, first we write the name of our dictionary like a normal variable then we write equal to and in curly braces, we write our key value pairs For example, here, this is a single key value pair in which the key is a name which is our string, in between we divided it with a colon and this is the value, whatever is a string After that, this is our second key value pair in which this is our key, a string and this is our value, a floating value So in this way, we can create multiple key value pairs Let's make our own dictionary For example, we are storing some information We are storing some information and to store it in the form of dictionary, we just have to write curly braces and then we have to start writing our key value pairs For example, this is our string key and this is its value We can make a name like this What is our name and value We can add any name in the value We have one more key and we have one more value So in this way, this is our dictionary We can print our dictionary if we want We have given the name and information, let's run it We have our dictionary print and the key value pairs are separated with a comma This is a single key value pair and this is a single key value pair We want, these values are not string We can store other data types in this For example, if I take a key Age We can store value in this Let's suppose 35, 35 is an integer If we make a key called isAdult We can store it in this What is true? It is a boolean value Or if we make a key called marks We can store value in this 94.4 So what is this? It is a floating value All values in this way are acceptable in a dictionary We can store lists and tuples Let's remove these values and add a name again We will get a string value in the name Apart from that, we can create another key We will call it subjects And we can store our list in subjects We will write Python in this We will write C in this We will write Java in this and so on So what is this? This is a list Apart from this, we can create a tuple For example, if we want to store topics today We can store them in a tuple Dictionary and set Let's do this safe and run So our different data types will be printed on the screen Now the values in the dictionary Almost all the data types are acceptable in it But we can't use the list and dictionary in the keys We can make a string We can make a number of our keys For example, our key can be 12 This will also be completely acceptable We can make a floating value of our keys Save Rerun This floating value can be This boolean value can be Or we can make a tuple Basically, there should be a value If we assign it once, then we can't change it later Like the list can be added, removed, removed It can be changed Similarly, dictionary is also mutable We can add elements in the dictionary We can remove it and the dictionary changes But because tuple doesn't change We can only make a tuple We generally keep our perimeter types In fact, the many times we see our dictionaries We will generally encounter strings in it We won't go into complexity We are making a tuple in the dictionary We are making floating values in the key We are making integers in the key We will keep our normal key values in the strings only Because in majority scenarios As a beginner, dictionaries make sense for us Now we can print the type of the dictionary For example, if I try to print type of info We will get a dictionary type We have some properties of the dictionary First of all, dictionaries are unordered Unordered means there is no fixed rule We can see which things will come first Which things will come last That is, our strings Or our list Or our tuple What happens in all of them Common thing is that they have index If the index is 0, 1, 2, or value We will know which value comes first Which value comes later But in dictionaries As such, there is no index So there is no order in dictionaries Apart from that, dictionaries are mutable We can change them For example, we can't change the tuple Tuple was immutable We can change the list For example, the list is mutable We also have a dictionary And we can't create duplicate keys If we want 2 keys One key has a name The other key has a name Then that is not possible in the dictionary Like in real life dictionary When we store word meanings So one word is written once We can write different meanings together But we write one word once It is not like after 10 pages There will be definition of apple Or cat definition Similarly, in dictionaries We don't repeat keys If we have created any dictionary If we want to access values In the place of index We can write the name of the dictionary And write the name of the key And through the name of the key We can access its value For example, this is our information dictionary Or give them a better name We can call it dictionary Let's call it dict For our information dictionary If we want to access its values We can print In the information In the square brackets And if I want to print the name We can simply write name Similarly, if we want to print our topics We can write topics We can print our subjects We can write subjects And we can write H, let's run it We can print all these individual values Let's make it up to college And we can print all the values Now here If we write a key like this Instead of name If I write Sir name Sir name because it doesn't exist In this information dictionary We will have an error We will have an error We will have an error Sir name key is not present in this dictionary For example, we try to Access an index like this In the string, in the list, in the tuple Which doesn't exist, which is bigger than its size Or smaller than its size In that case, as we have an error Similarly, if we do this key Which doesn't exist We will have an error If we want to change our name And assign some other value We can write name in the information And to assign a new value We can write equal to Assignment operator And let's suppose I assign this value Save it And let's print our information once again Let's refresh So here we have changed the value of our name And in this way We can add a new value For example, if I want In name We will add this thing We can take a sir name value We can take a sir name value Let's save it And run The value of the name was already replaced The name was our college But we re-assigned its value So the new value came here Along with that, we added another key value pair The way we assign We can also add a new key value pair In the dictionary So from all these actions, we get That dictionaries in python are mutable Now we will create another name Like this With a new value Because in that case The old value Will be overwritten Instead of creating a new key value pair With the same key Python overwrites the old key value And it is not necessary to assign a string We can assign a number Or assign some other value So here we will have name 23 Just like this If we want, we can create an empty dictionary For example I want to create a null dictionary Null means empty So we can write This way, we will have a parenthesis This will create an empty dictionary If we want We can print this This is going to be my null dictionary Let's remove this part Let's save it and run it So a null dictionary came And if we want, we can add values In this null dictionary I want the name To be equal to My college Let's save and run it In this dictionary, we have a value So we will have code scenarios In which we will start an empty dictionary With a null dictionary And then we will add values Now we will talk about nested dictionaries In dictionaries When we read the conditional statements If we know If we write any conditional Then we can create another block If we write any conditional We can create another block We can create a nesting So these are nested conditional statements As we said earlier Nesting is not only in conditional statements It can also be in other data structures So in this dictionary What can we do to bring nestedness We can create a dictionary We can create a value We can create a value For example For example We have a dictionary Called student We are storing the student's value Here we can store the student's name In the name The name is Rahul Kumar And we can store their subject When we store the subject Because a student has multiple subjects Either we can store it in a list That the subject is physics The subject is chemistry The subject is chemistry But if I have to store the student's marks Along with the subject Then we can choose That here I have to store the key value That there are so many marks in this subject So we can create another dictionary With some curly braces So we can specify What will be physics What will be our key And we will write marks in it Then we will write chemistry We will write marks in chemistry We will write marks in math And in this way we can store All the values in the form of a dictionary So what happened In the dictionary We created another dictionary So we call it Nested dictionary We can print it We can print our student We saved and ran So we have the student's value And we can print the subject In the student If I have to print only the subject Then I have to access it Subjects in the student So all the subjects are here The subjects are in the dictionary And in the dictionary Let's suppose I have to print the chemistry marks So what can we do for that We put another square bracket here And then we write The one more Save it and let's run it So we have the chemistry marks If we have the data in the nested form Then we can put another square bracket After one square bracket And then we can take out our relevant information From nested dictionaries Now next As we read the methods in the list We read the methods in the tuples We read the methods in the strings We are going to read some special methods of dictionaries The first of these Is the dot keys method In our dictionary If we want to take all the keys So we can write The whole collection of keys is returned to us For example This is my dictionary If I have to print all the keys So I can simply write Student.keys And in this way Let's save the parenthesis And run it So what we have here We get something called a dict keys It means the keys of the dictionary So this is a list format We have it In this dictionary How many keys are there One is name and one is subject We don't get the keys of the nested one Which are the keys of the outer layer That will come to us So we got the name and subject Now this data type If we want it We can convert it into a normal list We can convert it into a normal tuple For that we can use typecasting We have seen typecasting for string, integer or float For typecasting For that we write list And in parenthesis Pass our value For example if I want to typecast float I will simply write float And pass the value So here the value is student.keys And in which we want to typecast We want to do it in the list So let's save it and run So what we have here We have this list In which we have name and subject If I want to take out the total number of keys Or we can print length of student Which will be the length of dictionary Which is going to be 2 Which is the total number of key value So we can do it directly through length Or we can take out the length of this list In this way We added another layer of length So we will get the answer of this We will get 2 So basically what we have to do here First we took out all the keys of the dictionary Then we casted it in the list Now the final length Now we have the final list We are trying to take out the length of it So this is possible In python In one function In the other function But this concept is a little difficult to understand So if we don't do any other coding language Then we don't have to worry Our function chapter will come In which we will understand this in complete detail I am just giving you a little overview In the beginning So that we get a good flavour Next method we can use This is our values method With values we get a collection return Of all the values in the dictionary Like here We can write .values Once If I write .values Save it So this is our first value The value of the name Rahul Kumar And all of our subjects came What is the type here We have to do dict values We can convert it into our list Let's try to convert it into a list So our list is The first value in the list is X string And the second value is A dictionary in the list So the type of data Can be stored in a different type of data We can store dictionary in the list We can store the list in the dictionary So this is how our data is stored Next method We will talk about is our .items method What is .items In any dictionary All the key values return to pairs as tuples Like If I write Student .items means basically All the pairs will return So this is our first pair How is the pair coming In parenthesis In the form of tuples So this is our tuple The first value is in the tuple In the second tuple The key is in it And the value is in it So this is how the tuples return We can type it We can type it To some list Let's save and run it So we have a proper list In the list, our first tuple Is our second tuple We can access the tuples individually Like this is our list Of all the items We can give the name Pairs is equal to this value And in pairs If I want to access the first pair I can simply write Pairs of 0 We can run it We can get a tuple In which the name and value are stored So name was name Rahul Kumar We can get the first tuple And we can print our second tuple In pairs of 1 We can pass it We should not double quote So if we pass any key What is the method we are returning The method returns the key's value Now there are two ways to return the value One is If we have a dictionary We have written the key's value So what will be the return We will get the value Or we can simply write D.get And our key So we can get the value So there are two ways And one is method We need two ways to get the value To understand that First we write both Let's suppose I want to print The name of the student In it And I can also print student.get Name We will get the same value Save And we have printed the same thing But if I write the name To by mistake What will happen in that case So in this case, this line It returns an error Which we have already seen And this line Will not return any error It will simply return The non value for me For example, let's see this line What will this line do? It will print none Because this line doesn't exist So what will return Nothing But if we use this line What will it do? It will give us an error So what happened here? We have an error here So this difference is When we normally try to access The value with the square bracket notation We have an error And we don't have an error in the method It will look small So what happened? There was an error So we will keep in mind What is wrong in this But as a programmer We have to deal with a lot of data We have to write long programs And in that case it is very difficult To track and check Which keys exist in the dictionary In fact, many times For example, if we are building a website We are doing it back in Python So what will happen? We have data return in the form of a dictionary So we don't know exactly What keys will exist in it So we can make a mistake That is completely possible But what is the meaning of error I will explain it to you If we write some line in the code Which if something goes wrong And there is an error in it So what will happen in that case? In that case, in our code Which will write all the statements Like I print here Here I print Here I print My college And here we write We are Learning Coding I have written 5-6 lines Like this These lines Obviously there is no error in them I have printed these things And in this way, there can be many long codes Like number, age, B Which can be 2 Sum in which we are Summing A and B This can be a very long code Now this code There is no error in it But if there is an error in a line in the middle Then what happens in the program As soon as we run this program And as soon as we have an error After error, that code In which there should be no error The correct code is not executed And this is a problematic thing by programming Whenever we work in real life Practical work We work in companies So errors keep coming Problems keep coming But that doesn't mean our code stops This means that if there is an error on the website Then the entire website stopped working So that is not a good stable system So that is why we always prefer In real time practical scenarios That we don't write this type of code directly If there is any error in it Then the correct code is not running The correct code is not running For that we definitely have try-catch Blocks of different ways To manage such situations in programming But on a very small level On a basic level, there will be a way to manage this situation That instead of this format If we write a practical code in Python Not right now, we are just learning So what we will do in that We will try to use methods That are not error-throwing If there is an error, then we are able to manage it well There will be another way to explain this There will be another basic way to do this That I simply write here Print before And here I write After So the after code will never be executed We will save and run Before it was printed But in the output window, it never was after printed That means after the error, nothing worked So to avoid this kind of situation We have methods That is why we need methods Next comes to our next method Update method In the update method We can pass any additional dictionary Or any key value pair In the form of these curly braces Which will add any key value pairs Into our old dictionary Now let's see an example of this For example, this is our Student dictionary We want to add its city So we can simply write Student.update We will update it with some new key value pair City We will store the value in the city Save it And in fact print it Save Run So what value did we get in the student This value of city and deli Was stored extra Now we want this city deli To give it a new dictionary New dictionary We could store it in the new dictionary And if we pass the new dictionary We would have the same output That is, the original dictionary Changes into new dictionary Adds to new dictionary We want to keep multiple key value pairs For example, city and deli Or age And here we write Let's write 16 Save it and run So these multiple values Go into our dictionary And it is updated Now here, if we pass this new dictionary If we add an old key For example, I added a name And in the name I added a name of Rahul Kumar So in that case The old value Like the value of the name, it will be updated That is, it is not like if we pass The same key in the new dictionary Then a new key will be created Because we have already said that There are no duplicate keys allowed in dictionaries So that is why this value Will be overwritten So we are creating a new duplicate key So we have searched The most commonly used dictionary methods Generally when we use dictionaries There will be many rare cases When we have to use methods from them But if we do it well Then I don't think we will have A lot of problems using new methods Because simply We can write A dictionary name And dot something So these are all different methods So there are many easy methods But the most commonly used We have already covered them Which we will be coding in the Python In day to day life Now the next data structure Or the next data type They are called Sets in Python Now if we are coming from the math background We had studied math in 9th and 10th We had studied math in 11th and 12th So there are sets in the Maths The sets of Python Are based on the properties of the sets The set in Maths Means a collection In which all the unique values are stored If we store numbers Then the numbers are unique For example if I have stored 1, 2, 3, 4 Then it is not like that We can store 2 times 2 will be stored in our set once So we call it a set in Maths Similarly in Python The set is the collection of unordered items Like in dictionary There is no order It means basically there is no index Similarly there is no order in the set No index Any value can come first or any value can come later And each collection in the set Must be unique and immutable All the items in the set are unique It is not like that We have stored a number, value, string twice And all the items in the set Are immutable Means we can store numbers We can store integers We can store float Because the number 1 The value of 1 is not like that It will change into 2 in Math Or the value of 1 will be 1.777 1 will always remain 1 Universal is 1 Similarly if float is 2.9 Then it will not remain 2.9 It will be 3.14 Or if we take the example of string If we create a string ABC in Python Then it is immutable There can be no changes in it Or if we take the example of tuple We can store it Because we have created a tuple Now there can be no changes in this tuple Or if we take the example of boolean True or false True will always remain true and false will always remain false All these values It is possible to store them in the set But we cannot store them in the list We cannot store them in the dictionary Because both these values are mutable We can change the list We can change the dictionary That is why in the set There is no list and dictionary In the dictionary These are acceptable values We have studied till now That we can store in the set To create the set We simply write nums And we start the dictionary We start the set with curly braces And simply we start writing Our values For example if I want to create a set I can simply write Let's call it a collection Collection is equal to My collection is a set In which I have stored my 4 values We can print the collection value Or we can print Type of The collection Save it and run So this is our collection value Type is equal to the set This is recognized as a valid set Like a dictionary There is no key value It is stored only in the value In the set We can store our string values Save and run String values are also in the set But if we want We store the value of one value twice In this way We store it 3 times Or we store the world twice So what does the set do In that case the set ignores the duplicate values There is no error It will be ignored When we print the set Or we will use our collection The world will come once Hello once One once And you will notice an interesting thing Even though I have written the world here It is not like this The world will come here Or if I write 4 randomly Where is the 4? The set that was printed this time Is completely different It means that it was printed before 1,2 Before this The world came together So we call the set unordered There is no such thing as The thing that we wrote in the code That will come later There is no order follow And secondly, duplicate values are ignored In fact If we want to print the length of the collection Then the length can be printed The length will be Total number of items If we save Then the length will be 5k What did the length do? It ignored the duplicate items Even though we have included 4, 4 plus 3, 7 8 items But we will get 5 items from the final length Because duplicate values Are not allowed in the sets We have to make this a guard It is very important Whether we make the sets in python Whether we make them in another language Even there we always have unique values In the sets How do we create a set? How do we duplicate or set repeated elements Just store one thing Now we know how we can create an empty set How can we create an empty set If we think That in the set We will create an empty set In some way So we should remember That the syntax Is a syntax of an empty dictionary This is not an empty set This is an empty dictionary In fact, we can print this If I type Type of collection What will come? This is a dictionary This is not a set So to create an empty set We have to write a set And then parenthesis So this is the syntax The correct way to write code So if I have to create an empty set Then we will write this syntax As we write this Our collection Will be converted into a set So what is in the class this time We have printed a set Now we will talk about Some methods of sets The first method is Add method Whatever element we write in the add It goes into our set and adds And as it adds, it is removed method We write the element after removing the set It gets removed from our set One thing We have to notice here What are sets? Sets Are mutable Mutable means New element can be added and removed But the elements of the set Are Those elements Are immutable There is a difference Because many times We read in the definition Each element in the set must be immutable So many times we ask in an interview We say immutable Set is mutable Mutable can be changed Only then we can add and remove But we cannot change the value of the elements So That is why the elements are immutable So in .add We can pass the tuple But we cannot pass the list or dictionary So the set is mutable But its elements are immutable Now let's look at the methods Let's suppose we created an empty set Our empty set is now Collection Now if we want to add some values In the collection Let's print our collection here And start adding some values Let's suppose I add some value Collection.add1 Collection.add Value2 is done Let's suppose if I write again Collection.add value2 What will be the print in that case? In that case we will have only one or two Because this duplicate value will ignore our set Similarly We can remove the values Like here Let's remove the collection.remove If we remove one Then only one value will be left in our set Which is equal to two If we want to remove a value That does not exist in the set Like 7 does not exist in the set So what will happen in that case? We will have an error in that It is basically the same key error Key error means like in dictionary Key error means that key does not exist Here the value is the key That means the key value is the same In the pair The value is the same, that means our single element If that element does not exist Then we will have an error here Now in our collection We can store different types of values If we want we can pass a string here If we want If we want We can pass a tuple here Like we have a tuple But we cannot pass a list Like if we run Then there is no problem Our set is created But similarly if we try to Pass a list here So what is the list? The list can be changed with time New elements can be added, removed As soon as we write this line What will happen in it? Error will come Save it and run Error came Unhashable type list That we are trying to add a list Which is an unhashable type What does unhashable type mean? I will give you a small overview Basically whatever values are immutable Immutable That means that they cannot be changed We can add them in the set No problem Because these values can be a hash value Hashing basically A specific algorithm In which we Change the original value And convert it to something else Like if I have one value And the other value is one The final hashing value Will be same That is why Python detects Like this same thing But if we take an example of a list This is my list, this is the second list Now it can be changed If it is 1,2,3 then its hash value will be different So what will happen? A mutable thing will happen The moment the original value is changed The hash value will be changed So what will happen? The implementation of the set will be ruined So the values in the set Are all such Hasheable values That means immutable values In the lifetime The value assigned to them Like the double is double The value assigned to the double Is not possible to get So what will happen? The hash value will not change So in the same way Our sets are implemented in Python So whenever we read this Unhashable Unhashable means The values that change, mutate The hashing value will be different In this we are talking about Dictionaries Or we are talking about the list Or in fact we are talking about sets Where we can empty the set For example Here If I try to print The length of my set Let's save it Let's run it Because there are 4 elements in it 1,2, then the string The third element and then the double The fourth element Now in this if I want to clear this set We can simply write Collection.clear And in the length Next time we will print and it will be zero We run it and we will get the value Zero K equal Apart from this we have a Pop method in the set Which removes a random value Which we create a collection For which we create a collection We store some random strings in the collection Let's write hello Let's write our college Let's write world Let's write Let's suppose coding We have Python So there are some random values in this way What are we going to do? We are going to Collection.pop So when we run it We have our own college value So it's not like our college first index Or there is an order in this way So in random order Our elements can be our pop Similarly if we want to pop another value So this time Two values have been popped, Python and Hello It's not like our college is popping Before again So this time Python has picked randomly And then Hello has picked randomly So we are also getting random values Now its practical scenario is that We have a lot of unique values From which we want to generate Random value Next we have two more important methods Related to the set The first one is union method Intersection method The way sets work in math In the same way In the same way Our union and intersection of Python works In sets There is a meaning of union When we take one set And take another set And in both the sets The total unique values We create a new set By combining those values That is the union method combines Both set values and returns a new set For example We have a set 1 In set 1 we have values 1, 2 and 3 In set 2 we have values 3, 4 and 5 So can we visualize The 1, 2, 3 that we have 1 will come here, 2 will come here 3 will come here And in the same way 4, 5 will come here And 3 we have written only once Because 3 is common in set 1 So what are the total unique values That will come out of the final set What will be the values There will be values 1, 2, 3, 4 and 5 It is not that 3 will come in it 2 times So the duplicate values They are counted only in single time So we call it the union of our set The union of two sets In the same way our union works in Python For example if we have our set 1 In set 1 we have values 1, 2, 3 and we also have Set 2, set 2 We have values 2, 3, 4 We can work with these values And if we want to print What is set 1 dot union set 2 going to be So what should this come We should have this 1, 2, 3 and 4 K equal Because in this 2 is repeated twice So it will be 1 time So our answer is 1, 2, 3 and 4 K equal Now here this set 1 dot union set 2 it returns a new set It doesn't change anything in the old sets After that If we print set 1 and set 2 They will return their original values This was our set 1 And this was our set 2 So this is how union works in set And apart from that if we talk about intersection Intersection means Common elements That means that combining both the sets Their common values will return In the form of a new set For example this is set 1, 1, 2, 3 This is set 2, 3, 4, 5 Common values are only 3 So their intersection will be equal to 3 So if we have In the sets our intersection Is common area We highlight it from this area So here we have set 1 In which 1, 2, 3 and 4 We need an intersection So that intersection is going to be 2 and 3 equal Which we can print If we execute it we have values 2 and 3 So we covered most common methods in the sets Next we are going to read some practice questions In practice questions It is the same thing that we have to See and understand the practice questions And after that we have to pause Our lecture and try to solve The questions ourselves If we are unable to solve the questions We can come and see the solution First of all let's talk about the first question Store the following word meanings In a python dictionary So the first word is a table For the table we have the first meaning A piece of furniture, the second meaning A list of facts and figures The second word is a cat We have a small animal So in this way we have to Store these words along with their meanings Now I know if I have made a dictionary So what is the cat in it? It is a simple key value pair It is the value of the cat I don't think it should be difficult to store So we call it a dictionary This dictionary Is going to be the first meaning of the cat Store it A small animal We have stored it, there is no problem Now when we store the meaning of the table So here the key is 1 But what are the values? This is value 1 and this is value 2 How to store both the values together Now we can store the values In any way We can store them in a list Or we can store them in a double form Or we can store them in a list Or we can store them in a double form Let's opt for a list So here our word will be a table There are two meanings of the table The first meaning will be a piece of furniture The second meaning will be A list of Facts and Figures Figures We can print our dictionary and print it Let's save it and run So we have a proper dictionary This is our first key and this is our second key Let's move on to the second question The second question is We are given a list of subjects For students We have to assume That we need a classroom To take a subject class For example, a subject is Python We need one classroom to study Python We need a second classroom To study C++ C1 is Classroom 1, Classroom 2 And so on We have to tell how many classrooms are needed by all the students Now subject wise, there will be a classroom In one classroom, how many students can come We have to assume this We have different students These are limited students We have to tell how many total number of classrooms are needed Let's solve it on paper The first subject is Python We need one classroom for Python This student This student will come in a single classroom After that, Java We need one classroom for Java All the students of Java will come in a single classroom For C++ We need one classroom All the students of C++ will come there, then there is JavaScript We need one classroom for JavaScript And then for C We need one classroom for C How many classrooms are needed 1, 2, 3, 4 and 5 We need to know How can we reach this 5 value We have counted on paper But logically, if we have given all this data How can we find out the total number of classrooms If you look carefully Can we say The subjects we have are as many classrooms as we have We need as many unique subjects as we have Can we say that If we store all this data in a set And we take out the length of the set So whatever the length of the set means the unique values count What will be the count? It will be the total number of classrooms We need to store all this data And then take out the length of the set So for ourselves Let's create a set or let's call it Subjects We will have different values in the subjects We will have one value Python Then we have Java Then we have C++ We have Python again Java script Java Java Python Java C++ And finally C Remember one thing That we have to remember this C++ And this C++ What Python will do Treats like different strings For example, if we print Subjects Let's save it and run What happened here? C++ was returned twice So in this set We have to remember the case It is written in a smaller case And we want to repeat the same thing So we have to write it in a lower case again Let's delete it and run again So we have got all the individual unique subjects And how many classrooms do we need Whatever the length of the subjects We saved and run We need 5 classrooms To take all the students' classes So in this practical Scenarios, although it is not that practical But in the same scenarios The properties of the set Are our work Let's solve the next question Next question is We will start with an empty dictionary In the beginning We will add subjects In the end We will add the name of the subject If we have a chemistry We will write the key And then the marks We will write the value Then we will write the physics And then we will write the marks And in this way We will complete the dictionary First of all, let's take an empty dictionary Let's call it marks We initialized it Now we will take input from the user First of all Let's suppose we will take the marks of our physics Input Or simply here the physics is okay And we will convert these marks To some integer value Let's call this value X, we will get our marks And here we will use Which method to add In our dictionary We suggest the method But we use the update method To update our dictionary We will pass a new key value That we will have physics in key And what will be the value This value is x, which the user has input These will be the marks of our physics These are our math These are our chemistry Here we write math And this could be chemistry It could be English, it could be any subject And in the end We will take our marks Let's save it and run First we have to enter the physics Then we have to enter the math Then we have to enter the chemistry So this is our final dictionary We have created Let's move towards the next question The next question is Figuring out a way to store 9 and 9.0 As separate values In the set You can take help of built-in data types First let's understand this question In the set I want a way To store 9 and 9.0 I can store both the values So without external data types We will store these values And see in the set For example we create Some set called values We are creating values And in this I have stored 9 and 9.0 Now we are going to print The set Let's run it What we have? We have value 99 in the set Because python is made in this way That it treats 9 and 9.0 Like the same values If 9.25 is here And we run Then these are different values But because 9 and 9.0 are the same Let's take another example For example 8 and 8.0 What will happen in that? 8 will be stored in the set Because 8 and 8.0 The hash that comes out The final value on which we store The values on which we store It comes out the same So python works in this way We can't change this Now interestingly If we save 9 As 9.0 Like a string Then it is possible to save both Separately So we have one possible solution Whenever we have a situation In which we save a number But in floating format In a set We can make one string and save So both values will be saved Or if reverse For example 9 has a string But 9.0 The value comes So in that case 9.0 It comes in the floating value set And in the string we can save this 3 We have one possible solution The second possible solution Which we will discuss is We can use built in data types Like directly What is 9? 9 is an integer What is 9.0? It is a floating value We can't save both integer and floating values What we have done? Save this data type How? Or we can save pairs In pairs And after that we will save 9.0 And we will save a second tuple In which there is an integer And after that 9 value So this value will be saved This value will be saved We can save both in our set Now we are hearing key pairs We might be getting dictionary But what is dictionary? Dictionary is mutable We can't add dictionary in the set So in tuple we can store our pairs So this is the second possible solution We will make a set of values Which is float What is the value of float? 9.0 And then we will save Int What is value of value? 9 So in this way We can create a set for ourselves What is this? This is the first value And in this way we can save 9 and 9.0 separately So there is a possible solution When we save one in the form of strings There is a possible solution When we make pairs in the form of tuples So I hope that in this chapter We will get to learn a lot of things About dictionaries and sets Which we will implement in future chapters Which means there are many methods In dictionary sets Which we can't explore as well Because we haven't studied the concept of loops But in the next coming chapters We will study loops and functions We will know the type of Class print in the form of a dictionary What is the meaning of that class Or how do we work with methods How do we work with functions There are many different things We will study more in our Python series But I hope that from today's chapter The topics we covered We will have clarity in our mind Notes you will get in the description box To download That's all for today Till then keep learning and keep practicing"
+}

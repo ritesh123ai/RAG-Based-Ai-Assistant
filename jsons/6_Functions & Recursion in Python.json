@@ -1,0 +1,2266 @@
+{
+    "chunks": [
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 0.0,
+            "end": 29.14,
+            "text": "Hi everyone and welcome to the complete Python series in which we are going to read chapter 6 First we will read the functions in detail and then we will cover the recursion in detail We will not only read the theory concepts, we will also write a lot of codes and practice questions Along with that, we will also get the links to download the lecture's notes and slides in the description box Apart from this, if we want to read any other topic related to Python, then we will get the playlist on this channel"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 29.14,
+            "end": 55.7,
+            "text": "We can read any topic from there So let's start with chapter 6 Hi everyone and now we are going to start with chapter 6 in which we will read the functions first Now function is something like this, it is a word that we have heard in the chapters till now But we don't understand exactly what we use and why we use it"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 55.760000000000005,
+            "end": 80.76,
+            "text": "So when we talk about the functions in Python, the function is a block of statements That is a group of statements that perform a specific task Like we talked about loops, we used to use loops because if we want to do some set number of times, we have to repeat it Now in loops, we used to write the logic of loops once If we write that if a loop will run from 1 to 10, then it will run 10 times"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 80.76,
+            "end": 105.02,
+            "text": "Or it will run 9 times, then its set logic will perform the same time But functions are a block of code, which we have written once So we can use it again and again and again and again and again to perform the same task Now let's see the basic example of it For example, this is my Python file and we get a task that we have to calculate the sum of two numbers"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 105.02,
+            "end": 130.01999999999998,
+            "text": "So here we have written our first number, A is equal to 5, we have written our second number, B is equal to 10 And then we have made a variable, sum is equal to A plus B And then we have to print that sum, so we printed it Now tomorrow we might have written a lot of codes in between, this is probably more lines of code Here we can imagine 15-16 lines of code came"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 130.01999999999998,
+            "end": 159.02,
+            "text": "And again we got some other numbers A and B, which we had to calculate the sum So again we will write A plus B and print the sum again And similarly we might have to write more lines of code and again we have to repeat the same logic Means here A might have been 12, this might have been 17 And again we are calculating A plus B and printing the sum"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 159.02,
+            "end": 185.02,
+            "text": "So in this way we have taken a very simple example of calculating the sum of A plus B This is a very simple example, there are not that many simple examples in real world scenarios But because we are learning things from the beginner level, we will start with a simple example and then we will move towards a complex So here one thing that we are getting is that we have written this code here, I had to write this similar code here I had to write this similar code here too"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 185.02,
+            "end": 210.02,
+            "text": "So what is this code doing in the code? Things are repeating or for this there is another better word, redundant Redundant means there is a meaning of redundant in English, something that is repeating So redundant code is a sign of a bad programmer That repeatedly, repeatedly, repeatedly, that same line of code is being repeated in the code"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 210.02,
+            "end": 237.02,
+            "text": "So generally this is advised that if we have to write the same lines of code twice or three times, then we have to convert it into a function So basically this work that we have repeated repeatedly, a better way to do the same work is to make a function to perform this work What is the function? The function is to take two numbers, calculate the sum and print the sum This is a simple function Now how to create a function to perform this same work?"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 237.02,
+            "end": 258.02,
+            "text": "To create a function, we first write our keyword, this is deaf We can understand it in such a way that we are defining our function Defining means when we write a word meaning, we define a word We are telling what our function will do So deaf writes a keyword in us, then we can give our function any name, which can give any name to the variables"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 258.02,
+            "end": 287.02,
+            "text": "Let's suppose we give this function a name, calculate c-a-l-c, calculate sum or underscore sum I gave this function a name After that what we write in the function? We write parenthesis and put colon These parenthesis can be in them, we can take two values as input Taking two values as input means that this function takes some value input and then performs some operations on those values and returns some output"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 287.02,
+            "end": 315.02,
+            "text": "For example, if we make a chart and explain it, for example this is my function Now we are understanding conceptually this What does function do? Ideally, function takes some input and some output returns some input So we call the thing that takes input as parameter For example, we have written deaf as function, then if it takes some values as input, then it becomes parameter 1,2"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 315.02,
+            "end": 335.02,
+            "text": "In this way, it can take multiple parameters What are the parameters? Basically, we have to write the names of variables The function that calculates sum will take one value a and one value b Anything can be in a, anything can be in b, but the names of those variables will be a and b Now if I want to print some for a and b, then I take some variable sum is equal to a plus b"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 335.02,
+            "end": 352.02,
+            "text": "And then I printed my sum So what did I do? I performed this part Now the question can be that function takes input and returns output My function doesn't return any output here But if we wanted, we could return this sum after printing"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 352.02,
+            "end": 372.02,
+            "text": "If we wanted, we could return our sum So we have a keyword in Python that is used to send the value back, to send the output back So function is a block of code, some line of code that takes some input, takes some parameters input And gives some output by returning So this is a function, it is complete"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 372.02,
+            "end": 390.02,
+            "text": "It took these values as input and gave this value as output And in between, it has done some work with those values So this is an entire function to calculate the sum of two numbers Now how will this help me in my code? It will help me in this way that this part of the code, I don't need to do all this work"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 390.02,
+            "end": 413.02,
+            "text": "By removing these lines, what I can simply do is, I will call the sum Calling means calling, this is not the call, telephone call But when we call someone to do work, for example we hired a chef So what should we make to cook? We will have to call them and tell them We have to perform the function, to do that we will have to call them"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 413.02,
+            "end": 435.02,
+            "text": "So to call, we write the name of the function and pass some values in it These are the values that will be stored in our parameters For example, if A is in the parameter, B, I will write 1 and 2 So in A, one store will be there, in B, 2 will be stored The same values that the function calls, the statement will be called"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 435.02,
+            "end": 457.02,
+            "text": "We call it argument, this argument is not fighting, this argument is supplying values So these are the arguments that we pass, these are actual values Like 1, 2, string, and in the definition of the function, we call this parameter Now there are a lot of theories, we will revise all of them So we don't need to worry, we have found a lot of new words"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 457.02,
+            "end": 475.02,
+            "text": "We just have to pay attention to learn For example, in the calculate sum, now I can pass this value 5 Simply, and this value 10 So now this whole code, what can I do? I just need to write a single line Similarly, this whole code, all the lines, what I have to do?"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 475.02,
+            "end": 490.02,
+            "text": "I have to write a simple line for the calculate sum, in which I will pass the first value A is equal to 2, and then B is equal to 10 And I can remove this whole code from here To do this whole thing, because where is this work? This work has already been done in the function"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 490.02,
+            "end": 508.02,
+            "text": "So what will I do? I will call the calculate sum here for 12 and 17 So what I did? I used the same function three times The number of lines decreased in my code, the redundancy decreased And as a programmer, this is a better code If I run this after saving it, the same work will happen"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 508.02,
+            "end": 528.02,
+            "text": "What happened first? 5 for 10 is calculated, 15 is equal Then what happened? 2 or 10 is calculated, 12 is equal And then 12 and 17 is calculated, 29 is equal So logically, the work was performed, but we did our work in less lines of code Now this is the practical point of view, why do we use functions?"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 528.02,
+            "end": 543.02,
+            "text": "We use functions so that the redundancy in our code gets reduced Which is really important Meaning, whenever an interview is happening in a company, it doesn't just matter That we write the logic properly And it also matters how you write the code"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 543.02,
+            "end": 559.02,
+            "text": "If you have written the same lines properly and we are not using functions for that code That is a sign of a bad programmer So we don't have to do such mistakes in interviews So let's summarize all the things Let's make a new function, even simpler"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 559.02,
+            "end": 572.02,
+            "text": "Let's call it calculate sum Calculate sum is A and B, it takes two numbers This should be A And then it returns the sum of A and B We can write it like this, this is also a very simple function"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 572.02,
+            "end": 588.02,
+            "text": "So whenever we call the calculate function Calculate sum, let's suppose we call it with values 1 and 2 What should we print? We should have 3 prints Let's save it, let's run it Okay, here what I have to do is"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 588.02,
+            "end": 606.02,
+            "text": "We have to return the value So whatever value returns, we can store it in a variable And we can print it We saved it, run it, we have 3 values Similarly if I pass it 178 and 221"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 606.02,
+            "end": 620.02,
+            "text": "Or 2221 So it will calculate sum and print it So in such a simple way, our functions work Now let's revise the terminology in this Because whenever we are coding like a programmer"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 620.02,
+            "end": 640.02,
+            "text": "We are doing all the things, then it is necessary to use the right word So what is this? We have defined the function We call it in programming function definition This is my function definition What are these A and B? These are parameters"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 640.02,
+            "end": 656.02,
+            "text": "This is the whole line in which we have written the function And we call it function call And what are these values? These are our arguments The value of the arguments goes and stores in our parameters"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 656.02,
+            "end": 671.02,
+            "text": "Our function can return any value in which we can store it in a variable And then we can print that value Now let's make another simple function from this For example, a function which is called HelloPrint So what can we do? We have given a function deflic"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 671.02,
+            "end": 687.02,
+            "text": "And let's name this function printHello Or print underscore Hello Now we don't need any values to get this function HelloPrint So we can leave our parenthesis empty This function doesn't use any parameters"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 687.02,
+            "end": 705.02,
+            "text": "The only thing to do is to print Hello And the number of times we call Hello, it will simply print Hello For example, let's comment out this part Save and run So what happened? We got HelloPrint"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 705.02,
+            "end": 724.02,
+            "text": "And if we write this line 5 times Then we will get 5 times HelloPrint Something like this So what do we do? We repeat the same thing again and again There is nothing to worry about, you just have to make a function"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 724.02,
+            "end": 742.02,
+            "text": "So the redundancy will decrease in the code Also, our function has two things in it, which are completely optional For example, we want to give no parameter in the function So you can make a function without a parameter And you want that my function will not return any value"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 742.02,
+            "end": 755.02,
+            "text": "If you don't take a parameter, then it doesn't take any input You can also make a function like this If you don't return, then it doesn't give any output You can also make a function like this Like this Hello function doesn't take any input, it doesn't have any parameters"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 755.02,
+            "end": 771.02,
+            "text": "It doesn't give any output, it doesn't have any return value So making functions like this is also completely possible So the function that doesn't return any value For example, if I print Hello, print off Hello What I have done? I have printed the output of print off Hello"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 771.02,
+            "end": 789.02,
+            "text": "In fact, we will store it in the variable Suppose this is some output variable Print Hello's output is storing and we are printing this output So we will have print in this output, none None is printed because the function that doesn't return anything"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 789.02,
+            "end": 806.02,
+            "text": "It automatically gives a none value in its output Now let's take another simple example For example, we want to create a function which calculates the average of 3 numbers We want to make this function So we have to pause here and try to make this function"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 806.02,
+            "end": 820.02,
+            "text": "Let's see the other solutions First we will write def and we will give the name of this function Let's call it calculate average And we will get 3 numbers in it First we call number A, second we call B, third we call C"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 820.02,
+            "end": 829.02,
+            "text": "Like this Now what I have to do? I have to give proper indentation And I have to calculate the average First let's calculate the sum Sum is going to be A plus B plus C"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 829.02,
+            "end": 847.02,
+            "text": "And average is going to be sum divided by 3 So either we can print this average Or we can return it if we want So this is our calculate average function Now let's test it, in the calculate average"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 847.02,
+            "end": 863.02,
+            "text": "We will calculate the average of 1, 2 and 3 And if we run it, the average of 3 numbers is equal to 2.0 Similarly, let's suppose we take our marks If someone's marks are 98, 97, 95 They come in ratio, what is going to be the average?"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 863.02,
+            "end": 875.02,
+            "text": "The average is 96.66 So in this way, we can write a function To perform our calculations normally Now in functions, all the functions can be done Which we were writing in the file"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 875.02,
+            "end": 889.02,
+            "text": "For example, you have to do here If A is zero, what should we do? We can also do if, we can also do loops in the function But all the work will be done with proper indentation Means we will do it with proper spacing"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 889.02,
+            "end": 902.02,
+            "text": "Now let's talk about the types of functions In Python, functions are of two types One is our built-in functions And the other is our user defined functions Built-in functions are already written in Python"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 902.02,
+            "end": 914.02,
+            "text": "Their logic is also written We have used many of the built-in functions For example, if I want to print something What will I do? I will write print-appna-college What is this print?"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 914.02,
+            "end": 925.02,
+            "text": "This is a function, if you look carefully This is a function call, which we have written from the first class Print is the name of our built-in function We have written parenthesis And we are passing this call, it is nothing"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 925.02,
+            "end": 936.02,
+            "text": "This is an argument This goes and stores the definition of print function If we do hover, I can see the definition In Visual Studio Code, there is a print Then there are some values"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 936.02,
+            "end": 951.02,
+            "text": "And then there are some parameters As we are getting to know, in the print function One comes to know which value we want to print Then we have two more parameters One is CEP, which is our separator"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 951.02,
+            "end": 961.02,
+            "text": "And the other is END What should be in the ending? Like here, SEP means If you have written multiple values With comma, if we have written multiple values"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 961.02,
+            "end": 973.02,
+            "text": "Then there, separator, means between two values There will be an automatically space And the ending means that if we have Printed two values once Then when we print it next time"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 973.02,
+            "end": 985.02,
+            "text": "Then we will always have a gap of the next line So these are things already defined in the print function We can test this For example, I want to print appna-college And then I want to print Shraddha-khapra"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 985.02,
+            "end": 995.02,
+            "text": "And here, I don't give any gap But what will print function do? Automatically Because what happens in this? SEP is automatically defined to be a space What is the separator?"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 995.02,
+            "end": 1010.02,
+            "text": "There will be space between the two This value is extra space Because it is written in the definition of defined function Or if I print both in different lines For example, I want to print Shraddha-khapra here"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 1010.02,
+            "end": 1022.02,
+            "text": "So what will happen automatically? The end is defined as backslash end Backslash end means the next line I saved it, both values will be on the next line If I want to do both values on the same line"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 1022.02,
+            "end": 1036.02,
+            "text": "Then what will I have to do? I will have to pass any other value of my ending parameter For example, here I can pass an ending parameter Is equal to space That after printing this"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 1036.02,
+            "end": 1051.02,
+            "text": "I only need space, I don't want the next line So both values will be printed on the same line What happened? Both the things are printed on the same line So if you want to print multiple values on the same line In your print statement, in the print function"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 1051.02,
+            "end": 1061.02,
+            "text": "What you have to do? Pass end is equal to space If we pass the dollar instead of space Then the dollar will come in between So we can pass anything like this"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 1061.02,
+            "end": 1074.02,
+            "text": "This is supposed to be my ending Similarly, we can experiment with the value of our separator So this is a built-in function Sometimes there are very normal things in programming Which we are using, but they are very interesting from the inside"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 1074.02,
+            "end": 1086.02,
+            "text": "They are actually using concepts which we haven't studied yet And that is the interesting part of coding So this is our print function Apart from this, there are many other functions which are inbuilt For example, we have studied the length function"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 1086.02,
+            "end": 1098.02,
+            "text": "We give the length of the tuple, the length of the string, the length of the list This is a built-in function It is already defined Like if I write length of something I can hover over this"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 1098.02,
+            "end": 1105.02,
+            "text": "And what is this? This is already defined And what does it return? It returns an integer value And returns the number of items in a container"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 1105.02,
+            "end": 1116.02,
+            "text": "Apart from this, we have a type function We have a range function which we have already studied If I write range like this Then we will get a definition of this Range is also defined in its parameters"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 1116.02,
+            "end": 1129.02,
+            "text": "It takes the start, then stops, then steps So this also works on different values The second is our user defined function The functions we write Or the one which is written by another programmer"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 1129.02,
+            "end": 1140.02,
+            "text": "Which are not inbuilt We cannot automatically use them in Python Like the print function, the range function We did not write the logic of this We wrote the functions which we write"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 1140.02,
+            "end": 1155.02,
+            "text": "We define them as user And the ones in Python are called built-in functions Next we will talk about default parameters For example, we have made a normal function To calculate the multiplication of two numbers"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 1155.02,
+            "end": 1166.02,
+            "text": "The definition is called calculate Or calculate the product of two numbers A and B take two numbers And what does it return? It returns A multiplied by B"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 1166.02,
+            "end": 1177.02,
+            "text": "Now let's suppose In my imaginary world I have to calculate the product of two numbers But I want to pass only one number from it It is my wish"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 1177.02,
+            "end": 1187.02,
+            "text": "Or I don't want to pass any number Then I want to see Like here print A into B And then I want to return something And then I want to calculate the product"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 1187.02,
+            "end": 1196.02,
+            "text": "I can call this function Without any argument But as soon as I try to do this It will throw me an error What is the error?"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 1196.02,
+            "end": 1205.02,
+            "text": "In the Calculate prod There are two required arguments There should have been two arguments Which would have been stored in A and B So there was an error"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 1205.02,
+            "end": 1217.02,
+            "text": "But if we want to run any argument Then we can run the function So we can give some default values to our parameters Default values are values which will be used only when No argument has passed"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 1217.02,
+            "end": 1228.02,
+            "text": "If I write B is equal to 1 And A is equal to 1 So by default if I didn't pass anything Then A and B will assume one and one values We will save and run"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 1228.02,
+            "end": 1238.02,
+            "text": "So this time we will print 1 multiplied by 1 is equal to 1 If I write 2 here If I write 4 here If we run again Then by default we will print 8"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 1238.02,
+            "end": 1250.02,
+            "text": "We can make a single value Default value as B is equal to 2 And if I only pass 1 here Then 1 and 2 will be calculated If we pass 1"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 1250.02,
+            "end": 1260.02,
+            "text": "Then 1 will be stored in A And B value will be automatically 2 So we will get 2 in Output But we can't do the opposite For example, I have written 2 here"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 1260.02,
+            "end": 1268.02,
+            "text": "I will leave B here If I try to do this It will throw me an error Non-default argument follows default argument Means first we should always come non-default"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 1268.02,
+            "end": 1278.02,
+            "text": "And last we should come default arguments This is not the case We have written default arguments first Means if A is with default argument With default value"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 1278.02,
+            "end": 1288.02,
+            "text": "Then A will always come later So whenever we have to give default values We start giving default values from last So in this way Our default parameters work"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 1288.02,
+            "end": 1298.02,
+            "text": "In Python Next we are going to solve some practice questions To solidify our understanding Basically, the basic syntax The basic syntax for learning important things"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 1298.02,
+            "end": 1308.02,
+            "text": "The rules of programming We have covered that We have to solidify our understanding What we have to do now Is write more functions"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 1308.02,
+            "end": 1318.02,
+            "text": "So that we get used to writing functions Like in loops More loops will be written More conditional statements will be written We will get used to it"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 1318.02,
+            "end": 1328.02,
+            "text": "So let's solve the first question Write a function to print the length of a list List is the parameter So for example We have this list"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 1328.02,
+            "end": 1338.02,
+            "text": "Let's call it numbers In which we can write Cities In cities we have Delhi"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 1338.02,
+            "end": 1348.02,
+            "text": "We have Gurgaon We have Let's say Noida We have Pune"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 1348.02,
+            "end": 1360.02,
+            "text": "And we also have Mumbai Chennai So we have multiple cities We have to make a function"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 1360.02,
+            "end": 1370.02,
+            "text": "That can print the length of cities Now we know We can print it directly I have to print the same value in the function So what I can do is"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 1370.02,
+            "end": 1380.02,
+            "text": "I can define a function Let's call it print length In print length We can pass the list of cities"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 1380.02,
+            "end": 1390.02,
+            "text": "Or any list And then we have to print Length of cities In cities, any list can be made Let's call it"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 1390.02,
+            "end": 1400.02,
+            "text": "our list So we will pass the list and print the length of it This is a simple function Let's make another list"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 1400.02,
+            "end": 1410.02,
+            "text": "Let's call the second list heroes In heroes We can have Thor Ironman Captain America"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 1410.02,
+            "end": 1420.02,
+            "text": "We can also have Shaktimaan So what happened This is our heroes list First we will call print length"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 1420.02,
+            "end": 1430.02,
+            "text": "For whom? For cities Then we will call print length for our heroes list Save Run"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 1430.02,
+            "end": 1440.02,
+            "text": "The length of cities is equal to 6 Because here it is named as 6 cities And the length of heroes is equal to 4 So this is our casual and normal function Which can print the length of any list"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 1440.02,
+            "end": 1450.02,
+            "text": "Next question On the right side Write a function to print the elements of a list in a single line Now in a single line"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 1450.02,
+            "end": 1460.02,
+            "text": "Let's suppose This is my list Let's take the hero list In the hero list If I try to print heroes of 0"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 1460.02,
+            "end": 1470.02,
+            "text": "What will it do? It will print heroes of 0 for us And after that if I try to write heroes of 1 I know if I write again and again"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 1470.02,
+            "end": 1480.02,
+            "text": "I will print the elements on the next line But what I want is to print on the same line So we have learnt the foundation of that What is the logic? We can simply Change the end"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 1480.02,
+            "end": 1490.02,
+            "text": "What is the end? End is backslash n If we write the end here backslash n Then what will happen? That same effect will come"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 1490.02,
+            "end": 1500.02,
+            "text": "Thor in a line Iron man in a line But if I space here Then it will not come in the same line This iron man space"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 1500.02,
+            "end": 1510.02,
+            "text": "Then 6 again So I have to write the same logic in the function If we don't call the function Then there is no difference on the function We can write many functions like this"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 1510.02,
+            "end": 1520.02,
+            "text": "They don't get any print or work Like here I can create my second function Which will do What will print the list Print my list"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 1520.02,
+            "end": 1530.02,
+            "text": "Any list can be in the function And here we can run loop For the list Item in list Print"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 1530.02,
+            "end": 1540.02,
+            "text": "My item With Ending Of Space"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 1540.02,
+            "end": 1550.02,
+            "text": "This is my function Which will print all the items for me in a single line I have defined the function first Passed the argument After that I have given proper indentation"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 1550.02,
+            "end": 1560.02,
+            "text": "Then I have put a for loop to iterate on the list Then I have given proper indentation Then I have printed the items So The functions knowledge"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 1560.02,
+            "end": 1570.02,
+            "text": "The print function The loop knowledge The list knowledge The basic knowledge We are combining all of them"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 1570.02,
+            "end": 1580.02,
+            "text": "In the chapter If you look at it that way You will know how small things Can be combined and built On complex programs"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 1580.02,
+            "end": 1590.02,
+            "text": "Although this is not a very complex program But slowly we are increasing in that direction We will save it And I can call this Print list function"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 1590.02,
+            "end": 1600.02,
+            "text": "For my heroes Saved and run All the heroes are printed in the same line Okay, in the last This is the percentage"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 1600.02,
+            "end": 1610.02,
+            "text": "Because in the last We have given space in the ending So we can give An extra print here Or not here"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 1610.02,
+            "end": 1620.02,
+            "text": "We can give an extra print here What will happen with that This time this percentage sign is not for us So that is basically Kind of like a trailing character"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 1620.02,
+            "end": 1630.02,
+            "text": "But for now we can ignore it So if we want We can print our cities Saved and run All the cities are printed for us"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 1630.02,
+            "end": 1640.02,
+            "text": "Let's move on to the next question Next question is To find the factorial of n n is the parameter First of all let's revise the factorial"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 1640.02,
+            "end": 1650.02,
+            "text": "What was factorial In math n is the factorial This percentage sign is used for factorial That we multiply all the numbers from 1"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 1650.02,
+            "end": 1660.02,
+            "text": "From n to n 1 into 2 into Like this 4 factorial Means 1 into 2 into 3 into 4"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 1660.02,
+            "end": 1670.02,
+            "text": "3 factorial means 1 into 2 into 3 So we can calculate factorial like this We have calculated factorial from loop This part"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 1670.02,
+            "end": 1680.02,
+            "text": "We remove And let's suppose We have a number n, n is equal to 5 I have to calculate the factorial of n I know n factorial is equal to"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 1680.02,
+            "end": 1690.02,
+            "text": "1 to nt Let's see how we calculate it We can run a loop For i in range I have to take me from 1 to n"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 1690.02,
+            "end": 1700.02,
+            "text": "So we can start from 1 We will go to n plus 1 We will make a factorial variable factorial is equal to 1"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 1700.02,
+            "end": 1710.02,
+            "text": "I have to multiply my i in factorial And Finally We can print"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 1710.02,
+            "end": 1720.02,
+            "text": "our factorial So we will have 120 print This was our logic We have already covered it in last class So we will print for 120"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 1720.02,
+            "end": 1730.02,
+            "text": "I have to shift this logic into a function Let's define a function It is called CalculateFactorial"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 1730.02,
+            "end": 1740.02,
+            "text": "Which has any number n Now we will make the factorial variable Then we will run the loop We will calculate the factorial value"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 1740.02,
+            "end": 1750.02,
+            "text": "And print the factorial We can return Now I can call this CalculateFactorial function For my number"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 1750.02,
+            "end": 1760.02,
+            "text": "5 So we have 120 Calculate for 6 We have 720 So for multiple values"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 1760.02,
+            "end": 1770.02,
+            "text": "We can calculate their factorial directly through this function Now let's come to the next question Write a function to convert usd to inr"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 1770.02,
+            "end": 1780.02,
+            "text": "What will happen to me I will give a value in American dollars For example I am given 1 dollar I will give this value to INR"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 1780.02,
+            "end": 1790.02,
+            "text": "We have to convert it The conversion rate is 83 So 1 dollar is equal to 83 rupees So we have to"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 1790.02,
+            "end": 1800.02,
+            "text": "multiply the value we have with 83 For example If we are given 1 USD It is equal"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 1800.02,
+            "end": 1810.02,
+            "text": "to 83 INR If we give 2 USD It will be equal to 166 INR We can continue our multiplication"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 1810.02,
+            "end": 1820.02,
+            "text": "in this way Let's make a function Let's call it Def What will we get in the converter"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 1820.02,
+            "end": 1830.02,
+            "text": "We will get us USD value And we have to convert the USD value to INR We will print"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 1830.02,
+            "end": 1840.02,
+            "text": "First we write our USD value USD value USD is equal to INR value"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 1840.02,
+            "end": 1850.02,
+            "text": "In fact we will calculate INR value is equal to USD value multiplied by 83 For today"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 1850.02,
+            "end": 1862.02,
+            "text": "We will use our INR value with INR Let's save it I hope we understand Whatever value is coming in dollars"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 1862.02,
+            "end": 1872.02,
+            "text": "We will print it We can call our converter I have passed 1 dollar in the beginning"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 1872.02,
+            "end": 1882.02,
+            "text": "I am printing it 1 USD is equal to 83 INR Let's suppose I have to print 100 dollars is equal to 8300 INR"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 1882.02,
+            "end": 1892.02,
+            "text": "I have to print 73 dollars value Which I think is difficult to calculate in our mind We have made"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 1892.02,
+            "end": 1902.02,
+            "text": "a function which is easy for us So this way we have different functions which I hope"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 1902.02,
+            "end": 1912.02,
+            "text": "we will add some other functions Functions are not that simple In fact I think the logic of functions is easy"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 1912.02,
+            "end": 1922.02,
+            "text": "because we have to think about what is going to be the stopping condition How we will update the variable But we have to define the functions what is input"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 1922.02,
+            "end": 1932.02,
+            "text": "what is output The syntax of defining the function is very easy There are many things in Python I hope we understand the function"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 1932.02,
+            "end": 1942.02,
+            "text": "I will give you a homework problem You have to write a function which will take a number to the input Your function"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 1942.02,
+            "end": 1952.02,
+            "text": "should have a number in the input What should your function do If the number is odd in that case return a string"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 1952.02,
+            "end": 1962.02,
+            "text": "If the number is even the output of your function should be a string output saying even You have to write this function in the homework problem"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 1962.02,
+            "end": 1972.02,
+            "text": "If the number is odd send the odd string and return If the number is even return the even string If you are able to write it"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 1972.02,
+            "end": 1982.02,
+            "text": "you have understood the logic of functions You are ready to write your functions Next we will talk about an important concept related to functions which we call"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 1982.02,
+            "end": 1992.02,
+            "text": "Recursion Before recursion Recursion as a topic we should not understand the whole thing The explanation"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 1992.02,
+            "end": 2002.02,
+            "text": "we have to repeat which is completely normal because whenever we are learning any language Whether it is Python, Java C++, JavaScript"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 2002.02,
+            "end": 2012.02,
+            "text": "Whenever we are looking at Recursion When we are hitting Recursion we have a little difficulty understanding it as a beginner especially if Python is our first"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 2012.02,
+            "end": 2022.02,
+            "text": "programming language We can repeat slowly pause and try to understand it which is completely normal"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 2022.02,
+            "end": 2032.02,
+            "text": "With the same situation that every programmer is coding well that is perfectly fine We will take the concept of Recursion"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 2032.02,
+            "end": 2042.02,
+            "text": "and understand it in this chapter Recursion is a concept in which basically a function calls itself repeatedly"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 2042.02,
+            "end": 2052.02,
+            "text": "We have seen that we have written a normal program in which there is a function Generally in our program there is a calling statement"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 2052.02,
+            "end": 2062.02,
+            "text": "which calls the function and it makes us do something In Recursion our function is but the calling statement"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 2062.02,
+            "end": 2072.02,
+            "text": "it calls itself and then it calls itself again and again again and again This situation"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 2072.02,
+            "end": 2082.02,
+            "text": "looked like loops What did loops do? There was a block of statement which repeats and repeats"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 2082.02,
+            "end": 2092.02,
+            "text": "Functions also work like loops but the calling statement keeps coming in Also, if I say it in a very plain language then what is Recursion?"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 2092.02,
+            "end": 2102.02,
+            "text": "It is a dangerous version of loops It means that in maximum cases we may not need to write Recursion We don't need to write Recursion But there are some specific cases"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 2102.02,
+            "end": 2112.02,
+            "text": "in which if we write the same code with loops it becomes a little easier to write with Recursion But the very easy codes the easy things are generally"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 2112.02,
+            "end": 2122.02,
+            "text": "we prefer to write with loops Another interesting thing is that all the work done with loops can be done with Recursion and all the work done with Recursion"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 2122.02,
+            "end": 2132.02,
+            "text": "can be done with loops So loops and Recursion are interrelated We can do the same work In some cases we prefer loops"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 2132.02,
+            "end": 2142.02,
+            "text": "which are generally the codes of our beginner level and later if you go to learn data structures and algorithms then there will be some specific cases"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 2142.02,
+            "end": 2152.02,
+            "text": "in which Recursion will give you a simple code as compared to loops So once in detail we understand what is Recursion exactly We have said that Recursion is such a function"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 2152.02,
+            "end": 2162.02,
+            "text": "Recursion means when the function starts calling itself For example, let's create a function which is printing any number We call this function as show"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 2162.02,
+            "end": 2172.02,
+            "text": "It is called show which is showing any number any number in it is printed by the number N We have made such a simple function"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 2172.02,
+            "end": 2182.02,
+            "text": "and we are calling it Let's suppose, let's call it show5 We will call it 5 show There is no Recursion in it"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 2182.02,
+            "end": 2192.02,
+            "text": "Now let's suppose I have to do 5 shows then I have to print 4 then I have to print 3 then I have to print 2"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 2192.02,
+            "end": 2202.02,
+            "text": "and I want to print all these in one function call I want to call the show once and print all the numbers for the show Now I know the easiest way"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 2202.02,
+            "end": 2212.02,
+            "text": "is to run a loop which goes from 5 to 1 but I have to use Recursion So the logic of using Recursion is that first see what is the function"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 2212.02,
+            "end": 2222.02,
+            "text": "What we are doing is we have the number N First we want to print the N then we want to print N-1 then we want to print N-2"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 2222.02,
+            "end": 2232.02,
+            "text": "then we want to print N-3 How much we want to print until we reach 1 So the first way to write Recursion is to write the work in Recursion"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 2232.02,
+            "end": 2242.02,
+            "text": "to perform the work basically the value of N we have to print it so we have already written the work then we have to print N"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 2242.02,
+            "end": 2252.02,
+            "text": "that is I have already printed 5 then I have to print 4 can I say 4 is N-1 3 is N-2"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 2252.02,
+            "end": 2262.02,
+            "text": "2 is N-3 and this way So I have printed 5 then I can call the show to print N-1"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 2262.02,
+            "end": 2272.02,
+            "text": "that is first the show was called for N then the show was called for N-1 then when for N-1 the show will be called so what will be the value of N? 4?"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 2272.02,
+            "end": 2282.02,
+            "text": "So basically we get to see some sort of code that first we called the show for N is equal to 5 then what did it do?"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 2282.02,
+            "end": 2292.02,
+            "text": "we printed 5 and after that we called the show for N is equal to 4 that is N-1 what did it do? we printed 4"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 2292.02,
+            "end": 2302.02,
+            "text": "then he called the show for N is equal to 3 and printed 3 then this function called the show for N is equal to 2"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 2302.02,
+            "end": 2312.02,
+            "text": "and he printed 2 then in the same way he called the show for N is equal to 1 then he printed 1"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 2312.02,
+            "end": 2322.02,
+            "text": "continuously for 0 for 1-2 we want to stop the calls at some point we want to hit 1"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 2322.02,
+            "end": 2332.02,
+            "text": "we print 1 or as soon as we hit 0 without printing anything we have to return where to go back"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 2332.02,
+            "end": 2342.02,
+            "text": "as soon as we came to 0 go back here then here we go back level wise so here what will I do?"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 2342.02,
+            "end": 2352.02,
+            "text": "as soon as our value N is equal to 0 we will just return when we don't write any value with return"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 2352.02,
+            "end": 2362.02,
+            "text": "we are returning the control we are not returning any value so we will just return from here otherwise we will call for 5"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 2362.02,
+            "end": 2372.02,
+            "text": "then we will print 4, 3, 2 and print 1 like this try to run this function I will have 5, 4, 3, 2, 1 and what is this?"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 2372.02,
+            "end": 2382.02,
+            "text": "this is the recursion and what we will call this function? we will call this function recursive function the recursive function in which the recursion is happening"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 2382.02,
+            "end": 2392.02,
+            "text": "how is this recursion happening? this function's name is show and in this function again we cannot call the show function infinitely we have to give a condition"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 2392.02,
+            "end": 2402.02,
+            "text": "in the end function so we can return it and the condition we return on the basis of this we call this base case"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 2402.02,
+            "end": 2412.02,
+            "text": "like in loops there is stopping condition which condition, for example I wrote while loop we write this condition"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 2412.02,
+            "end": 2422.02,
+            "text": "it decides whether the loop should run or not similarly in recursion the base case decides whether the recursion should stop here so we call this base case"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 2422.02,
+            "end": 2432.02,
+            "text": "what will happen here? when the recursion stops or we keep printing if I write minus 1 in the base case then 0 would also be printed"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 2432.02,
+            "end": 2442.02,
+            "text": "so we have all the values from 5 to 0 so how did the recursion actually work? let's try to understand it"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 2442.02,
+            "end": 2452.02,
+            "text": "for n is equal to 3 in programming there is something called a call stack call stack means call"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 2452.02,
+            "end": 2462.02,
+            "text": "means function calls stack means if we keep many books we will call it stack of books so when we call a function"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 2462.02,
+            "end": 2472.02,
+            "text": "then we call a third function then we call the fourth function we call it call stack whenever we got the function it is a little complex"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 2472.02,
+            "end": 2482.02,
+            "text": "I am explaining you to understand the recursion it is not necessary to know about call stack but I am trying to explain you in detail whenever we code in any other programming language"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 2482.02,
+            "end": 2492.02,
+            "text": "and we are writing functions internally for functions in programming call stack is created if we want to imagine call stack"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 2492.02,
+            "end": 2502.02,
+            "text": "like we imagined the memory of the computer for variables if I want to imagine call stack then we can imagine it like a glass or like a bucket"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 2502.02,
+            "end": 2512.02,
+            "text": "this is our call stack now when we call any function for example I called show for n is equal to 3 so the function of show is in stack"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 2512.02,
+            "end": 2522.02,
+            "text": "like the book takes place in stack, as we believe the book will make a layer this show is equal to 3 for n is equal to 3"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 2522.02,
+            "end": 2532.02,
+            "text": "and the related variables of the function will come and store it it takes place in memory one thing is the variable takes place"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 2532.02,
+            "end": 2542.02,
+            "text": "if I made a variable for example a is equal to 1,2,3 so the variable a is equal to 1,2,3 it comes and stores it"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 2542.02,
+            "end": 2552.02,
+            "text": "like this but I haven't made any function like this so when the show calls for 3 in call stack it gets a layer"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 2552.02,
+            "end": 2562.02,
+            "text": "reserved like this and now what is happening here is that all functions are working first of all what functions are performing first we are checking if it is n0 so we don't have to return"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 2562.02,
+            "end": 2572.02,
+            "text": "then what is it called? then print n so if we print n then it will be 3 then what will it do? it will call show for n-1"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 2572.02,
+            "end": 2582.02,
+            "text": "so on this stack on this stick another layer will be created which will come for this new function this new call"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 2582.02,
+            "end": 2592.02,
+            "text": "and this call will be for show n-1 so the value of n will be equal now when we come to the second layer then the function"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 2592.02,
+            "end": 2602.02,
+            "text": "starts from the new series it starts from here so we will check again if it is equal to n0? no so print n"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 2602.02,
+            "end": 2612.02,
+            "text": "here it is printed then what we did? we called show again for n-1 so we will call the show for 1"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 2612.02,
+            "end": 2622.02,
+            "text": "so a third layer will be created for the function and now if it is equal to n then the function will start from the new series now it is equal to n value"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 2622.02,
+            "end": 2632.02,
+            "text": "so now we will check if it is n0 so print n if we print n then it will come for 1 and print here why 1 is printed for n? because for this function"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 2632.02,
+            "end": 2642.02,
+            "text": "n is equal to 1 then again show will be called for n-1 so n is equal to 1 so we will call the show for value 0"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 2642.02,
+            "end": 2652.02,
+            "text": "when we come to 0 and it will become a layer and in the last layer there is value 0 so here we will check"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 2652.02,
+            "end": 2662.02,
+            "text": "what to do from here? return so return means the layer above will be deleted and we will come"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 2662.02,
+            "end": 2672.02,
+            "text": "back to the lower layer what will we do? we will delete this layer and we will come back to the lower layer now what is left to do in this layer?"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 2672.02,
+            "end": 2682.02,
+            "text": "what is left to do? n is equal to 1 print it we called for 0 now nothing is left"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 2682.02,
+            "end": 2692.02,
+            "text": "delete this layer now this layer will be deleted and we will come back but if there was any work for example here if I want to print"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 2692.02,
+            "end": 2702.02,
+            "text": "another thing here, end so first if 3, 2, 1 is printed then from the layer above when we come back to the layer above then from 1 to 2"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 2702.02,
+            "end": 2712.02,
+            "text": "then end print then from 2 to 3 so first 3, 2, 1 is printed now because there was more work left in the old layer"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 2712.02,
+            "end": 2722.02,
+            "text": "then end print then this layer is deleted and it said let's go to the old layer so back to n is equal to 2 layer n is equal to 2 layer"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 2722.02,
+            "end": 2732.02,
+            "text": "did so much work now what is left to do? print the end so it printed the end so we delete this layer and we go to the bottom layer"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 2732.02,
+            "end": 2742.02,
+            "text": "what is in the bottom most layer? n is equal to 3 now there is work left for the end so what did it do? finally it printed the end"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 2742.02,
+            "end": 2752.02,
+            "text": "and from here now call stack is completely empty so as the call stack is empty our program is complete so this way our recursion"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 2752.02,
+            "end": 2762.02,
+            "text": "works now the function of call stack will not be understood in the first time and if you feel it is understood then repeat it"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 2762.02,
+            "end": 2772.02,
+            "text": "because this concept is very important in the programming and if we understand it well then we will get a lot of help if we are trying to learn some complex things"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 2772.02,
+            "end": 2782.02,
+            "text": "so this is how recursion works in programming now in recursion if we remove this base case for example if I comment out this base case"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 2782.02,
+            "end": 2792.02,
+            "text": "so what will recursion do? it could have run infinitely here recursion can also run infinitely and if recursion will run infinitely then at a point it will come"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 2792.02,
+            "end": 2802.02,
+            "text": "when it will occupy the whole memory and your code will crash if I try to save it and run maximum recursion depth exceeded"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 2802.02,
+            "end": 2812.02,
+            "text": "so in this fast recursion depth exceeded that the program will not work so this is why base case is very important in recursion"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 2812.02,
+            "end": 2822.02,
+            "text": "we write our code we see our work and then we see what should be our base case also generally in maximum cases"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 2822.02,
+            "end": 2832.02,
+            "text": "we will not use recursion we write in specific use cases in general cases we use loops and complete our work now next example of recursion"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 2832.02,
+            "end": 2842.02,
+            "text": "we will understand it through factorial factorial we already know which we know n factorial is equal to 1 into 2 into into n minus 1 into n"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 2842.02,
+            "end": 2852.02,
+            "text": "this is how factorial works so can we say that we can write 4 factorial 1 into 2 into 3 into"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 2852.02,
+            "end": 2862.02,
+            "text": "4 we can write 3 factorial 1 into 2 into 3 2 factorial we can write 1 into 2 this way, the factorial of negative numbers"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 2862.02,
+            "end": 2872.02,
+            "text": "is not there, 0 factorial is by default 1 and 1 factorial is also by default we take 1 and if we have default values we keep them aside"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 2872.02,
+            "end": 2882.02,
+            "text": "if we imagine this way can I say that 3 factorial is nothing but 2 factorial into 3 because 1 into 2 is"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 2882.02,
+            "end": 2892.02,
+            "text": "2 factorial is 3 factorial is equal to 2 factorial into 3 in the same way 4 factorial is nothing but 3 factorial into 4"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 2892.02,
+            "end": 2902.02,
+            "text": "this value is equal to 3 factorial so can we say that n factorial is equal to n minus 1 factorial"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 2902.02,
+            "end": 2912.02,
+            "text": "into n this statement is completely true in math this is how it works test 5 factorial 5 factorial is equal to 4 factorial into 5"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 2912.02,
+            "end": 2922.02,
+            "text": "is this true? what is 4 factorial? 1 into 2 into 2 into 3 into 4 we will multiply this with 5 we have the value of 5 factorial"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 2922.02,
+            "end": 2932.02,
+            "text": "the same way we call this thing that is what we know that we can apply recursion because the big value"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 2932.02,
+            "end": 2942.02,
+            "text": "depends on the small version technically it is called recurrence relation but we will not go into detail you can read"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 2942.02,
+            "end": 2952.02,
+            "text": "what is recurrence relation in the algorithms if you have python as a subject or data structures in algorithms then you will get it in detail"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 2952.02,
+            "end": 2962.02,
+            "text": "what is recurrence relation where recurrence relation is formed then recurrence can be written this is a recurrence relation recurrence means recurrent"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 2962.02,
+            "end": 2972.02,
+            "text": "which is reoccur which is repeated so the big thing's small version is repeated so recurrence can be used here now how will we use recurrence in programming"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 2972.02,
+            "end": 2982.02,
+            "text": "basically in our code can I say that if I have any function in which I have to calculate factorial of n so basically to calculate factorial of n"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 2982.02,
+            "end": 2992.02,
+            "text": "we will first calculate the factorial of n-1 in our code so the same thing which we have drawn out we can write the same thing"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 2992.02,
+            "end": 3002.02,
+            "text": "that if I have to calculate factorial of n then first calculate factorial of n-1 then multiply it with n if I have to calculate"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 3002.02,
+            "end": 3012.02,
+            "text": "factorial of n-1 then first calculate factorial of n-2 or multiply it with n-1 so in this way"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 3012.02,
+            "end": 3022.02,
+            "text": "we can use recurrence or recurrence so we will make a function in which we have to calculate factorial of n so basically we will calculate factorial of n-1 first then multiply it with n"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 3022.02,
+            "end": 3032.02,
+            "text": "so if I have to convert this relation in the code so I can simply write there is a factorial function in which any number n will come"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 3032.02,
+            "end": 3042.02,
+            "text": "so to calculate factorial of n I will first calculate factorial of n-1 then multiply it with n and the final value we will return it"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 3042.02,
+            "end": 3052.02,
+            "text": "this is our code now in this code suppose I have called for factorial of 4 imagine I have called for factorial of 4"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 3052.02,
+            "end": 3062.02,
+            "text": "so what will factorial of what will factorial of 4 do? first we will calculate factorial of 3 then we will calculate"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 3062.02,
+            "end": 3072.02,
+            "text": "factorial of 2 then we will calculate factorial of 0 then where will factorial of 1 come because there is no thing to stop"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 3072.02,
+            "end": 3082.02,
+            "text": "so we have seen the work but the base case is also very important base case means what is the stopping condition of the recurrence where the stop will come"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 3082.02,
+            "end": 3092.02,
+            "text": "where the stop will come means factorial of 1 or factorial of 0 we already know if my value of n is 1 or"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 3092.02,
+            "end": 3102.02,
+            "text": "the value of n is 0 what to do in that case? stop in this case I already know the value of factorial what is the value of factorial of 1 so return the value of factorial"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 3102.02,
+            "end": 3112.02,
+            "text": "when factorial of 1 will return then it will come only 1 then factorial of 2 will be calculated so this is my base case and this is my final value"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 3112.02,
+            "end": 3122.02,
+            "text": "so this is my recursive code for writing factorial now I want to calculate factorial of 2 so we can do this we will have to print"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 3122.02,
+            "end": 3132.02,
+            "text": "print it here this will be 2k equal in this way factorial of 4 will be 24k equal and in this way"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 3132.02,
+            "end": 3142.02,
+            "text": "factorial of 5 will be 120k equal here factorial of 6 will return to me 720k equal in this way"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 3142.02,
+            "end": 3152.02,
+            "text": "now how did this calculation happen? let us understand it a little more if we understand the call stack then we will have to start making some clarity in our mind"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 3152.02,
+            "end": 3162.02,
+            "text": "how things are working things are working in such a way that if we put the call stack for factorial of let us suppose 4 so this was our call stack"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 3162.02,
+            "end": 3172.02,
+            "text": "first it was factorial of 4 factorial of 4 first it was for me to calculate factorial of 3 so another layer was for factorial of 3"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 3172.02,
+            "end": 3182.02,
+            "text": "factorial of 3 said first it was for me to calculate so another layer was for factorial of 2 factorial of 2 said no for me to calculate"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 3182.02,
+            "end": 3192.02,
+            "text": "so another layer was for factorial of 1 now as we reach factorial of 1 for factorial of 1 we saw n is equal to 1"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 3192.02,
+            "end": 3202.02,
+            "text": "so we said return 1 from here so we came here from previous layer what we returned value 1 what will this do? it will move from here what will the 2nd layer do?"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 3202.02,
+            "end": 3212.02,
+            "text": "the 2nd layer will say 1 is for me to multiply with this I multiply 2 so what will be 1 into 2? it will send the old layer to 2"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 3212.02,
+            "end": 3222.02,
+            "text": "means factorial of 2 will be 2 and this layer will move from here now what will the 3rd layer say? factorial of 2 is here i.e. equal to 2"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 3222.02,
+            "end": 3232.02,
+            "text": "so what should I do? multiply by 2 and return 3 so this layer will return 6 and it will move from here now what is in factorial of 4"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 3232.02,
+            "end": 3242.02,
+            "text": "factorial of 3 returned 6 so it will be 6 so multiply by 4 so what will this return 6 into 4"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 3242.02,
+            "end": 3252.02,
+            "text": "will return 24 so when we print factorial of 4 the final value turns out to be 24"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 3252.02,
+            "end": 3262.02,
+            "text": "so I have tried my best I will tell you the whole deep I will not give you an overview I will tell you how to do recurrent work because this is an important concept"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 3262.02,
+            "end": 3272.02,
+            "text": "and many students who quit programming will quit after seeing the recursion thinking what is the difficult thing but it is not difficult there is a cousin who came from far away"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 3272.02,
+            "end": 3282.02,
+            "text": "and it is difficult to read the personality in the beginning but the more you get to understand him or the more you get to understand her, the better you will feel"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 3282.02,
+            "end": 3292.02,
+            "text": "ok, the things are simple ok, it was complex before but the more you use it the more you will not use it so there is no need to worry"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 3292.02,
+            "end": 3302.02,
+            "text": "in the next chapters we will not get to see the recurrence but we have read it in case you want to learn it later now next we are going to solve"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 3302.02,
+            "end": 3312.02,
+            "text": "our two practice questions first of all we have to pause and try to solve it by ourselves but if you are not able to do it then there is no need to worry"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 3312.02,
+            "end": 3322.02,
+            "text": "because these are the questions of recurrence and they are going to be difficult first question is calculate the sum of first n natural numbers first we write"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 3322.02,
+            "end": 3332.02,
+            "text": "a function that prints first n natural numbers any function which has the value passed by n what does it do? it prints all the values"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 3332.02,
+            "end": 3342.02,
+            "text": "from n to n so def we give this function name calculate sum but it will print only"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 3342.02,
+            "end": 3352.02,
+            "text": "so what is the work? it is to print n to n then what should I do? I should call to print n-1 so calculate sum"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 3352.02,
+            "end": 3362.02,
+            "text": "I called for 5 so it will print ok we forgot the important thing base case the value of n should be 0"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 3362.02,
+            "end": 3372.02,
+            "text": "if it is not 0 then it is natural so return from here save or run so 5,4,3,2,1 printed for me now what I have to do"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 3372.02,
+            "end": 3382.02,
+            "text": "is print now now it is the work of calculating sum so how to calculate sum basically first you tell this function that n-1 is the sum of numbers"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 3382.02,
+            "end": 3392.02,
+            "text": "we have calculated it for us what we will do in this? we will add n so if we have calculated all the numbers of 4 then add 5"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 3392.02,
+            "end": 3402.02,
+            "text": "if we have calculated all the numbers of 3 then add 4 this function is saying that if I have to calculate sum of 5 then what should I do?"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 3402.02,
+            "end": 3412.02,
+            "text": "first calculate sum of 4 then add 5 then calculate sum of 4 then add 4 for sum of 3"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 3412.02,
+            "end": 3422.02,
+            "text": "for sum of 3 then add 3 in sum of 2 this is how we will run so this will be our final sum and what we will do in this final sum"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 3422.02,
+            "end": 3432.02,
+            "text": "we will return so here we don't have to print the number we just have to return sum first calculate all the numbers of small numbers"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 3432.02,
+            "end": 3442.02,
+            "text": "then add me in it and for n is equal to 0 we will return value of 0 now we have I have to print"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 3442.02,
+            "end": 3452.02,
+            "text": "this value or store it in a variable sum variable and I will print the sum let's save it and re-execute"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 3452.02,
+            "end": 3462.02,
+            "text": "so we have got sum of 5 of 15 in this way I want the sum of 10 from 1 so that is going to be equal to 55"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 3462.02,
+            "end": 3472.02,
+            "text": "in this way we can calculate sum of all the numbers from 1 to n next we come to another function we come to another question writer recursive function"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 3472.02,
+            "end": 3482.02,
+            "text": "to print all elements in a list there is a hint that in function the list will be our parameter and index parameter"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 3482.02,
+            "end": 3492.02,
+            "text": "so we have to print recursively for example I have a list a, b, c all the elements of this"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 3492.02,
+            "end": 3502.02,
+            "text": "I have to print recursively so first if the index value is 0 then print it then the index value should be increased then print it"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 3502.02,
+            "end": 3512.02,
+            "text": "then the index value should be 2 then print it so every time in every function call I will have to change the index value and send it to plus 1"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 3512.02,
+            "end": 3522.02,
+            "text": "what will be the base case base case will be when my index value becomes equal to my length of list"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 3522.02,
+            "end": 3532.02,
+            "text": "because as soon as the index value is 3 then nothing to print then come back so let's try to write it once what I have to do I have to print"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 3532.02,
+            "end": 3542.02,
+            "text": "my list underscore list I will have 2 parameters one will be my list and one will be my index what is the work?"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 3542.02,
+            "end": 3552.02,
+            "text": "the work which you have index go to the list and print the index value and then for the rest of the index"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 3552.02,
+            "end": 3562.02,
+            "text": "i.e. call for next index then we will call the print list for our list and this time we will do index to plus 1 earlier it was 0"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 3562.02,
+            "end": 3572.02,
+            "text": "sorry not 0, it should be index earlier it was 0, now it will be 1 then it will be 2, then 3, then 4 and then it will be the index value"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 3572.02,
+            "end": 3582.02,
+            "text": "will not be equal to the length of list where the index value will be equal to the length of list simply return it this is a recursive function"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 3582.02,
+            "end": 3592.02,
+            "text": "how to call the print list with some updates why are you updating the index otherwise it will be infinite or not loop, sorry recursion will be infinite"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 3592.02,
+            "end": 3602.02,
+            "text": "if we let's suppose we create a list called fruits we have mango"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 3602.02,
+            "end": 3614.02,
+            "text": "we have apple and we have banana and we will call the print list"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 3614.02,
+            "end": 3624.02,
+            "text": "for our fruits list so we will save it and let's run it ok, we have passed the fruits in the list but we have to pass"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 3624.02,
+            "end": 3634.02,
+            "text": "the starting value so the starting value of index if we don't pass we can make it an optional parameter, start from index is equal to 0"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 3636.02,
+            "end": 3646.02,
+            "text": "so mango print, leechi print apple print, banana print I hope we understand the working understanding of this that first for fruits, call"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 3646.02,
+            "end": 3656.02,
+            "text": "for index number 0 first check if it is equal to 0 length or not, so what did it print we have printed mango then index increased"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 3656.02,
+            "end": 3666.02,
+            "text": "so next call in it index value is 1 for 1 it printed leechi index value is 2 then it printed apple"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 3666.02,
+            "end": 3676.02,
+            "text": "then again index value is equal to 4 in 4 it checked if it is equal to length if we don't print anything, now we will return so this way recursion works"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 3676.02,
+            "end": 3686.02,
+            "text": "the rest of the codes we have written as a beginner, it can look difficult so if we need to repeat things then don't worry, repeat them"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 3686.02,
+            "end": 3696.02,
+            "text": "because it takes time to understand the recursion the time you will invest on learning the better things we will understand the stronger our core concepts will be"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 3696.02,
+            "end": 3706.02,
+            "text": "so I hope we have enjoyed reading the recursion so that's all for today's lecture the notes below will be in the description box see you in the next class"
+        },
+        {
+            "number": "6",
+            "title": "Functions & Recursion in Python",
+            "start": 3706.02,
+            "end": 3708.02,
+            "text": "till then keep learning and keep practicing"
+        }
+    ],
+    "text": " Hi everyone and welcome to the complete Python series in which we are going to read chapter 6 First we will read the functions in detail and then we will cover the recursion in detail We will not only read the theory concepts, we will also write a lot of codes and practice questions Along with that, we will also get the links to download the lecture's notes and slides in the description box Apart from this, if we want to read any other topic related to Python, then we will get the playlist on this channel We can read any topic from there So let's start with chapter 6 Hi everyone and now we are going to start with chapter 6 in which we will read the functions first Now function is something like this, it is a word that we have heard in the chapters till now But we don't understand exactly what we use and why we use it So when we talk about the functions in Python, the function is a block of statements That is a group of statements that perform a specific task Like we talked about loops, we used to use loops because if we want to do some set number of times, we have to repeat it Now in loops, we used to write the logic of loops once If we write that if a loop will run from 1 to 10, then it will run 10 times Or it will run 9 times, then its set logic will perform the same time But functions are a block of code, which we have written once So we can use it again and again and again and again and again to perform the same task Now let's see the basic example of it For example, this is my Python file and we get a task that we have to calculate the sum of two numbers So here we have written our first number, A is equal to 5, we have written our second number, B is equal to 10 And then we have made a variable, sum is equal to A plus B And then we have to print that sum, so we printed it Now tomorrow we might have written a lot of codes in between, this is probably more lines of code Here we can imagine 15-16 lines of code came And again we got some other numbers A and B, which we had to calculate the sum So again we will write A plus B and print the sum again And similarly we might have to write more lines of code and again we have to repeat the same logic Means here A might have been 12, this might have been 17 And again we are calculating A plus B and printing the sum So in this way we have taken a very simple example of calculating the sum of A plus B This is a very simple example, there are not that many simple examples in real world scenarios But because we are learning things from the beginner level, we will start with a simple example and then we will move towards a complex So here one thing that we are getting is that we have written this code here, I had to write this similar code here I had to write this similar code here too So what is this code doing in the code? Things are repeating or for this there is another better word, redundant Redundant means there is a meaning of redundant in English, something that is repeating So redundant code is a sign of a bad programmer That repeatedly, repeatedly, repeatedly, that same line of code is being repeated in the code So generally this is advised that if we have to write the same lines of code twice or three times, then we have to convert it into a function So basically this work that we have repeated repeatedly, a better way to do the same work is to make a function to perform this work What is the function? The function is to take two numbers, calculate the sum and print the sum This is a simple function Now how to create a function to perform this same work? To create a function, we first write our keyword, this is deaf We can understand it in such a way that we are defining our function Defining means when we write a word meaning, we define a word We are telling what our function will do So deaf writes a keyword in us, then we can give our function any name, which can give any name to the variables Let's suppose we give this function a name, calculate c-a-l-c, calculate sum or underscore sum I gave this function a name After that what we write in the function? We write parenthesis and put colon These parenthesis can be in them, we can take two values as input Taking two values as input means that this function takes some value input and then performs some operations on those values and returns some output For example, if we make a chart and explain it, for example this is my function Now we are understanding conceptually this What does function do? Ideally, function takes some input and some output returns some input So we call the thing that takes input as parameter For example, we have written deaf as function, then if it takes some values as input, then it becomes parameter 1,2 In this way, it can take multiple parameters What are the parameters? Basically, we have to write the names of variables The function that calculates sum will take one value a and one value b Anything can be in a, anything can be in b, but the names of those variables will be a and b Now if I want to print some for a and b, then I take some variable sum is equal to a plus b And then I printed my sum So what did I do? I performed this part Now the question can be that function takes input and returns output My function doesn't return any output here But if we wanted, we could return this sum after printing If we wanted, we could return our sum So we have a keyword in Python that is used to send the value back, to send the output back So function is a block of code, some line of code that takes some input, takes some parameters input And gives some output by returning So this is a function, it is complete It took these values as input and gave this value as output And in between, it has done some work with those values So this is an entire function to calculate the sum of two numbers Now how will this help me in my code? It will help me in this way that this part of the code, I don't need to do all this work By removing these lines, what I can simply do is, I will call the sum Calling means calling, this is not the call, telephone call But when we call someone to do work, for example we hired a chef So what should we make to cook? We will have to call them and tell them We have to perform the function, to do that we will have to call them So to call, we write the name of the function and pass some values in it These are the values that will be stored in our parameters For example, if A is in the parameter, B, I will write 1 and 2 So in A, one store will be there, in B, 2 will be stored The same values that the function calls, the statement will be called We call it argument, this argument is not fighting, this argument is supplying values So these are the arguments that we pass, these are actual values Like 1, 2, string, and in the definition of the function, we call this parameter Now there are a lot of theories, we will revise all of them So we don't need to worry, we have found a lot of new words We just have to pay attention to learn For example, in the calculate sum, now I can pass this value 5 Simply, and this value 10 So now this whole code, what can I do? I just need to write a single line Similarly, this whole code, all the lines, what I have to do? I have to write a simple line for the calculate sum, in which I will pass the first value A is equal to 2, and then B is equal to 10 And I can remove this whole code from here To do this whole thing, because where is this work? This work has already been done in the function So what will I do? I will call the calculate sum here for 12 and 17 So what I did? I used the same function three times The number of lines decreased in my code, the redundancy decreased And as a programmer, this is a better code If I run this after saving it, the same work will happen What happened first? 5 for 10 is calculated, 15 is equal Then what happened? 2 or 10 is calculated, 12 is equal And then 12 and 17 is calculated, 29 is equal So logically, the work was performed, but we did our work in less lines of code Now this is the practical point of view, why do we use functions? We use functions so that the redundancy in our code gets reduced Which is really important Meaning, whenever an interview is happening in a company, it doesn't just matter That we write the logic properly And it also matters how you write the code If you have written the same lines properly and we are not using functions for that code That is a sign of a bad programmer So we don't have to do such mistakes in interviews So let's summarize all the things Let's make a new function, even simpler Let's call it calculate sum Calculate sum is A and B, it takes two numbers This should be A And then it returns the sum of A and B We can write it like this, this is also a very simple function So whenever we call the calculate function Calculate sum, let's suppose we call it with values 1 and 2 What should we print? We should have 3 prints Let's save it, let's run it Okay, here what I have to do is We have to return the value So whatever value returns, we can store it in a variable And we can print it We saved it, run it, we have 3 values Similarly if I pass it 178 and 221 Or 2221 So it will calculate sum and print it So in such a simple way, our functions work Now let's revise the terminology in this Because whenever we are coding like a programmer We are doing all the things, then it is necessary to use the right word So what is this? We have defined the function We call it in programming function definition This is my function definition What are these A and B? These are parameters This is the whole line in which we have written the function And we call it function call And what are these values? These are our arguments The value of the arguments goes and stores in our parameters Our function can return any value in which we can store it in a variable And then we can print that value Now let's make another simple function from this For example, a function which is called HelloPrint So what can we do? We have given a function deflic And let's name this function printHello Or print underscore Hello Now we don't need any values to get this function HelloPrint So we can leave our parenthesis empty This function doesn't use any parameters The only thing to do is to print Hello And the number of times we call Hello, it will simply print Hello For example, let's comment out this part Save and run So what happened? We got HelloPrint And if we write this line 5 times Then we will get 5 times HelloPrint Something like this So what do we do? We repeat the same thing again and again There is nothing to worry about, you just have to make a function So the redundancy will decrease in the code Also, our function has two things in it, which are completely optional For example, we want to give no parameter in the function So you can make a function without a parameter And you want that my function will not return any value If you don't take a parameter, then it doesn't take any input You can also make a function like this If you don't return, then it doesn't give any output You can also make a function like this Like this Hello function doesn't take any input, it doesn't have any parameters It doesn't give any output, it doesn't have any return value So making functions like this is also completely possible So the function that doesn't return any value For example, if I print Hello, print off Hello What I have done? I have printed the output of print off Hello In fact, we will store it in the variable Suppose this is some output variable Print Hello's output is storing and we are printing this output So we will have print in this output, none None is printed because the function that doesn't return anything It automatically gives a none value in its output Now let's take another simple example For example, we want to create a function which calculates the average of 3 numbers We want to make this function So we have to pause here and try to make this function Let's see the other solutions First we will write def and we will give the name of this function Let's call it calculate average And we will get 3 numbers in it First we call number A, second we call B, third we call C Like this Now what I have to do? I have to give proper indentation And I have to calculate the average First let's calculate the sum Sum is going to be A plus B plus C And average is going to be sum divided by 3 So either we can print this average Or we can return it if we want So this is our calculate average function Now let's test it, in the calculate average We will calculate the average of 1, 2 and 3 And if we run it, the average of 3 numbers is equal to 2.0 Similarly, let's suppose we take our marks If someone's marks are 98, 97, 95 They come in ratio, what is going to be the average? The average is 96.66 So in this way, we can write a function To perform our calculations normally Now in functions, all the functions can be done Which we were writing in the file For example, you have to do here If A is zero, what should we do? We can also do if, we can also do loops in the function But all the work will be done with proper indentation Means we will do it with proper spacing Now let's talk about the types of functions In Python, functions are of two types One is our built-in functions And the other is our user defined functions Built-in functions are already written in Python Their logic is also written We have used many of the built-in functions For example, if I want to print something What will I do? I will write print-appna-college What is this print? This is a function, if you look carefully This is a function call, which we have written from the first class Print is the name of our built-in function We have written parenthesis And we are passing this call, it is nothing This is an argument This goes and stores the definition of print function If we do hover, I can see the definition In Visual Studio Code, there is a print Then there are some values And then there are some parameters As we are getting to know, in the print function One comes to know which value we want to print Then we have two more parameters One is CEP, which is our separator And the other is END What should be in the ending? Like here, SEP means If you have written multiple values With comma, if we have written multiple values Then there, separator, means between two values There will be an automatically space And the ending means that if we have Printed two values once Then when we print it next time Then we will always have a gap of the next line So these are things already defined in the print function We can test this For example, I want to print appna-college And then I want to print Shraddha-khapra And here, I don't give any gap But what will print function do? Automatically Because what happens in this? SEP is automatically defined to be a space What is the separator? There will be space between the two This value is extra space Because it is written in the definition of defined function Or if I print both in different lines For example, I want to print Shraddha-khapra here So what will happen automatically? The end is defined as backslash end Backslash end means the next line I saved it, both values will be on the next line If I want to do both values on the same line Then what will I have to do? I will have to pass any other value of my ending parameter For example, here I can pass an ending parameter Is equal to space That after printing this I only need space, I don't want the next line So both values will be printed on the same line What happened? Both the things are printed on the same line So if you want to print multiple values on the same line In your print statement, in the print function What you have to do? Pass end is equal to space If we pass the dollar instead of space Then the dollar will come in between So we can pass anything like this This is supposed to be my ending Similarly, we can experiment with the value of our separator So this is a built-in function Sometimes there are very normal things in programming Which we are using, but they are very interesting from the inside They are actually using concepts which we haven't studied yet And that is the interesting part of coding So this is our print function Apart from this, there are many other functions which are inbuilt For example, we have studied the length function We give the length of the tuple, the length of the string, the length of the list This is a built-in function It is already defined Like if I write length of something I can hover over this And what is this? This is already defined And what does it return? It returns an integer value And returns the number of items in a container Apart from this, we have a type function We have a range function which we have already studied If I write range like this Then we will get a definition of this Range is also defined in its parameters It takes the start, then stops, then steps So this also works on different values The second is our user defined function The functions we write Or the one which is written by another programmer Which are not inbuilt We cannot automatically use them in Python Like the print function, the range function We did not write the logic of this We wrote the functions which we write We define them as user And the ones in Python are called built-in functions Next we will talk about default parameters For example, we have made a normal function To calculate the multiplication of two numbers The definition is called calculate Or calculate the product of two numbers A and B take two numbers And what does it return? It returns A multiplied by B Now let's suppose In my imaginary world I have to calculate the product of two numbers But I want to pass only one number from it It is my wish Or I don't want to pass any number Then I want to see Like here print A into B And then I want to return something And then I want to calculate the product I can call this function Without any argument But as soon as I try to do this It will throw me an error What is the error? In the Calculate prod There are two required arguments There should have been two arguments Which would have been stored in A and B So there was an error But if we want to run any argument Then we can run the function So we can give some default values to our parameters Default values are values which will be used only when No argument has passed If I write B is equal to 1 And A is equal to 1 So by default if I didn't pass anything Then A and B will assume one and one values We will save and run So this time we will print 1 multiplied by 1 is equal to 1 If I write 2 here If I write 4 here If we run again Then by default we will print 8 We can make a single value Default value as B is equal to 2 And if I only pass 1 here Then 1 and 2 will be calculated If we pass 1 Then 1 will be stored in A And B value will be automatically 2 So we will get 2 in Output But we can't do the opposite For example, I have written 2 here I will leave B here If I try to do this It will throw me an error Non-default argument follows default argument Means first we should always come non-default And last we should come default arguments This is not the case We have written default arguments first Means if A is with default argument With default value Then A will always come later So whenever we have to give default values We start giving default values from last So in this way Our default parameters work In Python Next we are going to solve some practice questions To solidify our understanding Basically, the basic syntax The basic syntax for learning important things The rules of programming We have covered that We have to solidify our understanding What we have to do now Is write more functions So that we get used to writing functions Like in loops More loops will be written More conditional statements will be written We will get used to it So let's solve the first question Write a function to print the length of a list List is the parameter So for example We have this list Let's call it numbers In which we can write Cities In cities we have Delhi We have Gurgaon We have Let's say Noida We have Pune And we also have Mumbai Chennai So we have multiple cities We have to make a function That can print the length of cities Now we know We can print it directly I have to print the same value in the function So what I can do is I can define a function Let's call it print length In print length We can pass the list of cities Or any list And then we have to print Length of cities In cities, any list can be made Let's call it our list So we will pass the list and print the length of it This is a simple function Let's make another list Let's call the second list heroes In heroes We can have Thor Ironman Captain America We can also have Shaktimaan So what happened This is our heroes list First we will call print length For whom? For cities Then we will call print length for our heroes list Save Run The length of cities is equal to 6 Because here it is named as 6 cities And the length of heroes is equal to 4 So this is our casual and normal function Which can print the length of any list Next question On the right side Write a function to print the elements of a list in a single line Now in a single line Let's suppose This is my list Let's take the hero list In the hero list If I try to print heroes of 0 What will it do? It will print heroes of 0 for us And after that if I try to write heroes of 1 I know if I write again and again I will print the elements on the next line But what I want is to print on the same line So we have learnt the foundation of that What is the logic? We can simply Change the end What is the end? End is backslash n If we write the end here backslash n Then what will happen? That same effect will come Thor in a line Iron man in a line But if I space here Then it will not come in the same line This iron man space Then 6 again So I have to write the same logic in the function If we don't call the function Then there is no difference on the function We can write many functions like this They don't get any print or work Like here I can create my second function Which will do What will print the list Print my list Any list can be in the function And here we can run loop For the list Item in list Print My item With Ending Of Space This is my function Which will print all the items for me in a single line I have defined the function first Passed the argument After that I have given proper indentation Then I have put a for loop to iterate on the list Then I have given proper indentation Then I have printed the items So The functions knowledge The print function The loop knowledge The list knowledge The basic knowledge We are combining all of them In the chapter If you look at it that way You will know how small things Can be combined and built On complex programs Although this is not a very complex program But slowly we are increasing in that direction We will save it And I can call this Print list function For my heroes Saved and run All the heroes are printed in the same line Okay, in the last This is the percentage Because in the last We have given space in the ending So we can give An extra print here Or not here We can give an extra print here What will happen with that This time this percentage sign is not for us So that is basically Kind of like a trailing character But for now we can ignore it So if we want We can print our cities Saved and run All the cities are printed for us Let's move on to the next question Next question is To find the factorial of n n is the parameter First of all let's revise the factorial What was factorial In math n is the factorial This percentage sign is used for factorial That we multiply all the numbers from 1 From n to n 1 into 2 into Like this 4 factorial Means 1 into 2 into 3 into 4 3 factorial means 1 into 2 into 3 So we can calculate factorial like this We have calculated factorial from loop This part We remove And let's suppose We have a number n, n is equal to 5 I have to calculate the factorial of n I know n factorial is equal to 1 to nt Let's see how we calculate it We can run a loop For i in range I have to take me from 1 to n So we can start from 1 We will go to n plus 1 We will make a factorial variable factorial is equal to 1 I have to multiply my i in factorial And Finally We can print our factorial So we will have 120 print This was our logic We have already covered it in last class So we will print for 120 I have to shift this logic into a function Let's define a function It is called CalculateFactorial Which has any number n Now we will make the factorial variable Then we will run the loop We will calculate the factorial value And print the factorial We can return Now I can call this CalculateFactorial function For my number 5 So we have 120 Calculate for 6 We have 720 So for multiple values We can calculate their factorial directly through this function Now let's come to the next question Write a function to convert usd to inr What will happen to me I will give a value in American dollars For example I am given 1 dollar I will give this value to INR We have to convert it The conversion rate is 83 So 1 dollar is equal to 83 rupees So we have to multiply the value we have with 83 For example If we are given 1 USD It is equal to 83 INR If we give 2 USD It will be equal to 166 INR We can continue our multiplication in this way Let's make a function Let's call it Def What will we get in the converter We will get us USD value And we have to convert the USD value to INR We will print First we write our USD value USD value USD is equal to INR value In fact we will calculate INR value is equal to USD value multiplied by 83 For today We will use our INR value with INR Let's save it I hope we understand Whatever value is coming in dollars We will print it We can call our converter I have passed 1 dollar in the beginning I am printing it 1 USD is equal to 83 INR Let's suppose I have to print 100 dollars is equal to 8300 INR I have to print 73 dollars value Which I think is difficult to calculate in our mind We have made a function which is easy for us So this way we have different functions which I hope we will add some other functions Functions are not that simple In fact I think the logic of functions is easy because we have to think about what is going to be the stopping condition How we will update the variable But we have to define the functions what is input what is output The syntax of defining the function is very easy There are many things in Python I hope we understand the function I will give you a homework problem You have to write a function which will take a number to the input Your function should have a number in the input What should your function do If the number is odd in that case return a string If the number is even the output of your function should be a string output saying even You have to write this function in the homework problem If the number is odd send the odd string and return If the number is even return the even string If you are able to write it you have understood the logic of functions You are ready to write your functions Next we will talk about an important concept related to functions which we call Recursion Before recursion Recursion as a topic we should not understand the whole thing The explanation we have to repeat which is completely normal because whenever we are learning any language Whether it is Python, Java C++, JavaScript Whenever we are looking at Recursion When we are hitting Recursion we have a little difficulty understanding it as a beginner especially if Python is our first programming language We can repeat slowly pause and try to understand it which is completely normal With the same situation that every programmer is coding well that is perfectly fine We will take the concept of Recursion and understand it in this chapter Recursion is a concept in which basically a function calls itself repeatedly We have seen that we have written a normal program in which there is a function Generally in our program there is a calling statement which calls the function and it makes us do something In Recursion our function is but the calling statement it calls itself and then it calls itself again and again again and again This situation looked like loops What did loops do? There was a block of statement which repeats and repeats Functions also work like loops but the calling statement keeps coming in Also, if I say it in a very plain language then what is Recursion? It is a dangerous version of loops It means that in maximum cases we may not need to write Recursion We don't need to write Recursion But there are some specific cases in which if we write the same code with loops it becomes a little easier to write with Recursion But the very easy codes the easy things are generally we prefer to write with loops Another interesting thing is that all the work done with loops can be done with Recursion and all the work done with Recursion can be done with loops So loops and Recursion are interrelated We can do the same work In some cases we prefer loops which are generally the codes of our beginner level and later if you go to learn data structures and algorithms then there will be some specific cases in which Recursion will give you a simple code as compared to loops So once in detail we understand what is Recursion exactly We have said that Recursion is such a function Recursion means when the function starts calling itself For example, let's create a function which is printing any number We call this function as show It is called show which is showing any number any number in it is printed by the number N We have made such a simple function and we are calling it Let's suppose, let's call it show5 We will call it 5 show There is no Recursion in it Now let's suppose I have to do 5 shows then I have to print 4 then I have to print 3 then I have to print 2 and I want to print all these in one function call I want to call the show once and print all the numbers for the show Now I know the easiest way is to run a loop which goes from 5 to 1 but I have to use Recursion So the logic of using Recursion is that first see what is the function What we are doing is we have the number N First we want to print the N then we want to print N-1 then we want to print N-2 then we want to print N-3 How much we want to print until we reach 1 So the first way to write Recursion is to write the work in Recursion to perform the work basically the value of N we have to print it so we have already written the work then we have to print N that is I have already printed 5 then I have to print 4 can I say 4 is N-1 3 is N-2 2 is N-3 and this way So I have printed 5 then I can call the show to print N-1 that is first the show was called for N then the show was called for N-1 then when for N-1 the show will be called so what will be the value of N? 4? So basically we get to see some sort of code that first we called the show for N is equal to 5 then what did it do? we printed 5 and after that we called the show for N is equal to 4 that is N-1 what did it do? we printed 4 then he called the show for N is equal to 3 and printed 3 then this function called the show for N is equal to 2 and he printed 2 then in the same way he called the show for N is equal to 1 then he printed 1 continuously for 0 for 1-2 we want to stop the calls at some point we want to hit 1 we print 1 or as soon as we hit 0 without printing anything we have to return where to go back as soon as we came to 0 go back here then here we go back level wise so here what will I do? as soon as our value N is equal to 0 we will just return when we don't write any value with return we are returning the control we are not returning any value so we will just return from here otherwise we will call for 5 then we will print 4, 3, 2 and print 1 like this try to run this function I will have 5, 4, 3, 2, 1 and what is this? this is the recursion and what we will call this function? we will call this function recursive function the recursive function in which the recursion is happening how is this recursion happening? this function's name is show and in this function again we cannot call the show function infinitely we have to give a condition in the end function so we can return it and the condition we return on the basis of this we call this base case like in loops there is stopping condition which condition, for example I wrote while loop we write this condition it decides whether the loop should run or not similarly in recursion the base case decides whether the recursion should stop here so we call this base case what will happen here? when the recursion stops or we keep printing if I write minus 1 in the base case then 0 would also be printed so we have all the values from 5 to 0 so how did the recursion actually work? let's try to understand it for n is equal to 3 in programming there is something called a call stack call stack means call means function calls stack means if we keep many books we will call it stack of books so when we call a function then we call a third function then we call the fourth function we call it call stack whenever we got the function it is a little complex I am explaining you to understand the recursion it is not necessary to know about call stack but I am trying to explain you in detail whenever we code in any other programming language and we are writing functions internally for functions in programming call stack is created if we want to imagine call stack like we imagined the memory of the computer for variables if I want to imagine call stack then we can imagine it like a glass or like a bucket this is our call stack now when we call any function for example I called show for n is equal to 3 so the function of show is in stack like the book takes place in stack, as we believe the book will make a layer this show is equal to 3 for n is equal to 3 and the related variables of the function will come and store it it takes place in memory one thing is the variable takes place if I made a variable for example a is equal to 1,2,3 so the variable a is equal to 1,2,3 it comes and stores it like this but I haven't made any function like this so when the show calls for 3 in call stack it gets a layer reserved like this and now what is happening here is that all functions are working first of all what functions are performing first we are checking if it is n0 so we don't have to return then what is it called? then print n so if we print n then it will be 3 then what will it do? it will call show for n-1 so on this stack on this stick another layer will be created which will come for this new function this new call and this call will be for show n-1 so the value of n will be equal now when we come to the second layer then the function starts from the new series it starts from here so we will check again if it is equal to n0? no so print n here it is printed then what we did? we called show again for n-1 so we will call the show for 1 so a third layer will be created for the function and now if it is equal to n then the function will start from the new series now it is equal to n value so now we will check if it is n0 so print n if we print n then it will come for 1 and print here why 1 is printed for n? because for this function n is equal to 1 then again show will be called for n-1 so n is equal to 1 so we will call the show for value 0 when we come to 0 and it will become a layer and in the last layer there is value 0 so here we will check what to do from here? return so return means the layer above will be deleted and we will come back to the lower layer what will we do? we will delete this layer and we will come back to the lower layer now what is left to do in this layer? what is left to do? n is equal to 1 print it we called for 0 now nothing is left delete this layer now this layer will be deleted and we will come back but if there was any work for example here if I want to print another thing here, end so first if 3, 2, 1 is printed then from the layer above when we come back to the layer above then from 1 to 2 then end print then from 2 to 3 so first 3, 2, 1 is printed now because there was more work left in the old layer then end print then this layer is deleted and it said let's go to the old layer so back to n is equal to 2 layer n is equal to 2 layer did so much work now what is left to do? print the end so it printed the end so we delete this layer and we go to the bottom layer what is in the bottom most layer? n is equal to 3 now there is work left for the end so what did it do? finally it printed the end and from here now call stack is completely empty so as the call stack is empty our program is complete so this way our recursion works now the function of call stack will not be understood in the first time and if you feel it is understood then repeat it because this concept is very important in the programming and if we understand it well then we will get a lot of help if we are trying to learn some complex things so this is how recursion works in programming now in recursion if we remove this base case for example if I comment out this base case so what will recursion do? it could have run infinitely here recursion can also run infinitely and if recursion will run infinitely then at a point it will come when it will occupy the whole memory and your code will crash if I try to save it and run maximum recursion depth exceeded so in this fast recursion depth exceeded that the program will not work so this is why base case is very important in recursion we write our code we see our work and then we see what should be our base case also generally in maximum cases we will not use recursion we write in specific use cases in general cases we use loops and complete our work now next example of recursion we will understand it through factorial factorial we already know which we know n factorial is equal to 1 into 2 into into n minus 1 into n this is how factorial works so can we say that we can write 4 factorial 1 into 2 into 3 into 4 we can write 3 factorial 1 into 2 into 3 2 factorial we can write 1 into 2 this way, the factorial of negative numbers is not there, 0 factorial is by default 1 and 1 factorial is also by default we take 1 and if we have default values we keep them aside if we imagine this way can I say that 3 factorial is nothing but 2 factorial into 3 because 1 into 2 is 2 factorial is 3 factorial is equal to 2 factorial into 3 in the same way 4 factorial is nothing but 3 factorial into 4 this value is equal to 3 factorial so can we say that n factorial is equal to n minus 1 factorial into n this statement is completely true in math this is how it works test 5 factorial 5 factorial is equal to 4 factorial into 5 is this true? what is 4 factorial? 1 into 2 into 2 into 3 into 4 we will multiply this with 5 we have the value of 5 factorial the same way we call this thing that is what we know that we can apply recursion because the big value depends on the small version technically it is called recurrence relation but we will not go into detail you can read what is recurrence relation in the algorithms if you have python as a subject or data structures in algorithms then you will get it in detail what is recurrence relation where recurrence relation is formed then recurrence can be written this is a recurrence relation recurrence means recurrent which is reoccur which is repeated so the big thing's small version is repeated so recurrence can be used here now how will we use recurrence in programming basically in our code can I say that if I have any function in which I have to calculate factorial of n so basically to calculate factorial of n we will first calculate the factorial of n-1 in our code so the same thing which we have drawn out we can write the same thing that if I have to calculate factorial of n then first calculate factorial of n-1 then multiply it with n if I have to calculate factorial of n-1 then first calculate factorial of n-2 or multiply it with n-1 so in this way we can use recurrence or recurrence so we will make a function in which we have to calculate factorial of n so basically we will calculate factorial of n-1 first then multiply it with n so if I have to convert this relation in the code so I can simply write there is a factorial function in which any number n will come so to calculate factorial of n I will first calculate factorial of n-1 then multiply it with n and the final value we will return it this is our code now in this code suppose I have called for factorial of 4 imagine I have called for factorial of 4 so what will factorial of what will factorial of 4 do? first we will calculate factorial of 3 then we will calculate factorial of 2 then we will calculate factorial of 0 then where will factorial of 1 come because there is no thing to stop so we have seen the work but the base case is also very important base case means what is the stopping condition of the recurrence where the stop will come where the stop will come means factorial of 1 or factorial of 0 we already know if my value of n is 1 or the value of n is 0 what to do in that case? stop in this case I already know the value of factorial what is the value of factorial of 1 so return the value of factorial when factorial of 1 will return then it will come only 1 then factorial of 2 will be calculated so this is my base case and this is my final value so this is my recursive code for writing factorial now I want to calculate factorial of 2 so we can do this we will have to print print it here this will be 2k equal in this way factorial of 4 will be 24k equal and in this way factorial of 5 will be 120k equal here factorial of 6 will return to me 720k equal in this way now how did this calculation happen? let us understand it a little more if we understand the call stack then we will have to start making some clarity in our mind how things are working things are working in such a way that if we put the call stack for factorial of let us suppose 4 so this was our call stack first it was factorial of 4 factorial of 4 first it was for me to calculate factorial of 3 so another layer was for factorial of 3 factorial of 3 said first it was for me to calculate so another layer was for factorial of 2 factorial of 2 said no for me to calculate so another layer was for factorial of 1 now as we reach factorial of 1 for factorial of 1 we saw n is equal to 1 so we said return 1 from here so we came here from previous layer what we returned value 1 what will this do? it will move from here what will the 2nd layer do? the 2nd layer will say 1 is for me to multiply with this I multiply 2 so what will be 1 into 2? it will send the old layer to 2 means factorial of 2 will be 2 and this layer will move from here now what will the 3rd layer say? factorial of 2 is here i.e. equal to 2 so what should I do? multiply by 2 and return 3 so this layer will return 6 and it will move from here now what is in factorial of 4 factorial of 3 returned 6 so it will be 6 so multiply by 4 so what will this return 6 into 4 will return 24 so when we print factorial of 4 the final value turns out to be 24 so I have tried my best I will tell you the whole deep I will not give you an overview I will tell you how to do recurrent work because this is an important concept and many students who quit programming will quit after seeing the recursion thinking what is the difficult thing but it is not difficult there is a cousin who came from far away and it is difficult to read the personality in the beginning but the more you get to understand him or the more you get to understand her, the better you will feel ok, the things are simple ok, it was complex before but the more you use it the more you will not use it so there is no need to worry in the next chapters we will not get to see the recurrence but we have read it in case you want to learn it later now next we are going to solve our two practice questions first of all we have to pause and try to solve it by ourselves but if you are not able to do it then there is no need to worry because these are the questions of recurrence and they are going to be difficult first question is calculate the sum of first n natural numbers first we write a function that prints first n natural numbers any function which has the value passed by n what does it do? it prints all the values from n to n so def we give this function name calculate sum but it will print only so what is the work? it is to print n to n then what should I do? I should call to print n-1 so calculate sum I called for 5 so it will print ok we forgot the important thing base case the value of n should be 0 if it is not 0 then it is natural so return from here save or run so 5,4,3,2,1 printed for me now what I have to do is print now now it is the work of calculating sum so how to calculate sum basically first you tell this function that n-1 is the sum of numbers we have calculated it for us what we will do in this? we will add n so if we have calculated all the numbers of 4 then add 5 if we have calculated all the numbers of 3 then add 4 this function is saying that if I have to calculate sum of 5 then what should I do? first calculate sum of 4 then add 5 then calculate sum of 4 then add 4 for sum of 3 for sum of 3 then add 3 in sum of 2 this is how we will run so this will be our final sum and what we will do in this final sum we will return so here we don't have to print the number we just have to return sum first calculate all the numbers of small numbers then add me in it and for n is equal to 0 we will return value of 0 now we have I have to print this value or store it in a variable sum variable and I will print the sum let's save it and re-execute so we have got sum of 5 of 15 in this way I want the sum of 10 from 1 so that is going to be equal to 55 in this way we can calculate sum of all the numbers from 1 to n next we come to another function we come to another question writer recursive function to print all elements in a list there is a hint that in function the list will be our parameter and index parameter so we have to print recursively for example I have a list a, b, c all the elements of this I have to print recursively so first if the index value is 0 then print it then the index value should be increased then print it then the index value should be 2 then print it so every time in every function call I will have to change the index value and send it to plus 1 what will be the base case base case will be when my index value becomes equal to my length of list because as soon as the index value is 3 then nothing to print then come back so let's try to write it once what I have to do I have to print my list underscore list I will have 2 parameters one will be my list and one will be my index what is the work? the work which you have index go to the list and print the index value and then for the rest of the index i.e. call for next index then we will call the print list for our list and this time we will do index to plus 1 earlier it was 0 sorry not 0, it should be index earlier it was 0, now it will be 1 then it will be 2, then 3, then 4 and then it will be the index value will not be equal to the length of list where the index value will be equal to the length of list simply return it this is a recursive function how to call the print list with some updates why are you updating the index otherwise it will be infinite or not loop, sorry recursion will be infinite if we let's suppose we create a list called fruits we have mango we have apple and we have banana and we will call the print list for our fruits list so we will save it and let's run it ok, we have passed the fruits in the list but we have to pass the starting value so the starting value of index if we don't pass we can make it an optional parameter, start from index is equal to 0 so mango print, leechi print apple print, banana print I hope we understand the working understanding of this that first for fruits, call for index number 0 first check if it is equal to 0 length or not, so what did it print we have printed mango then index increased so next call in it index value is 1 for 1 it printed leechi index value is 2 then it printed apple then again index value is equal to 4 in 4 it checked if it is equal to length if we don't print anything, now we will return so this way recursion works the rest of the codes we have written as a beginner, it can look difficult so if we need to repeat things then don't worry, repeat them because it takes time to understand the recursion the time you will invest on learning the better things we will understand the stronger our core concepts will be so I hope we have enjoyed reading the recursion so that's all for today's lecture the notes below will be in the description box see you in the next class till then keep learning and keep practicing"
+}

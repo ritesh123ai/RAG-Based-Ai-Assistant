@@ -1,0 +1,2728 @@
+{
+    "chunks": [
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 0.0,
+            "end": 32.82,
+            "text": "Hi everyone and welcome to the complete Python series in which we are going to do our OOPS, Object Oriented Programming, Part 2. In this part, we will be doing Inheritance, Polymorphism, we will cover important concepts like this, implement them and then we will be solving practical questions based on them. Apart from this, if you want to read any topic of Python, it is available in this playlist on this channel, so we can go and see. And like always, the link to download the notes will be in the description box below, so we can access our slides from there. So let's start with our next lecture."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 39.08,
+            "end": 70.75999999999999,
+            "text": "So in OOPS chapter, the next concept we are going to read is this is the Dell Keyword. Dell Keyword is the work of deleting object properties or the entire object itself. If we create any object in the code, it occupies some space in the memory. Because there are some methods related to objects, there are many different attributes of it, they take all the attributes in our memory. So sometimes we have created some object that we will never use, so we can delete the properties of the individual and delete that object."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 71.0,
+            "end": 96.80000000000001,
+            "text": "To delete it, we simply have to write DAL, and after that we can delete the properties and attributes in this way. And in this way, we can also delete our complete object. Let's try to create a student object. If we have created a student class, let's create our constructor in it. We will have a name in it."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 96.84,
+            "end": 123.84,
+            "text": "And self.name is equal to name. And now what we have to do is, we create a student1 in which we can pass the name. And if I want to delete this student, I can simply write DEL, S1. And after that, if we try to print the student, we will have an error in that case. Let's save it and run."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 123.88000000000001,
+            "end": 150.92,
+            "text": "So in this case, we have an error because name S1 is not defined, why? Because it has been deleted here. Whereas if we were printing the same thing here, then there was no error. So in that case, normally the already printed thing would be printed. If we are printing S.name here, and then if we delete S.name later, and then try to print it, So first it will be printed normally for us, but after that because we have deleted that thing,"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 150.92,
+            "end": 170.92,
+            "text": "it shows that student object has no attribute name. So in this way, we can use our DEL, Delete Keyword. Next we are going to talk about private attributes and methods. Generally, whenever we read OOPs, like in any other language, whenever we read OOPs in C++, Java,"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 170.92,
+            "end": 195.95999999999998,
+            "text": "then we have this concept of public and private. Generally, in other languages, if we public some attribute or method, then it means that we can access that attribute or method outside the class. For example, if I have made a student, I can write in student, S1.name. What I am doing is, using the scope of my class,"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 195.95999999999998,
+            "end": 213.0,
+            "text": "that is, this is the scope of the class, where the things inside the class are, I can access the student's name outside the class. So we generally put it in the category of public. But many times we get some sensitive information, some sensitive attribute, some method which we want to keep private,"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 213.0,
+            "end": 236.04,
+            "text": "which we don't want to give access to anyone outside our class. For example, if I create a class called account, for bank account or for account, someone is creating a class. And for this account, we store multiple information. For example, in this unit, we have self, we have the account number."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 238.04,
+            "end": 259.04,
+            "text": "Along with that, we have the password of the account. So we have account number and password. Self.account number is equal to account number. And self.account password is equal to account password. This way, we have displayed some information."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 259.08000000000004,
+            "end": 275.08000000000004,
+            "text": "Let's suppose, a new user comes to the class tomorrow and tries to create that account. So we can pass multiple information inside the account. Let's suppose, at the beginning, when a user creates an account, for that, account number is going 1, 2, 3, 4, 5."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 275.08000000000004,
+            "end": 293.12,
+            "text": "And their password is going A, B, C, D, E. In this way, this account number is done and this password is done. Now, anyone wants to print the account number. By the way, things are visible in the code here. But generally, flow works like this."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 293.12,
+            "end": 309.12,
+            "text": "Generally, if you go to a website, a user will set their account number or password or enter it. And after that, in the backend, it can be through the Python code, we are saving the information that we have directly in the class."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 309.12,
+            "end": 323.16,
+            "text": "Now, when we are printing the account number, then what will happen? The account number will be printed and the password will be printed for us. And I try to print these things. Both of them will be printed for me."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 323.16,
+            "end": 337.16,
+            "text": "But generally, this is bad practice. Because the password is something that we should not pass outside the class in this code. Because whatever is publicly available, chances of changes in the code increase"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 337.16,
+            "end": 353.20000000000005,
+            "text": "and security decreases. So, whenever we implement some implementation in the code in which we feel that information is sensitive, or we do not want to pass this information outside our class, then we can make it private."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 353.20000000000005,
+            "end": 368.20000000000005,
+            "text": "That is, now it is not possible to access that information outside the class. And to make any attribute private, we simply put two underscore in front of it. We have put these two underscore and this thing is now private."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 368.24,
+            "end": 380.24,
+            "text": "So, here, if I try to access this thing, that is, account1. underscore underscore when we try to access the account password. And we will run it. In this case, we will have an error."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 380.24,
+            "end": 395.24,
+            "text": "Account object has no attribute account password. So, basically, this thing is now private. We cannot access it outside the class. Let's suppose we have a function of reset password. All these imaginary things are running."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 395.28000000000003,
+            "end": 409.28000000000003,
+            "text": "We have a function that resets the password. And in that function, let's suppose we want to print account1.password or this will be"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 409.28000000000003,
+            "end": 421.28000000000003,
+            "text": "self.accountpassword. So, it is absolutely possible to do this. That is, here, self.password will run. But here, account1.password will not run. Because where is this function?"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 421.28000000000003,
+            "end": 433.32,
+            "text": "This function is inside the class. And this print statement is outside the class. So, outside the class, we cannot access it. But inside the class, like if I try to call"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 433.32,
+            "end": 446.32,
+            "text": "reset password, then this time we will not have any error. This time, simply our password will be printed. So, if there is something that we want to keep inside the class, then we can make it private."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 446.32,
+            "end": 459.36,
+            "text": "Now, the concept of private and public, like it works in other languages, like Java, C++, if you have a background in those languages, then it does not work exactly like that. Basically, in Python,"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 459.36,
+            "end": 472.36,
+            "text": "conceptually, we implement public and private. That is, we can make our attributes and methods private, but they will be like that. Exactly private. But we will not go into the implementation detail"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 472.36,
+            "end": 483.40000000000003,
+            "text": "much. If someone asks, how can we hide things in private, then the way to hide it will be basically that we put underscore in front of the attributes and we put underscore in front of the methods."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 483.40000000000003,
+            "end": 496.40000000000003,
+            "text": "For example, let's create another class. We normally create a class. Let's suppose this is a class called person. In the person class, we make an attribute name which we store anonymous."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 496.40000000000003,
+            "end": 506.40000000000003,
+            "text": "In this way, we made a class. Now, p1 is equal to this new person which we have created. If we try to print p1.name"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 506.44,
+            "end": 516.4399999999999,
+            "text": "and try to print the name, then we will have an error. We know the error. Because we have used double underscore here. If we run it, we will have an error."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 516.4399999999999,
+            "end": 526.4399999999999,
+            "text": "So, this thing is conceptually private. We can also make methods private. For example, if I define a method called hello, which is printed"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 526.4399999999999,
+            "end": 536.48,
+            "text": "by the hello user. This way, it prints something or hello person. This way, it prints something. So, it prints something like this."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 536.48,
+            "end": 546.48,
+            "text": "So, it is like a normal method. It is not possible to call it here. If we think that we will write hello here, then this thing is not possible in Python. What will happen in this?"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 546.48,
+            "end": 556.48,
+            "text": "We will have an error in this too. Person object has no attribute called hello. Because here, we have used underscore underscore. As a beginner, we can ask a question in our mind"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 556.48,
+            "end": 566.52,
+            "text": "that why did we make a function which we can never use with an object. Because, these functions are generally the functions of the object. Which we want to use internally"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 566.52,
+            "end": 576.52,
+            "text": "for some other function. For example, we make another function of the welcome name. And this is a completely normal function. This is our normal method."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 576.52,
+            "end": 586.52,
+            "text": "What does it do? It will print hello first. In some way. And after that, what does it pass in the hello?"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 586.52,
+            "end": 596.56,
+            "text": "It passes its name. This is going to be self.name. In fact, we will do self here. And then, we will get our name value."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 596.56,
+            "end": 606.56,
+            "text": "So, it will call the hello function and it will pass its name. Like underscore underscore. And what does this welcome function do? It is calling the hello."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 606.56,
+            "end": 616.56,
+            "text": "So, it can call the hello completely. We can write self here. Now, we are saying that a person can welcome, but can never say hello."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 616.56,
+            "end": 626.5999999999999,
+            "text": "Welcome but can say hello. Because it is an internally class method. So, it works in this way. So, what will P1 do? P1 will call welcome."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 626.5999999999999,
+            "end": 636.5999999999999,
+            "text": "Because it is possible to do this. And for that, self.hello will be calling. We will not have any error in this call. Let's save it and run it."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 636.5999999999999,
+            "end": 646.5999999999999,
+            "text": "So, what is printed? We have a hello person and we have no error. So, how are things working? Things are working like this. If we made something from double underscore"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 646.64,
+            "end": 656.64,
+            "text": "and made it private, then only the internal functions of the class will be able to access it. No one will be able to access it. This is basically done to prevent"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 656.64,
+            "end": 666.64,
+            "text": "exposing our instance attributes outside of the class. So, let's see its definition. Private attributes and methods are meant to be used only within the class"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 666.64,
+            "end": 676.68,
+            "text": "and not accessible from outside the class. Next concept, which we will talk about which is a very important concept. This is called inheritance. The inheritance which we already talked about"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 676.68,
+            "end": 686.68,
+            "text": "is the four main pillars of the Ups which already have two of them Abstraction and Encapsulation. The third pillar is called inheritance."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 686.68,
+            "end": 696.68,
+            "text": "And inheritance is very important and very easy topic to be honest. For example, we inherit many things in real life. For example, our parents"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 696.68,
+            "end": 706.7199999999999,
+            "text": "pass on their good values to us. So, we have inherited the good values that our parents have inherited from our grandparents."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 706.7199999999999,
+            "end": 716.7199999999999,
+            "text": "So, in this way, what are the things that are inherited from the parents and the child? So, the same concept of inheritance when we pass on something"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 716.7199999999999,
+            "end": 726.7199999999999,
+            "text": "from one generation of class to another generation of class is called inheritance in programming. What does this mean? It means that when one class"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 726.7199999999999,
+            "end": 736.76,
+            "text": "derives the properties and methods of another class and a start and a stop will be a different method"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 736.76,
+            "end": 746.76,
+            "text": "and a color property can be also in this class. So, the logic of starting and stopping the car is already in the car. Now, Toyota decides"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 746.76,
+            "end": 756.76,
+            "text": "that they want to create their own car factory. So, what can they do? The Toyota car, whether it is a Fortuner or Prius"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 756.76,
+            "end": 766.8,
+            "text": "they have to start and stop every car. Because in the car a Toyota car is a sub-category. I mean, some of the cars"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 766.8,
+            "end": 776.8,
+            "text": "will be Toyota cars. So, when some things are already written in the cars when the logic of start and stop is written in the car"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 776.8,
+            "end": 786.8,
+            "text": "then we don't want to write it in the second time because we have already written it in the code. What we will do is inherit that logic we will derive that logic"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 786.8399999999999,
+            "end": 796.8399999999999,
+            "text": "and how we will take it. When we write the class of Toyota car then we will put a parenthesis in front of the class name and write the name of our parent class."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 796.8399999999999,
+            "end": 806.8399999999999,
+            "text": "So, parent class or base class is the class through which properties are taken and child class or derived class is the one"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 806.8399999999999,
+            "end": 816.88,
+            "text": "which takes properties. What is the meaning of properties? Attributes or methods. We can also inherit methods. For example, we created"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 816.88,
+            "end": 826.88,
+            "text": "this class called car. Now, in the car there are going to be different attributes. Suppose, in the car"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 826.88,
+            "end": 836.88,
+            "text": "we have a static method to start. Here we will print car started. What will this method do? It will start the car"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 836.88,
+            "end": 848.92,
+            "text": "and we have another static method. We can also keep these methods as static because we are not using car object in them. We can call it"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 848.92,
+            "end": 861.92,
+            "text": "stop. What will this method do? It will stop the car. Car stopped. Let's fix it. So, this is our car class"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 861.92,
+            "end": 871.92,
+            "text": "in which we have two simple methods. Now, we are going to make another class which we will call Toyota car. Toyota car. And to show inheritance,"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 871.9599999999999,
+            "end": 881.92,
+            "text": "we are going to put parenthesis here. And we will write the name of our class in which we want to inherit properties and methods. And then we can define Toyota car."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 881.92,
+            "end": 891.92,
+            "text": "Suppose, in this car there is something called name. So, let's create our constructor. In this, we will get self and we will get name."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 891.92,
+            "end": 901.92,
+            "text": "So, self.name is equal to name. And now, we are going to create car."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 901.92,
+            "end": 911.92,
+            "text": "So, my car 1 is equal to a Toyota car in which we are going to pass the name, let's suppose, Fortuner. And this is my car 2 in which"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 911.92,
+            "end": 921.92,
+            "text": "it is also a Toyota car in which we are going to pass the name Prius. Now, let's suppose we are talking about car 1. What will I do? I am going to print car 1.name."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 921.92,
+            "end": 931.92,
+            "text": "And this thing will work. There will be no error in it because in this class, we have already given a name. So, when we run it, there will be no error"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 931.92,
+            "end": 941.92,
+            "text": "and car 1's name will be printed for us. But if I try to do something like this car1.start then what should be expected in this case? In this case, we can check"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 941.92,
+            "end": 951.92,
+            "text": "that this is an object of Toyota car. Now, we have not defined any function in Toyota car. So, here we can think that we will have error. But because we have used"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 951.92,
+            "end": 961.92,
+            "text": "inheritance here, then all the methods and properties of this car will be available and there will be no error. When we run it, we will have printed car."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 961.92,
+            "end": 971.92,
+            "text": "So, in this way, we can inherit our properties and methods in different classes. Now, let's suppose here we define some other property."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 971.92,
+            "end": 981.92,
+            "text": "For example, we specify color as black. So, we can use that thing here car1.color and that property"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 981.92,
+            "end": 991.92,
+            "text": "will also be printed for us. Now, we categorize inheritance in three different types. These are the three different types of inheritance. First,"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 991.92,
+            "end": 1001.92,
+            "text": "we can say single inheritance. In this inheritance type, basically we have a single parent class or we can call it base class."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 1001.92,
+            "end": 1011.92,
+            "text": "And one single derived class comes out of it. So, this is my base class and this is my derived class. So, basically this is parent and this is my child"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 1011.92,
+            "end": 1021.92,
+            "text": "class. This is our single inheritance. For example, this is an example of single inheritance. This is a single parent class"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 1021.92,
+            "end": 1031.92,
+            "text": "and this is a single child class. Now, the next example we will see is of multi-level inheritance. Multi-level inheritance means that one base class is done"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 1031.92,
+            "end": 1041.92,
+            "text": "and the other base class has no derived class. And after that, the other class has no derived class and this is also"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 1041.92,
+            "end": 1051.92,
+            "text": "parent and this is child class. So, basically the properties that have been left from here are all properties."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 1051.92,
+            "end": 1061.92,
+            "text": "The first class is its property and the second class is its property. Both properties are going into our third derived class. So, in this example, we can take"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 1061.92,
+            "end": 1071.92,
+            "text": "that suppose these are the basic methods of our car that are in each car. We remove the name Toyota car and we have already made"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 1071.92,
+            "end": 1081.92,
+            "text": "a class. We will remove the name and add the brand to it. So, instead of name, we will simply add the brand to it. And now, the car of individual brand"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 1081.92,
+            "end": 1091.92,
+            "text": "like in Toyota, there is a car called Fortuner, there is a car called Prius. We want to set their factory separately. So, to create them, we will"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 1091.92,
+            "end": 1101.92,
+            "text": "create another class. Let's suppose we call this class Fortuner which manufactures Fortuner. And now, we have not inherited the things in it. And basically"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 1101.92,
+            "end": 1111.92,
+            "text": "we define different things in it like how much mileage we should have or we keep a type. What is the type going to be? Is the Fortuner"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 1111.92,
+            "end": 1121.92,
+            "text": "going to be? Is the diesel going to be? Or is it going to be petrol or we imagine that this can be an electric car. So, here in self.type, we store the type."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 1121.92,
+            "end": 1131.92,
+            "text": "Now, what will Fortuner do? Fortuner will simply inherit all the important things of Toyota car. So, here if we look"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 1131.92,
+            "end": 1141.92,
+            "text": "then first we have car class. All the properties of car take Toyota car. And Toyota car has all the properties which are basically brand. That is"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 1141.92,
+            "end": 1151.92,
+            "text": "Fortuner car. What is the class? Class is a factory whose work is to produce objects. So, we put the factory of Fortuner which has all the properties of Toyota car."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 1151.92,
+            "end": 1161.92,
+            "text": "In the factory, already there were all the properties of car. So, all those properties came here. Let's see an example of this. Let's suppose this is my car 1 is equal to new"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 1161.92,
+            "end": 1171.92,
+            "text": "or Fortuner we have taken. In Fortuner, we will add our type. Let's suppose this is diesel. And now, what we will do? Now, we will call the start method"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 1171.92,
+            "end": 1181.92,
+            "text": "for car 1. And this start method for car 1. This is not even in the Fortuner class. Not even in the Fortuner class. This is directly in our"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 1181.92,
+            "end": 1191.92,
+            "text": "upper car class. But this will work. No error will come. The car has already started. So, this is our multi-level inheritance. In which"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 1191.92,
+            "end": 1201.92,
+            "text": "first class is our car name. We have made second class Toyota car. And third class we have given another brand. Tomorrow, it may be"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 1201.92,
+            "end": 1211.92,
+            "text": "another factory setup which will inherit the properties of Toyota car. So, it will inherit another multi-level. And it is not necessary that these levels will be here. It may be that we can derive"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 1211.92,
+            "end": 1221.92,
+            "text": "a car from this. We can derive a class from this. So, in this way, how many levels can be in multi-level inheritance. Now, next we will talk about multiple"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 1221.92,
+            "end": 1231.92,
+            "text": "inheritance. Multiple inheritance says that if we have one derived class. Let's suppose this is my derived class. So, it can inherit properties"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 1231.92,
+            "end": 1241.92,
+            "text": "of multiple classes. This could be my base class 2. So, this is my first class. And this is my second class which is inherited."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 1241.92,
+            "end": 1251.92,
+            "text": "So, this is parent 1. This is parent 2. And this is my child class. It may be multiple parents. But basically, the properties"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 1251.92,
+            "end": 1261.92,
+            "text": "of multiple classes can be inherited here. Let's take an example of this. We will make a very simple class. We will take an example of this. Let's suppose we have created"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 1261.92,
+            "end": 1271.92,
+            "text": "class A. This is my class A. We can make any variable in it. Let's suppose variable A has some value."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 1271.92,
+            "end": 1281.92,
+            "text": "Which is Welcome to class A. This is how we have our class A. And we have class B."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 1281.92,
+            "end": 1291.92,
+            "text": "In class B, there is something called a variable B. In which we are writing Welcome to class B. And then we have made class C. And this is our child"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 1291.92,
+            "end": 1301.92,
+            "text": "class. And what will this do? It will inherit both A and B properties. So, here we can write A, B. I mean, you can write things from any class"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 1301.92,
+            "end": 1313.92,
+            "text": "by separating them from the comma. And then in this, we can create something else or any other variable. Welcome to class C. So, when we make"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 1313.92,
+            "end": 1325.92,
+            "text": "a new object of C. For that, we can print C1.Variable C. Along with that, we can print C1.Variable B"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 1325.92,
+            "end": 1335.92,
+            "text": "and variable A. So, print C1.Variable A. Let's save it and run it. So, we will get"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 1335.92,
+            "end": 1345.92,
+            "text": "three things printed for us. There will be no error because all these properties are inherited. So, these were the three types of inheritance that we read."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 1345.92,
+            "end": 1355.92,
+            "text": "Now, next we are going to talk about which is related to inheritance, which is our super method. Super method is a special method in a class which is used to"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 1355.92,
+            "end": 1365.92,
+            "text": "access methods of the parent class. For example, let's start again with this basic example. We can remove these things. And what will a constructor do?"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 1365.92,
+            "end": 1375.92,
+            "text": "We will create for our car method. Basically, every car can have a type or a fuel type or anything. Is it going to be diesel? Is it going to be"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 1375.92,
+            "end": 1385.92,
+            "text": "electric? So, we made a class. What we did in the class is we defined a constructor in which we are taking a type and then we created two static methods."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 1385.92,
+            "end": 1395.92,
+            "text": "Then, we took all the properties of the car in the class Toyota car and in Toyota car, we are taking the name of the brand. Like we initially took"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 1395.92,
+            "end": 1405.92,
+            "text": "our single level of inheritance. This is the same example. We have added an extra constructor in it. Suppose, we create a new car"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 1405.92,
+            "end": 1415.92,
+            "text": "of Toyota car. This is my new car of Toyota. Let me give it a name. What do we want now? We want to print"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 1415.92,
+            "end": 1425.92,
+            "text": "the type of car for our car 1. Even though we didn't send any type. We didn't send any type. But we want to print the type for it."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 1425.92,
+            "end": 1435.92,
+            "text": "So, what will happen in that case? As soon as we execute it, we will have an error. The object of Toyota car has an attribute type. But even though the type was defined here,"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 1435.92,
+            "end": 1445.92,
+            "text": "let's suppose we create the Toyota car here and give it a type. I am going to create an electric Prius. I don't know if it exists or not. But let's suppose our type"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 1445.92,
+            "end": 1455.92,
+            "text": "is electric. So, we will have another variable here. Now, we have this type here. But how will this thing come here?"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 1455.92,
+            "end": 1465.92,
+            "text": "We have written this type variable here. But if I write self.type is equal to type. So, that means, in the Toyota car,"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 1465.92,
+            "end": 1475.92,
+            "text": "in the object of Toyota car, a type attribute will be created. But I don't want the type attribute of Toyota car. I want to change the type attribute in this parent"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 1475.92,
+            "end": 1485.92,
+            "text": "class. So, to do that, we have to call the constructor of parent class in this constructor. Now, there is no direct method of that. We can't write"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 1485.92,
+            "end": 1495.92,
+            "text": "something like parent. something like this. So, our super method works. Whenever we are writing super, super means our parent in inheritance. So, whenever we"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 1495.92,
+            "end": 1505.92,
+            "text": "are writing super, we are basically talking about the parent class, which we are inheriting properties. And here, what can we do? We can write super and then"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 1505.92,
+            "end": 1515.92,
+            "text": "our parent thesis. Dot. Now, in the super class, this is my super class. As soon as we have written dot, all the methods will start. There is a method in this."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 1515.92,
+            "end": 1525.92,
+            "text": "Stop. In this, our constructor method is there. In which, we can pass our type. So, in this way, we passed the type."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 1525.92,
+            "end": 1535.92,
+            "text": "So, basically, in the super class, the constructor will be called. In which, the type method is already running. Now, when we write car1.type here, we won't have any error."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 1535.92,
+            "end": 1545.92,
+            "text": "When we run it, we get our type to be electric. The same thing is, in fact, we can start the constructor. So, the properties of parent class will be"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 1545.92,
+            "end": 1555.92,
+            "text": "set first. So, as such, functionality wise, there won't be any significant change in this. But in this way, we can use our super constructor. In fact, if we want"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 1555.92,
+            "end": 1565.92,
+            "text": "to create a car as soon as this new car is created, I have to start the car as well. So, to start the car simply, we can write super.start."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 1565.92,
+            "end": 1575.92,
+            "text": "So, the super class will have a start method and the car will start. So, in this way, if we want to call any method of parent class,"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 1575.92,
+            "end": 1585.92,
+            "text": "we can access them through super. Next, we are going to talk about class methods. We had talked about the static"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 1585.92,
+            "end": 1595.92,
+            "text": "method decorator. Static method which was our static method decorator. It looked like this way,"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 1595.92,
+            "end": 1605.92,
+            "text": "so that we could make any method static. Any method means that for every new instance, for every new object, that method will not be created again and again."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 1605.92,
+            "end": 1615.92,
+            "text": "That method will be common for the whole class. It will be created once for all objects. All objects can use it. Because static method doesn't change instance attributes."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 1615.92,
+            "end": 1625.92,
+            "text": "It doesn't access them. So, it doesn't need to be created again and again for every object. But the problem with static methods is that they can't access or modify class"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 1625.92,
+            "end": 1635.92,
+            "text": "state and they are generally used for utility. If we want to do something that doesn't have instance attributes for instance attributes,"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 1635.92,
+            "end": 1645.92,
+            "text": "we generally use static methods in Python. As such, we made static method that doesn't have any attributes."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 1645.92,
+            "end": 1655.92,
+            "text": "We made static method that doesn't have any attributes. Let's start with a basic class called person. We have a class attribute"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 1655.92,
+            "end": 1665.92,
+            "text": "in which we have stored name as anonymous. Now, what we do is, we make a change name or change name"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 1665.92,
+            "end": 1675.92,
+            "text": "in which we have a self-ig, a new name. We write self.name is equal to name. Our assumption is that this name that was anonymous before, will change."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 1675.92,
+            "end": 1685.92,
+            "text": "So, we make a person P1 is equal to this new person. For P1, we want to call this person anonymous."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 1685.92,
+            "end": 1695.92,
+            "text": "We want to name this guy Rahul Kumar and then we want to print name for P1. So, we save this and run. What is the name for us? Rahul Kumar."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 1695.92,
+            "end": 1705.92,
+            "text": "The name of P1 is Rahul Kumar. But interestingly, when I try to print person.name, that is, class name.name, what will happen with this?"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 1705.92,
+            "end": 1715.92,
+            "text": "We can access class attribute. So, when we run this, we still have anonymous. But we wanted to change class attribute."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 1715.92,
+            "end": 1725.92,
+            "text": "But as soon as we try to work in a normal method, what we do is, this name here is not talking about class attribute. This is creating a new name attribute"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 1725.92,
+            "end": 1735.92,
+            "text": "for my instance, for my object. If I explain this a little more carefully, then basically, this was our class. Let's suppose this is my class."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 1735.92,
+            "end": 1745.92,
+            "text": "In the class, this is my object. Now, in the class there was a name attribute which had value anonymous."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 1745.92,
+            "end": 1755.92,
+            "text": "Now, what we did is, we tried to change this anonymous with the object's method. But it couldn't directly change. As soon as we wrote self.name is equal to name,"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 1755.92,
+            "end": 1765.92,
+            "text": "what happened in it? A new name was created in the object which we called Rahul Kumar. This was the result. So, basically, class name was different."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 1765.92,
+            "end": 1775.92,
+            "text": "Object name was different. So, we changed it. We created a new name for it by writing this statement. But we don't want to do that."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 1775.92,
+            "end": 1785.92,
+            "text": "We want to change class attribute. Now, there are many indirect ways to change class attribute. For example, here we have written person.name is equal to name."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 1785.92,
+            "end": 1795.92,
+            "text": "This can be the way to change class attribute. So, when we change our class attribute in this way, then P1.name will be Rahul Kumar."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 1795.92,
+            "end": 1805.92,
+            "text": "Let's save it and run. So, what happened? It changed in both the places. By writing person.name means, to access this attribute"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 1805.92,
+            "end": 1815.92,
+            "text": "in class, by writing this our new thing was not created. Now, all the new changes have been made in this."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 1815.92,
+            "end": 1825.92,
+            "text": "This is the way. We write self. underscore underscore class, this thing is coming here. This is underscore underscore."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 1825.92,
+            "end": 1835.92,
+            "text": "Basically, the object which is self we want to change in class, we can access class."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 1835.92,
+            "end": 1845.92,
+            "text": "So, here we are showing the class is equal to person. And then, what we are talking about here is basically person. The person class. And now, we can access"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 1845.92,
+            "end": 1855.92,
+            "text": "any attribute of this. So, we have got Rahul here. We will delete it and print it again. So, we will get the same result. So, either"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 1855.92,
+            "end": 1865.92,
+            "text": "we can write self. underscore underscore class.something or we can write our class name.something."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 1865.92,
+            "end": 1875.92,
+            "text": "Now, this is the way to do it. But, if we want to directly access our class in our function then the way to write it is"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 1875.92,
+            "end": 1885.92,
+            "text": "our class methods. The things which cannot be done in static methods and the things which can change the attributes. We do that through class methods. How do we do it?"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 1885.92,
+            "end": 1895.92,
+            "text": "A class method is basically bound to the class and receives the class as an implicit first argument. A normal method which we have created as it is changed name"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 1895.92,
+            "end": 1905.92,
+            "text": "which means self is object. What is this? This is basically our object. This is a normal method instance method. We have class methods too. In which, first argument"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 1905.92,
+            "end": 1915.92,
+            "text": "is instead of self and to write this, we use our class method decorator. And then we write definition and then we take our function name and in that"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 1915.92,
+            "end": 1925.92,
+            "text": "we take our class as the first argument. For example, if I want to do the same thing then we can create another new function. We will call it class method"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 1925.92,
+            "end": 1935.92,
+            "text": "and we can write it as def change name and in change name, the first argument will be our class."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 1935.92,
+            "end": 1945.92,
+            "text": "The class will be keyworded. We will write this as cls and a new name can come in it. And as soon as we do this, we will do cls.name"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 1945.92,
+            "end": 1955.92,
+            "text": "Now where will this change be directly will be directly in my class attribute. Let's save it and run it. So this time, in class attribute the change has been directly done."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 1955.92,
+            "end": 1965.92,
+            "text": "This thing is not self. This is actually referring to the class. So what did this decorator do? The class method decorator took this function and returned it to the better function"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 1965.92,
+            "end": 1975.92,
+            "text": "which can directly change the class attributes. Now at this point we will have a small confusion in something. Basically we have three functions."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 1975.92,
+            "end": 1987.92,
+            "text": "The first type is our static method. Or let's call it methods. The second type of methods are our class methods."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 1987.92,
+            "end": 1997.92,
+            "text": "And the third type of methods are our normal methods. Let me call them instance methods. Instance methods are methods basically. Instance methods are"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 1997.92,
+            "end": 2007.92,
+            "text": "the methods in which self is an argument. Class methods are the methods in which class is a first implicit argument. And static methods are"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 2007.92,
+            "end": 2017.92,
+            "text": "the classes or instance. None of them needs to be changed or accessed. So basically when we have to do something in which we are not touching any of the class"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 2017.92,
+            "end": 2027.92,
+            "text": "or instance methods or instance properties we will use the starting method. When we have to use only class attributes we will use class methods."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 2027.92,
+            "end": 2037.92,
+            "text": "And when we have to use only instance properties instance attributes we will use instance methods. So these are three different methods and classes that we have studied. Now next we will talk about"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 2037.92,
+            "end": 2049.92,
+            "text": "one more decorator which is the property decorator. For example, we create a class called student. We have created a student class. In this class we define"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 2049.92,
+            "end": 2061.92,
+            "text": "our constructor. The constructor has self and we have three subject marks. We can take any subject like physics, chemistry, math. These are basically our values."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 2061.92,
+            "end": 2071.92,
+            "text": "So what we do is first of all self.chemistry is equal to chemistry and self.math"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 2071.92,
+            "end": 2081.92,
+            "text": "is equal to math. We have three different subject marks. We want to create another attribute for this student class which we will call"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 2081.92,
+            "end": 2091.92,
+            "text": "percentage. So basically we want to create percentage attribute in this class. So either we can create it here. We can write self.percentage"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 2091.92,
+            "end": 2101.92,
+            "text": "What will be percentage? Percentage will be equal to three subject marks which will be self.physics plus self.chemistry"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 2101.92,
+            "end": 2111.92,
+            "text": "plus self.math divided by three. What will be this? It will be our percentage. If I want to convert this into string"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 2111.92,
+            "end": 2121.92,
+            "text": "I can type cast all of this to string and then we will add a percentage sign. So this will basically be my percentage. We create a new student"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 2121.92,
+            "end": 2131.92,
+            "text": "and see. This is my student one. We will pass some values for this. Suppose we passed marks and then what we are printing"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 2131.92,
+            "end": 2141.92,
+            "text": "is the student's student's student's student's percentage. It is very simple."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 2141.92,
+            "end": 2151.92,
+            "text": "Our student's percentage is 98.0%. There is nothing as such problematic. Everything is simple. Now let's imagine a small scenario. Let's suppose the teacher"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 2151.92,
+            "end": 2161.92,
+            "text": "did a research on papers and they found out that the student scored 98 in physics this should actually be 86. This is the score of 98."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 2161.92,
+            "end": 2171.92,
+            "text": "So what will the teacher do? The teacher will simply write the marks of the student 1 they are supposed to be 86. The student has written"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 2171.92,
+            "end": 2181.92,
+            "text": "and when we print student1.physics marks then that change will be it is equal to 86. But the problem is"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 2181.92,
+            "end": 2191.92,
+            "text": "when we print the student's percentage again that percentage will automatically change. Percentage is set according to the marks. The value of the"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 2191.92,
+            "end": 2201.92,
+            "text": "percentage is set according to the original value. But we want as soon as the marks change, the percentage will also change. So the percentage will be wrong. For such cases"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 2201.92,
+            "end": 2211.92,
+            "text": "when we can't give any attribute fixed value then its value will depend on some other parameter or on some calculation. So here we"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 2211.92,
+            "end": 2221.92,
+            "text": "can make a method and we can call it Calculate Percentage We made a method which we are saying Calculate Percentage."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 2221.92,
+            "end": 2231.92,
+            "text": "Now in Calculate Percentage we know that in this method the value of the percentage"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 2231.92,
+            "end": 2241.92,
+            "text": "should always be this. So basically we will change the marks first then we will call the Calculate Percentage for the student and then its percentage will change."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 2241.92,
+            "end": 2251.92,
+            "text": "This is absolutely correct. There is no problem in this. But we have a better and simpler way to do this. So basically"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 2251.92,
+            "end": 2261.92,
+            "text": "we use property decorator on any method in the class to use the method as a property. So basically what is the work of this Calculate Percentage function? We just have to calculate the percentage."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 2261.92,
+            "end": 2271.92,
+            "text": "What is normal? The normal attribute is basically defining the value of an attribute. But when the value of an attribute is"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 2271.92,
+            "end": 2281.92,
+            "text": "depending on a function then we can make this function our property. So property here means attribute."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 2281.92,
+            "end": 2291.92,
+            "text": "So to do the same work we remove this thing from here. There is a better way to do the same work. We write here"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 2291.92,
+            "end": 2301.92,
+            "text": "Add the Rate property and then we make a function in which we will write the attribute name. My attribute name is basically Percentage. So we have to calculate the percentage."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 2301.92,
+            "end": 2311.92,
+            "text": "We will get a self in the percentage and we have to return this value. This is basically my percentage. So this method will return the value of my property. So the depth percentage"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 2311.92,
+            "end": 2321.92,
+            "text": "is the name of the method. And this value is returning in it. But whatever this value returns will basically convert into a property or an attribute."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 2321.92,
+            "end": 2331.92,
+            "text": "And now when I will change the physics marks then what will happen here? I don't need to do all these calculations here. I don't need to do any extra method. I don't have to call separately."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 2331.92,
+            "end": 2341.92,
+            "text": "As soon as I change the marks my percentage will also change. Let's save it and run. This error is coming because of indentation."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 2341.92,
+            "end": 2351.92,
+            "text": "We remove this thing. And we didn't indent properly. We will do all these things and work on it."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 2351.92,
+            "end": 2361.92,
+            "text": "So in the beginning we did the percentage but as soon as the marks of physics are reduced the percentage will fall down to 94%. So this method is changing automatically. Now it's not like this."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 2361.92,
+            "end": 2371.92,
+            "text": "Because whoever we have added the property will change in another parameter as soon as it changes. It will automatically reflect here. So whenever we will access the percentage"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 2371.92,
+            "end": 2381.92,
+            "text": "the latest values will be calculated with them. Now the last concept we are going to cover this is related to polymorphism."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 2381.92,
+            "end": 2391.92,
+            "text": "Let me revise you again. When we talked about the OOPS in the beginning we saw that there are 4 pillars of OOPS. We have already read 3 pillars of OOPS."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 2391.92,
+            "end": 2401.92,
+            "text": "We have talked about abstraction. We have talked about encapsulation. We have talked about inheritance. And now let's talk about the fourth pillar"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 2401.92,
+            "end": 2411.92,
+            "text": "which is called polymorphism. Now poly means poly is basically many. And morph means forms"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 2411.92,
+            "end": 2421.92,
+            "text": "or faces. So polymorphism means that when one thing can be used in different ways then it basically comes"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 2421.92,
+            "end": 2431.92,
+            "text": "in the category of polymorphism. And in Python, the best example of polymorphism is operator overloading. What is operator overloading?"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 2431.92,
+            "end": 2441.92,
+            "text": "We will read it in detail. One more additional thing here. If you want to study more about decorators as a homework problem then what you can do is"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 2441.92,
+            "end": 2451.92,
+            "text": "we have 2 more decorators. Getter and Setter. For example, we have read multiple decorators."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 2451.92,
+            "end": 2461.92,
+            "text": "We have read property decorator static method, class method. If you want to read about more decorators, you want to explore more. Then we can read about getter and setter decorators."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 2461.92,
+            "end": 2471.92,
+            "text": "So let's come back to polymorphism. Operator overloading is basically when the same operator is allowed to have different meanings according to the context."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 2471.92,
+            "end": 2481.92,
+            "text": "That is, we have the same operator. For example, our plus operator. Plus depending upon which data type we are using or in which situation, that will"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 2481.92,
+            "end": 2491.92,
+            "text": "change. For example, let's see a practical example which already exists in Python. If we want, we can print 1 plus 2."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 2491.92,
+            "end": 2501.92,
+            "text": "This is completely possible. What will be the result of this? What is the operator here? It is plus operator. We know that we have to add"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 2501.92,
+            "end": 2511.92,
+            "text": "the plus operator's work. But if I try to print my with college here also"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 2511.92,
+            "end": 2521.92,
+            "text": "it is plus operator. But these values are not numbers. So what will be the work of plus operator here? There will be the work of plus operator here. Concatinate"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 2521.92,
+            "end": 2531.92,
+            "text": "2 strings. And in the answer, we will have combination return of both strings. So what is this? Overloading is done. Plus"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 2531.92,
+            "end": 2541.92,
+            "text": "when we are using numbers, plus means it is different. And when we are using strings, plus means it is different. And when we are using the list, plus also means it is different. That is, when I print"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 2541.92,
+            "end": 2551.92,
+            "text": "1, 2, 3, plus 4, 5, 6. So here it will be that we are basically trying to merge"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 2551.92,
+            "end": 2561.92,
+            "text": "the two. So here plus means it will be different. But plus is a operator. But because here, according to different data types, different"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 2561.92,
+            "end": 2571.92,
+            "text": "meanings are added, we call operator overloading this. And it is a type of polymorphism. Polymorphism says that there are multiple forms of one thing. So this is the first form, this is the second form,"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 2571.92,
+            "end": 2581.92,
+            "text": "this is the third form, we are going to see other forms. But as soon as we run it, we will have different outputs. The meaning of this means has changed."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 2581.92,
+            "end": 2591.92,
+            "text": "There is something else for strings, something else for numbers, something else for lists. So this means that plus we have written here, so this one is connected with this 4,"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 2591.92,
+            "end": 2601.92,
+            "text": "this 2 is connected with this 5. This could also be the meaning. But this did not happen because the meaning of plus is already defined within the list class. Whenever we are talking about this number,"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 2601.92,
+            "end": 2611.92,
+            "text": "what is a number? What is an integer? If I try to print type of 1, what will come to me? It is a class int. Basically in Python,"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 2611.92,
+            "end": 2621.92,
+            "text": "there is already a class int. The integer class exists. And if I write any number, any integer, it will be an object of that class. So this is an object"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 2621.92,
+            "end": 2631.92,
+            "text": "and this is an object. And these objects, because they are integer types, for them already that class is defined in int that plus means add two numbers. Similarly"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 2631.92,
+            "end": 2641.92,
+            "text": "if we try to print type of 1, what is 1? What is college?"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 2641.92,
+            "end": 2651.92,
+            "text": "This is basically class string. So what is this? It is class string. So in Python, there is already a string class which has all the strings of objects."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 2651.92,
+            "end": 2661.92,
+            "text": "So this is an object, this is an object, this is an object. And in this class string it is already defined that whenever plus is written, what does it mean? It means adding two strings."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 2661.92,
+            "end": 2671.92,
+            "text": "Similarly if I try to print type of 1,2,3 So what will come here? We will have class list."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 2671.92,
+            "end": 2681.92,
+            "text": "So in Python there is already a list class in Python, there is already a list class which has one object, one object, one object."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 2681.92,
+            "end": 2691.92,
+            "text": "And in this list class, it is already defined that what does plus mean? What does this operator mean? This operator doesn't mean that add one with its first number"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 2691.92,
+            "end": 2701.92,
+            "text": "add it with its second number add it with its third number This doesn't mean defined. In that list class, it is defined that the entire list will merge"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 2701.92,
+            "end": 2711.92,
+            "text": "where there will be plus. So in this way, in every class the different operators are already defined for different data types. So when we create our own class"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 2711.92,
+            "end": 2721.92,
+            "text": "we can also overload the operator. What is this? All of this is implicit overloading which already is done by Python for us."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 2721.92,
+            "end": 2731.92,
+            "text": "But we can do the same for our classes. We will learn from it. Now we will understand when the same operator is allowed"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 2731.92,
+            "end": 2741.92,
+            "text": "to have different meanings according to the context. It depends on the context that you are trying to write some code with numbers, trying to write with strings,"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 2741.92,
+            "end": 2751.92,
+            "text": "trying to write with a list. According to me, I am going to use a good example of the operator overloading. For that, if you have heard about complex numbers"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 2751.92,
+            "end": 2761.92,
+            "text": "in Math 11-12 then it is a very good thing. I will explain the basic concept of it. And for those who have not heard it there is no problem."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 2761.92,
+            "end": 2771.92,
+            "text": "I am going to explain it in a similar way. So basically, in Math, there is something called complex numbers. Now what are the complex numbers that we use? I will not go into more detail."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 2771.92,
+            "end": 2781.92,
+            "text": "It is a very simple plus minus as I am going to show you. The normal number basically we call it real numbers."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 2781.92,
+            "end": 2791.92,
+            "text": "The real numbers are called real numbers. The real numbers are 1, 2, 3 or minus 5 or 3.1. Now when we add numbers"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 2791.92,
+            "end": 2801.92,
+            "text": "I already know that 1 plus 2 is going to be equal to 3. Real numbers are very easy. We are reading all these in Math. There are two parts of complex numbers. For example, if there is a complex number"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 2801.92,
+            "end": 2811.92,
+            "text": "let's suppose I create a complex number. It will look like this. 1i plus 3j This i in it"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 2811.92,
+            "end": 2821.92,
+            "text": "this is my real part and this is my imaginary part. I have written something like this. Let's call this a complex number. Now why do we call it a complex number?"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 2821.92,
+            "end": 2831.92,
+            "text": "What does it mean? Why do we use a complex number? What is the difference between real and complex numbers? We will not go into more detail. Basically this is a complex number. This is a number."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 2831.92,
+            "end": 2841.92,
+            "text": "This is a number. We denote this as i. This is my real part. This is my imaginary part. Real is 1 and imaginary is 3."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 2841.92,
+            "end": 2851.92,
+            "text": "This is basically the part of Math which we have imagined. This is all imaginary. Let's assume this as my first complex number. I have created another complex number."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 2851.92,
+            "end": 2861.92,
+            "text": "In the second complex number we can write any number. 2i plus 5j. When two complex numbers are added then what happens?"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 2861.92,
+            "end": 2871.92,
+            "text": "Their real parts are added separately and their imaginary parts are added separately. When they are added then the answer is going to be 1 plus 2 3i"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 2871.92,
+            "end": 2881.92,
+            "text": "plus 3 plus 5 8j. This is the right thing. This is what I am going to teach you. This is a complex number. This is a complex number."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 2881.92,
+            "end": 2891.92,
+            "text": "It has no relation with Python. Although complex numbers are used in voice recognition systems. In voice, in audio waves,"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 2891.92,
+            "end": 2901.92,
+            "text": "we use complex numbers for calculation. If you do something on voice recognition for machine learning. We don't need to go into detail. We will discuss more."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 2901.92,
+            "end": 2911.92,
+            "text": "This is a complex number. This is how complex numbers are added. Let's add the real part separately. Let me give you another example. Suppose we have a complex number"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 2911.92,
+            "end": 2921.92,
+            "text": "called 5i. This is 5i plus 10j. This is a complex number. It has minus 1i plus 8j. What will be the answer?"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 2921.92,
+            "end": 2931.92,
+            "text": "We will add 5 and minus 1. We will add 4i plus 18j. This is the math of complex numbers. Let's come back. There is no class"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 2931.92,
+            "end": 2941.92,
+            "text": "to create complex numbers in Python. We will make our own class. We will create a class that can create complex numbers."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 2941.92,
+            "end": 2951.92,
+            "text": "Like in the integer class. In Python, you can create integer numbers, strings, lists, or dictionary."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 2951.92,
+            "end": 2961.92,
+            "text": "But we will create complex numbers. We are going to create a class called complex. We named it complex. Let's define a constructor in it."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 2961.92,
+            "end": 2971.92,
+            "text": "Every complex number will have two parts. One is real and the other is imaginary. Self.real is equal to"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 2971.92,
+            "end": 2981.92,
+            "text": "imaginary. Self.imginary is equal to imaginary. Let's write another function. It is called"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 2981.92,
+            "end": 2991.92,
+            "text": "show number. In show number, we will print our number. What will we print? First we will print the real part."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 2991.92,
+            "end": 3001.92,
+            "text": "Real part is going to be self.real. Then we print i. Plus Then we will print"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 3001.92,
+            "end": 3011.92,
+            "text": "imaginary part. Then we will print j. This is going to be our number. Which will be printed."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 3011.92,
+            "end": 3021.92,
+            "text": "Let's create a new complex number. This is my number 1. In number 1, it is real part. It is imaginary part."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 3021.92,
+            "end": 3031.92,
+            "text": "I want to print num1. So we will call show number. Let's save it and run. Now we have our first complex number. 1i plus 3j."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 3031.92,
+            "end": 3041.92,
+            "text": "I have created my number. We can create another number. So let me create another number. Called number 2. We will pass it in this."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 3041.92,
+            "end": 3051.92,
+            "text": "4i and 6j. This is my number 2. Let's print it. This is my number 1 and this is my number 2. Now we want to add these two."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 3051.92,
+            "end": 3061.92,
+            "text": "So we have made complex numbers. We will have to create logic to add. So how will we do that? How do we know how to add"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 3061.92,
+            "end": 3071.92,
+            "text": "these two numbers? How do we know how to add two complex numbers? What is the logic? So here we have"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 3071.92,
+            "end": 3081.92,
+            "text": "our dunder functions. And we overload the operator in this way. We define the meaning of plus for ourselves. We do it using dunder functions."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 3081.92,
+            "end": 3091.92,
+            "text": "Dunder functions are double underscore. We call them dunder functions which are used in the function. And many functions exist in python. We will read"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 3091.92,
+            "end": 3101.92,
+            "text": "one function in detail. Basically whenever we are using any thing. A can be integer, B can be integer."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 3101.92,
+            "end": 3111.92,
+            "text": "A can be string, A can be list. Whenever we are writing A plus B whenever we are adding. So internally"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 3111.92,
+            "end": 3121.92,
+            "text": "in that class we basically for any object, for any object. We are trying to call dunder function underscore underscore"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 3121.92,
+            "end": 3131.92,
+            "text": "add underscore underscore. In which our second number will pass. And what will it do? It defines the logic of adding in A. This function."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 3131.92,
+            "end": 3141.92,
+            "text": "For example for complex numbers I have to create a function. Def add. This is a normal function. What does this do? It will self"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 3141.92,
+            "end": 3151.92,
+            "text": "means object 1. Or I can call it object 1 or number 1. This is basically my number 1. And in this we will take another parameter"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 3151.92,
+            "end": 3161.92,
+            "text": "which is my number 2. We call it self. First we have self which is my object and one will be number 2. We call it object 2."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 3161.92,
+            "end": 3171.92,
+            "text": "Number 2 is also fine. Now I have to define logic to add two numbers. Two numbers will have a logic. Basically in the new number"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 3171.92,
+            "end": 3181.92,
+            "text": "the real part the real part in the number what should be that? That real part should be self.real"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 3181.92,
+            "end": 3191.92,
+            "text": "plus number 2.real In this way our new real part will be created and our new imaginary part will be created."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 3191.92,
+            "end": 3203.92,
+            "text": "Self.imaginary plus number 2.imaginary Now what can we do in the add? Now we will create a new complex number in the add."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 3203.92,
+            "end": 3213.92,
+            "text": "We will create a new complex number in which the new real part and the new imaginary part will come and we will return this complex number from here."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 3213.92,
+            "end": 3223.92,
+            "text": "Basically I have made this an add function which adds two numbers. And now here I am trying to add number 1 to number 2. So I can write number 3"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 3223.92,
+            "end": 3233.92,
+            "text": "is equal to number 1.add number 2 I don't think we should have any confusion in this syntax. Normally I have called"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 3233.92,
+            "end": 3243.92,
+            "text": "the add function in number 1. And now I can print my number 3. Let's save it. Or not print number 3 but call number 3.show"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 3243.92,
+            "end": 3253.92,
+            "text": "number. And let's run it. So what happened? By adding these two numbers the third number came. So we added 1 and 4."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 3253.92,
+            "end": 3263.92,
+            "text": "So we didn't have 9. This is a correct calculation. Similarly our complex numbers add. But I want I don't have to write the function here."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 3263.92,
+            "end": 3273.92,
+            "text": "I want anyone to use the complex number class and simply write number 1 plus number 2. They can do that."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 3273.92,
+            "end": 3283.92,
+            "text": "Anyone can write number 1 plus number 2. I don't need to write this thing. But what will happen with this? We will have an error. In fact"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 3283.92,
+            "end": 3293.92,
+            "text": "even if I write this thing I want instead of writing this I want to write number 2. Let's save it and run."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 3293.92,
+            "end": 3303.92,
+            "text": "So we will have an error. What is the error? Unsupported operant type plus for complex and complex. They are saying you can't use the plus for complex class objects."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 3303.92,
+            "end": 3313.92,
+            "text": "Because you didn't define any logic. We can use the plus like this. In integer class there is logic. In list class there is logic. But there is no logic in your class."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 3313.92,
+            "end": 3323.92,
+            "text": "To define plus for the plus operator. So we can define that logic in our class using the dunder functions. To create dunder function"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 3323.92,
+            "end": 3333.92,
+            "text": "basically if we have written add then I have to write add. Because add is already a dunder function. So to use dunder function what I will do is"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 3333.92,
+            "end": 3343.92,
+            "text": "underscore underscore and after that underscore underscore. What is this? It is a dunder function. Now there will be no error in this code. Now if I minimize it"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 3343.92,
+            "end": 3353.92,
+            "text": "and re-execute. Now I don't have any error. Now simply these things started working. What is happening here?"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 3353.92,
+            "end": 3363.92,
+            "text": "I am able to add two complex numbers. Which was not possible in Python. Now let's suppose I have to define minus logic. That there should be real minus and imaginary minus."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 3363.92,
+            "end": 3373.92,
+            "text": "So for its logic our sub function of A minus B is the dunder function of underscore underscore sub. So I can write here let's save it."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 3373.92,
+            "end": 3383.92,
+            "text": "And write it here. Here it will be done. For the sub function. And here I have to do minus."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 3383.92,
+            "end": 3393.92,
+            "text": "So if I want I can also subtract one of my numbers from another number. Let's save this and run it. So basically one out of four subtracts"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 3393.92,
+            "end": 3403.92,
+            "text": "subtracted minus three. Out of three subtracted minus three. We will have to deal with that with a little sign. But this is basically how subtraction will work in complex numbers."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 3403.92,
+            "end": 3413.92,
+            "text": "So for such a class which I had to do plus and minus. But its logic was not defined. We can define that logic to those operators. I am using the same operator."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 3413.92,
+            "end": 3423.92,
+            "text": "For complex class, the meaning of the sub-traction operator has changed. What is the meaning? This is how operator overloading works. And this is operator overloading."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 3423.92,
+            "end": 3433.92,
+            "text": "I have changed the meaning of minus for my class. This is called operator overloading. And this is the implementation of polymorphism. This is what we call polymorphism"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 3433.92,
+            "end": 3443.92,
+            "text": "when we are implementing classes and objects. And dander function is not like used for arithmetic calculations. This is our init. This is also a dander function. This also has"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 3443.92,
+            "end": 3453.92,
+            "text": "a double underscore here. That is why dander functions are special. A lot of them are already built in python. And if we want to see more dander functions, we can"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 3453.92,
+            "end": 3463.92,
+            "text": "go to the python documentation. We can go to this link. And here section 3.3.8 basically adds, subtract, multiplication, math, multiplication,"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 3463.92,
+            "end": 3473.92,
+            "text": "true, div, flow, div, mod. Mod is basically for percentage. Similarly we have power function and we have exor and or"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 3473.92,
+            "end": 3483.92,
+            "text": "functions for or. And if we scroll down more then there are more different things. Like abs, absolute value. The"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 3483.92,
+            "end": 3493.92,
+            "text": "math mod function, which is also positive for negative, the functions of that type, we can do those things. So this was all about"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 3493.92,
+            "end": 3503.92,
+            "text": "oops in python. Different concepts which are our 4 main pillars. We have covered them. We will find a theoretical in the oops. We will find out where to use it."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 3503.92,
+            "end": 3513.92,
+            "text": "So many times when we are using beginner oops, we feel unnecessary. Because when we work on small projects, oops"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 3513.92,
+            "end": 3523.92,
+            "text": "doesn't make sense. But whenever we go into real world programming, whenever we start working in companies, there are many things through oops. If something"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 3523.92,
+            "end": 3533.92,
+            "text": "is written, we create classes and objects and structure that code. That is why oops is really important and also for interview point of view. Next we"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 3533.92,
+            "end": 3543.92,
+            "text": "will start with the practice questions. Let's start with the first question. Define a circle class to create a circle with a radius r using the constructor. Let's just do this much."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 3543.92,
+            "end": 3553.92,
+            "text": "Let us create our class, we'll call it circle. In the circle class, we will have a init constructor, which has self"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 3553.92,
+            "end": 3563.92,
+            "text": "and our radius. So self.radius is equal to radius. And then what we will do now?"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 3565.92,
+            "end": 3575.92,
+            "text": "A new circle. Let's suppose we create this. This is my circle whose radius is equal to 4. I created this. Or we give a better radius. Let's give it a radius"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 3575.92,
+            "end": 3585.92,
+            "text": "of 21, which is the multiple of 7 so that we can easily calculate. Next what we will do? Next we have to define an area method of the class which calculates the area of the"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 3585.92,
+            "end": 3595.92,
+            "text": "circle and in the same way a perimeter class. Now I know if I have radius of any circle. So its area is going to be pi r square and perimeter"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 3595.92,
+            "end": 3605.92,
+            "text": "is going to be 2pi r equal. There is a little math calculation. Here formula is not important. Here it is most important to convert that thing into code."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 3605.92,
+            "end": 3615.92,
+            "text": "So we'll define a method called area. And in this we are going to return this value which is basically pi."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 3615.92,
+            "end": 3625.92,
+            "text": "We have to return pi r square to the power of 0.14 into r square. So whatever our radius is, self dot radius to the power"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 3625.92,
+            "end": 3635.92,
+            "text": "2. We have to return this thing. And we'll have perimeter which will be self in it. We have to"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 3635.92,
+            "end": 3645.92,
+            "text": "return it to pi r which is self dot radius. So the circle"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 3645.92,
+            "end": 3655.92,
+            "text": "we'll print the area of the circle and we'll print the radius of the circle."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 3655.92,
+            "end": 3669.92,
+            "text": "Not radius but its perimeter. Let's save it and run. A better way to do it would be instead of 3.14 I take it as 22 by 7"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 3669.92,
+            "end": 3679.92,
+            "text": "and I also take it as 22 by 7. Save and run. So we have even values."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 3679.92,
+            "end": 3689.92,
+            "text": "So the area will be 1386. We don't have units and the perimeter will be 132 k. So we have defined our class."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 3689.92,
+            "end": 3699.92,
+            "text": "Next class is Define an employee class with attributes. The role of the employee should be department and salary should be there."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 3699.92,
+            "end": 3709.92,
+            "text": "This class also has a show details method. So first of all we create an employee class. Employee in which"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 3709.92,
+            "end": 3719.92,
+            "text": "in it we are going to have a role, department and we are going to have a salary. Now self dot role is equal to role."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 3719.92,
+            "end": 3729.92,
+            "text": "Self dot department is equal to department. And self dot salary is equal to salary. And we'll make another method which is show"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 3729.92,
+            "end": 3739.92,
+            "text": "details. We call it show details. In this we have self and we have to print all the details. So we have printed it."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 3739.92,
+            "end": 3751.92,
+            "text": "We will write role is equal to role self dot role. Then we will print department is equal to"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 3751.92,
+            "end": 3761.92,
+            "text": "self dot department and salary and double quotes. Salary is equal to"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 3761.92,
+            "end": 3771.92,
+            "text": "self dot salary. So we can create a new employee. E1 is equal to"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 3771.92,
+            "end": 3781.92,
+            "text": "my employee. What is the role for? Let's suppose the employee is an accountant. The department is basically they are in the finance department."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 3781.92,
+            "end": 3791.92,
+            "text": "And the salary is I don't know an accountant's salary but we'll make it 60,000 and a string."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 3791.92,
+            "end": 3801.92,
+            "text": "And for E1 we'll call show details. Let's save it and run. So all these details are printed for us. Now next thing we have to do is"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 3801.92,
+            "end": 3811.92,
+            "text": "we have to create an engineer class that inherits properties from employee and has additional attributes name and age. So we have to create"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 3811.92,
+            "end": 3821.92,
+            "text": "another class and we'll call this class engineer. And what is engineer doing? He will inherit all the properties of the employee."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 3821.92,
+            "end": 3831.92,
+            "text": "And we'll have our own attributes which attributes will be there. One will be name and one will be age. But along with that or let's keep it for now."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 3831.92,
+            "end": 3841.92,
+            "text": "So self dot name is equal to name self dot age is equal to age. And what we will do with it? For employee, for engineer"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 3841.92,
+            "end": 3851.92,
+            "text": "we know that it is going to be engineer. Department is going to be IT department and salary we'll keep fixed for all the engineers. So we'll"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 3851.92,
+            "end": 3861.92,
+            "text": "use super and call the constructor in which we'll pass the role. The role is going to be engineer. And then we'll pass the department"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 3861.92,
+            "end": 3871.92,
+            "text": "and then we'll pass on basically the salary. Let's take the salary to be 75,000 and we'll do it."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 3871.92,
+            "end": 3883.92,
+            "text": "Safe. So here in the place of employee, we'll do engineer one and we'll pass some values in"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 3883.92,
+            "end": 3897.92,
+            "text": "the engineer class. Name is done, let's suppose. Let's take it to be Lawn Mask. And age, I don't know maybe 40."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 3897.92,
+            "end": 3907.92,
+            "text": "And then we'll call the show details for engineer one. Let's save it and run. The engineer has"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 3907.92,
+            "end": 3917.92,
+            "text": "complete information in the show details. And in the same way, we can call the show details separately. Basically this is how inheritance works. Next, we'll solve one more practice question."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 3917.92,
+            "end": 3927.92,
+            "text": "It is asking us to create a class called order which stores items and its price. So let's create a normal class"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 3927.92,
+            "end": 3939.92,
+            "text": "whose name is order. For every order two values will be passed in the constructor. One will be item name and one will be the price of that item."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 3939.92,
+            "end": 3949.92,
+            "text": "So self dot item is equal to my item and self dot price is equal to my price. We have this value."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 3949.92,
+            "end": 3959.92,
+            "text": "Now what we have to do let's suppose we have created order one. Order one is equal to just can that we bought"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 3959.92,
+            "end": 3969.92,
+            "text": "a packet of chips and we bought it for 20 rupees. And order two can that we ordered some"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 3969.92,
+            "end": 3979.92,
+            "text": "tea and we ordered it for 15 rupees. This is our basic values. Now what we have to do is in this class"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 3979.92,
+            "end": 3989.92,
+            "text": "we have to use a dunder function which is the GT function. It means greater than. So whenever we write A greater than B basically this dunder function"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 3989.92,
+            "end": 3999.92,
+            "text": "is invoked. So the logic of greater than is defined. It is different logic for strings different logic for int different logic for list."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 3999.92,
+            "end": 4009.92,
+            "text": "So each class has its own different logic. We have to use logic for order class. Basically we want to go to dunder function meaning as soon as we write order one greater than order two"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 4009.92,
+            "end": 4019.92,
+            "text": "then it should be true or false. The answer will depend on that. Order one greater than order two is true only if order one's price is greater than order two's price."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 4019.92,
+            "end": 4029.92,
+            "text": "So the price is dependent on greater than the property. For that we can define how to do dunder function. We write def, the name of the function is GT."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 4029.92,
+            "end": 4039.92,
+            "text": "Inside that we have self and we have order two. What we will return in this is that if self's price is greater than"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 4039.92,
+            "end": 4049.92,
+            "text": "order two's price then it should be true so that is the same thing will be returned here. So now we can print is my order one"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 4049.92,
+            "end": 4059.92,
+            "text": "greater than order two we will get the answer. Order one is 20. Order two is 15. So obviously this value is greater than this value"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 4059.92,
+            "end": 4069.92,
+            "text": "so we will get true return here. Let's save it and run. We will get true. There will be no error. But if we didn't write this function"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 4069.92,
+            "end": 4079.92,
+            "text": "then we would have an error. The error would be that the operator is not supported for the instances of order and order. This is the benefit of dunder functions"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 4079.92,
+            "end": 4089.92,
+            "text": "that if we define a custom class for ourselves and we want to create logic greater than less than not equal to then we can write all that logic by ourselves."
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 4089.92,
+            "end": 4099.92,
+            "text": "If we wanted we could have created less than logic and created it. So this is all about object oriented programming in python"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 4099.92,
+            "end": 4109.92,
+            "text": "I hope that in today's lecture we will have fun. We will learn more concepts in UPS and we will revise all these concepts. Once again, the link to download the notes"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 4109.92,
+            "end": 4119.92,
+            "text": "will be in the description box. That's all for today. Let's meet in the next lecture Till then keep learning and keep practicing. One more extra information here that in python"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 4119.92,
+            "end": 4129.92,
+            "text": "all the core python concepts were created in one way. So one more last lecture in which we will use our concepts to create a small project of python"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 4129.92,
+            "end": 4139.92,
+            "text": "but basically if we talk about concepts then conceptually in python we have read many concepts from a good level. So now our last lecture will be left which is not conceptually but basically"
+        },
+        {
+            "number": "9",
+            "title": "OOPS Part 2",
+            "start": 4139.92,
+            "end": 4145.92,
+            "text": "implementation wise project oriented. So that's all for today. See you in the next lecture. Till then keep learning and keep practicing."
+        }
+    ],
+    "text": " Hi everyone and welcome to the complete Python series in which we are going to do our OOPS, Object Oriented Programming, Part 2. In this part, we will be doing Inheritance, Polymorphism, we will cover important concepts like this, implement them and then we will be solving practical questions based on them. Apart from this, if you want to read any topic of Python, it is available in this playlist on this channel, so we can go and see. And like always, the link to download the notes will be in the description box below, so we can access our slides from there. So let's start with our next lecture. So in OOPS chapter, the next concept we are going to read is this is the Dell Keyword. Dell Keyword is the work of deleting object properties or the entire object itself. If we create any object in the code, it occupies some space in the memory. Because there are some methods related to objects, there are many different attributes of it, they take all the attributes in our memory. So sometimes we have created some object that we will never use, so we can delete the properties of the individual and delete that object. To delete it, we simply have to write DAL, and after that we can delete the properties and attributes in this way. And in this way, we can also delete our complete object. Let's try to create a student object. If we have created a student class, let's create our constructor in it. We will have a name in it. And self.name is equal to name. And now what we have to do is, we create a student1 in which we can pass the name. And if I want to delete this student, I can simply write DEL, S1. And after that, if we try to print the student, we will have an error in that case. Let's save it and run. So in this case, we have an error because name S1 is not defined, why? Because it has been deleted here. Whereas if we were printing the same thing here, then there was no error. So in that case, normally the already printed thing would be printed. If we are printing S.name here, and then if we delete S.name later, and then try to print it, So first it will be printed normally for us, but after that because we have deleted that thing, it shows that student object has no attribute name. So in this way, we can use our DEL, Delete Keyword. Next we are going to talk about private attributes and methods. Generally, whenever we read OOPs, like in any other language, whenever we read OOPs in C++, Java, then we have this concept of public and private. Generally, in other languages, if we public some attribute or method, then it means that we can access that attribute or method outside the class. For example, if I have made a student, I can write in student, S1.name. What I am doing is, using the scope of my class, that is, this is the scope of the class, where the things inside the class are, I can access the student's name outside the class. So we generally put it in the category of public. But many times we get some sensitive information, some sensitive attribute, some method which we want to keep private, which we don't want to give access to anyone outside our class. For example, if I create a class called account, for bank account or for account, someone is creating a class. And for this account, we store multiple information. For example, in this unit, we have self, we have the account number. Along with that, we have the password of the account. So we have account number and password. Self.account number is equal to account number. And self.account password is equal to account password. This way, we have displayed some information. Let's suppose, a new user comes to the class tomorrow and tries to create that account. So we can pass multiple information inside the account. Let's suppose, at the beginning, when a user creates an account, for that, account number is going 1, 2, 3, 4, 5. And their password is going A, B, C, D, E. In this way, this account number is done and this password is done. Now, anyone wants to print the account number. By the way, things are visible in the code here. But generally, flow works like this. Generally, if you go to a website, a user will set their account number or password or enter it. And after that, in the backend, it can be through the Python code, we are saving the information that we have directly in the class. Now, when we are printing the account number, then what will happen? The account number will be printed and the password will be printed for us. And I try to print these things. Both of them will be printed for me. But generally, this is bad practice. Because the password is something that we should not pass outside the class in this code. Because whatever is publicly available, chances of changes in the code increase and security decreases. So, whenever we implement some implementation in the code in which we feel that information is sensitive, or we do not want to pass this information outside our class, then we can make it private. That is, now it is not possible to access that information outside the class. And to make any attribute private, we simply put two underscore in front of it. We have put these two underscore and this thing is now private. So, here, if I try to access this thing, that is, account1. underscore underscore when we try to access the account password. And we will run it. In this case, we will have an error. Account object has no attribute account password. So, basically, this thing is now private. We cannot access it outside the class. Let's suppose we have a function of reset password. All these imaginary things are running. We have a function that resets the password. And in that function, let's suppose we want to print account1.password or this will be self.accountpassword. So, it is absolutely possible to do this. That is, here, self.password will run. But here, account1.password will not run. Because where is this function? This function is inside the class. And this print statement is outside the class. So, outside the class, we cannot access it. But inside the class, like if I try to call reset password, then this time we will not have any error. This time, simply our password will be printed. So, if there is something that we want to keep inside the class, then we can make it private. Now, the concept of private and public, like it works in other languages, like Java, C++, if you have a background in those languages, then it does not work exactly like that. Basically, in Python, conceptually, we implement public and private. That is, we can make our attributes and methods private, but they will be like that. Exactly private. But we will not go into the implementation detail much. If someone asks, how can we hide things in private, then the way to hide it will be basically that we put underscore in front of the attributes and we put underscore in front of the methods. For example, let's create another class. We normally create a class. Let's suppose this is a class called person. In the person class, we make an attribute name which we store anonymous. In this way, we made a class. Now, p1 is equal to this new person which we have created. If we try to print p1.name and try to print the name, then we will have an error. We know the error. Because we have used double underscore here. If we run it, we will have an error. So, this thing is conceptually private. We can also make methods private. For example, if I define a method called hello, which is printed by the hello user. This way, it prints something or hello person. This way, it prints something. So, it prints something like this. So, it is like a normal method. It is not possible to call it here. If we think that we will write hello here, then this thing is not possible in Python. What will happen in this? We will have an error in this too. Person object has no attribute called hello. Because here, we have used underscore underscore. As a beginner, we can ask a question in our mind that why did we make a function which we can never use with an object. Because, these functions are generally the functions of the object. Which we want to use internally for some other function. For example, we make another function of the welcome name. And this is a completely normal function. This is our normal method. What does it do? It will print hello first. In some way. And after that, what does it pass in the hello? It passes its name. This is going to be self.name. In fact, we will do self here. And then, we will get our name value. So, it will call the hello function and it will pass its name. Like underscore underscore. And what does this welcome function do? It is calling the hello. So, it can call the hello completely. We can write self here. Now, we are saying that a person can welcome, but can never say hello. Welcome but can say hello. Because it is an internally class method. So, it works in this way. So, what will P1 do? P1 will call welcome. Because it is possible to do this. And for that, self.hello will be calling. We will not have any error in this call. Let's save it and run it. So, what is printed? We have a hello person and we have no error. So, how are things working? Things are working like this. If we made something from double underscore and made it private, then only the internal functions of the class will be able to access it. No one will be able to access it. This is basically done to prevent exposing our instance attributes outside of the class. So, let's see its definition. Private attributes and methods are meant to be used only within the class and not accessible from outside the class. Next concept, which we will talk about which is a very important concept. This is called inheritance. The inheritance which we already talked about is the four main pillars of the Ups which already have two of them Abstraction and Encapsulation. The third pillar is called inheritance. And inheritance is very important and very easy topic to be honest. For example, we inherit many things in real life. For example, our parents pass on their good values to us. So, we have inherited the good values that our parents have inherited from our grandparents. So, in this way, what are the things that are inherited from the parents and the child? So, the same concept of inheritance when we pass on something from one generation of class to another generation of class is called inheritance in programming. What does this mean? It means that when one class derives the properties and methods of another class and a start and a stop will be a different method and a color property can be also in this class. So, the logic of starting and stopping the car is already in the car. Now, Toyota decides that they want to create their own car factory. So, what can they do? The Toyota car, whether it is a Fortuner or Prius they have to start and stop every car. Because in the car a Toyota car is a sub-category. I mean, some of the cars will be Toyota cars. So, when some things are already written in the cars when the logic of start and stop is written in the car then we don't want to write it in the second time because we have already written it in the code. What we will do is inherit that logic we will derive that logic and how we will take it. When we write the class of Toyota car then we will put a parenthesis in front of the class name and write the name of our parent class. So, parent class or base class is the class through which properties are taken and child class or derived class is the one which takes properties. What is the meaning of properties? Attributes or methods. We can also inherit methods. For example, we created this class called car. Now, in the car there are going to be different attributes. Suppose, in the car we have a static method to start. Here we will print car started. What will this method do? It will start the car and we have another static method. We can also keep these methods as static because we are not using car object in them. We can call it stop. What will this method do? It will stop the car. Car stopped. Let's fix it. So, this is our car class in which we have two simple methods. Now, we are going to make another class which we will call Toyota car. Toyota car. And to show inheritance, we are going to put parenthesis here. And we will write the name of our class in which we want to inherit properties and methods. And then we can define Toyota car. Suppose, in this car there is something called name. So, let's create our constructor. In this, we will get self and we will get name. So, self.name is equal to name. And now, we are going to create car. So, my car 1 is equal to a Toyota car in which we are going to pass the name, let's suppose, Fortuner. And this is my car 2 in which it is also a Toyota car in which we are going to pass the name Prius. Now, let's suppose we are talking about car 1. What will I do? I am going to print car 1.name. And this thing will work. There will be no error in it because in this class, we have already given a name. So, when we run it, there will be no error and car 1's name will be printed for us. But if I try to do something like this car1.start then what should be expected in this case? In this case, we can check that this is an object of Toyota car. Now, we have not defined any function in Toyota car. So, here we can think that we will have error. But because we have used inheritance here, then all the methods and properties of this car will be available and there will be no error. When we run it, we will have printed car. So, in this way, we can inherit our properties and methods in different classes. Now, let's suppose here we define some other property. For example, we specify color as black. So, we can use that thing here car1.color and that property will also be printed for us. Now, we categorize inheritance in three different types. These are the three different types of inheritance. First, we can say single inheritance. In this inheritance type, basically we have a single parent class or we can call it base class. And one single derived class comes out of it. So, this is my base class and this is my derived class. So, basically this is parent and this is my child class. This is our single inheritance. For example, this is an example of single inheritance. This is a single parent class and this is a single child class. Now, the next example we will see is of multi-level inheritance. Multi-level inheritance means that one base class is done and the other base class has no derived class. And after that, the other class has no derived class and this is also parent and this is child class. So, basically the properties that have been left from here are all properties. The first class is its property and the second class is its property. Both properties are going into our third derived class. So, in this example, we can take that suppose these are the basic methods of our car that are in each car. We remove the name Toyota car and we have already made a class. We will remove the name and add the brand to it. So, instead of name, we will simply add the brand to it. And now, the car of individual brand like in Toyota, there is a car called Fortuner, there is a car called Prius. We want to set their factory separately. So, to create them, we will create another class. Let's suppose we call this class Fortuner which manufactures Fortuner. And now, we have not inherited the things in it. And basically we define different things in it like how much mileage we should have or we keep a type. What is the type going to be? Is the Fortuner going to be? Is the diesel going to be? Or is it going to be petrol or we imagine that this can be an electric car. So, here in self.type, we store the type. Now, what will Fortuner do? Fortuner will simply inherit all the important things of Toyota car. So, here if we look then first we have car class. All the properties of car take Toyota car. And Toyota car has all the properties which are basically brand. That is Fortuner car. What is the class? Class is a factory whose work is to produce objects. So, we put the factory of Fortuner which has all the properties of Toyota car. In the factory, already there were all the properties of car. So, all those properties came here. Let's see an example of this. Let's suppose this is my car 1 is equal to new or Fortuner we have taken. In Fortuner, we will add our type. Let's suppose this is diesel. And now, what we will do? Now, we will call the start method for car 1. And this start method for car 1. This is not even in the Fortuner class. Not even in the Fortuner class. This is directly in our upper car class. But this will work. No error will come. The car has already started. So, this is our multi-level inheritance. In which first class is our car name. We have made second class Toyota car. And third class we have given another brand. Tomorrow, it may be another factory setup which will inherit the properties of Toyota car. So, it will inherit another multi-level. And it is not necessary that these levels will be here. It may be that we can derive a car from this. We can derive a class from this. So, in this way, how many levels can be in multi-level inheritance. Now, next we will talk about multiple inheritance. Multiple inheritance says that if we have one derived class. Let's suppose this is my derived class. So, it can inherit properties of multiple classes. This could be my base class 2. So, this is my first class. And this is my second class which is inherited. So, this is parent 1. This is parent 2. And this is my child class. It may be multiple parents. But basically, the properties of multiple classes can be inherited here. Let's take an example of this. We will make a very simple class. We will take an example of this. Let's suppose we have created class A. This is my class A. We can make any variable in it. Let's suppose variable A has some value. Which is Welcome to class A. This is how we have our class A. And we have class B. In class B, there is something called a variable B. In which we are writing Welcome to class B. And then we have made class C. And this is our child class. And what will this do? It will inherit both A and B properties. So, here we can write A, B. I mean, you can write things from any class by separating them from the comma. And then in this, we can create something else or any other variable. Welcome to class C. So, when we make a new object of C. For that, we can print C1.Variable C. Along with that, we can print C1.Variable B and variable A. So, print C1.Variable A. Let's save it and run it. So, we will get three things printed for us. There will be no error because all these properties are inherited. So, these were the three types of inheritance that we read. Now, next we are going to talk about which is related to inheritance, which is our super method. Super method is a special method in a class which is used to access methods of the parent class. For example, let's start again with this basic example. We can remove these things. And what will a constructor do? We will create for our car method. Basically, every car can have a type or a fuel type or anything. Is it going to be diesel? Is it going to be electric? So, we made a class. What we did in the class is we defined a constructor in which we are taking a type and then we created two static methods. Then, we took all the properties of the car in the class Toyota car and in Toyota car, we are taking the name of the brand. Like we initially took our single level of inheritance. This is the same example. We have added an extra constructor in it. Suppose, we create a new car of Toyota car. This is my new car of Toyota. Let me give it a name. What do we want now? We want to print the type of car for our car 1. Even though we didn't send any type. We didn't send any type. But we want to print the type for it. So, what will happen in that case? As soon as we execute it, we will have an error. The object of Toyota car has an attribute type. But even though the type was defined here, let's suppose we create the Toyota car here and give it a type. I am going to create an electric Prius. I don't know if it exists or not. But let's suppose our type is electric. So, we will have another variable here. Now, we have this type here. But how will this thing come here? We have written this type variable here. But if I write self.type is equal to type. So, that means, in the Toyota car, in the object of Toyota car, a type attribute will be created. But I don't want the type attribute of Toyota car. I want to change the type attribute in this parent class. So, to do that, we have to call the constructor of parent class in this constructor. Now, there is no direct method of that. We can't write something like parent. something like this. So, our super method works. Whenever we are writing super, super means our parent in inheritance. So, whenever we are writing super, we are basically talking about the parent class, which we are inheriting properties. And here, what can we do? We can write super and then our parent thesis. Dot. Now, in the super class, this is my super class. As soon as we have written dot, all the methods will start. There is a method in this. Stop. In this, our constructor method is there. In which, we can pass our type. So, in this way, we passed the type. So, basically, in the super class, the constructor will be called. In which, the type method is already running. Now, when we write car1.type here, we won't have any error. When we run it, we get our type to be electric. The same thing is, in fact, we can start the constructor. So, the properties of parent class will be set first. So, as such, functionality wise, there won't be any significant change in this. But in this way, we can use our super constructor. In fact, if we want to create a car as soon as this new car is created, I have to start the car as well. So, to start the car simply, we can write super.start. So, the super class will have a start method and the car will start. So, in this way, if we want to call any method of parent class, we can access them through super. Next, we are going to talk about class methods. We had talked about the static method decorator. Static method which was our static method decorator. It looked like this way, so that we could make any method static. Any method means that for every new instance, for every new object, that method will not be created again and again. That method will be common for the whole class. It will be created once for all objects. All objects can use it. Because static method doesn't change instance attributes. It doesn't access them. So, it doesn't need to be created again and again for every object. But the problem with static methods is that they can't access or modify class state and they are generally used for utility. If we want to do something that doesn't have instance attributes for instance attributes, we generally use static methods in Python. As such, we made static method that doesn't have any attributes. We made static method that doesn't have any attributes. Let's start with a basic class called person. We have a class attribute in which we have stored name as anonymous. Now, what we do is, we make a change name or change name in which we have a self-ig, a new name. We write self.name is equal to name. Our assumption is that this name that was anonymous before, will change. So, we make a person P1 is equal to this new person. For P1, we want to call this person anonymous. We want to name this guy Rahul Kumar and then we want to print name for P1. So, we save this and run. What is the name for us? Rahul Kumar. The name of P1 is Rahul Kumar. But interestingly, when I try to print person.name, that is, class name.name, what will happen with this? We can access class attribute. So, when we run this, we still have anonymous. But we wanted to change class attribute. But as soon as we try to work in a normal method, what we do is, this name here is not talking about class attribute. This is creating a new name attribute for my instance, for my object. If I explain this a little more carefully, then basically, this was our class. Let's suppose this is my class. In the class, this is my object. Now, in the class there was a name attribute which had value anonymous. Now, what we did is, we tried to change this anonymous with the object's method. But it couldn't directly change. As soon as we wrote self.name is equal to name, what happened in it? A new name was created in the object which we called Rahul Kumar. This was the result. So, basically, class name was different. Object name was different. So, we changed it. We created a new name for it by writing this statement. But we don't want to do that. We want to change class attribute. Now, there are many indirect ways to change class attribute. For example, here we have written person.name is equal to name. This can be the way to change class attribute. So, when we change our class attribute in this way, then P1.name will be Rahul Kumar. Let's save it and run. So, what happened? It changed in both the places. By writing person.name means, to access this attribute in class, by writing this our new thing was not created. Now, all the new changes have been made in this. This is the way. We write self. underscore underscore class, this thing is coming here. This is underscore underscore. Basically, the object which is self we want to change in class, we can access class. So, here we are showing the class is equal to person. And then, what we are talking about here is basically person. The person class. And now, we can access any attribute of this. So, we have got Rahul here. We will delete it and print it again. So, we will get the same result. So, either we can write self. underscore underscore class.something or we can write our class name.something. Now, this is the way to do it. But, if we want to directly access our class in our function then the way to write it is our class methods. The things which cannot be done in static methods and the things which can change the attributes. We do that through class methods. How do we do it? A class method is basically bound to the class and receives the class as an implicit first argument. A normal method which we have created as it is changed name which means self is object. What is this? This is basically our object. This is a normal method instance method. We have class methods too. In which, first argument is instead of self and to write this, we use our class method decorator. And then we write definition and then we take our function name and in that we take our class as the first argument. For example, if I want to do the same thing then we can create another new function. We will call it class method and we can write it as def change name and in change name, the first argument will be our class. The class will be keyworded. We will write this as cls and a new name can come in it. And as soon as we do this, we will do cls.name Now where will this change be directly will be directly in my class attribute. Let's save it and run it. So this time, in class attribute the change has been directly done. This thing is not self. This is actually referring to the class. So what did this decorator do? The class method decorator took this function and returned it to the better function which can directly change the class attributes. Now at this point we will have a small confusion in something. Basically we have three functions. The first type is our static method. Or let's call it methods. The second type of methods are our class methods. And the third type of methods are our normal methods. Let me call them instance methods. Instance methods are methods basically. Instance methods are the methods in which self is an argument. Class methods are the methods in which class is a first implicit argument. And static methods are the classes or instance. None of them needs to be changed or accessed. So basically when we have to do something in which we are not touching any of the class or instance methods or instance properties we will use the starting method. When we have to use only class attributes we will use class methods. And when we have to use only instance properties instance attributes we will use instance methods. So these are three different methods and classes that we have studied. Now next we will talk about one more decorator which is the property decorator. For example, we create a class called student. We have created a student class. In this class we define our constructor. The constructor has self and we have three subject marks. We can take any subject like physics, chemistry, math. These are basically our values. So what we do is first of all self.chemistry is equal to chemistry and self.math is equal to math. We have three different subject marks. We want to create another attribute for this student class which we will call percentage. So basically we want to create percentage attribute in this class. So either we can create it here. We can write self.percentage What will be percentage? Percentage will be equal to three subject marks which will be self.physics plus self.chemistry plus self.math divided by three. What will be this? It will be our percentage. If I want to convert this into string I can type cast all of this to string and then we will add a percentage sign. So this will basically be my percentage. We create a new student and see. This is my student one. We will pass some values for this. Suppose we passed marks and then what we are printing is the student's student's student's student's percentage. It is very simple. Our student's percentage is 98.0%. There is nothing as such problematic. Everything is simple. Now let's imagine a small scenario. Let's suppose the teacher did a research on papers and they found out that the student scored 98 in physics this should actually be 86. This is the score of 98. So what will the teacher do? The teacher will simply write the marks of the student 1 they are supposed to be 86. The student has written and when we print student1.physics marks then that change will be it is equal to 86. But the problem is when we print the student's percentage again that percentage will automatically change. Percentage is set according to the marks. The value of the percentage is set according to the original value. But we want as soon as the marks change, the percentage will also change. So the percentage will be wrong. For such cases when we can't give any attribute fixed value then its value will depend on some other parameter or on some calculation. So here we can make a method and we can call it Calculate Percentage We made a method which we are saying Calculate Percentage. Now in Calculate Percentage we know that in this method the value of the percentage should always be this. So basically we will change the marks first then we will call the Calculate Percentage for the student and then its percentage will change. This is absolutely correct. There is no problem in this. But we have a better and simpler way to do this. So basically we use property decorator on any method in the class to use the method as a property. So basically what is the work of this Calculate Percentage function? We just have to calculate the percentage. What is normal? The normal attribute is basically defining the value of an attribute. But when the value of an attribute is depending on a function then we can make this function our property. So property here means attribute. So to do the same work we remove this thing from here. There is a better way to do the same work. We write here Add the Rate property and then we make a function in which we will write the attribute name. My attribute name is basically Percentage. So we have to calculate the percentage. We will get a self in the percentage and we have to return this value. This is basically my percentage. So this method will return the value of my property. So the depth percentage is the name of the method. And this value is returning in it. But whatever this value returns will basically convert into a property or an attribute. And now when I will change the physics marks then what will happen here? I don't need to do all these calculations here. I don't need to do any extra method. I don't have to call separately. As soon as I change the marks my percentage will also change. Let's save it and run. This error is coming because of indentation. We remove this thing. And we didn't indent properly. We will do all these things and work on it. So in the beginning we did the percentage but as soon as the marks of physics are reduced the percentage will fall down to 94%. So this method is changing automatically. Now it's not like this. Because whoever we have added the property will change in another parameter as soon as it changes. It will automatically reflect here. So whenever we will access the percentage the latest values will be calculated with them. Now the last concept we are going to cover this is related to polymorphism. Let me revise you again. When we talked about the OOPS in the beginning we saw that there are 4 pillars of OOPS. We have already read 3 pillars of OOPS. We have talked about abstraction. We have talked about encapsulation. We have talked about inheritance. And now let's talk about the fourth pillar which is called polymorphism. Now poly means poly is basically many. And morph means forms or faces. So polymorphism means that when one thing can be used in different ways then it basically comes in the category of polymorphism. And in Python, the best example of polymorphism is operator overloading. What is operator overloading? We will read it in detail. One more additional thing here. If you want to study more about decorators as a homework problem then what you can do is we have 2 more decorators. Getter and Setter. For example, we have read multiple decorators. We have read property decorator static method, class method. If you want to read about more decorators, you want to explore more. Then we can read about getter and setter decorators. So let's come back to polymorphism. Operator overloading is basically when the same operator is allowed to have different meanings according to the context. That is, we have the same operator. For example, our plus operator. Plus depending upon which data type we are using or in which situation, that will change. For example, let's see a practical example which already exists in Python. If we want, we can print 1 plus 2. This is completely possible. What will be the result of this? What is the operator here? It is plus operator. We know that we have to add the plus operator's work. But if I try to print my with college here also it is plus operator. But these values are not numbers. So what will be the work of plus operator here? There will be the work of plus operator here. Concatinate 2 strings. And in the answer, we will have combination return of both strings. So what is this? Overloading is done. Plus when we are using numbers, plus means it is different. And when we are using strings, plus means it is different. And when we are using the list, plus also means it is different. That is, when I print 1, 2, 3, plus 4, 5, 6. So here it will be that we are basically trying to merge the two. So here plus means it will be different. But plus is a operator. But because here, according to different data types, different meanings are added, we call operator overloading this. And it is a type of polymorphism. Polymorphism says that there are multiple forms of one thing. So this is the first form, this is the second form, this is the third form, we are going to see other forms. But as soon as we run it, we will have different outputs. The meaning of this means has changed. There is something else for strings, something else for numbers, something else for lists. So this means that plus we have written here, so this one is connected with this 4, this 2 is connected with this 5. This could also be the meaning. But this did not happen because the meaning of plus is already defined within the list class. Whenever we are talking about this number, what is a number? What is an integer? If I try to print type of 1, what will come to me? It is a class int. Basically in Python, there is already a class int. The integer class exists. And if I write any number, any integer, it will be an object of that class. So this is an object and this is an object. And these objects, because they are integer types, for them already that class is defined in int that plus means add two numbers. Similarly if we try to print type of 1, what is 1? What is college? This is basically class string. So what is this? It is class string. So in Python, there is already a string class which has all the strings of objects. So this is an object, this is an object, this is an object. And in this class string it is already defined that whenever plus is written, what does it mean? It means adding two strings. Similarly if I try to print type of 1,2,3 So what will come here? We will have class list. So in Python there is already a list class in Python, there is already a list class which has one object, one object, one object. And in this list class, it is already defined that what does plus mean? What does this operator mean? This operator doesn't mean that add one with its first number add it with its second number add it with its third number This doesn't mean defined. In that list class, it is defined that the entire list will merge where there will be plus. So in this way, in every class the different operators are already defined for different data types. So when we create our own class we can also overload the operator. What is this? All of this is implicit overloading which already is done by Python for us. But we can do the same for our classes. We will learn from it. Now we will understand when the same operator is allowed to have different meanings according to the context. It depends on the context that you are trying to write some code with numbers, trying to write with strings, trying to write with a list. According to me, I am going to use a good example of the operator overloading. For that, if you have heard about complex numbers in Math 11-12 then it is a very good thing. I will explain the basic concept of it. And for those who have not heard it there is no problem. I am going to explain it in a similar way. So basically, in Math, there is something called complex numbers. Now what are the complex numbers that we use? I will not go into more detail. It is a very simple plus minus as I am going to show you. The normal number basically we call it real numbers. The real numbers are called real numbers. The real numbers are 1, 2, 3 or minus 5 or 3.1. Now when we add numbers I already know that 1 plus 2 is going to be equal to 3. Real numbers are very easy. We are reading all these in Math. There are two parts of complex numbers. For example, if there is a complex number let's suppose I create a complex number. It will look like this. 1i plus 3j This i in it this is my real part and this is my imaginary part. I have written something like this. Let's call this a complex number. Now why do we call it a complex number? What does it mean? Why do we use a complex number? What is the difference between real and complex numbers? We will not go into more detail. Basically this is a complex number. This is a number. This is a number. We denote this as i. This is my real part. This is my imaginary part. Real is 1 and imaginary is 3. This is basically the part of Math which we have imagined. This is all imaginary. Let's assume this as my first complex number. I have created another complex number. In the second complex number we can write any number. 2i plus 5j. When two complex numbers are added then what happens? Their real parts are added separately and their imaginary parts are added separately. When they are added then the answer is going to be 1 plus 2 3i plus 3 plus 5 8j. This is the right thing. This is what I am going to teach you. This is a complex number. This is a complex number. It has no relation with Python. Although complex numbers are used in voice recognition systems. In voice, in audio waves, we use complex numbers for calculation. If you do something on voice recognition for machine learning. We don't need to go into detail. We will discuss more. This is a complex number. This is how complex numbers are added. Let's add the real part separately. Let me give you another example. Suppose we have a complex number called 5i. This is 5i plus 10j. This is a complex number. It has minus 1i plus 8j. What will be the answer? We will add 5 and minus 1. We will add 4i plus 18j. This is the math of complex numbers. Let's come back. There is no class to create complex numbers in Python. We will make our own class. We will create a class that can create complex numbers. Like in the integer class. In Python, you can create integer numbers, strings, lists, or dictionary. But we will create complex numbers. We are going to create a class called complex. We named it complex. Let's define a constructor in it. Every complex number will have two parts. One is real and the other is imaginary. Self.real is equal to imaginary. Self.imginary is equal to imaginary. Let's write another function. It is called show number. In show number, we will print our number. What will we print? First we will print the real part. Real part is going to be self.real. Then we print i. Plus Then we will print imaginary part. Then we will print j. This is going to be our number. Which will be printed. Let's create a new complex number. This is my number 1. In number 1, it is real part. It is imaginary part. I want to print num1. So we will call show number. Let's save it and run. Now we have our first complex number. 1i plus 3j. I have created my number. We can create another number. So let me create another number. Called number 2. We will pass it in this. 4i and 6j. This is my number 2. Let's print it. This is my number 1 and this is my number 2. Now we want to add these two. So we have made complex numbers. We will have to create logic to add. So how will we do that? How do we know how to add these two numbers? How do we know how to add two complex numbers? What is the logic? So here we have our dunder functions. And we overload the operator in this way. We define the meaning of plus for ourselves. We do it using dunder functions. Dunder functions are double underscore. We call them dunder functions which are used in the function. And many functions exist in python. We will read one function in detail. Basically whenever we are using any thing. A can be integer, B can be integer. A can be string, A can be list. Whenever we are writing A plus B whenever we are adding. So internally in that class we basically for any object, for any object. We are trying to call dunder function underscore underscore add underscore underscore. In which our second number will pass. And what will it do? It defines the logic of adding in A. This function. For example for complex numbers I have to create a function. Def add. This is a normal function. What does this do? It will self means object 1. Or I can call it object 1 or number 1. This is basically my number 1. And in this we will take another parameter which is my number 2. We call it self. First we have self which is my object and one will be number 2. We call it object 2. Number 2 is also fine. Now I have to define logic to add two numbers. Two numbers will have a logic. Basically in the new number the real part the real part in the number what should be that? That real part should be self.real plus number 2.real In this way our new real part will be created and our new imaginary part will be created. Self.imaginary plus number 2.imaginary Now what can we do in the add? Now we will create a new complex number in the add. We will create a new complex number in which the new real part and the new imaginary part will come and we will return this complex number from here. Basically I have made this an add function which adds two numbers. And now here I am trying to add number 1 to number 2. So I can write number 3 is equal to number 1.add number 2 I don't think we should have any confusion in this syntax. Normally I have called the add function in number 1. And now I can print my number 3. Let's save it. Or not print number 3 but call number 3.show number. And let's run it. So what happened? By adding these two numbers the third number came. So we added 1 and 4. So we didn't have 9. This is a correct calculation. Similarly our complex numbers add. But I want I don't have to write the function here. I want anyone to use the complex number class and simply write number 1 plus number 2. They can do that. Anyone can write number 1 plus number 2. I don't need to write this thing. But what will happen with this? We will have an error. In fact even if I write this thing I want instead of writing this I want to write number 2. Let's save it and run. So we will have an error. What is the error? Unsupported operant type plus for complex and complex. They are saying you can't use the plus for complex class objects. Because you didn't define any logic. We can use the plus like this. In integer class there is logic. In list class there is logic. But there is no logic in your class. To define plus for the plus operator. So we can define that logic in our class using the dunder functions. To create dunder function basically if we have written add then I have to write add. Because add is already a dunder function. So to use dunder function what I will do is underscore underscore and after that underscore underscore. What is this? It is a dunder function. Now there will be no error in this code. Now if I minimize it and re-execute. Now I don't have any error. Now simply these things started working. What is happening here? I am able to add two complex numbers. Which was not possible in Python. Now let's suppose I have to define minus logic. That there should be real minus and imaginary minus. So for its logic our sub function of A minus B is the dunder function of underscore underscore sub. So I can write here let's save it. And write it here. Here it will be done. For the sub function. And here I have to do minus. So if I want I can also subtract one of my numbers from another number. Let's save this and run it. So basically one out of four subtracts subtracted minus three. Out of three subtracted minus three. We will have to deal with that with a little sign. But this is basically how subtraction will work in complex numbers. So for such a class which I had to do plus and minus. But its logic was not defined. We can define that logic to those operators. I am using the same operator. For complex class, the meaning of the sub-traction operator has changed. What is the meaning? This is how operator overloading works. And this is operator overloading. I have changed the meaning of minus for my class. This is called operator overloading. And this is the implementation of polymorphism. This is what we call polymorphism when we are implementing classes and objects. And dander function is not like used for arithmetic calculations. This is our init. This is also a dander function. This also has a double underscore here. That is why dander functions are special. A lot of them are already built in python. And if we want to see more dander functions, we can go to the python documentation. We can go to this link. And here section 3.3.8 basically adds, subtract, multiplication, math, multiplication, true, div, flow, div, mod. Mod is basically for percentage. Similarly we have power function and we have exor and or functions for or. And if we scroll down more then there are more different things. Like abs, absolute value. The math mod function, which is also positive for negative, the functions of that type, we can do those things. So this was all about oops in python. Different concepts which are our 4 main pillars. We have covered them. We will find a theoretical in the oops. We will find out where to use it. So many times when we are using beginner oops, we feel unnecessary. Because when we work on small projects, oops doesn't make sense. But whenever we go into real world programming, whenever we start working in companies, there are many things through oops. If something is written, we create classes and objects and structure that code. That is why oops is really important and also for interview point of view. Next we will start with the practice questions. Let's start with the first question. Define a circle class to create a circle with a radius r using the constructor. Let's just do this much. Let us create our class, we'll call it circle. In the circle class, we will have a init constructor, which has self and our radius. So self.radius is equal to radius. And then what we will do now? A new circle. Let's suppose we create this. This is my circle whose radius is equal to 4. I created this. Or we give a better radius. Let's give it a radius of 21, which is the multiple of 7 so that we can easily calculate. Next what we will do? Next we have to define an area method of the class which calculates the area of the circle and in the same way a perimeter class. Now I know if I have radius of any circle. So its area is going to be pi r square and perimeter is going to be 2pi r equal. There is a little math calculation. Here formula is not important. Here it is most important to convert that thing into code. So we'll define a method called area. And in this we are going to return this value which is basically pi. We have to return pi r square to the power of 0.14 into r square. So whatever our radius is, self dot radius to the power 2. We have to return this thing. And we'll have perimeter which will be self in it. We have to return it to pi r which is self dot radius. So the circle we'll print the area of the circle and we'll print the radius of the circle. Not radius but its perimeter. Let's save it and run. A better way to do it would be instead of 3.14 I take it as 22 by 7 and I also take it as 22 by 7. Save and run. So we have even values. So the area will be 1386. We don't have units and the perimeter will be 132 k. So we have defined our class. Next class is Define an employee class with attributes. The role of the employee should be department and salary should be there. This class also has a show details method. So first of all we create an employee class. Employee in which in it we are going to have a role, department and we are going to have a salary. Now self dot role is equal to role. Self dot department is equal to department. And self dot salary is equal to salary. And we'll make another method which is show details. We call it show details. In this we have self and we have to print all the details. So we have printed it. We will write role is equal to role self dot role. Then we will print department is equal to self dot department and salary and double quotes. Salary is equal to self dot salary. So we can create a new employee. E1 is equal to my employee. What is the role for? Let's suppose the employee is an accountant. The department is basically they are in the finance department. And the salary is I don't know an accountant's salary but we'll make it 60,000 and a string. And for E1 we'll call show details. Let's save it and run. So all these details are printed for us. Now next thing we have to do is we have to create an engineer class that inherits properties from employee and has additional attributes name and age. So we have to create another class and we'll call this class engineer. And what is engineer doing? He will inherit all the properties of the employee. And we'll have our own attributes which attributes will be there. One will be name and one will be age. But along with that or let's keep it for now. So self dot name is equal to name self dot age is equal to age. And what we will do with it? For employee, for engineer we know that it is going to be engineer. Department is going to be IT department and salary we'll keep fixed for all the engineers. So we'll use super and call the constructor in which we'll pass the role. The role is going to be engineer. And then we'll pass the department and then we'll pass on basically the salary. Let's take the salary to be 75,000 and we'll do it. Safe. So here in the place of employee, we'll do engineer one and we'll pass some values in the engineer class. Name is done, let's suppose. Let's take it to be Lawn Mask. And age, I don't know maybe 40. And then we'll call the show details for engineer one. Let's save it and run. The engineer has complete information in the show details. And in the same way, we can call the show details separately. Basically this is how inheritance works. Next, we'll solve one more practice question. It is asking us to create a class called order which stores items and its price. So let's create a normal class whose name is order. For every order two values will be passed in the constructor. One will be item name and one will be the price of that item. So self dot item is equal to my item and self dot price is equal to my price. We have this value. Now what we have to do let's suppose we have created order one. Order one is equal to just can that we bought a packet of chips and we bought it for 20 rupees. And order two can that we ordered some tea and we ordered it for 15 rupees. This is our basic values. Now what we have to do is in this class we have to use a dunder function which is the GT function. It means greater than. So whenever we write A greater than B basically this dunder function is invoked. So the logic of greater than is defined. It is different logic for strings different logic for int different logic for list. So each class has its own different logic. We have to use logic for order class. Basically we want to go to dunder function meaning as soon as we write order one greater than order two then it should be true or false. The answer will depend on that. Order one greater than order two is true only if order one's price is greater than order two's price. So the price is dependent on greater than the property. For that we can define how to do dunder function. We write def, the name of the function is GT. Inside that we have self and we have order two. What we will return in this is that if self's price is greater than order two's price then it should be true so that is the same thing will be returned here. So now we can print is my order one greater than order two we will get the answer. Order one is 20. Order two is 15. So obviously this value is greater than this value so we will get true return here. Let's save it and run. We will get true. There will be no error. But if we didn't write this function then we would have an error. The error would be that the operator is not supported for the instances of order and order. This is the benefit of dunder functions that if we define a custom class for ourselves and we want to create logic greater than less than not equal to then we can write all that logic by ourselves. If we wanted we could have created less than logic and created it. So this is all about object oriented programming in python I hope that in today's lecture we will have fun. We will learn more concepts in UPS and we will revise all these concepts. Once again, the link to download the notes will be in the description box. That's all for today. Let's meet in the next lecture Till then keep learning and keep practicing. One more extra information here that in python all the core python concepts were created in one way. So one more last lecture in which we will use our concepts to create a small project of python but basically if we talk about concepts then conceptually in python we have read many concepts from a good level. So now our last lecture will be left which is not conceptually but basically implementation wise project oriented. So that's all for today. See you in the next lecture. Till then keep learning and keep practicing."
+}

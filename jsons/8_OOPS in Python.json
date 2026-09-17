@@ -1,0 +1,2238 @@
+{
+    "chunks": [
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 0.0,
+            "end": 24.7,
+            "text": "Hi everyone and welcome to the complete Python series in which we will cover today's chapter 8 about object oriented programming using Python i.e. our classes, objects, constructors, static methods, etc. We will talk about different concepts which will make us better as a programmer As usual, if we want to read any other topic of Python, it is available in this playlist"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 24.7,
+            "end": 47.9,
+            "text": "We will do theory concepts and write a lot of codes and the chapter's slides will be in the description box below So let's start with chapter 8 Hi everyone, now we will start with chapter 8 in which we will read objects and classes i.e. object oriented programming"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 47.9,
+            "end": 68.1,
+            "text": "and in fact object oriented programming is one of the most important topics of any programming language because the questions related to this are asked in interviews In fact, a lot of theoretical concepts, practical concepts which we are using in companies to build systems"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 68.1,
+            "end": 86.3,
+            "text": "are a lot of concepts from object oriented programming Today, we are doing our programming in Python We are learning something else in the company, learning a new framework and some of the concepts we will learn in this chapter are applied in some other language"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 86.3,
+            "end": 107.3,
+            "text": "So this is going to be one of the most important concepts which will teach us more new things about programming Now let's talk about object oriented programming Basically, to map with real world scenarios, we started using objects in code In the beginning, we used to do procedural programming"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 107.5,
+            "end": 122.5,
+            "text": "So, procedural means that the code is written in sequence For example, I have written A is equal to 10, my second variable Let me zoom in, B is equal to 20 I have made a sum, sum is equal to this A plus this B"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 122.5,
+            "end": 137.7,
+            "text": "Then I am trying to print my sum A plus or write my sum directly After that, I have to calculate a difference For difference, I am going to write A minus B I have written a lot of codes"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 137.7,
+            "end": 152.7,
+            "text": "I have written simple ones But I am imagining many codes which we have written Then we have learnt the concept functions In the beginning, we were writing many classes Similarly, we were writing codes"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 152.7,
+            "end": 166.89999999999998,
+            "text": "Normally, in a sequence, we have a line, then a line, then a line Then a line, then a line, then a line And we know that in a sequence, our whole code has been executed This is called procedural programming Now, how can we bring reusability in the code?"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 166.89999999999998,
+            "end": 181.89999999999998,
+            "text": "To reduce redundancy and bring reusability Let me write these words Because of functions, redundancy Decreases and reusability What happens? It increases"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 181.89999999999998,
+            "end": 195.1,
+            "text": "This means that if some things are repeated Then combine them and make a single function Then redundancy decreases and reusability increases We have made a piece of code By saying function, we can use it again and again"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 195.1,
+            "end": 210.1,
+            "text": "That is why functions were really important Basically, we moved from procedural to functional programming Which is better There is another level up method from function Which we call object-oriented programming"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 210.1,
+            "end": 224.29999999999998,
+            "text": "Which we are going to learn in this chapter Basically, we know that we can make functions But to decrease redundancy To decrease redundancy and reusability This is more important"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 224.29999999999998,
+            "end": 239.29999999999998,
+            "text": "To increase reusability, we can use objects and classes too Like in the code, there is no compulsory use of functions Our wish is that if we feel that there is a piece of code Which I should make a function Then we make it a function"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 239.29999999999998,
+            "end": 254.5,
+            "text": "Similarly, if we feel that we have to use classes and objects Then we use object-orientation So, it is completely up to us We are reading important concepts But it is not compulsory to use these concepts"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 254.5,
+            "end": 269.5,
+            "text": "But yes, from the point of view of interviews And from the point of view of practical programming We should get all these concepts In real world, we have heard both the terms of object and class In real world, we have heard both the terms of object and class"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 269.5,
+            "end": 284.7,
+            "text": "In real world, we can say anything We can say anything as object This mouse is an object This pencil is going to be an object Everything is an object"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 284.7,
+            "end": 299.7,
+            "text": "So, here itself, we can make anything as an object But before making an object We make the object class In object-oriented programming We don't make objects directly"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 299.9,
+            "end": 314.9,
+            "text": "We study these terms in detail So, first we make a class Then we start to make a student This is an object This is an object"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 314.9,
+            "end": 330.09999999999997,
+            "text": "So, in this way, we imagine all our things That the concepts used in programming In real world, we can combine them To solve real world problems We are listing things that we have already dealt with"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 330.09999999999997,
+            "end": 345.09999999999997,
+            "text": "With many objects and classes in Python The lists in Python are objects The strings are objects And by the end of this chapter, we will realize What these terms mean and how we have already used them"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 345.09999999999997,
+            "end": 359.1,
+            "text": "Also, our chapter on object-oriented Is a little theoretical But we will be understanding it very easily In this section, we will talk about What exactly does a class and an object mean?"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 359.1,
+            "end": 374.1,
+            "text": "Let's talk about a class first Class is a blueprint for creating objects For example, a car has installed its factory The line of the car The car will be produced"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 374.1,
+            "end": 387.1,
+            "text": "Like Mercedes's GLS is a car Before making it, its blueprint will be ready For all the features Basically, a class is a blueprint In which we first tell what features should be"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 387.1,
+            "end": 402.1,
+            "text": "If we are going to bring a student to the college Then for that student, what information is there That we have to save in our system The student's name, address, role number How much information is there"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 402.1,
+            "end": 417.1,
+            "text": "So, all the information we have to save For a particular object We call it a blueprint for an object For example, we have to create a system for our college Now, college tells us to store a lot of students' information"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 417.1,
+            "end": 431.1,
+            "text": "One way is to store a lot of students' information In a list form For example, this is my list First, store the student's name in the list This is the student's name, then store their marks"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 431.1,
+            "end": 443.1,
+            "text": "We can store anything, then store Different relevant information We can do it from a list or dictionary There are many different ways But the most practical way is to use a class and object"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 443.1,
+            "end": 454.1,
+            "text": "How? First, we define a blueprint We define a class by writing What do we want to store for students To define a class, we write a class keyword"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 454.1,
+            "end": 468.1,
+            "text": "And then we write the class name The class name can be anything like the name of the variables Generally, the name of the class is always started with a capital letter We have made a class with the name of the student Now, we will tell you what information should be stored for the student"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 468.1,
+            "end": 481.1,
+            "text": "In our code, let's try to create a class We are making a class, student And in the student class, let's suppose I have to save the name For now, all my students I want to give the same name to everyone"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 481.1,
+            "end": 492.1,
+            "text": "What I have given everyone is the same name Meaning, in a student class Whatever student will be made, the name will always be the same name Now, what can we do? I have made this student"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 492.1,
+            "end": 502.1,
+            "text": "But we don't directly use the classes We have to make an object of the class We can imagine it as Our school has a class But it will have no use of the class alone"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 502.1,
+            "end": 513.1,
+            "text": "When students are sitting in the class The actual students are of their benefit So, here We make objects using the blueprint of the class Like in the factory, we made a blueprint"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 513.1,
+            "end": 523.1,
+            "text": "That this should be the feature of a car But then actually, we have to make a car By using the blueprint The actual car is made We call it an object"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 523.1,
+            "end": 534.1,
+            "text": "To create an object, we write our object variable Its name is equal to Then the class name and then the parenthesis So, in this way, we can create a new object The objects we have are called"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 534.1,
+            "end": 545.1,
+            "text": "Instances in programming Instances or Instances of class So, whenever we hear the instance Whenever we hear the object We are basically talking about the same thing"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 545.1,
+            "end": 555.1,
+            "text": "So, here, if I want to make a student To create it, we can write It is equal to student The name of the class is I have to write it here"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 555.1,
+            "end": 565.1,
+            "text": "And then we will put our parenthesis And then we can print our student Let's try to print S1 As we execute it What was printed for S1?"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 565.1,
+            "end": 575.1,
+            "text": "For S1, the main dot student Object At this location But basically, we have A little idea that"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 575.1,
+            "end": 585.1,
+            "text": "This is an object that is created In our code And what is the type of it? This is an object of a student class Which is created for us in this code"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 585.1,
+            "end": 595.1,
+            "text": "We can print the name as well Now, this name is Because it was in the blueprint If we define in the blueprint That every car should be blue"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 595.1,
+            "end": 605.1,
+            "text": "So, whatever cars will come The color will be blue So, in the blueprint, if we define That my student's name should be Karan Which is going to be the name"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 605.1,
+            "end": 617.1,
+            "text": "Same for every student Similarly, if I Made a second student S2 is equal to student And we will print S2 dot name"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 617.1,
+            "end": 627.1,
+            "text": "So, here also we will print the same thing We will have the same value For both the students Now, we will learn how to change this value But for now, we have seen"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 627.1,
+            "end": 637.1,
+            "text": "That if we want to make a class In a basic way And if we want to make an object We can make it in this way This is a class and this is an object"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 637.1,
+            "end": 647.1,
+            "text": "Let's take another example For example, we are making a factory In which We are going to produce cars So, we can make a class"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 647.1,
+            "end": 657.1,
+            "text": "Let's call it Car How should every car look Basically, in every car All our cars"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 657.1,
+            "end": 667.1,
+            "text": "We want to give color to all of them The color of our cars is going to be blue Now, we can create our cars This is my car one Car one is equal to"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 667.1,
+            "end": 677.1,
+            "text": "We have made an object of the car And now we can print The color of car one We saved and run The color of car one is equal to blue"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 677.1,
+            "end": 687.1,
+            "text": "Similarly, we can give parameters For example, every car Will have some model Or will have some brand Let's suppose"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 687.1,
+            "end": 697.1,
+            "text": "We have made a factory Brand will be Mercedes So, now if we want to print The brand of our car We can print it"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 697.1,
+            "end": 707.1,
+            "text": "Let's save and run So, we will get these values Printed So, this is how a class is created And this is how an object is created"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 707.1,
+            "end": 717.1,
+            "text": "Now, next we are going to talk About the constructor Constructor is basically the Init function In every class"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 717.1,
+            "end": 727.1,
+            "text": "We call it as init function Or we call it constructor This function is Invoked during object creation Invoked means executed"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 727.1,
+            "end": 737.1,
+            "text": "Whenever a new object is created For example, I created car one So, what happened? Automatically, a constructor Was executed"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 737.1,
+            "end": 747.1,
+            "text": "If I created car two Then again my constructor function Init function will be executed Now, interesting thing is We can't see init function here"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 747.1,
+            "end": 757.1,
+            "text": "So, let's comment on Our simple example For example, here Our class is student For student"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 757.1,
+            "end": 767.1,
+            "text": "We can create a constructor All classes have a function Called init function Which is always executed When the class is being initiated"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 767.1,
+            "end": 777.1,
+            "text": "In fact, it should be here When the object is being initiated You will use it to create a new object Automatically, the init function Will be called"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 777.1,
+            "end": 787.1,
+            "text": "We didn't write any init function In our class So, what Python does Automatically, it creates an init function And executes it"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 787.1,
+            "end": 797.1,
+            "text": "Whether you write init function as a programmer Or you don't write it Init function will always be executed There will always be a constructor for us If we want to write the constructor"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 797.1,
+            "end": 807.1,
+            "text": "How can we write it? We will write it in the class First, we will write def Then underscore underscore We will write i and it"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 807.1,
+            "end": 817.1,
+            "text": "That is initialization short init And underscore underscore again Which suggests me that this is my init function And We will put parenthesis for it"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 817.1,
+            "end": 827.1,
+            "text": "And in this init function Now, we can do any work For example, if I want to print it Creating New student"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 827.1,
+            "end": 837.1,
+            "text": "Or For practicality Adding new student in Database We will write something like this"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 837.1,
+            "end": 847.1,
+            "text": "What we are doing? Adding new student value in college database We have written this We will keep this name on top Now, we will notice that"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 847.1,
+            "end": 857.1,
+            "text": "As soon as we create our S1 object What will happen first? The init function will be called Basically, when we write the class name We are putting parenthesis here"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 857.1,
+            "end": 867.1,
+            "text": "This parenthesis is used to call the constructor So, automatically This constructor will be called One more interesting thing about the constructor Constructor always"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 867.1,
+            "end": 877.1,
+            "text": "Take an argument Or take a parameter Which is called the self parameter If we define our constructor like this The first parameter"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 877.1,
+            "end": 887.1,
+            "text": "Will always be a self parameter We will have to write Self here What does self mean? It means the new object"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 887.1,
+            "end": 897.1,
+            "text": "That is creating The new object that we are creating We are calling this self The object which the constructor calls This is the reference"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 897.1,
+            "end": 907.1,
+            "text": "It is pointing towards this So, let's save this And run We haven't printed anything I have created a class"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 907.1,
+            "end": 917.1,
+            "text": "There was a name and there was a constructor I have only written this much Let me delete all of this This line is written in the code What happened next?"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 917.1,
+            "end": 927.1,
+            "text": "Our app will be printed Adding new student in database Why? Because this constructor Invokes our app Calls our app"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 927.1,
+            "end": 937.1,
+            "text": "Now, let's see what is this self We can print our self Let's save it and run it What was printed? Student object at this location"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 937.1,
+            "end": 947.1,
+            "text": "Basically The object we are creating We have taken this self variable Both are the same It is pointing to this"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 947.1,
+            "end": 957.1,
+            "text": "In fact, if I print S1 Let's save it and run So, what are these two things? This location and this thing"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 957.1,
+            "end": 967.1,
+            "text": "They are both the same things This S1 object Which we have given the name S1 Internally, self That is what we are talking about"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 967.1,
+            "end": 977.1,
+            "text": "Now, if we want to give Different names to different students We can take multiple parameters For example, our self parameter Self always is the first parameter"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 977.1,
+            "end": 987.1,
+            "text": "After that, we can take Full name variable And here, because this constructor Can pass our name here Let's suppose"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 987.1,
+            "end": 997.1,
+            "text": "We want to name the first student Now, we will not name Every student's name So, what we can do here We can name"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 997.1,
+            "end": 1007.1,
+            "text": "Our self.name Is equal to Full name Basically, whatever value we pass here Will come into full name"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 1007.1,
+            "end": 1017.1,
+            "text": "And in self, basically in S1 The value of name A new variable will be created In which the value of full name will be assigned So, when we"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 1017.1,
+            "end": 1027.1,
+            "text": "Name S1.name We will have its value printed Let's save it And run it What is S1.name?"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 1027.1,
+            "end": 1037.1,
+            "text": "Current I hope we understand this process That we created an object What did we do in the object? We created a constructor"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 1037.1,
+            "end": 1047.1,
+            "text": "If we do not create the constructor Then Python automatically does it for us And we have to pass an argument In the constructor Which is my self argument"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 1047.1,
+            "end": 1057.1,
+            "text": "If we do not write this self here Then we will have an error I want to say ABCD And here I write ABCD So, basically I am saying"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 1057.1,
+            "end": 1067.1,
+            "text": "My object is naming That I want to call my object ABCD This code is completely valid And there will be no error in it Because generally all the programmers"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 1067.1,
+            "end": 1077.1,
+            "text": "Are writing selfies here Because if you work on any other code In the company Then there should be no confusion What is exactly the reference here"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 1077.1,
+            "end": 1087.1,
+            "text": "So, generally what we will write Is we always try to write Self here We don't have to create a name by ourselves So, what is self?"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 1087.1,
+            "end": 1097.1,
+            "text": "Self is the reference In fact, here I have written The self parameter is a reference To the current instance of the class That is, the object we are creating"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 1097.1,
+            "end": 1107.1,
+            "text": "Is talking about it If we create a new object Then it will be talking about it Then if we do it to someone else Then it will be talking about it"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 1107.1,
+            "end": 1117.1,
+            "text": "Using self or new variables Like what we have created this name Now, in the same way We can make another student S2 is equal to student"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 1117.1,
+            "end": 1127.1,
+            "text": "We give it the name Arjun And then what we will do We will print the name of S2 The same work that was done Will be the same work here"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 1127.1,
+            "end": 1137.1,
+            "text": "We save it and run What was printed? First of all, for current If our constructor is called Then we printed the name of S1"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 1137.1,
+            "end": 1147.1,
+            "text": "Then the second constructor Was called here The constructor calls with every new object So here, that thing was printed Then we printed the name of S2"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 1147.1,
+            "end": 1157.1,
+            "text": "So we printed the name of S2 So, in this way Our constructor works And in this way our self parameter With the help of self parameter"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 1157.1,
+            "end": 1167.1,
+            "text": "We can store different variables Or different data Whatever data we store For S1 we have stored name Or we have stored name for all students"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 1167.1,
+            "end": 1177.1,
+            "text": "We call all these attributes Whatever data is stored We call all these data Attributes The variables"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 1177.1,
+            "end": 1187.1,
+            "text": "That is stored inside the class Or inside the object Or we call these variables We call these variables attributes We can sell multiple values here"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 1187.1,
+            "end": 1197.1,
+            "text": "Like we can send our marks with full name Like we can send our marks with full name It is not necessary to call it full name We can simply call it name We call it name"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 1197.1,
+            "end": 1207.1,
+            "text": "So when we are writing name The name means the name which is in the parameter And here, the name of self.name Which is going to create a new object In the same way"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 1207.1,
+            "end": 1217.1,
+            "text": "Self.marks is equal to marks Generally, these are syntax Which we will get to see in many places That is why I am giving the same name Generally, programmers give the same name"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 1217.1,
+            "end": 1227.1,
+            "text": "And this value We will add the same value Now we can start sending the marks of students Let's suppose they scored 97 And they scored 88"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 1227.1,
+            "end": 1237.1,
+            "text": "Now we can print S2.name with S2.marks And here S1.marks Let's save it and run"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 1237.1,
+            "end": 1247.1,
+            "text": "This is the name of our S1 And this is the name of our S2 So in this way We create our classes We can create a constructor"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 1247.1,
+            "end": 1257.1,
+            "text": "When a new object is being created We can pass additional information So that additional information Can be stored with our object And we can access that information"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 1257.1,
+            "end": 1267.1,
+            "text": "With this object And use it for some other work So this is how the concept of object orientation works We could store the same data In the same string"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 1267.1,
+            "end": 1277.1,
+            "text": "The same data of students and marks We could store it in the list We could store it in the dictionary It is not compulsory to use classes and objects But many times we will realize"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 1277.1,
+            "end": 1287.1,
+            "text": "Scenarios when we have to Use classes and objects But now we are trying to Understand this concept from a simple example So that when we have a complex problem"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 1287.1,
+            "end": 1297.1,
+            "text": "Then we have all this knowledge Available Also our constructors Theoretically we can divide them into two categories For example this constructor"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 1297.1,
+            "end": 1311.1,
+            "text": "And we create another version of it Let's suppose I have this Additional constructor So this one The first one is a constructor"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 1311.1,
+            "end": 1321.1,
+            "text": "With only one variable Which is my self parameter Generally we call Default constructors We call them default constructors"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 1321.1,
+            "end": 1331.1,
+            "text": "If we don't make default constructors Then by default we will make them python Means in that This thing won't be printed If I write something here"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 1331.1,
+            "end": 1345.1,
+            "text": "Then it will come in the category of default constructors And the second one is Parameterized constructors Constructors Parameterized constructors means"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 1345.1,
+            "end": 1355.1,
+            "text": "That constructor in which There are some other parameters other than self So this comes in the category of parameterized constructors And this comes in the category of default constructors And in one class"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 1355.1,
+            "end": 1365.1,
+            "text": "If we write two constructors For example we have called this Which constructor was executed Which constructor was executed Which is matching with your parameters"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 1367.1,
+            "end": 1377.1,
+            "text": "Now this one is the default constructor Our parameters are not matching Obviously this one won't run This one won't run Generally for a single class"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 1377.1,
+            "end": 1387.1,
+            "text": "We don't make multiple constructors as such We just look at our needs And according to that we are defining Only one single constructor So this was all about constructors"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 1387.1,
+            "end": 1397.1,
+            "text": "We have two ways We have already seen what is the attribute Attribute means any data Like any variable It is marked, it is attribute values for my class"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 1397.1,
+            "end": 1409.1,
+            "text": "Now whenever we talk about attributes We have two types of attributes One is our class attributes Which are common for all objects Which are common for the entire class"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 1409.1,
+            "end": 1419.1,
+            "text": "Which owns the class And are common for all objects And one is instance attribute Which is different for each object For example"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 1419.1,
+            "end": 1429.1,
+            "text": "We have made a class with the name of the student Now for the student First student will come one, student two Student three, student four If I have a class"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 1429.1,
+            "end": 1439.1,
+            "text": "Called student So in that Let's suppose this is my student one This is my student two, this is my student three This is my student four"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 1439.1,
+            "end": 1449.1,
+            "text": "Can I say that for every student The name will be different From the name of the student It can be different It can be different"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 1449.1,
+            "end": 1459.1,
+            "text": "It is not like we will define the name And the name will be the same for all students So whatever student objects Or student instances Will have different names for all of them"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 1459.1,
+            "end": 1469.1,
+            "text": "So logically If every student object has different names Can I say that this name Is an object Or instance attribute"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 1469.1,
+            "end": 1479.1,
+            "text": "Means this should be a data That the object should be different So the data that each object has We define it by self dot Define it"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 1479.1,
+            "end": 1489.1,
+            "text": "For example we know that every student's name will be different For every student's marks will be different So we will write self dot So self dot name Means every object's name will be different"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 1489.1,
+            "end": 1499.1,
+            "text": "Self dot marks means Self here is the reference For object we are defining marks For object we are defining names For object we are defining names"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 1499.1,
+            "end": 1509.1,
+            "text": "So these names Self dot names and self dot marks These are both instance attributes For each object Second thing"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 1509.1,
+            "end": 1519.1,
+            "text": "If we have a student With the name of the class So this student If we are making the same database For the same college system"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 1519.1,
+            "end": 1529.1,
+            "text": "So can I say that the name Will be the same Means this student Is also studying in the same college This also in the same college"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 1529.1,
+            "end": 1539.1,
+            "text": "So the name of the college Will be the same So can I store the name of the college Here I store the name of the college Here the name of the college"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 1539.1,
+            "end": 1549.1,
+            "text": "Does it make sense? It doesn't make sense Because what objects do Objects occupy the space In the memory When this object is created"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 1549.1,
+            "end": 1559.1,
+            "text": "And its name will be stored separately For example this object We have defined the name current We have defined the name Arjun We have defined the name Tony"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 1559.1,
+            "end": 1569.1,
+            "text": "We have defined the name Bruce So this also in the memory We will occupy this space in the memory We will occupy this space in the memory We will occupy this space in the memory"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 1569.1,
+            "end": 1579.1,
+            "text": "Each new object occupies space in the memory But if I know that For all objects I want to store the same data So can I make it 4 different times"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 1579.1,
+            "end": 1589.1,
+            "text": "Or if I want to make a thousand objects Then can I make the same variable Same thing Same attribute I want to store it a thousand times"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 1589.1,
+            "end": 1599.1,
+            "text": "So for this The common thing is We make it a class attribute And we store it in the memory For example"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 1599.1,
+            "end": 1609.1,
+            "text": "For every student The college name is the same So I will define the college name In the constructor That my college name is ABC college"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 1609.1,
+            "end": 1619.1,
+            "text": "So for every student The college name will be the same If I want I can print the college name For example In the last"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 1619.1,
+            "end": 1629.1,
+            "text": "I can print s2. College name Let's save it and run For s2 the name of the college is printed And this variable is college name"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 1629.1,
+            "end": 1639.1,
+            "text": "Because it was not defined with self That is why it is stored in the memory once If you create 10 objects Then it will be stored in the memory once But because every object has a different name"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 1639.1,
+            "end": 1649.1,
+            "text": "Then it will be stored in the memory Because for storing different values The marks are different So the common things For all objects"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 1649.1,
+            "end": 1659.1,
+            "text": "We make them a class attribute And to access the class attributes We can write class.attribute For example Instead of writing s2."
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 1659.1,
+            "end": 1669.1,
+            "text": "College name I can write the student's name This is also completely valid We get the same value from it But if I want to access this name"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 1669.1,
+            "end": 1679.1,
+            "text": "Then we Can access s2.name Or s1.name In the mind of some students There may be one more doubt"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 1679.1,
+            "end": 1689.1,
+            "text": "For example I have this one student s1 Let's try this For example In our student class"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 1689.1,
+            "end": 1699.1,
+            "text": "We have two class attributes One is college name And one is by default Anonymous I wrote this"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 1699.1,
+            "end": 1709.1,
+            "text": "What is the student's name? Anonymous is written in the class attribute And in the object attribute I passed the current When I will print s1.name"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 1709.1,
+            "end": 1719.1,
+            "text": "What should be printed? You can pause here And think and try to guess By the way, there is nothing to guess When I run it"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 1719.1,
+            "end": 1729.1,
+            "text": "Then I will get current print Why will it print? When we have class attribute What is this? This is a class attribute"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 1729.1,
+            "end": 1739.1,
+            "text": "When we have class attribute And when we have object attribute Then the precedence of object attribute Is higher than class attribute Means if we have same name"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 1739.1,
+            "end": 1749.1,
+            "text": "Then we will always get the object For preference That will be the higher priority But generally we don't do Generally object attribute and class attribute"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 1749.1,
+            "end": 1759.1,
+            "text": "We don't keep the same Generally in that case Let's suppose that an object Has not given its name Then its name will be by default anonymous"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 1759.1,
+            "end": 1769.1,
+            "text": "That is Basically one of the purposes why you would use it But in this case It is not making a lot of sense But remember"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 1769.1,
+            "end": 1779.1,
+            "text": "That when object attribute Is of the same value Then the object attribute gets higher priority In usage Next we will talk about methods"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 1779.1,
+            "end": 1789.1,
+            "text": "Whatever our class is In the class Two things can be stored One is data And one is"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 1789.1,
+            "end": 1799.1,
+            "text": "Methods Data means Attributes So class is basically a collection of two things Attributes"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 1799.1,
+            "end": 1809.1,
+            "text": "Methods Attributes means what properties you have Methods means what can you do Like car So first I will tell you"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 1809.1,
+            "end": 1819.1,
+            "text": "What is the mileage of the car What is the color of the car What is the engine of the car What is the size of the tire These are different things"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 1819.1,
+            "end": 1829.1,
+            "text": "These are all attributes But then I will have to tell How does the car run How does the car start How does the car stop"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 1829.1,
+            "end": 1839.1,
+            "text": "Whatever our functions are We call them methods Methods are basically functions They belong to objects When we write functions in the class"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 1839.1,
+            "end": 1849.1,
+            "text": "We call them methods We call the functions in the class So till now we have studied String methods Or we have studied list methods"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 1849.1,
+            "end": 1859.1,
+            "text": "Or we have studied dictionary methods So how did we come For these methods Because all these were classes Which we created objects"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 1859.1,
+            "end": 1869.1,
+            "text": "Then we were using methods for objects So let's suppose we have made this class Here we have defined the constructor And in this way we can define our method We can write def"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 1869.1,
+            "end": 1879.1,
+            "text": "We can write the name of our method We can call our self And in the class we write methods We always write our first parameter Our first parameter"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 1879.1,
+            "end": 1889.1,
+            "text": "And then we can use it We can use it or not In this way we can define our methods And to use it we write Object name dot"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 1889.1,
+            "end": 1899.1,
+            "text": "We can execute it like this For example Let me remove this print line For example We can make a method"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 1899.1,
+            "end": 1911.1,
+            "text": "That says hello If I have made a method like this Which simply says hello Or which says welcome student And in fact"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 1911.1,
+            "end": 1921.1,
+            "text": "We call it welcome This method It says welcome student Let's save it To call welcome student"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 1921.1,
+            "end": 1931.1,
+            "text": "We can write s1 dot welcome And we can call this method When we call this method We will have an error that Welcome takes zero positional arguments"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 1931.1,
+            "end": 1941.1,
+            "text": "But one was given That we are not passing any argument Basically in this welcome We have to write our self first That is self parameter"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 1941.1,
+            "end": 1951.1,
+            "text": "We always write it first Let's save it and run now So welcome student came to us and printed Whether we are using or not using We are writing our self in every method"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 1951.1,
+            "end": 1961.1,
+            "text": "Generally Now while using our self We can access its properties Like icon type Self dot name"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 1961.1,
+            "end": 1971.1,
+            "text": "So welcome student and then The name of student will be printed for us Let's save it and run So our whole method is executed In the same way"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 1971.1,
+            "end": 1981.1,
+            "text": "We can make a method Def get Self is here We can print What does this function do?"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 1981.1,
+            "end": 1991.1,
+            "text": "It returns Self dot marks It returns self dot marks So here we can print s1 dot"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 1991.1,
+            "end": 2001.1,
+            "text": "get marks And execute it So whatever value will return It will come after printing Minimize it a bit"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 2001.1,
+            "end": 2011.1,
+            "text": "And when we run it We will get a student So in this way we can create Different methods in Python And then we can use them for the objects"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 2011.1,
+            "end": 2021.1,
+            "text": "So whatever we have learnt Let's revise it once Our classes we define We create objects in this way Whenever we make a class"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 2021.1,
+            "end": 2031.1,
+            "text": "There is always a constructor If we have not written a constructor Python will automatically create a constructor for us If we want a constructor Constructor is basically for object initialization"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 2031.1,
+            "end": 2041.1,
+            "text": "If we want to create something If we want to create something If we want to create some new attributes We do that in the constructor In this way we define our constructor"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 2041.1,
+            "end": 2051.1,
+            "text": "There are two types of constructor Default and parametrized First in the constructor Our parameter is the self parameter Which means object instance"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 2051.1,
+            "end": 2061.1,
+            "text": "And after that we can take different parameters We can create our attributes There are two types of attributes Class attributes and object attributes Apart from that we create"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 2061.1,
+            "end": 2071.1,
+            "text": "Our methods in the class The functions in the class are called The methods are always written These methods are the functions of our class Like this is our first method"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 2071.1,
+            "end": 2081.1,
+            "text": "Similarly we can make Student object S2 For that we can call our method again So about classes and objects The basic important things"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 2081.1,
+            "end": 2091.1,
+            "text": "We have covered them So let's solve a practice question The question is telling us To create a student class That takes name and marks of three subjects"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 2091.1,
+            "end": 2101.1,
+            "text": "So what can we do We can make a class We will call it student Basically we will make A constructor in it"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 2101.1,
+            "end": 2111.1,
+            "text": "We will define our constructor underscore underscore init First of all we will get a selfie After that we will be told That we have to pass the name"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 2111.1,
+            "end": 2121.1,
+            "text": "And then we have to pass the marks of three subjects Or we can pass three different variables If we want we can pass a proper list We will try the list method Subjects as arguments"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 2121.1,
+            "end": 2131.1,
+            "text": "In constructor Then create a method to print the average Of all the subjects So we are going to do all these things Let's clear our screen"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 2131.1,
+            "end": 2141.1,
+            "text": "First of all we make a class With the name of student In the student class We make a constructor Def init"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 2141.1,
+            "end": 2151.1,
+            "text": "Self in it Self will come We will get our name And we will get marks I am going to assume marks is a list"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 2151.1,
+            "end": 2161.1,
+            "text": "When marks pass We will get some marks Like this We will get marks We can define"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 2161.1,
+            "end": 2171.1,
+            "text": "Self.name is equal to this name And self.marks Is equal to Marks Let's make a student object"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 2171.1,
+            "end": 2181.1,
+            "text": "Let's make a student object S1 is equal to Student And we pass values First we can pass the name of the student"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 2181.1,
+            "end": 2191.1,
+            "text": "We can pass the name of the student Let's call him Tony Stark And then we will pass marks 99, 98, 97 Like this"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 2191.1,
+            "end": 2201.1,
+            "text": "So let's save it Now the second part we are saying To create a method to print the average So in this we are going to define Let's call it"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 2201.1,
+            "end": 2211.1,
+            "text": "GetAverage Self will come in it We don't need to take anything else For the average So here first we will calculate"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 2211.1,
+            "end": 2221.1,
+            "text": "The sum is going to be Self.marks We can run a loop To take the sum of self We can run a loop"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 2221.1,
+            "end": 2231.1,
+            "text": "In the beginning sum is equal to 0 For Value In.marks I can"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 2231.1,
+            "end": 2241.1,
+            "text": "Add all the values in my marks And then print High Let's print the name first High.name"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 2241.1,
+            "end": 2251.1,
+            "text": "Your score is Your average Score is Your average Score is"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 2251.1,
+            "end": 2261.1,
+            "text": "Sum Divided by 3 Here also we will do Self.marks So basically"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 2261.1,
+            "end": 2271.1,
+            "text": "We have made a method Self will come in it Before that we have Self.marks We have calculated the sum of all the values"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 2271.1,
+            "end": 2281.1,
+            "text": "And then printed the average Let's save it And Call S1. GetAverage"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 2281.1,
+            "end": 2291.1,
+            "text": "Save and run High Tony Star Your average score is 98.0 What happened? The average score was calculated for me"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 2291.1,
+            "end": 2301.1,
+            "text": "Additionally Our attributes For example this name is my attribute This is the object attribute If I have to change this name"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 2301.1,
+            "end": 2311.1,
+            "text": "By going to tomorrow Let's suppose I want to change S1.name And after that if I call S1.AverageMarks"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 2311.1,
+            "end": 2321.1,
+            "text": "I can change the value of the attribute Directly Save it and run it What happened? My name is getting printed"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 2321.1,
+            "end": 2331.1,
+            "text": "So changing the value of the attributes And manipulating them Is also possible in classes and objects Next, the concept we will talk about That is going to be static methods"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 2331.1,
+            "end": 2341.1,
+            "text": "Till now The methods we have seen For example getAverage, or other methods These are non-static methods Now we are going to talk about"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 2341.1,
+            "end": 2351.1,
+            "text": "A special type of method Which are called static methods Static methods are methods that don't Use the self parameter Till now we have seen that in every method"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 2351.1,
+            "end": 2361.1,
+            "text": "In some way our self parameter We have to write it always But if we don't want to use it For example If I want to make a function"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 2361.1,
+            "end": 2371.1,
+            "text": "Hello And in that I just want to print hello If we write something like this And then we tried to use it If I try to write s1.hello"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 2371.1,
+            "end": 2381.1,
+            "text": "This will give me an error Run it I will get an error. Why am I getting an error? Because by default We should be self inside hello"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 2381.1,
+            "end": 2391.1,
+            "text": "But there is no sense in this function So that's why we can make it A static method We can change this method to a special category So the static methods"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 2391.1,
+            "end": 2401.1,
+            "text": "Don't have a self parameter and they work At class level They don't work at object level So whenever we make a class Let's suppose this is our class"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 2401.1,
+            "end": 2411.1,
+            "text": "This is my object1 This is my object2 This is my object3 The self is used for objects So here self means"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 2411.1,
+            "end": 2421.1,
+            "text": "Object1, object2, object3 But if you are making a method Where object is not needed For example, to print hello We are not using any attribute"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 2421.1,
+            "end": 2431.1,
+            "text": "Or anything else So what should we do? We should not use object level But we should use class level method That's why we call the class methods static methods"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 2431.1,
+            "end": 2441.1,
+            "text": "To make static methods We write ad-rate static method This is our decorator We will talk about decorator Basically we are writing decorator"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 2441.1,
+            "end": 2451.1,
+            "text": "And telling that we want to create a static method Then we can create our static method For example To remove an error in this hello I just have to write ad-rate"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 2451.1,
+            "end": 2461.1,
+            "text": "Static Here we are suggesting What is this? It converts a function to be a static method This is a decorator Which converts a normal function to be a static method"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 2461.1,
+            "end": 2471.1,
+            "text": "Now if I save and run it Then there will be no error It will be a simple hello print for us So this is what we call a decorator In python"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 2471.1,
+            "end": 2481.1,
+            "text": "There are more decorators But decorators allow us to wrap another function In order to extend the behavior of the wrap Function without permanently modifying it I will explain in a simpler language"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 2481.1,
+            "end": 2491.1,
+            "text": "Basically a function Which is a decorator Which takes function in parameter And gives function in output So this decorator"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 2491.1,
+            "end": 2501.1,
+            "text": "Decorator does not need to take All this function Changes its behavior and returns it This is what we call as decorator We are going to see decorators"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 2501.1,
+            "end": 2511.1,
+            "text": "So we don't need to worry Basically we have to write Adderate static method To make it Which is changing the behavior"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 2511.1,
+            "end": 2521.1,
+            "text": "Of my normal function So this is not a normal function Just changing its behavior and making it a static method So whenever we have such methods Which do not need such self"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 2521.1,
+            "end": 2531.1,
+            "text": "Then we can bring them to the class level And for them we can use Static method decorator Next we are going to talk About two important concepts"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 2531.1,
+            "end": 2541.1,
+            "text": "Which I will call as two pillars of Oops! Two pillars of object orientation Basically whenever We are programming object orientation In any language"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 2541.1,
+            "end": 2551.1,
+            "text": "Whether it is already C++ Or Java background In every language There are generally four pillars Of object orientation"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 2551.1,
+            "end": 2561.1,
+            "text": "One pillar is abstraction Which means it is a four theoretical definition It is very easy to remember The name of the pillar is difficult The more difficult it is"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 2561.1,
+            "end": 2571.1,
+            "text": "To remember the word abstraction It will be difficult It is very easy to remember Just remember the word It is English and nothing else"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 2571.1,
+            "end": 2585.1,
+            "text": "Abstraction Encapsulation Inheritance And polymorphism These are four pillars"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 2585.1,
+            "end": 2595.1,
+            "text": "Which have a complete object orientation From these We will discuss these in our next part We will discuss abstraction and Encapsulation"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 2595.1,
+            "end": 2605.1,
+            "text": "Abstraction Abstract means It is not clear How it is hidden Like if you have heard the word abstract art"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 2605.1,
+            "end": 2615.1,
+            "text": "Abstraction means In programming, in Oops Hiding the implementation details of a class In a class What kind of things are being implemented"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 2615.1,
+            "end": 2625.1,
+            "text": "Exactly, you have hidden And you are showing the user Important features Unnecessary things Which user does not need"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 2625.1,
+            "end": 2635.1,
+            "text": "You have hidden that For example, when a car starts When an engine starts What is the process internally In the engine"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 2635.1,
+            "end": 2645.1,
+            "text": "The driver will never know Unless you go and search it But as such, when you press the clutch When you press the accelerator As such, what exactly is happening in the engine"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 2645.1,
+            "end": 2655.1,
+            "text": "What is happening with the fuel We cannot see all that But it is happening internally So what did the car manufacturer do What did the car manufacturer do"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 2655.1,
+            "end": 2665.1,
+            "text": "Unnecessary things Like what is happening in the engine The driver does not have such a meaning He has to start his car So he has hidden unnecessary details"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 2665.1,
+            "end": 2675.1,
+            "text": "And the necessary things Only those are shown The user has shown essential things This is the meaning of abstraction For example"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 2675.1,
+            "end": 2685.1,
+            "text": "I made a car Suppose I create a function called Start What does this function do So first of all"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 2685.1,
+            "end": 2697.1,
+            "text": "Let's take a self And In fact, let's make a constructor Def Let's write a constructor"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 2697.1,
+            "end": 2709.1,
+            "text": "In it, the self will come And as soon as the self comes In every car, we will create an accelerator This is my accelerator Let's call it"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 2709.1,
+            "end": 2719.1,
+            "text": "dot ACC In every car, we can create an accelerator In the beginning What is the accelerator We can call it"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 2719.1,
+            "end": 2729.1,
+            "text": "False Or the accelerator is not pressed Apart from that, in every car There can be a break Break is a keyword"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 2729.1,
+            "end": 2739.1,
+            "text": "We call it Break is a break In the beginning, we did not press the brake And in every car We can have a clutch"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 2739.1,
+            "end": 2749.1,
+            "text": "We did not press the clutch So what did we do Define a car As soon as we start the car First of all, we press the clutch"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 2749.1,
+            "end": 2759.1,
+            "text": "So our value of self dot clutch Will be first After that, we will press the accelerator Self dot Don't take it literally"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 2759.1,
+            "end": 2769.1,
+            "text": "We are taking an example And then what will we do The car will start We will print We have made a class"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 2769.1,
+            "end": 2779.1,
+            "text": "A normal class car We initialized it Accelerator, brake and clutch are in every car In the beginning, there are all the false No one was pressed"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 2779.1,
+            "end": 2789.1,
+            "text": "When we have to start the car Then we have to press the clutch We have to press the accelerator And the car will start An object is equal to car"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 2789.1,
+            "end": 2799.1,
+            "text": "We do not have to pass anything And then what I want to do I want to start my car Let's save it and run it As soon as I wrote my code to start the car"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 2799.1,
+            "end": 2809.1,
+            "text": "The car started The thing was printed But in the background The unnecessary steps that we did To the accelerator"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 2809.1,
+            "end": 2819.1,
+            "text": "I do not know where these steps are These steps are in the class There was no unnecessary thing There was no unnecessary thing Nothing was shown outside the class"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 2819.1,
+            "end": 2829.1,
+            "text": "Which is internally implemented So assuming that this is an automatic car The unnecessary details Were hid And the necessary things"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 2829.1,
+            "end": 2839.1,
+            "text": "Which I needed to start the car I had access to them This is called abstraction What we did here is We implemented abstraction in our code"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 2839.1,
+            "end": 2849.1,
+            "text": "Basically in the code When you hide unnecessary details And just show the user the necessary things We call it abstraction Second is encapsulation"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 2849.1,
+            "end": 2859.1,
+            "text": "Encapsulation In this, capsule is an important word Basically we make a capsule Let me try to create this capsule Of data"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 2859.1,
+            "end": 2869.1,
+            "text": "And related functions Data and related functions We make a capsule In a single unit What is this? This is my capsule"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 2869.1,
+            "end": 2879.1,
+            "text": "And we encapsulate And we call this encapsulation Basically we made a class In which there are attributes And methods are also used"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 2879.1,
+            "end": 2889.1,
+            "text": "And we are using it as an object The thing we have done We have written the entire code in this lecture That was all encapsulation Whenever we are making a class"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 2889.1,
+            "end": 2899.1,
+            "text": "There are attributes and methods What we did? We encapsulated So encapsulation is Wrapping data And the functions"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 2899.1,
+            "end": 2909.1,
+            "text": "In a single unit Which is my object It has related data And related functions And what is the capsule?"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 2909.1,
+            "end": 2919.1,
+            "text": "It is my object And we call it encapsulation Abstraction and encapsulation There are two difficult words in English But they are very easy"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 2919.1,
+            "end": 2929.1,
+            "text": "The same abstractions And the same encapsulation There is no difficulty in understanding But yes The definition of both of them is very important"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 2929.1,
+            "end": 2939.1,
+            "text": "Because the interviewer can ask you the definition Or if you have an exam In the college, in Python The definition is really important We can remember that"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 2939.1,
+            "end": 2949.1,
+            "text": "Next, let's solve another practice question We have to create An account class With two attributes An account name"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 2949.1,
+            "end": 2959.1,
+            "text": "We are talking about bank accounts There will be two attributes One will be the balance We have to create two attributes After that we have to create methods"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 2959.1,
+            "end": 2969.1,
+            "text": "With which we can debit anything With which we can credit Debit means to reduce the value With which we can add some Balances"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 2969.1,
+            "end": 2979.1,
+            "text": "And then we have Another method which prints the balance So we are going to create All these things So first of all, let's make an account class"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 2979.1,
+            "end": 2991.1,
+            "text": "For ourselves In the account class Let's define a constructor In this we will have Self, apart from that we will have"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 2991.1,
+            "end": 3001.1,
+            "text": "Balance, let's call it BL And after that we will have Account number So self dot Balance"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 3001.1,
+            "end": 3011.1,
+            "text": "Is equal to this value And self dot Account Number Is equal to this value"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 3013.1,
+            "end": 3023.1,
+            "text": "So if I have to create any account For example This is my Account 1 Or ACC 1"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 3023.1,
+            "end": 3033.1,
+            "text": "For Customer 1 So we can set up our account First we have to pass the balance We can pass a number in the balance For example we have"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 3033.1,
+            "end": 3043.1,
+            "text": "Added an amount of 10,000 In our bank account And then our account number Let's suppose 1,2,3,4 Or"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 3043.1,
+            "end": 3053.1,
+            "text": "Let's suppose 1,2,3,4,5 This is my account number Now we can print The balance for our user For account 1"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 3053.1,
+            "end": 3067.1,
+            "text": "Directly And for that We can Print the account number So I have successfully created my class"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 3067.1,
+            "end": 3077.1,
+            "text": "And object So we have to add 3 methods For debit, credit and printing the balance First We create our debit method"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 3081.1,
+            "end": 3091.1,
+            "text": "Def We have to use self in debit Because whenever the amount is debit If you want to take anything from the bank account Then the value of balance will decrease"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 3091.1,
+            "end": 3101.1,
+            "text": "And who has the balance Of every object Every account has a different balance The balance of the third account So here"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 3101.1,
+            "end": 3111.1,
+            "text": "The amount will decrease from the balance Let's suppose this is the amount That we want to take out from our account So what will happen first First from the balance"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 3111.1,
+            "end": 3121.1,
+            "text": "That is from self.balance We will minus this amount And Then basically we can print Rs"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 3121.1,
+            "end": 3131.1,
+            "text": "Rs Amount Was Debted From your account"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 3131.1,
+            "end": 3147.1,
+            "text": "It is given So this is our debit method And some way Our credit method This is my credit method"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 3147.1,
+            "end": 3157.1,
+            "text": "We will add some amount This will be Minus equal to We have added this amount Into our balance"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 3157.1,
+            "end": 3167.1,
+            "text": "And we will write here Credited Basically this amount has been added And then we will create a function Which returns the final balance"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 3167.1,
+            "end": 3179.1,
+            "text": "Get Balance And what does this basically do It returns Self.balance"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 3179.1,
+            "end": 3189.1,
+            "text": "In fact If we want We can call here Like we have printed Debted"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 3189.1,
+            "end": 3199.1,
+            "text": "We can print it Total Balance is equal to And here We will call"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 3199.1,
+            "end": 3209.1,
+            "text": "Get GetBalance We can print the same thing here So our internal method We will call it"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 3209.1,
+            "end": 3219.1,
+            "text": "Whenever any amount is debit or credit We will print our final balance So this is my account class It has balance and account number Then I have done amount debit"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 3219.1,
+            "end": 3229.1,
+            "text": "Debit is removed from balance Printed and came And the final balance came We have added the balance Printed and came"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 3229.1,
+            "end": 3239.1,
+            "text": "And the final total balance came And we have already created the internal function of getBalance Let's try to do some things First of all In the account"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 3239.1,
+            "end": 3249.1,
+            "text": "Let's suppose we want to debit We I want to take out 1000 rupees What I want to do after that We want to add"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 3249.1,
+            "end": 3259.1,
+            "text": "500 rupees So what will happen First 1000 rupees when we debit The print will come here 1000 was debited"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 3259.1,
+            "end": 3269.1,
+            "text": "Total balance is 9000 After that 500 we have added Total balance is 9500 After that Let's suppose our salary comes"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 3269.1,
+            "end": 3279.1,
+            "text": "At the start of the month Let's suppose my salary is 40,000 Save it Re-execute So the 4500"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 3279.1,
+            "end": 3289.1,
+            "text": "40,000 added in it becomes 49,500 After that I have to pay my rent I might be spending About 10,000"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 3289.1,
+            "end": 3299.1,
+            "text": "And the cycle And the cycle repeats The total balance changes So in this way We have created a class"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 3299.1,
+            "end": 3309.1,
+            "text": "We have created objects This was a single account So we can create multiple accounts In fact many people who create Starter projects"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 3309.1,
+            "end": 3319.1,
+            "text": "Like whenever we learn a first language We learn Java, Python, C++ We learn in that In the first year of college The basic project"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 3319.1,
+            "end": 3329.1,
+            "text": "We create some other system In which classes and objects Are based on object orientation In which you create an account class Your balance is being updated"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 3329.1,
+            "end": 3339.1,
+            "text": "Different things are happening But this is basically a demo Of how objects can relate to real world scenario All these things are fine We could have created a debit function"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 3339.1,
+            "end": 3349.1,
+            "text": "We could have created a credit function We could have created a get balance function But for every account To store its balance To store its account number"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 3349.1,
+            "end": 3359.1,
+            "text": "We had to use lists We had to use dictionaries We had to use something else Things get confusing But according to a real world scenario"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 3359.1,
+            "end": 3369.1,
+            "text": "Using class and objects in this case Is totally sensible Otherwise we get stuck in Different data types So this is how"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 3369.1,
+            "end": 3379.1,
+            "text": "Classes and objects help us Logically to organize our code In a well structured manner All these classes and objects Were based on basic things"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 3379.1,
+            "end": 3389.1,
+            "text": "We covered in part 1 And there are many concepts We talked about which is Inheritance, polymorphism How we can create a private attribute"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 3389.1,
+            "end": 3399.1,
+            "text": "How we can create a private method How we can delete an attribute These are small important things Which we will cover in part 2 That's all for today"
+        },
+        {
+            "number": "8",
+            "title": "OOPS in Python",
+            "start": 3399.1,
+            "end": 3401.1,
+            "text": "Till then keep learning and keep practicing"
+        }
+    ],
+    "text": " Hi everyone and welcome to the complete Python series in which we will cover today's chapter 8 about object oriented programming using Python i.e. our classes, objects, constructors, static methods, etc. We will talk about different concepts which will make us better as a programmer As usual, if we want to read any other topic of Python, it is available in this playlist We will do theory concepts and write a lot of codes and the chapter's slides will be in the description box below So let's start with chapter 8 Hi everyone, now we will start with chapter 8 in which we will read objects and classes i.e. object oriented programming and in fact object oriented programming is one of the most important topics of any programming language because the questions related to this are asked in interviews In fact, a lot of theoretical concepts, practical concepts which we are using in companies to build systems are a lot of concepts from object oriented programming Today, we are doing our programming in Python We are learning something else in the company, learning a new framework and some of the concepts we will learn in this chapter are applied in some other language So this is going to be one of the most important concepts which will teach us more new things about programming Now let's talk about object oriented programming Basically, to map with real world scenarios, we started using objects in code In the beginning, we used to do procedural programming So, procedural means that the code is written in sequence For example, I have written A is equal to 10, my second variable Let me zoom in, B is equal to 20 I have made a sum, sum is equal to this A plus this B Then I am trying to print my sum A plus or write my sum directly After that, I have to calculate a difference For difference, I am going to write A minus B I have written a lot of codes I have written simple ones But I am imagining many codes which we have written Then we have learnt the concept functions In the beginning, we were writing many classes Similarly, we were writing codes Normally, in a sequence, we have a line, then a line, then a line Then a line, then a line, then a line And we know that in a sequence, our whole code has been executed This is called procedural programming Now, how can we bring reusability in the code? To reduce redundancy and bring reusability Let me write these words Because of functions, redundancy Decreases and reusability What happens? It increases This means that if some things are repeated Then combine them and make a single function Then redundancy decreases and reusability increases We have made a piece of code By saying function, we can use it again and again That is why functions were really important Basically, we moved from procedural to functional programming Which is better There is another level up method from function Which we call object-oriented programming Which we are going to learn in this chapter Basically, we know that we can make functions But to decrease redundancy To decrease redundancy and reusability This is more important To increase reusability, we can use objects and classes too Like in the code, there is no compulsory use of functions Our wish is that if we feel that there is a piece of code Which I should make a function Then we make it a function Similarly, if we feel that we have to use classes and objects Then we use object-orientation So, it is completely up to us We are reading important concepts But it is not compulsory to use these concepts But yes, from the point of view of interviews And from the point of view of practical programming We should get all these concepts In real world, we have heard both the terms of object and class In real world, we have heard both the terms of object and class In real world, we can say anything We can say anything as object This mouse is an object This pencil is going to be an object Everything is an object So, here itself, we can make anything as an object But before making an object We make the object class In object-oriented programming We don't make objects directly We study these terms in detail So, first we make a class Then we start to make a student This is an object This is an object So, in this way, we imagine all our things That the concepts used in programming In real world, we can combine them To solve real world problems We are listing things that we have already dealt with With many objects and classes in Python The lists in Python are objects The strings are objects And by the end of this chapter, we will realize What these terms mean and how we have already used them Also, our chapter on object-oriented Is a little theoretical But we will be understanding it very easily In this section, we will talk about What exactly does a class and an object mean? Let's talk about a class first Class is a blueprint for creating objects For example, a car has installed its factory The line of the car The car will be produced Like Mercedes's GLS is a car Before making it, its blueprint will be ready For all the features Basically, a class is a blueprint In which we first tell what features should be If we are going to bring a student to the college Then for that student, what information is there That we have to save in our system The student's name, address, role number How much information is there So, all the information we have to save For a particular object We call it a blueprint for an object For example, we have to create a system for our college Now, college tells us to store a lot of students' information One way is to store a lot of students' information In a list form For example, this is my list First, store the student's name in the list This is the student's name, then store their marks We can store anything, then store Different relevant information We can do it from a list or dictionary There are many different ways But the most practical way is to use a class and object How? First, we define a blueprint We define a class by writing What do we want to store for students To define a class, we write a class keyword And then we write the class name The class name can be anything like the name of the variables Generally, the name of the class is always started with a capital letter We have made a class with the name of the student Now, we will tell you what information should be stored for the student In our code, let's try to create a class We are making a class, student And in the student class, let's suppose I have to save the name For now, all my students I want to give the same name to everyone What I have given everyone is the same name Meaning, in a student class Whatever student will be made, the name will always be the same name Now, what can we do? I have made this student But we don't directly use the classes We have to make an object of the class We can imagine it as Our school has a class But it will have no use of the class alone When students are sitting in the class The actual students are of their benefit So, here We make objects using the blueprint of the class Like in the factory, we made a blueprint That this should be the feature of a car But then actually, we have to make a car By using the blueprint The actual car is made We call it an object To create an object, we write our object variable Its name is equal to Then the class name and then the parenthesis So, in this way, we can create a new object The objects we have are called Instances in programming Instances or Instances of class So, whenever we hear the instance Whenever we hear the object We are basically talking about the same thing So, here, if I want to make a student To create it, we can write It is equal to student The name of the class is I have to write it here And then we will put our parenthesis And then we can print our student Let's try to print S1 As we execute it What was printed for S1? For S1, the main dot student Object At this location But basically, we have A little idea that This is an object that is created In our code And what is the type of it? This is an object of a student class Which is created for us in this code We can print the name as well Now, this name is Because it was in the blueprint If we define in the blueprint That every car should be blue So, whatever cars will come The color will be blue So, in the blueprint, if we define That my student's name should be Karan Which is going to be the name Same for every student Similarly, if I Made a second student S2 is equal to student And we will print S2 dot name So, here also we will print the same thing We will have the same value For both the students Now, we will learn how to change this value But for now, we have seen That if we want to make a class In a basic way And if we want to make an object We can make it in this way This is a class and this is an object Let's take another example For example, we are making a factory In which We are going to produce cars So, we can make a class Let's call it Car How should every car look Basically, in every car All our cars We want to give color to all of them The color of our cars is going to be blue Now, we can create our cars This is my car one Car one is equal to We have made an object of the car And now we can print The color of car one We saved and run The color of car one is equal to blue Similarly, we can give parameters For example, every car Will have some model Or will have some brand Let's suppose We have made a factory Brand will be Mercedes So, now if we want to print The brand of our car We can print it Let's save and run So, we will get these values Printed So, this is how a class is created And this is how an object is created Now, next we are going to talk About the constructor Constructor is basically the Init function In every class We call it as init function Or we call it constructor This function is Invoked during object creation Invoked means executed Whenever a new object is created For example, I created car one So, what happened? Automatically, a constructor Was executed If I created car two Then again my constructor function Init function will be executed Now, interesting thing is We can't see init function here So, let's comment on Our simple example For example, here Our class is student For student We can create a constructor All classes have a function Called init function Which is always executed When the class is being initiated In fact, it should be here When the object is being initiated You will use it to create a new object Automatically, the init function Will be called We didn't write any init function In our class So, what Python does Automatically, it creates an init function And executes it Whether you write init function as a programmer Or you don't write it Init function will always be executed There will always be a constructor for us If we want to write the constructor How can we write it? We will write it in the class First, we will write def Then underscore underscore We will write i and it That is initialization short init And underscore underscore again Which suggests me that this is my init function And We will put parenthesis for it And in this init function Now, we can do any work For example, if I want to print it Creating New student Or For practicality Adding new student in Database We will write something like this What we are doing? Adding new student value in college database We have written this We will keep this name on top Now, we will notice that As soon as we create our S1 object What will happen first? The init function will be called Basically, when we write the class name We are putting parenthesis here This parenthesis is used to call the constructor So, automatically This constructor will be called One more interesting thing about the constructor Constructor always Take an argument Or take a parameter Which is called the self parameter If we define our constructor like this The first parameter Will always be a self parameter We will have to write Self here What does self mean? It means the new object That is creating The new object that we are creating We are calling this self The object which the constructor calls This is the reference It is pointing towards this So, let's save this And run We haven't printed anything I have created a class There was a name and there was a constructor I have only written this much Let me delete all of this This line is written in the code What happened next? Our app will be printed Adding new student in database Why? Because this constructor Invokes our app Calls our app Now, let's see what is this self We can print our self Let's save it and run it What was printed? Student object at this location Basically The object we are creating We have taken this self variable Both are the same It is pointing to this In fact, if I print S1 Let's save it and run So, what are these two things? This location and this thing They are both the same things This S1 object Which we have given the name S1 Internally, self That is what we are talking about Now, if we want to give Different names to different students We can take multiple parameters For example, our self parameter Self always is the first parameter After that, we can take Full name variable And here, because this constructor Can pass our name here Let's suppose We want to name the first student Now, we will not name Every student's name So, what we can do here We can name Our self.name Is equal to Full name Basically, whatever value we pass here Will come into full name And in self, basically in S1 The value of name A new variable will be created In which the value of full name will be assigned So, when we Name S1.name We will have its value printed Let's save it And run it What is S1.name? Current I hope we understand this process That we created an object What did we do in the object? We created a constructor If we do not create the constructor Then Python automatically does it for us And we have to pass an argument In the constructor Which is my self argument If we do not write this self here Then we will have an error I want to say ABCD And here I write ABCD So, basically I am saying My object is naming That I want to call my object ABCD This code is completely valid And there will be no error in it Because generally all the programmers Are writing selfies here Because if you work on any other code In the company Then there should be no confusion What is exactly the reference here So, generally what we will write Is we always try to write Self here We don't have to create a name by ourselves So, what is self? Self is the reference In fact, here I have written The self parameter is a reference To the current instance of the class That is, the object we are creating Is talking about it If we create a new object Then it will be talking about it Then if we do it to someone else Then it will be talking about it Using self or new variables Like what we have created this name Now, in the same way We can make another student S2 is equal to student We give it the name Arjun And then what we will do We will print the name of S2 The same work that was done Will be the same work here We save it and run What was printed? First of all, for current If our constructor is called Then we printed the name of S1 Then the second constructor Was called here The constructor calls with every new object So here, that thing was printed Then we printed the name of S2 So we printed the name of S2 So, in this way Our constructor works And in this way our self parameter With the help of self parameter We can store different variables Or different data Whatever data we store For S1 we have stored name Or we have stored name for all students We call all these attributes Whatever data is stored We call all these data Attributes The variables That is stored inside the class Or inside the object Or we call these variables We call these variables attributes We can sell multiple values here Like we can send our marks with full name Like we can send our marks with full name It is not necessary to call it full name We can simply call it name We call it name So when we are writing name The name means the name which is in the parameter And here, the name of self.name Which is going to create a new object In the same way Self.marks is equal to marks Generally, these are syntax Which we will get to see in many places That is why I am giving the same name Generally, programmers give the same name And this value We will add the same value Now we can start sending the marks of students Let's suppose they scored 97 And they scored 88 Now we can print S2.name with S2.marks And here S1.marks Let's save it and run This is the name of our S1 And this is the name of our S2 So in this way We create our classes We can create a constructor When a new object is being created We can pass additional information So that additional information Can be stored with our object And we can access that information With this object And use it for some other work So this is how the concept of object orientation works We could store the same data In the same string The same data of students and marks We could store it in the list We could store it in the dictionary It is not compulsory to use classes and objects But many times we will realize Scenarios when we have to Use classes and objects But now we are trying to Understand this concept from a simple example So that when we have a complex problem Then we have all this knowledge Available Also our constructors Theoretically we can divide them into two categories For example this constructor And we create another version of it Let's suppose I have this Additional constructor So this one The first one is a constructor With only one variable Which is my self parameter Generally we call Default constructors We call them default constructors If we don't make default constructors Then by default we will make them python Means in that This thing won't be printed If I write something here Then it will come in the category of default constructors And the second one is Parameterized constructors Constructors Parameterized constructors means That constructor in which There are some other parameters other than self So this comes in the category of parameterized constructors And this comes in the category of default constructors And in one class If we write two constructors For example we have called this Which constructor was executed Which constructor was executed Which is matching with your parameters Now this one is the default constructor Our parameters are not matching Obviously this one won't run This one won't run Generally for a single class We don't make multiple constructors as such We just look at our needs And according to that we are defining Only one single constructor So this was all about constructors We have two ways We have already seen what is the attribute Attribute means any data Like any variable It is marked, it is attribute values for my class Now whenever we talk about attributes We have two types of attributes One is our class attributes Which are common for all objects Which are common for the entire class Which owns the class And are common for all objects And one is instance attribute Which is different for each object For example We have made a class with the name of the student Now for the student First student will come one, student two Student three, student four If I have a class Called student So in that Let's suppose this is my student one This is my student two, this is my student three This is my student four Can I say that for every student The name will be different From the name of the student It can be different It can be different It is not like we will define the name And the name will be the same for all students So whatever student objects Or student instances Will have different names for all of them So logically If every student object has different names Can I say that this name Is an object Or instance attribute Means this should be a data That the object should be different So the data that each object has We define it by self dot Define it For example we know that every student's name will be different For every student's marks will be different So we will write self dot So self dot name Means every object's name will be different Self dot marks means Self here is the reference For object we are defining marks For object we are defining names For object we are defining names So these names Self dot names and self dot marks These are both instance attributes For each object Second thing If we have a student With the name of the class So this student If we are making the same database For the same college system So can I say that the name Will be the same Means this student Is also studying in the same college This also in the same college So the name of the college Will be the same So can I store the name of the college Here I store the name of the college Here the name of the college Does it make sense? It doesn't make sense Because what objects do Objects occupy the space In the memory When this object is created And its name will be stored separately For example this object We have defined the name current We have defined the name Arjun We have defined the name Tony We have defined the name Bruce So this also in the memory We will occupy this space in the memory We will occupy this space in the memory We will occupy this space in the memory Each new object occupies space in the memory But if I know that For all objects I want to store the same data So can I make it 4 different times Or if I want to make a thousand objects Then can I make the same variable Same thing Same attribute I want to store it a thousand times So for this The common thing is We make it a class attribute And we store it in the memory For example For every student The college name is the same So I will define the college name In the constructor That my college name is ABC college So for every student The college name will be the same If I want I can print the college name For example In the last I can print s2. College name Let's save it and run For s2 the name of the college is printed And this variable is college name Because it was not defined with self That is why it is stored in the memory once If you create 10 objects Then it will be stored in the memory once But because every object has a different name Then it will be stored in the memory Because for storing different values The marks are different So the common things For all objects We make them a class attribute And to access the class attributes We can write class.attribute For example Instead of writing s2. College name I can write the student's name This is also completely valid We get the same value from it But if I want to access this name Then we Can access s2.name Or s1.name In the mind of some students There may be one more doubt For example I have this one student s1 Let's try this For example In our student class We have two class attributes One is college name And one is by default Anonymous I wrote this What is the student's name? Anonymous is written in the class attribute And in the object attribute I passed the current When I will print s1.name What should be printed? You can pause here And think and try to guess By the way, there is nothing to guess When I run it Then I will get current print Why will it print? When we have class attribute What is this? This is a class attribute When we have class attribute And when we have object attribute Then the precedence of object attribute Is higher than class attribute Means if we have same name Then we will always get the object For preference That will be the higher priority But generally we don't do Generally object attribute and class attribute We don't keep the same Generally in that case Let's suppose that an object Has not given its name Then its name will be by default anonymous That is Basically one of the purposes why you would use it But in this case It is not making a lot of sense But remember That when object attribute Is of the same value Then the object attribute gets higher priority In usage Next we will talk about methods Whatever our class is In the class Two things can be stored One is data And one is Methods Data means Attributes So class is basically a collection of two things Attributes Methods Attributes means what properties you have Methods means what can you do Like car So first I will tell you What is the mileage of the car What is the color of the car What is the engine of the car What is the size of the tire These are different things These are all attributes But then I will have to tell How does the car run How does the car start How does the car stop Whatever our functions are We call them methods Methods are basically functions They belong to objects When we write functions in the class We call them methods We call the functions in the class So till now we have studied String methods Or we have studied list methods Or we have studied dictionary methods So how did we come For these methods Because all these were classes Which we created objects Then we were using methods for objects So let's suppose we have made this class Here we have defined the constructor And in this way we can define our method We can write def We can write the name of our method We can call our self And in the class we write methods We always write our first parameter Our first parameter And then we can use it We can use it or not In this way we can define our methods And to use it we write Object name dot We can execute it like this For example Let me remove this print line For example We can make a method That says hello If I have made a method like this Which simply says hello Or which says welcome student And in fact We call it welcome This method It says welcome student Let's save it To call welcome student We can write s1 dot welcome And we can call this method When we call this method We will have an error that Welcome takes zero positional arguments But one was given That we are not passing any argument Basically in this welcome We have to write our self first That is self parameter We always write it first Let's save it and run now So welcome student came to us and printed Whether we are using or not using We are writing our self in every method Generally Now while using our self We can access its properties Like icon type Self dot name So welcome student and then The name of student will be printed for us Let's save it and run So our whole method is executed In the same way We can make a method Def get Self is here We can print What does this function do? It returns Self dot marks It returns self dot marks So here we can print s1 dot get marks And execute it So whatever value will return It will come after printing Minimize it a bit And when we run it We will get a student So in this way we can create Different methods in Python And then we can use them for the objects So whatever we have learnt Let's revise it once Our classes we define We create objects in this way Whenever we make a class There is always a constructor If we have not written a constructor Python will automatically create a constructor for us If we want a constructor Constructor is basically for object initialization If we want to create something If we want to create something If we want to create some new attributes We do that in the constructor In this way we define our constructor There are two types of constructor Default and parametrized First in the constructor Our parameter is the self parameter Which means object instance And after that we can take different parameters We can create our attributes There are two types of attributes Class attributes and object attributes Apart from that we create Our methods in the class The functions in the class are called The methods are always written These methods are the functions of our class Like this is our first method Similarly we can make Student object S2 For that we can call our method again So about classes and objects The basic important things We have covered them So let's solve a practice question The question is telling us To create a student class That takes name and marks of three subjects So what can we do We can make a class We will call it student Basically we will make A constructor in it We will define our constructor underscore underscore init First of all we will get a selfie After that we will be told That we have to pass the name And then we have to pass the marks of three subjects Or we can pass three different variables If we want we can pass a proper list We will try the list method Subjects as arguments In constructor Then create a method to print the average Of all the subjects So we are going to do all these things Let's clear our screen First of all we make a class With the name of student In the student class We make a constructor Def init Self in it Self will come We will get our name And we will get marks I am going to assume marks is a list When marks pass We will get some marks Like this We will get marks We can define Self.name is equal to this name And self.marks Is equal to Marks Let's make a student object Let's make a student object S1 is equal to Student And we pass values First we can pass the name of the student We can pass the name of the student Let's call him Tony Stark And then we will pass marks 99, 98, 97 Like this So let's save it Now the second part we are saying To create a method to print the average So in this we are going to define Let's call it GetAverage Self will come in it We don't need to take anything else For the average So here first we will calculate The sum is going to be Self.marks We can run a loop To take the sum of self We can run a loop In the beginning sum is equal to 0 For Value In.marks I can Add all the values in my marks And then print High Let's print the name first High.name Your score is Your average Score is Your average Score is Sum Divided by 3 Here also we will do Self.marks So basically We have made a method Self will come in it Before that we have Self.marks We have calculated the sum of all the values And then printed the average Let's save it And Call S1. GetAverage Save and run High Tony Star Your average score is 98.0 What happened? The average score was calculated for me Additionally Our attributes For example this name is my attribute This is the object attribute If I have to change this name By going to tomorrow Let's suppose I want to change S1.name And after that if I call S1.AverageMarks I can change the value of the attribute Directly Save it and run it What happened? My name is getting printed So changing the value of the attributes And manipulating them Is also possible in classes and objects Next, the concept we will talk about That is going to be static methods Till now The methods we have seen For example getAverage, or other methods These are non-static methods Now we are going to talk about A special type of method Which are called static methods Static methods are methods that don't Use the self parameter Till now we have seen that in every method In some way our self parameter We have to write it always But if we don't want to use it For example If I want to make a function Hello And in that I just want to print hello If we write something like this And then we tried to use it If I try to write s1.hello This will give me an error Run it I will get an error. Why am I getting an error? Because by default We should be self inside hello But there is no sense in this function So that's why we can make it A static method We can change this method to a special category So the static methods Don't have a self parameter and they work At class level They don't work at object level So whenever we make a class Let's suppose this is our class This is my object1 This is my object2 This is my object3 The self is used for objects So here self means Object1, object2, object3 But if you are making a method Where object is not needed For example, to print hello We are not using any attribute Or anything else So what should we do? We should not use object level But we should use class level method That's why we call the class methods static methods To make static methods We write ad-rate static method This is our decorator We will talk about decorator Basically we are writing decorator And telling that we want to create a static method Then we can create our static method For example To remove an error in this hello I just have to write ad-rate Static Here we are suggesting What is this? It converts a function to be a static method This is a decorator Which converts a normal function to be a static method Now if I save and run it Then there will be no error It will be a simple hello print for us So this is what we call a decorator In python There are more decorators But decorators allow us to wrap another function In order to extend the behavior of the wrap Function without permanently modifying it I will explain in a simpler language Basically a function Which is a decorator Which takes function in parameter And gives function in output So this decorator Decorator does not need to take All this function Changes its behavior and returns it This is what we call as decorator We are going to see decorators So we don't need to worry Basically we have to write Adderate static method To make it Which is changing the behavior Of my normal function So this is not a normal function Just changing its behavior and making it a static method So whenever we have such methods Which do not need such self Then we can bring them to the class level And for them we can use Static method decorator Next we are going to talk About two important concepts Which I will call as two pillars of Oops! Two pillars of object orientation Basically whenever We are programming object orientation In any language Whether it is already C++ Or Java background In every language There are generally four pillars Of object orientation One pillar is abstraction Which means it is a four theoretical definition It is very easy to remember The name of the pillar is difficult The more difficult it is To remember the word abstraction It will be difficult It is very easy to remember Just remember the word It is English and nothing else Abstraction Encapsulation Inheritance And polymorphism These are four pillars Which have a complete object orientation From these We will discuss these in our next part We will discuss abstraction and Encapsulation Abstraction Abstract means It is not clear How it is hidden Like if you have heard the word abstract art Abstraction means In programming, in Oops Hiding the implementation details of a class In a class What kind of things are being implemented Exactly, you have hidden And you are showing the user Important features Unnecessary things Which user does not need You have hidden that For example, when a car starts When an engine starts What is the process internally In the engine The driver will never know Unless you go and search it But as such, when you press the clutch When you press the accelerator As such, what exactly is happening in the engine What is happening with the fuel We cannot see all that But it is happening internally So what did the car manufacturer do What did the car manufacturer do Unnecessary things Like what is happening in the engine The driver does not have such a meaning He has to start his car So he has hidden unnecessary details And the necessary things Only those are shown The user has shown essential things This is the meaning of abstraction For example I made a car Suppose I create a function called Start What does this function do So first of all Let's take a self And In fact, let's make a constructor Def Let's write a constructor In it, the self will come And as soon as the self comes In every car, we will create an accelerator This is my accelerator Let's call it dot ACC In every car, we can create an accelerator In the beginning What is the accelerator We can call it False Or the accelerator is not pressed Apart from that, in every car There can be a break Break is a keyword We call it Break is a break In the beginning, we did not press the brake And in every car We can have a clutch We did not press the clutch So what did we do Define a car As soon as we start the car First of all, we press the clutch So our value of self dot clutch Will be first After that, we will press the accelerator Self dot Don't take it literally We are taking an example And then what will we do The car will start We will print We have made a class A normal class car We initialized it Accelerator, brake and clutch are in every car In the beginning, there are all the false No one was pressed When we have to start the car Then we have to press the clutch We have to press the accelerator And the car will start An object is equal to car We do not have to pass anything And then what I want to do I want to start my car Let's save it and run it As soon as I wrote my code to start the car The car started The thing was printed But in the background The unnecessary steps that we did To the accelerator I do not know where these steps are These steps are in the class There was no unnecessary thing There was no unnecessary thing Nothing was shown outside the class Which is internally implemented So assuming that this is an automatic car The unnecessary details Were hid And the necessary things Which I needed to start the car I had access to them This is called abstraction What we did here is We implemented abstraction in our code Basically in the code When you hide unnecessary details And just show the user the necessary things We call it abstraction Second is encapsulation Encapsulation In this, capsule is an important word Basically we make a capsule Let me try to create this capsule Of data And related functions Data and related functions We make a capsule In a single unit What is this? This is my capsule And we encapsulate And we call this encapsulation Basically we made a class In which there are attributes And methods are also used And we are using it as an object The thing we have done We have written the entire code in this lecture That was all encapsulation Whenever we are making a class There are attributes and methods What we did? We encapsulated So encapsulation is Wrapping data And the functions In a single unit Which is my object It has related data And related functions And what is the capsule? It is my object And we call it encapsulation Abstraction and encapsulation There are two difficult words in English But they are very easy The same abstractions And the same encapsulation There is no difficulty in understanding But yes The definition of both of them is very important Because the interviewer can ask you the definition Or if you have an exam In the college, in Python The definition is really important We can remember that Next, let's solve another practice question We have to create An account class With two attributes An account name We are talking about bank accounts There will be two attributes One will be the balance We have to create two attributes After that we have to create methods With which we can debit anything With which we can credit Debit means to reduce the value With which we can add some Balances And then we have Another method which prints the balance So we are going to create All these things So first of all, let's make an account class For ourselves In the account class Let's define a constructor In this we will have Self, apart from that we will have Balance, let's call it BL And after that we will have Account number So self dot Balance Is equal to this value And self dot Account Number Is equal to this value So if I have to create any account For example This is my Account 1 Or ACC 1 For Customer 1 So we can set up our account First we have to pass the balance We can pass a number in the balance For example we have Added an amount of 10,000 In our bank account And then our account number Let's suppose 1,2,3,4 Or Let's suppose 1,2,3,4,5 This is my account number Now we can print The balance for our user For account 1 Directly And for that We can Print the account number So I have successfully created my class And object So we have to add 3 methods For debit, credit and printing the balance First We create our debit method Def We have to use self in debit Because whenever the amount is debit If you want to take anything from the bank account Then the value of balance will decrease And who has the balance Of every object Every account has a different balance The balance of the third account So here The amount will decrease from the balance Let's suppose this is the amount That we want to take out from our account So what will happen first First from the balance That is from self.balance We will minus this amount And Then basically we can print Rs Rs Amount Was Debted From your account It is given So this is our debit method And some way Our credit method This is my credit method We will add some amount This will be Minus equal to We have added this amount Into our balance And we will write here Credited Basically this amount has been added And then we will create a function Which returns the final balance Get Balance And what does this basically do It returns Self.balance In fact If we want We can call here Like we have printed Debted We can print it Total Balance is equal to And here We will call Get GetBalance We can print the same thing here So our internal method We will call it Whenever any amount is debit or credit We will print our final balance So this is my account class It has balance and account number Then I have done amount debit Debit is removed from balance Printed and came And the final balance came We have added the balance Printed and came And the final total balance came And we have already created the internal function of getBalance Let's try to do some things First of all In the account Let's suppose we want to debit We I want to take out 1000 rupees What I want to do after that We want to add 500 rupees So what will happen First 1000 rupees when we debit The print will come here 1000 was debited Total balance is 9000 After that 500 we have added Total balance is 9500 After that Let's suppose our salary comes At the start of the month Let's suppose my salary is 40,000 Save it Re-execute So the 4500 40,000 added in it becomes 49,500 After that I have to pay my rent I might be spending About 10,000 And the cycle And the cycle repeats The total balance changes So in this way We have created a class We have created objects This was a single account So we can create multiple accounts In fact many people who create Starter projects Like whenever we learn a first language We learn Java, Python, C++ We learn in that In the first year of college The basic project We create some other system In which classes and objects Are based on object orientation In which you create an account class Your balance is being updated Different things are happening But this is basically a demo Of how objects can relate to real world scenario All these things are fine We could have created a debit function We could have created a credit function We could have created a get balance function But for every account To store its balance To store its account number We had to use lists We had to use dictionaries We had to use something else Things get confusing But according to a real world scenario Using class and objects in this case Is totally sensible Otherwise we get stuck in Different data types So this is how Classes and objects help us Logically to organize our code In a well structured manner All these classes and objects Were based on basic things We covered in part 1 And there are many concepts We talked about which is Inheritance, polymorphism How we can create a private attribute How we can create a private method How we can delete an attribute These are small important things Which we will cover in part 2 That's all for today Till then keep learning and keep practicing"
+}

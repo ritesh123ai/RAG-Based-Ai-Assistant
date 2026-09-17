@@ -1,0 +1,1909 @@
+{
+    "chunks": [
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 0.0,
+            "end": 17.3,
+            "text": "Hi everyone and welcome to the complete Python language series in which we are going to read chapter 2 In chapter 2 we will cover what are the strings in Python and how they work and related functions and also we will cover an important concept which is conditional statements"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 17.3,
+            "end": 34.14,
+            "text": "which form a core of our Python language All the lectures of the Python series are available on this channel in this playlist, you can check them out Also, the links to download the slides of our classes will be in the description box below"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 34.14,
+            "end": 49.08,
+            "text": "Let's start with chapter 2 Hi everyone, let's start with chapter 2 in which we are going to read about strings Now, strings is a data type we already read it in our first lecture"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 49.08,
+            "end": 59.24,
+            "text": "and it stores a sequence of characters that is, a sequence of different characters which we store in the form of a string it can be a single character it can be a word"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 59.24,
+            "end": 76.03999999999999,
+            "text": "it can be a sentence or a paragraph We saw three ways to create a string For example, in this code, we have already made a file in our folder in the name of lecture underscore 2.py So, in this Python file, we will be writing our lecture 2 codes"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 76.03999999999999,
+            "end": 87.88,
+            "text": "If I want to create a string in it then in this way, we can make a variable named string1 Generally, we define our string in double quotes and this is a string So, what is this string?"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 87.88,
+            "end": 101.6,
+            "text": "It is a sentence that we have stored in the form of a string We can create strings in this way In fact, we can create strings in single quotes If we want, we can make a string 2 in which we can store a single word"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 101.6,
+            "end": 114.67999999999999,
+            "text": "enclosed within single quotes and this is the same thing that we can do in triple quotes Our string can be 3 which we want in triple quotes This is a string"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 114.67999999999999,
+            "end": 127.0,
+            "text": "We can store it in this way These three are valid ways to create a string in Python But when we are creating our strings most of the time, we will use double quotes because generally, when we see other people's quotes in Python"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 127.0,
+            "end": 138.88,
+            "text": "then double quotes are used or in fact, in other programming languages Here, we can ask the question why do we need three different types of quotes to create string? It is generally due to the fact"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 138.88,
+            "end": 153.24,
+            "text": "For example, we have to use apostrophe somewhere We have to use single quotes in our string So, how do we use it? For example, we have to write this is our college tutorial"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 153.24,
+            "end": 165.84,
+            "text": "If we enclose this string in single quotes then Python will get confused How will it get confused? Because single quotes means strings are starting from here And as soon as we see the second single quote"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 165.84,
+            "end": 182.36,
+            "text": "means the string ends here So, this word and single quote are saved It will not make sense to our Python interpreter Instead, we want to use single apostrophe in this string We will enclose it in double quotes"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 182.36,
+            "end": 199.0,
+            "text": "So, it will become a valid string and we have also enclosed apostrophe in single quotes But if we had double quotes here then we would enclose this string in single quotes So, we have different types of quotes"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 199.0,
+            "end": 211.48000000000002,
+            "text": "So that we can use single quotes and double quotes inside the string value itself These are the basic things Now, let's talk about some other things For example, we have to write two or three sentences in a string"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 211.48000000000002,
+            "end": 226.20000000000002,
+            "text": "For example, this is a string We are creating it in Python We want to write two sentences in this way But we want to print one sentence and then in the next line, we print another sentence"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 226.20000000000002,
+            "end": 241.36,
+            "text": "But in this way, if we try to give the next line in the code editor then we have an error Because this next line is not valid in Python So, as such, generally, we work in Word documents We cannot work in the code"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 241.36,
+            "end": 254.36,
+            "text": "If we have to give the next line in any string then we use Escape Sequence Characters What are these Escape Sequence Characters? Let me also write it down Escape Sequence Characters"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 254.36,
+            "end": 263.36,
+            "text": "There are some special characters whose work is to give formatting Formatting means if we want a tab space or we want the next line"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 263.36,
+            "end": 280.36,
+            "text": "then we cannot directly code these things So, to do these things, we use these characters Now, if we want to make this string print normally Let me try to print my string 1 Our string 1 will come up with some kind of print on our screen"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 280.36,
+            "end": 294.36,
+            "text": "We want the next line to come up So, for that, we can write backslash n Backslash n is an Escape Sequence character which means the next line Whenever a string print is there or some operation is there"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 294.36,
+            "end": 305.36,
+            "text": "then we have to have the next line Let's save it and run it So, we have a next line here This extra space was created in the starting because we had extra space before v"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 305.36,
+            "end": 316.36,
+            "text": "We can rerun it And in this way, we can bring the next line in our string Like we brought the next line We could have brought the space of the tab Like if we had written backslash t"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 316.36,
+            "end": 327.36,
+            "text": "This means this is the Escape Sequence character Let's save it and rerun So, in this way, the space of a tab came between our sentences So, we can use Escape Sequence characters"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 327.36,
+            "end": 338.36,
+            "text": "at different times Whenever we are writing a paragraph or trying to write a big line in the string Now, let's talk about the strings How can we perform different operations?"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 338.36,
+            "end": 350.36,
+            "text": "The first operation we will talk about is Concatenation It seems very difficult to hear but it is actually a very easy thing Like in Math, we can add two numbers"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 350.36,
+            "end": 364.36,
+            "text": "We can write A plus B Similarly, we can add two strings in Python Like if we add one string 1 and one string 2 then the output of the string is a valid output And to add two strings, we call it"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 364.36,
+            "end": 377.36,
+            "text": "Concatenation And to add two strings, we can use our plus operator in Python Like here, if I create my string 1 Let's call it Apna and my string 2"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 377.36,
+            "end": 388.36,
+            "text": "Let's call it College So, we can simply write string 1 plus string 2 We will save it and run it So, we will have the output of both the strings' concatenated version"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 388.36,
+            "end": 399.36,
+            "text": "i.e. the connected version We want the connected version We can store it in a different string Let's call it final string Final string"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 399.36,
+            "end": 414.36,
+            "text": "And we will store our final string here Save and run So, this is our final string Next, we have the length of the operation We can find out the length of any string"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 414.36,
+            "end": 425.36,
+            "text": "using this length function Now, what are the functions? We don't need to worry about them We will read the functions in detail So, we can hear the function word again and again"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 425.36,
+            "end": 437.36,
+            "text": "So, we have to imagine the function Basically, it is a magical word Which we write So, a particular operation is performed for us Like, when we write the plus, it adds two things"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 437.36,
+            "end": 450.36,
+            "text": "Similarly, in Python, there are different functions which are inbuilt and use to perform different tasks In this Python, we have LEN It is a length function which is used to calculate the length of a string"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 450.36,
+            "end": 460.36,
+            "text": "So, we can write simply LEN Like, we write a print And then, we will pass the parenthesis and the string we write We will have its length"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 460.36,
+            "end": 480.36,
+            "text": "For example, I have to print the length of string 1 So, we can simply print LEN of str1 Or, we can store it in a different variable Here, we have made a variable called LEN1 And we are storing length of string 1"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 480.36,
+            "end": 495.36,
+            "text": "And then, we are printing LEN1 Similarly, we can print length 2 Let's create another variable LEN2 In which, string 2 will have length And we print it too"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 495.36,
+            "end": 504.36,
+            "text": "Let's run it So, first of all, we have printed 4 Because there are 4 characters in our own And then, we have printed 7 Because there are 7 characters in our college"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 504.36,
+            "end": 517.36,
+            "text": "When we are creating our final string Let's suppose, we create our final string In this way, we add an additional space So, adding a new string like this means adding an empty string is completely valid"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 517.36,
+            "end": 525.36,
+            "text": "First, it will come to its own Then, it will come to its own space Then, it will come to its college In this way, we will have an extra space in our final string"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 525.36,
+            "end": 536.36,
+            "text": "And then, we can print the length of the final string We can print length of our final string Let's save it And run it So, we have our college printed"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 536.36,
+            "end": 544.36,
+            "text": "With a space and total characters How many are printed? 12 characters are printed The two of the initials Our and college were 11 characters"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 544.36,
+            "end": 553.36,
+            "text": "So, basically, whenever a string has a length calculated Then, this empty space is counted So, we have to remember that"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 553.36,
+            "end": 560.36,
+            "text": "spaces are not ignored by counting the length Because many times, as a beginner we mistake this as a beginner That we think that only characters"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 560.36,
+            "end": 568.36,
+            "text": "will be counted in length Spaces are counted in length Special characters like Percentage, Dollar Sign, Adderate are counted in length"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 568.36,
+            "end": 577.36,
+            "text": "In fact, digits are also counted Now, there is another interesting thing related to strings in Python which is called indexing Indexing is something that"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 577.36,
+            "end": 589.36,
+            "text": "we get to see in different languages If you have seen C, C++, Java or JavaScript or any other language like this I am sure you already know about indexing"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 589.36,
+            "end": 598.36,
+            "text": "Otherwise, we will learn in Python Indexing basically means whenever a string is created in Python Internally, all the characters of that string"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 598.36,
+            "end": 607.36,
+            "text": "get an index Index is kind of saying that the character gets a position number Like, we were standing in the assembly"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 607.36,
+            "end": 615.36,
+            "text": "in the school So, first student was standing Second student was standing Third student was standing Similarly, whenever our string is created"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 615.36,
+            "end": 623.36,
+            "text": "we can imagine that from here from the first character our numbering starts our count starts and our position gets known"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 623.36,
+            "end": 632.36,
+            "text": "And in Python, the numbering of strings always starts with 0 instead of 1 So, the first character gets an index of 0"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 632.36,
+            "end": 639.36,
+            "text": "The second character gets an index of 1 The third character gets an index of 2 and so on And even if there are spaces in between or there is an underscore"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 639.36,
+            "end": 649.36,
+            "text": "or a special character we get an index of 0 Now, how do we help the index? We help the index to access characters Access characters means"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 649.36,
+            "end": 660.36,
+            "text": "if we want to get a character of position 2 we can directly access it How? We can write the name of our string and then we put square brackets In square brackets"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 660.36,
+            "end": 671.36,
+            "text": "we can write the index of the character For example, we need an index of 2 So, we can simply write this thing and access our character Let's check this thing once"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 671.36,
+            "end": 684.36,
+            "text": "In our code, let's create a string Let's call it our college in which we have given a space Now, if I want to access the character of index 0 we can call it character"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 684.36,
+            "end": 697.36,
+            "text": "or ch is equal to str of 0 This means that we are accessing the character of index 0 and we can print it if we want and save it"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 697.36,
+            "end": 706.36,
+            "text": "If we run it, we have a print Similarly, if we run it we will have p print If we run it 2 we will have n print"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 706.36,
+            "end": 718.36,
+            "text": "We can directly access it We can write string of let's suppose 3 So, we need to get 0, 1, 2, 3 we need to get a print"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 718.36,
+            "end": 728.36,
+            "text": "We can print our space in 4 So, the output we have will be an empty space In this way, we have accessed the character of index"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 728.36,
+            "end": 738.36,
+            "text": "but we can't change our character using the help of index If we want our string of 4 this empty space this empty space"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 738.36,
+            "end": 747.36,
+            "text": "should be replaced with a dash or an adder 8 sign then it will not be possible to do that If we write some code like this"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 747.36,
+            "end": 757.36,
+            "text": "and try running it once we will have an error What is the error? string object does not support item assignment Assignment means"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 757.36,
+            "end": 766.36,
+            "text": "that we are trying to assign a value of a different character on a particular index This is not allowed in Python In the form of index"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 766.36,
+            "end": 775.36,
+            "text": "we can access the characters we can't manipulate them we can't modify them So, this was all about indexing Another special thing is string related"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 775.36,
+            "end": 785.36,
+            "text": "If you want to learn machine learning after learning Python then we have a concept of slicing in Python which we are using a lot Because machine learning algorithms"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 785.36,
+            "end": 795.36,
+            "text": "apply time to deal with data and we have to find relevant information from data So, we will use a lot of slicing"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 795.36,
+            "end": 804.36,
+            "text": "So, slicing is an important topic whenever we are reading Python In Python, what does slicing mean? Slicing means accessing parts of a string"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 804.36,
+            "end": 813.36,
+            "text": "Like if we have a fruit like an apple we cut it and call it slicing and apple Similarly, to break the strings in part"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 813.36,
+            "end": 823.36,
+            "text": "we cut the strings and call it slicing Now, we can directly cut the strings in Python We can simply write the name of the string"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 823.36,
+            "end": 833.36,
+            "text": "and then we pass two indexes One is our starting index and one is our ending index If we have this string in which we pass any starting index"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 833.36,
+            "end": 843.36,
+            "text": "and any ending index then the entire piece of the middle part will be returned to us For slicing, we write"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 843.36,
+            "end": 853.36,
+            "text": "starting index, colon, ending index and in this, our starting index is included but our ending index is not included For example, if we have made a string in our college"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 853.36,
+            "end": 863.36,
+            "text": "and if we want to access any part then if we have sent one colon four then it means that from one index to three"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 863.36,
+            "end": 873.36,
+            "text": "the part of the string that is in the three index will be returned to us So, we have PNA, this part of the string will be returned to us Let's check this"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 873.36,
+            "end": 883.36,
+            "text": "Let's suppose I have this string in my college and from here we try to take the fourth index from one"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 883.36,
+            "end": 893.36,
+            "text": "saved and run So, we have PNA, how did we get PNA? A is our index number zero so, if we want to start from one then we will start from P, two will be on N"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 893.36,
+            "end": 903.36,
+            "text": "three will be on A and we will stop from three and we will not include We need one more so, we will do five"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 903.36,
+            "end": 913.36,
+            "text": "so, this time we will have PNA with an additional space We can start from zero if we want If we do from zero to four then we will have"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 913.36,
+            "end": 923.36,
+            "text": "saved, refreshed, we got our and if we want only college then what we have to do which index we will start from zero, one, two, three, four"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 923.36,
+            "end": 933.36,
+            "text": "We will start from fifth index from index number five and we have to go to which index five, six, seven, eight, nine, ten, eleven so, we will write"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 933.36,
+            "end": 943.36,
+            "text": "12, that is for 11th index we have to count plus one so, we will have to print the whole college Okay, instead of 12"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 943.36,
+            "end": 953.36,
+            "text": "we can write one more thing here which would be length of string This would be completely valid because what will be the last thing which will be our last index, plus one"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 953.36,
+            "end": 963.36,
+            "text": "length of string, we could write length of string so, what we had same output return so, whenever we have to give last index we have to go to last index, so we can write length of string"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 963.36,
+            "end": 973.36,
+            "text": "Okay, another thing about slicing that whenever we miss our second ending index so, python automatically thinks that we want to go to last index"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 973.36,
+            "end": 983.36,
+            "text": "that is, even if we run our program by writing this much then we can reach college that is, if we have to go to last index then we can completely skip the last index"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 983.36,
+            "end": 993.36,
+            "text": "and let's suppose if we write any index here and we miss the starting one then python automatically thinks that we should have come to zero here"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 993.36,
+            "end": 1003.36,
+            "text": "so, this means that we want to go to four with zero and similarly if we write here"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 1003.36,
+            "end": 1013.36,
+            "text": "then this means that we want to go to length of string so, sometimes in python if we miss the starting index or ending index"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 1013.36,
+            "end": 1023.36,
+            "text": "then python automatically fills it let's save it and try to run it in the first case, we have our own print which goes from zero to four in the second case, we have college print"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 1023.36,
+            "end": 1033.3600000000001,
+            "text": "which goes from five to length of string generally, in normal cases slicing is doing the same but another special case of slicing in which we have negative index"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 1033.3600000000001,
+            "end": 1043.36,
+            "text": "now, what is the concept of negative index in python but when we go from start to end then we increase our positive index count"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 1043.36,
+            "end": 1053.36,
+            "text": "that is, if there is any string for example, we have this string called apple in this, the starting index will be zero then one, then two, then three, then four but in python, there is another special feature"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 1053.36,
+            "end": 1063.36,
+            "text": "which is not available in other languages that is, if you are coming from C++ java background or javascript then generally, we won't get to see it in programming that we can count our index"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 1063.36,
+            "end": 1073.36,
+            "text": "backward too how does backward counting work backward counting starts with minus one and then we decrease our number with minus one"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 1073.36,
+            "end": 1083.36,
+            "text": "that is, we call the last index minus one, second last is minus two third last is minus three and so on so if we try to do this slicing"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 1083.36,
+            "end": 1093.36,
+            "text": "string of minus three colon minus one means, we are trying to go to minus one index and in this, our ending index"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 1093.36,
+            "end": 1103.36,
+            "text": "will not include this means, if we try to go to minus three to minus one then we will have only P and L and we will print it we can test this too"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 1103.36,
+            "end": 1113.36,
+            "text": "and when we create apple then we can try to print it string of minus three to minus one let's save it and let's run it"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 1113.36,
+            "end": 1123.36,
+            "text": "so we will have print P and L similarly, if we want to print it from the starting then we can write minus five from minus five to P P"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 1123.36,
+            "end": 1133.36,
+            "text": "so we will write minus two here we will save and run it so we will have an app to print that means, going from minus five to minus two means, we will cover these three characters"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 1133.36,
+            "end": 1143.36,
+            "text": "and we will skip the last one so, in some cases, backward counting helps us when we don't have the exact length of the string and when we want to count our characters from the last"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 1143.36,
+            "end": 1153.36,
+            "text": "although, right now because we are on the beginner stage we are not seeing such practical cases we just need to remember that this is how concept works"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 1153.36,
+            "end": 1163.36,
+            "text": "now, when we are reading strings we are reading many concepts now, we will read some more functions which are quite useful but as a professional programmer"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 1163.36,
+            "end": 1173.36,
+            "text": "sometimes, we have to work with different languages or we have many different concepts which we use together whenever we are coding in the company so, it is not necessary that all these functions"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 1173.36,
+            "end": 1183.36,
+            "text": "should be remembered in one or we will remember them lifelong if we read them once as a programmer, when we start coding in multiple languages"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 1183.36,
+            "end": 1193.36,
+            "text": "we start learning multiple technologies which generally, all the people who are doing software engineering, machine learning or in the field of data science at that time, we don't need to remember"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 1193.36,
+            "end": 1203.36,
+            "text": "all these functions as a programmer, we will have many times that we will not remember the names of small functions so, in such cases, if we want to google simple things"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 1203.36,
+            "end": 1213.36,
+            "text": "that is also completely normal if we write a big code in Python and if we forget what a specific function does in Python or how does the slicing of negative index work"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 1213.36,
+            "end": 1223.36,
+            "text": "then we can simply do our work while doing it even google it which is a lot of practical coding it is not about memorizing things"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 1223.36,
+            "end": 1233.36,
+            "text": "it is about understanding things from a logical point of view that is, how things are logically working we should understand its background we don't necessarily need to memorize things i.e. we don't have to hit the bars"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 1233.36,
+            "end": 1243.36,
+            "text": "but yes, there will be some basic syntax which we have to remember together and it would be better to practice things i.e. we will write more and more"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 1243.36,
+            "end": 1253.36,
+            "text": "with the tutorial and the class so we will automatically remember the maximum things now, we will talk about the functions in the next strings as we saw the length function"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 1253.36,
+            "end": 1263.36,
+            "text": "in the string we have many more functions the first function we are reading is endswith function if we write endswith"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 1263.36,
+            "end": 1273.36,
+            "text": "and in it, any value will pass in parenthesis so what will this function do? it will check if our string ends with this string"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 1273.36,
+            "end": 1283.36,
+            "text": "i.e. the sub string i.e. any small string this function is sent to us by checking if the last part of our string"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 1283.36,
+            "end": 1293.36,
+            "text": "is ending with this sub string if it is ending, then it will return and if it is not ending, then it will return and it will return for example"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 1293.36,
+            "end": 1303.36,
+            "text": "let's take a string string is equal to i am studying python from our college"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 1303.36,
+            "end": 1313.36,
+            "text": "if we write any string like this now if we want to print str.endswith here we can print"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 1313.36,
+            "end": 1323.36,
+            "text": "string.endswith many times for our help we can use this function as soon as we want to use this, we can simply"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 1323.36,
+            "end": 1333.36,
+            "text": "enter and then we will write our parenthesis whenever we write a function to use it, we have to always write parenthesis"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 1333.36,
+            "end": 1343.36,
+            "text": "we will read the rest of the functions in detail here if we want to check if my string ends with this string then we can pass ege"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 1343.36,
+            "end": 1353.36,
+            "text": "we can save it but if I want to check if this ends with app then obviously in my string it doesn't end with app"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 1353.36,
+            "end": 1363.36,
+            "text": "so we will execute it and it will come to us so in this way any word any string ends with any particular sub string for that we can check using this function"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 1363.36,
+            "end": 1373.36,
+            "text": "second function which we can use which can be useful later this is capitalized function capitalizing means whatever is our string"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 1373.36,
+            "end": 1383.36,
+            "text": "we can make it capitalized for example if I make it small i and here we can write string.capitalize"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 1387.36,
+            "end": 1397.36,
+            "text": "only this much so what will this function do? whenever we print our new string then i will have capital one more thing in this"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 1397.36,
+            "end": 1407.36,
+            "text": "if we want to print our string like this then our capitalized only works once second time means it doesn't change in original string"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 1407.36,
+            "end": 1417.36,
+            "text": "whenever string.capitalized works then it creates a new string which will have changes there will be no changes in old string but we want"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 1417.36,
+            "end": 1427.36,
+            "text": "that our old string also have changes so we can simply write string.capitalize is equal to string that means this new value is returning it to its old variable"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 1427.36,
+            "end": 1437.36,
+            "text": "so this time when we print our string then changes will happen now we are trying to modify our original string"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 1437.36,
+            "end": 1447.36,
+            "text": "as soon as we print then modifications will happen so whenever any function is working in strings then they don't change in original string"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 1447.36,
+            "end": 1457.36,
+            "text": "they create new string and changes in it next function which we can use is replace function replace function is to replace"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 1457.36,
+            "end": 1467.36,
+            "text": "for example we have a string I am studying python from our college all the O's in this string i.e. from O, college O, python O"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 1467.36,
+            "end": 1477.36,
+            "text": "we want to replace all these O's from A's so we can simply write string.replace we will pass old value first"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 1477.36,
+            "end": 1487.36,
+            "text": "i.e. we have to replace O with A so wherever O comes in string it will replace A let's try to run it so we have A in O's place"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 1487.36,
+            "end": 1497.36,
+            "text": "A in from O's place and O in college O's place we can replace all the O's for example if we want to do JavaScript"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 1497.36,
+            "end": 1507.36,
+            "text": "instead of python we can write python our old value and JavaScript our new value saved and run"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 1507.36,
+            "end": 1517.36,
+            "text": "so we have started JavaScript from our college next we will talk about our find function to search for this word in our string"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 1517.36,
+            "end": 1527.36,
+            "text": "find function search whether this word exists or not and if this word exists then wherever it exists we get its starting index"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 1527.36,
+            "end": 1537.36,
+            "text": "return i.e. the first occurrence we get its first index return for example we want to"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 1537.36,
+            "end": 1547.36,
+            "text": "search O in our string so where does O come O comes in python so we get its index return"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 1547.36,
+            "end": 1557.36,
+            "text": "let's try to do it we are trying to search for character O let's save it and search"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 1557.36,
+            "end": 1567.36,
+            "text": "character index is equal to 18 you can also count it if you want but i'm pretty sure python program is giving us the right thing we can search the word if i write"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 1567.36,
+            "end": 1577.36,
+            "text": "i am from i am from we can search for from and wherever it exists i.e. the index number 5"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 1577.36,
+            "end": 1587.36,
+            "text": "we get its return 0, 1, 2, 3, 4 and 5 i.e. this is the 5th index where our word starts if we search for such things"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 1587.36,
+            "end": 1597.36,
+            "text": "which doesn't exist for example i search for the letter Q in that case we get its return minus 1 because minus 1 is not a valid index"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 1597.36,
+            "end": 1607.36,
+            "text": "whenever we talk about indexes we never think about negative indexes in our first thought negative indexes only exist for slicing we deal with normal strings"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 1607.36,
+            "end": 1617.36,
+            "text": "always start with indexes 0 and go on to increase next we talk about another function this is our count function count function counts occurrences"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 1617.36,
+            "end": 1627.36,
+            "text": "for a substring in a string i.e. if we pass any word then how many times the word exists in our string we get its count return for example if we write"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 1627.36,
+            "end": 1637.36,
+            "text": "string.count and pass from so how many times the word exists in our string it exists twice"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 1637.36,
+            "end": 1647.36,
+            "text": "once here once here so we get 2 print so we get 2 if we want to count how many times the letter O exists"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 1647.36,
+            "end": 1657.36,
+            "text": "it exists 4 times once in from, once in python and once in our college in this way we get different functions in python"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 1657.36,
+            "end": 1667.36,
+            "text": "in fact there are many other functions like if i write string. so all the functions visual studio code is suggesting these are all"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 1667.36,
+            "end": 1677.36,
+            "text": "valid functions for string which we can explore but there is no point in reading all the functions we have seen all these functions"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 1677.36,
+            "end": 1687.36,
+            "text": "so that we get a basic idea that strings are very powerful in fact if we learn better concepts we are using string functions"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 1687.36,
+            "end": 1697.36,
+            "text": "or string properties now let's solve some practice questions let's come to our first practice question which says write a program to input user's first name and print its length"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 1697.36,
+            "end": 1707.36,
+            "text": "i.e. first we have to take input of the user's first name we already learnt to take input in our first lecture and then we have to"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 1707.36,
+            "end": 1717.36,
+            "text": "print the length of the input so before solving you have to pause and you have to try to solve this question after that if we can solve it"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 1717.36,
+            "end": 1727.36,
+            "text": "or not, it doesn't matter but we have to try and after that we can see the solution let's remove all of it and first let's get our input"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 1727.36,
+            "end": 1739.36,
+            "text": "enter your name and we will store it in a string named name and then we have to print the first thing we have to do"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 1739.36,
+            "end": 1749.36,
+            "text": "length of your name is length of name let's save it and run"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 1749.36,
+            "end": 1759.36,
+            "text": "let's suppose i write my name to be Shraddha then my string length will be 7k if we write Amman then string length will be 4k so we can write any name"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 1759.36,
+            "end": 1769.36,
+            "text": "and we will have to print its length let's move on to the second question write a program to find the occurrence in a string how many times a dollar comes in a string"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 1769.36,
+            "end": 1779.36,
+            "text": "we have to print the number of occurrences that is to print the count so we can simply use our count method we can use the count function let's take a string"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 1779.36,
+            "end": 1789.36,
+            "text": "str is equal to high i am the dollar symbol"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 1789.36,
+            "end": 1799.36,
+            "text": "dollar 99.99 we have made a string and we can print the occurrence of dollar"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 1799.36,
+            "end": 1809.36,
+            "text": "so i know we have 3 times the dollar sign let's run it and we will have this number so in this way we can use"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 1809.36,
+            "end": 1819.36,
+            "text": "our string functions next we are going to read another important concept conditional statements there are many different conditions in life"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 1819.36,
+            "end": 1829.36,
+            "text": "for example for a DVD or for a license we can apply it only when our age is 18 or our marks are also condition for example"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 1829.36,
+            "end": 1839.36,
+            "text": "if our marks are 90 then we may get grade A if we get grade A between 80 and 90 then we may get grade B so there are different conditions in life"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 1839.36,
+            "end": 1849.36,
+            "text": "we can express all these conditions in the code to write conditions in the code we use if,elif and else"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 1849.36,
+            "end": 1859.36,
+            "text": "we use syntax syntax means in programming rules of programming for example if we want to write a function"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 1859.36,
+            "end": 1869.36,
+            "text": "for example we want to write a print statement we will write it like this in python there is syntax meaning the correct way to write the code so we are going to learn the right way"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 1869.36,
+            "end": 1879.36,
+            "text": "to write conditional statements in conditional statements first we will talk about if whenever we want to write a function"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 1879.36,
+            "end": 1889.36,
+            "text": "for example if our age is 18 then we can apply it for our license so if we can write this keyword and after that in parenthesis"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 1889.36,
+            "end": 1899.36,
+            "text": "we can write a condition any condition can happen condition can happen like we have age variable and its value is greater than equal to 18 and what is this condition"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 1899.36,
+            "end": 1909.36,
+            "text": "condition is basically anything which returns the true or false value we can write a boolean variable in which either it is true or false"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 1909.36,
+            "end": 1919.36,
+            "text": "so if in statement there is a condition which returns the true value then any work in if i.e. statement 1 is executed"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 1919.36,
+            "end": 1929.36,
+            "text": "we will write it practically for example we make a variable age equals 21 now if we want"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 1929.36,
+            "end": 1939.36,
+            "text": "that if age is 18 then we have to decide whether we can apply for license or we can get driver's license so for that we can write"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 1939.36,
+            "end": 1949.36,
+            "text": "if and after that in parenthesis in parenthesis we will write if age is greater than equal to 18 and then we will apply colon and then next line"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 1949.36,
+            "end": 1959.36,
+            "text": "now here we have to keep in mind that the next line will start after colon we will start that line with a tab space or with 4 spaces in visual studio code by default"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 1959.36,
+            "end": 1969.36,
+            "text": "tab means 4 spaces so either we will give 4 spaces here 1, 2, 3, 4 or in by default visual studio code as soon as we"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 1969.36,
+            "end": 1979.36,
+            "text": "enter here then we will reach the distance of tab space and here we will write our next statement this means this statement will be executed only when our if statement"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 1979.36,
+            "end": 1989.36,
+            "text": "i.e. if condition is true so in that case we want to print can, vote and apply for license"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 1989.36,
+            "end": 1999.36,
+            "text": "we can print this kind of statement so we will save it and run it so here what will happen here condition as soon as it is true"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 1999.36,
+            "end": 2009.36,
+            "text": "means age value is obviously greater than equal to 18 so it will give us true and in that case we will print can, vote and apply for license but here if our age we do 16"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 2009.36,
+            "end": 2019.36,
+            "text": "save and run so this time nothing is printed for us if we want as soon as statement is true then we need 2 things and we can also do our second work"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 2019.36,
+            "end": 2029.36,
+            "text": "i.e. our first statement is done and here we can define our second statement so here we can write can, drive and can, vote so in this way we can execute"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 2029.36,
+            "end": 2039.36,
+            "text": "2 statements let's make our age greater than 18 save and we have both lines executed"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 2039.36,
+            "end": 2049.3599999999997,
+            "text": "now in if statement we want we can write simply true instead of any condition simply if we write true in this way so these statements will be executed for us"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 2049.3599999999997,
+            "end": 2059.3599999999997,
+            "text": "now as we have if if means if if this is true then this should be done similarly we have L if L if means"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 2059.3599999999997,
+            "end": 2069.3599999999997,
+            "text": "if we want to read its expanded version then we can read it as else if if we believe if first statement is not true"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 2069.3599999999997,
+            "end": 2079.36,
+            "text": "then we will check this statement in that case so here in next line we can write L if and we can execute any other statement"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 2079.36,
+            "end": 2089.36,
+            "text": "for example let's take example of traffic lights for example our light its color is let's suppose we have taken green"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 2089.36,
+            "end": 2099.36,
+            "text": "so here we can check if our light is its value is red then what we do we stop in traffic lights we have 3 colors"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 2099.36,
+            "end": 2109.36,
+            "text": "red yellow and green means go and yellow means look so here if our light is red then we have to stop L if"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 2109.36,
+            "end": 2119.36,
+            "text": "means if light is red then we can check for another condition that if our light is green if light is green then we will put colon again"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 2119.36,
+            "end": 2129.36,
+            "text": "in next line again then we will print go in that case and if light is not green then we can write another L if statement if"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 2129.36,
+            "end": 2139.36,
+            "text": "light is yellow then in that case we can print weight or look we can do this save"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 2139.36,
+            "end": 2149.36,
+            "text": "and execute because light is green then how code execution will work in code this way execution will be that first we will check if light is red then obviously"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 2149.36,
+            "end": 2159.36,
+            "text": "light is not red then we will come to this statement if light is green then we will print go in that case so here we have printed go in that case"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 2159.36,
+            "end": 2169.36,
+            "text": "and as soon as a statement is executed then we will not see the code in the next statement means we will ignore this statement and come out"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 2169.36,
+            "end": 2179.36,
+            "text": "so here in fact we can print in last end of code save and run"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 2179.36,
+            "end": 2189.36,
+            "text": "so we have printed go and then end of code we want and how many L if can be written and how many L if can be written"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 2189.36,
+            "end": 2199.36,
+            "text": "in one sequence if we wanted we could make this L if also then we could write 3 if statements and if we wanted we could"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 2199.36,
+            "end": 2209.36,
+            "text": "make all these L if but whenever L if comes we have to write an if statement now what is the difference between if and L if"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 2209.36,
+            "end": 2219.36,
+            "text": "there is only difference between if and L if that if statement will always means this if statement will always check for condition but L if statement will only check"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 2219.36,
+            "end": 2229.36,
+            "text": "when if condition will give false for example let's comment this code once for example we have a number"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 2229.36,
+            "end": 2239.36,
+            "text": "number is equal to 5 we want to check here if our number value is greater than 5 or greater than 3 or 2 then"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 2239.36,
+            "end": 2249.36,
+            "text": "we will print in that case greater than 2 and if we check here if our number is greater than"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 2249.36,
+            "end": 2259.36,
+            "text": "3 then we will print in that case greater than 3 we save it and will execute so what will happen first we will check for our number of 5 is greater than"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 2259.36,
+            "end": 2269.36,
+            "text": "2 then we will print here greater than 2 then we will check if so we will check every time if 5 is greater than 3 we will print in greater than 3 so in this case when we use if"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 2269.36,
+            "end": 2294.36,
+            "text": "I will execute two statements. But as soon as we write LF here, we will save and rerun. So only one statement will be true. That is, the first one is true, the second one is true. We will not check for the second condition. In the case of LF, we only check when our first statement is false. Now as soon as we have if and lf, we have an else statement. We can write if and lf many times. It always starts with if."
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 2294.36,
+            "end": 2321.36,
+            "text": "But we only write the else statement once and we always write the else statement at the end. L statement means that no one checks the condition. L statement means that if all the conditions give us false, then else will be run. That is, in the case of traffic light, we come back. For example, in this code, if our light color is not red, green, or yellow,"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 2321.36,
+            "end": 2344.36,
+            "text": "that means light is broken. Definitely, if we see blue color in traffic light, then it doesn't make any sense. In that case, we can write an else statement. We will put a colon. In that statement, we don't have to check any condition. And here we can print light is broken. For example, our traffic light color is pink. In that case, this condition will also give false,"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 2344.36,
+            "end": 2364.36,
+            "text": "this will also give false, this will also give false. Then we will get this thing printed. If we execute it, then we will get this print. Light is broken. Similarly, if we yellow here, then in that case, we will get this print. Look. Because red condition will give false, this will give false. Here, as soon as it is true, it is printed. In that case, we won't have the else statement."
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 2364.36,
+            "end": 2390.36,
+            "text": "We can use if and else only. For example, let's comment out this. Let's take our voting example. Let's suppose our age is equal to 24. So here we can check if our age value is greater than equal to 18. In that case, we can print can vote and write an else case. That is, if greater than equal to 18 is not there, if this statement gives false,"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 2390.36,
+            "end": 2414.36,
+            "text": "then we have to print in that case, cannot vote. Let's save it. We can execute it. In this case, it will come can vote and as soon as age is equal to 14, in that case, we will get the print. So in this way, our if, elif and else statements work. Now these are very basic examples. Later, when we explore different concepts,"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 2414.36,
+            "end": 2441.36,
+            "text": "we will write conditional statements many times. Now here, another thing is that whenever we give the space of four spaces in if statement, or in elfs, or in elfs, we call this thing as indentation. Indentation means proper spacing. Generally, if we are coming from the CEC plus java background, then we must have heard that block of or seen that we combine multiple statements with the help of block of code."
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 2441.36,
+            "end": 2463.36,
+            "text": "That thing is not in python. In python, to write multiple statements, we are using indentation or not proper spacing instead of curly braces. That is why in python, indentation or not proper spacing is very important for programming point of view. So these are our basics of conditional statements. Now let's understand one more example through conditional statements."
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 2463.36,
+            "end": 2482.36,
+            "text": "For example, we want to write a code, a program in which we want to grade our students based on their marks. That is, the way the student has 90 plus marks, he should get grade A. The way the student should get between 80 and 90, he should get B. The one who gets 80 to 70, he should get C. And if he gets less than 70, he should get D."
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 2482.36,
+            "end": 2503.36,
+            "text": "Obviously, this is a very harsh way of assigning grades. But for simplicity, we assume that this system is running in some college. So how we will convert this system into a code? Basically, this can be a practical scenario. We have written a program of python in which we can do all the students' marks and for those students,"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 2503.36,
+            "end": 2520.36,
+            "text": "grade grade system will be prepared according to the CGA system. So we have to create this system. To create it, we will use conditional statements. First, let's come to our first condition. In the first condition, let's suppose we already have marks."
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 2520.36,
+            "end": 2544.36,
+            "text": "So we will check whether our marks are greater than or equal to 90. If marks are greater than or equal to 90, then in that case, what will be our grade? Our grade will be equal to A. After that, if this doesn't happen, then we will check the second condition, that is, in the elef, we will check whether marks are greater than 80 and less than 90."
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 2544.36,
+            "end": 2566.36,
+            "text": "To check this, we will have to use our logical operators here. That is, we will first check whether our marks are greater than or equal to 80. Now, any value can be greater than or equal to 80. Then we will check and, that is, if we want to check in our range, we will write and marks are less than 90."
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 2566.36,
+            "end": 2585.36,
+            "text": "So in this way, by using the logical operator, we can combine our two conditions. That is, marks should be greater than or equal to 80 plus marks should be less than 90. So this statement will also be true. This will also be true. That is, marks are in range of 80 to 90. Then our final statement will be true."
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 2585.36,
+            "end": 2601.36,
+            "text": "In this way, we use the logical operators in our programming. That both statements are true, only then marks are in our range. In that case, what we will print out is, in that case, our grade will be BK equal. And in this way, we can write all our statements. Let's write its code once."
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 2601.36,
+            "end": 2618.36,
+            "text": "For example, we have some marks. Let's suppose the marks are equal to 74. We can start writing our conditions. If our marks are greater than or equal to 90, in that case, our grade will be equal to A,"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 2618.36,
+            "end": 2650.36,
+            "text": "L if our marks are greater than or equal to 80 and marks are less than 90. In that case, our grade will be BK equal. Next, we are going to write L if our marks are greater than or equal to 70 and marks are less than 80. In that case, grade is going to be C. And here we can write our L's case."
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 2650.36,
+            "end": 2664.36,
+            "text": "L's grade is going to be equal to D. And lastly, we can print out grade of the student. And grade. Let's do that. Save and refresh."
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 2664.36,
+            "end": 2683.36,
+            "text": "So grade is the student is going to be C. Now, we can take the marks from the user. Enter student marks. Save it and let's run it. Let's suppose our student marks are 94 equal."
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 2683.36,
+            "end": 2700.36,
+            "text": "Let's cast it into int. Save and run. So the student marks are 94 and the grade is going to be A. We can check again. The student marks are 67 and the grade is going to be D."
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 2700.36,
+            "end": 2719.36,
+            "text": "The student marks are 88 and the grade is going to be B. So in this way, we have created a whole program for ourselves in which something is being inputted. Then we have some operations being performed and then we are finally doing some output. Generally, programs work in programming languages in the same way. So first we are taking some input and then we perform some operations."
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 2719.36,
+            "end": 2737.36,
+            "text": "And then finally, we send some output which we send out as a result of our program. Now with conditional statements, there is also something called nesting. Nesting means to write an if statement in an if. That is, in one statement, we write another statement. For example, we have written a condition."
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 2737.36,
+            "end": 2757.36,
+            "text": "This is our if statement. And in this, when we write another if statement, that is, the proper spacing, with that, in some other condition, we can write another if statement. Then we have to give a gap from here and we can print something here. We call this phenomenon nesting in programming."
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 2757.36,
+            "end": 2774.36,
+            "text": "Nesting is to write another statement in one statement. And this is completely valid in Python. For example, we have age. In age, let's suppose the age is equal to 34. First, we are checking if the age is greater than equal to 18."
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 2774.36,
+            "end": 2792.36,
+            "text": "So in that case, let's suppose we are printing. Can drive. And in the other case, we are printing. Cannot drive. Now, in fact, there is no upper age limit for driving."
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 2792.36,
+            "end": 2812.36,
+            "text": "But for example, we have an imaginary upper age limit. That 80 plus means that driving is not possible. In this way, we imagine a scenario. So here, if we have to check in this statement that if the age is greater than equal to 18, if we want to check in that, if the age is also greater than equal to 80,"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 2812.36,
+            "end": 2828.36,
+            "text": "then here we want to print something. Let's suppose we want to print cannot drive. We want to print something like this. But if this thing is not true, then in that case, in the case of the other, we want to print this thing."
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 2828.36,
+            "end": 2839.36,
+            "text": "So this code is completely valid. In fact, what are we using in this code? We are using nesting in this code. Nesting means to write the other statements in one statement. Let's save it."
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 2839.36,
+            "end": 2852.36,
+            "text": "If the age is 34, then in that case, it will print and come. But as soon as we do our age, let's suppose 95, save and rerun. In that case, it will print and come. Cannot drive."
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 2852.36,
+            "end": 2866.36,
+            "text": "So here, as soon as the first statement is true, it will come and then we will go inside and check the second statement again. If this is true, then we will print this thing. And if this thing is false, then we will print this statement. So in this way, nesting also works in programming."
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 2866.36,
+            "end": 2881.36,
+            "text": "Here we have seen nesting in conditional statements. Further, we will read the important concept of loops in the next lectures. In which we can do nesting in loops. Now let's come to some practice questions. First of all, we have to try to solve these practice questions."
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 2881.36,
+            "end": 2900.36,
+            "text": "And after that, we can see them with the class. First of all, practice question is, write a program to check if a number entered by the user is odd or even. Now to solve this question, let's think about odd and even numbers. Our odd numbers can start from 1. 1, 3, 5, 7, 9, 11, 13."
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 2900.36,
+            "end": 2916.36,
+            "text": "All these are our odd numbers. We have even numbers like this. In even numbers, we have 2, 4, 6, 8, 10, 12, 14 and so on. Now there is a special property of odd and even numbers. All the even numbers,"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 2916.36,
+            "end": 2939.36,
+            "text": "can we say that they are multiples of 2? All those even numbers come in the table of 2. Or there is a better way to say that all the even numbers are completely divided from 2. If we divide any even number from 2, then the remainder will always be 0."
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 2939.36,
+            "end": 2960.36,
+            "text": "For example, if we divide 14 from 2, then the remainder is going to be equal to 0. So can we say that any number, if it is divided from 2 and gives zero, then it is an even number. We can definitely say that. If any number is used for remainder, for remainder, for the modular operator, that if any number is divided from 2 and gives zero to the remainder,"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 2960.36,
+            "end": 2976.36,
+            "text": "then divide number from 2 and give the remainder. If its value is zero, then it means it is an even number. And any number that does not give zero to the remainder, the remaining numbers are our odd numbers. Let's check this, that is, let's convert it to a program."
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 2976.36,
+            "end": 2998.36,
+            "text": "Let's suppose we have some number equal to 14. Now here we can find out a remainder, or at least a number, if our remainder is equal to zero, then we can print it in that case even. In the case of the other, we can print it like this."
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 2998.36,
+            "end": 3018.36,
+            "text": "In fact, we can also take the input from the user. Enter number, save and run. First of all, we will enter our number 14. Our 14 is an even number. Or if we enter 1, then 1 is an odd number."
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 3018.36,
+            "end": 3034.36,
+            "text": "So we can calculate this way, or directly, we can calculate the remainder here, instead of creating a new variable. Save, refresh, the number 24 is an even number, and the number 17 is an odd number."
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 3034.36,
+            "end": 3059.36,
+            "text": "Let's come to the next question. The next question is, write a program to find the greatest of 3 numbers entered by the user. That is, the user will give us 3 numbers, A, B and C. We have to write a program which will find out the largest value of these 3. For example, let's suppose A has 4, B has 5 and C has 7."
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 3059.36,
+            "end": 3077.36,
+            "text": "So we have 3 numbers in this way. First of all, we can check that A is greater than B. If A is greater than B, and A is greater than C, then what we can say in this case is that if A is greater than both numbers, then our greatest number A will come."
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 3077.36,
+            "end": 3094.36,
+            "text": "Or if it doesn't happen, then A is not the greatest number. So in L, if we can check that B is greater than C. We obviously know that if the first statement is not true, then A is not the greatest number. So either B is the greatest or C is the greatest."
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 3094.36,
+            "end": 3111.36,
+            "text": "So first check whether B is greater than C, if B is greater than C, then B is the greatest number. And in the case of L, it is C greater than number. Let's write this in the code once. Let's suppose we enter the number, input it from the user,"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 3111.36,
+            "end": 3135.36,
+            "text": "or enter the first number, then we will store it in A. And in the same way, we will enter our 3 numbers. We will store A in B and store A in C. First check that if A is greater than B, and we can say greater than equal to B,"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 3135.36,
+            "end": 3162.36,
+            "text": "and A is greater than equal to C, then in this case, we want to print it. First number is greatest or largest. And let's print the value of the first number, which is A. If L is greater than equal to C,"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 3162.36,
+            "end": 3185.36,
+            "text": "then in this case, we will print the number, second is the largest. Second is largest and we will print the value of B. And in the case of L, we obviously know that our number C is the greatest. So third is largest and C. Let's save it and run."
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 3185.36,
+            "end": 3200.36,
+            "text": "First, let's suppose we input 4, we input 5 in the second number and we input 7 in the third number. So the answer is third is largest, which is 7. If we want, we can run the code with some different values. Let's suppose first number is 99,"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 3200.36,
+            "end": 3218.36,
+            "text": "second number is 201 and third number is 87. Our largest number will be second number, which is equal to 201. So our program is finished in this way. Here, I will give you a homework problem. As we have written the code to find out the largest of 3,"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 3218.36,
+            "end": 3233.36,
+            "text": "you have to write the code to find out the largest of 4 numbers. And you have to think logically about this code yourself, and then we will convert it into Python code. Now let's come to our third question. In the third question, it says,"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 3233.36,
+            "end": 3246.36,
+            "text": "Write a program to check if a number is a multiple of 7 or not. If a number is a multiple of some other number, when their remainder is 0, that is, if we take any number x, if we have to check if this is a multiple of 7,"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 3246.36,
+            "end": 3264.36,
+            "text": "then we should have a remainder of 0. For example, x is equal to 7 or for 14, 21, 28, for all these numbers, their remainder will be 0 with 7. So all these numbers will become 7's multiples. We can write the code for this."
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 3264.36,
+            "end": 3278.36,
+            "text": "For example, suppose we have taken a number input, let's call it x, enter number, and if our number is x, its remainder with 7 turns out to be 0,"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 3278.36,
+            "end": 3297.36,
+            "text": "so in that case, we will print multiple of 7, and in the case of the other one, we will print not a multiple. Let's save it, let's enter. We have entered 21, so 21 is a multiple of 7, and if we enter again, let's suppose 16,"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 3297.36,
+            "end": 3312.36,
+            "text": "so 16 is not a multiple of 7. And we can check for any number for only 7. For example, we can check if any number is a multiple of 5. Save, run, if we enter 25, so 25 is a multiple of 5,"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 3312.36,
+            "end": 3330.36,
+            "text": "but if we enter 27, so 27 is not a multiple of 5. So basically, this is the basic code that we have practiced. Obviously, when we do real life programming, the logic we build there is more complex than that. But for that, as a beginner, we have many different concepts"
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 3330.36,
+            "end": 3338.36,
+            "text": "in Python that we have to learn. So I hope that from today's lecture, we will learn more concepts about Python language. That's all for today. See you in the next video."
+        },
+        {
+            "number": "2",
+            "title": "Strings & Conditional Statements",
+            "start": 3338.36,
+            "end": 3340.36,
+            "text": "Till then, keep learning and keep practicing."
+        }
+    ],
+    "text": " Hi everyone and welcome to the complete Python language series in which we are going to read chapter 2 In chapter 2 we will cover what are the strings in Python and how they work and related functions and also we will cover an important concept which is conditional statements which form a core of our Python language All the lectures of the Python series are available on this channel in this playlist, you can check them out Also, the links to download the slides of our classes will be in the description box below Let's start with chapter 2 Hi everyone, let's start with chapter 2 in which we are going to read about strings Now, strings is a data type we already read it in our first lecture and it stores a sequence of characters that is, a sequence of different characters which we store in the form of a string it can be a single character it can be a word it can be a sentence or a paragraph We saw three ways to create a string For example, in this code, we have already made a file in our folder in the name of lecture underscore 2.py So, in this Python file, we will be writing our lecture 2 codes If I want to create a string in it then in this way, we can make a variable named string1 Generally, we define our string in double quotes and this is a string So, what is this string? It is a sentence that we have stored in the form of a string We can create strings in this way In fact, we can create strings in single quotes If we want, we can make a string 2 in which we can store a single word enclosed within single quotes and this is the same thing that we can do in triple quotes Our string can be 3 which we want in triple quotes This is a string We can store it in this way These three are valid ways to create a string in Python But when we are creating our strings most of the time, we will use double quotes because generally, when we see other people's quotes in Python then double quotes are used or in fact, in other programming languages Here, we can ask the question why do we need three different types of quotes to create string? It is generally due to the fact For example, we have to use apostrophe somewhere We have to use single quotes in our string So, how do we use it? For example, we have to write this is our college tutorial If we enclose this string in single quotes then Python will get confused How will it get confused? Because single quotes means strings are starting from here And as soon as we see the second single quote means the string ends here So, this word and single quote are saved It will not make sense to our Python interpreter Instead, we want to use single apostrophe in this string We will enclose it in double quotes So, it will become a valid string and we have also enclosed apostrophe in single quotes But if we had double quotes here then we would enclose this string in single quotes So, we have different types of quotes So that we can use single quotes and double quotes inside the string value itself These are the basic things Now, let's talk about some other things For example, we have to write two or three sentences in a string For example, this is a string We are creating it in Python We want to write two sentences in this way But we want to print one sentence and then in the next line, we print another sentence But in this way, if we try to give the next line in the code editor then we have an error Because this next line is not valid in Python So, as such, generally, we work in Word documents We cannot work in the code If we have to give the next line in any string then we use Escape Sequence Characters What are these Escape Sequence Characters? Let me also write it down Escape Sequence Characters There are some special characters whose work is to give formatting Formatting means if we want a tab space or we want the next line then we cannot directly code these things So, to do these things, we use these characters Now, if we want to make this string print normally Let me try to print my string 1 Our string 1 will come up with some kind of print on our screen We want the next line to come up So, for that, we can write backslash n Backslash n is an Escape Sequence character which means the next line Whenever a string print is there or some operation is there then we have to have the next line Let's save it and run it So, we have a next line here This extra space was created in the starting because we had extra space before v We can rerun it And in this way, we can bring the next line in our string Like we brought the next line We could have brought the space of the tab Like if we had written backslash t This means this is the Escape Sequence character Let's save it and rerun So, in this way, the space of a tab came between our sentences So, we can use Escape Sequence characters at different times Whenever we are writing a paragraph or trying to write a big line in the string Now, let's talk about the strings How can we perform different operations? The first operation we will talk about is Concatenation It seems very difficult to hear but it is actually a very easy thing Like in Math, we can add two numbers We can write A plus B Similarly, we can add two strings in Python Like if we add one string 1 and one string 2 then the output of the string is a valid output And to add two strings, we call it Concatenation And to add two strings, we can use our plus operator in Python Like here, if I create my string 1 Let's call it Apna and my string 2 Let's call it College So, we can simply write string 1 plus string 2 We will save it and run it So, we will have the output of both the strings' concatenated version i.e. the connected version We want the connected version We can store it in a different string Let's call it final string Final string And we will store our final string here Save and run So, this is our final string Next, we have the length of the operation We can find out the length of any string using this length function Now, what are the functions? We don't need to worry about them We will read the functions in detail So, we can hear the function word again and again So, we have to imagine the function Basically, it is a magical word Which we write So, a particular operation is performed for us Like, when we write the plus, it adds two things Similarly, in Python, there are different functions which are inbuilt and use to perform different tasks In this Python, we have LEN It is a length function which is used to calculate the length of a string So, we can write simply LEN Like, we write a print And then, we will pass the parenthesis and the string we write We will have its length For example, I have to print the length of string 1 So, we can simply print LEN of str1 Or, we can store it in a different variable Here, we have made a variable called LEN1 And we are storing length of string 1 And then, we are printing LEN1 Similarly, we can print length 2 Let's create another variable LEN2 In which, string 2 will have length And we print it too Let's run it So, first of all, we have printed 4 Because there are 4 characters in our own And then, we have printed 7 Because there are 7 characters in our college When we are creating our final string Let's suppose, we create our final string In this way, we add an additional space So, adding a new string like this means adding an empty string is completely valid First, it will come to its own Then, it will come to its own space Then, it will come to its college In this way, we will have an extra space in our final string And then, we can print the length of the final string We can print length of our final string Let's save it And run it So, we have our college printed With a space and total characters How many are printed? 12 characters are printed The two of the initials Our and college were 11 characters So, basically, whenever a string has a length calculated Then, this empty space is counted So, we have to remember that spaces are not ignored by counting the length Because many times, as a beginner we mistake this as a beginner That we think that only characters will be counted in length Spaces are counted in length Special characters like Percentage, Dollar Sign, Adderate are counted in length In fact, digits are also counted Now, there is another interesting thing related to strings in Python which is called indexing Indexing is something that we get to see in different languages If you have seen C, C++, Java or JavaScript or any other language like this I am sure you already know about indexing Otherwise, we will learn in Python Indexing basically means whenever a string is created in Python Internally, all the characters of that string get an index Index is kind of saying that the character gets a position number Like, we were standing in the assembly in the school So, first student was standing Second student was standing Third student was standing Similarly, whenever our string is created we can imagine that from here from the first character our numbering starts our count starts and our position gets known And in Python, the numbering of strings always starts with 0 instead of 1 So, the first character gets an index of 0 The second character gets an index of 1 The third character gets an index of 2 and so on And even if there are spaces in between or there is an underscore or a special character we get an index of 0 Now, how do we help the index? We help the index to access characters Access characters means if we want to get a character of position 2 we can directly access it How? We can write the name of our string and then we put square brackets In square brackets we can write the index of the character For example, we need an index of 2 So, we can simply write this thing and access our character Let's check this thing once In our code, let's create a string Let's call it our college in which we have given a space Now, if I want to access the character of index 0 we can call it character or ch is equal to str of 0 This means that we are accessing the character of index 0 and we can print it if we want and save it If we run it, we have a print Similarly, if we run it we will have p print If we run it 2 we will have n print We can directly access it We can write string of let's suppose 3 So, we need to get 0, 1, 2, 3 we need to get a print We can print our space in 4 So, the output we have will be an empty space In this way, we have accessed the character of index but we can't change our character using the help of index If we want our string of 4 this empty space this empty space should be replaced with a dash or an adder 8 sign then it will not be possible to do that If we write some code like this and try running it once we will have an error What is the error? string object does not support item assignment Assignment means that we are trying to assign a value of a different character on a particular index This is not allowed in Python In the form of index we can access the characters we can't manipulate them we can't modify them So, this was all about indexing Another special thing is string related If you want to learn machine learning after learning Python then we have a concept of slicing in Python which we are using a lot Because machine learning algorithms apply time to deal with data and we have to find relevant information from data So, we will use a lot of slicing So, slicing is an important topic whenever we are reading Python In Python, what does slicing mean? Slicing means accessing parts of a string Like if we have a fruit like an apple we cut it and call it slicing and apple Similarly, to break the strings in part we cut the strings and call it slicing Now, we can directly cut the strings in Python We can simply write the name of the string and then we pass two indexes One is our starting index and one is our ending index If we have this string in which we pass any starting index and any ending index then the entire piece of the middle part will be returned to us For slicing, we write starting index, colon, ending index and in this, our starting index is included but our ending index is not included For example, if we have made a string in our college and if we want to access any part then if we have sent one colon four then it means that from one index to three the part of the string that is in the three index will be returned to us So, we have PNA, this part of the string will be returned to us Let's check this Let's suppose I have this string in my college and from here we try to take the fourth index from one saved and run So, we have PNA, how did we get PNA? A is our index number zero so, if we want to start from one then we will start from P, two will be on N three will be on A and we will stop from three and we will not include We need one more so, we will do five so, this time we will have PNA with an additional space We can start from zero if we want If we do from zero to four then we will have saved, refreshed, we got our and if we want only college then what we have to do which index we will start from zero, one, two, three, four We will start from fifth index from index number five and we have to go to which index five, six, seven, eight, nine, ten, eleven so, we will write 12, that is for 11th index we have to count plus one so, we will have to print the whole college Okay, instead of 12 we can write one more thing here which would be length of string This would be completely valid because what will be the last thing which will be our last index, plus one length of string, we could write length of string so, what we had same output return so, whenever we have to give last index we have to go to last index, so we can write length of string Okay, another thing about slicing that whenever we miss our second ending index so, python automatically thinks that we want to go to last index that is, even if we run our program by writing this much then we can reach college that is, if we have to go to last index then we can completely skip the last index and let's suppose if we write any index here and we miss the starting one then python automatically thinks that we should have come to zero here so, this means that we want to go to four with zero and similarly if we write here then this means that we want to go to length of string so, sometimes in python if we miss the starting index or ending index then python automatically fills it let's save it and try to run it in the first case, we have our own print which goes from zero to four in the second case, we have college print which goes from five to length of string generally, in normal cases slicing is doing the same but another special case of slicing in which we have negative index now, what is the concept of negative index in python but when we go from start to end then we increase our positive index count that is, if there is any string for example, we have this string called apple in this, the starting index will be zero then one, then two, then three, then four but in python, there is another special feature which is not available in other languages that is, if you are coming from C++ java background or javascript then generally, we won't get to see it in programming that we can count our index backward too how does backward counting work backward counting starts with minus one and then we decrease our number with minus one that is, we call the last index minus one, second last is minus two third last is minus three and so on so if we try to do this slicing string of minus three colon minus one means, we are trying to go to minus one index and in this, our ending index will not include this means, if we try to go to minus three to minus one then we will have only P and L and we will print it we can test this too and when we create apple then we can try to print it string of minus three to minus one let's save it and let's run it so we will have print P and L similarly, if we want to print it from the starting then we can write minus five from minus five to P P so we will write minus two here we will save and run it so we will have an app to print that means, going from minus five to minus two means, we will cover these three characters and we will skip the last one so, in some cases, backward counting helps us when we don't have the exact length of the string and when we want to count our characters from the last although, right now because we are on the beginner stage we are not seeing such practical cases we just need to remember that this is how concept works now, when we are reading strings we are reading many concepts now, we will read some more functions which are quite useful but as a professional programmer sometimes, we have to work with different languages or we have many different concepts which we use together whenever we are coding in the company so, it is not necessary that all these functions should be remembered in one or we will remember them lifelong if we read them once as a programmer, when we start coding in multiple languages we start learning multiple technologies which generally, all the people who are doing software engineering, machine learning or in the field of data science at that time, we don't need to remember all these functions as a programmer, we will have many times that we will not remember the names of small functions so, in such cases, if we want to google simple things that is also completely normal if we write a big code in Python and if we forget what a specific function does in Python or how does the slicing of negative index work then we can simply do our work while doing it even google it which is a lot of practical coding it is not about memorizing things it is about understanding things from a logical point of view that is, how things are logically working we should understand its background we don't necessarily need to memorize things i.e. we don't have to hit the bars but yes, there will be some basic syntax which we have to remember together and it would be better to practice things i.e. we will write more and more with the tutorial and the class so we will automatically remember the maximum things now, we will talk about the functions in the next strings as we saw the length function in the string we have many more functions the first function we are reading is endswith function if we write endswith and in it, any value will pass in parenthesis so what will this function do? it will check if our string ends with this string i.e. the sub string i.e. any small string this function is sent to us by checking if the last part of our string is ending with this sub string if it is ending, then it will return and if it is not ending, then it will return and it will return for example let's take a string string is equal to i am studying python from our college if we write any string like this now if we want to print str.endswith here we can print string.endswith many times for our help we can use this function as soon as we want to use this, we can simply enter and then we will write our parenthesis whenever we write a function to use it, we have to always write parenthesis we will read the rest of the functions in detail here if we want to check if my string ends with this string then we can pass ege we can save it but if I want to check if this ends with app then obviously in my string it doesn't end with app so we will execute it and it will come to us so in this way any word any string ends with any particular sub string for that we can check using this function second function which we can use which can be useful later this is capitalized function capitalizing means whatever is our string we can make it capitalized for example if I make it small i and here we can write string.capitalize only this much so what will this function do? whenever we print our new string then i will have capital one more thing in this if we want to print our string like this then our capitalized only works once second time means it doesn't change in original string whenever string.capitalized works then it creates a new string which will have changes there will be no changes in old string but we want that our old string also have changes so we can simply write string.capitalize is equal to string that means this new value is returning it to its old variable so this time when we print our string then changes will happen now we are trying to modify our original string as soon as we print then modifications will happen so whenever any function is working in strings then they don't change in original string they create new string and changes in it next function which we can use is replace function replace function is to replace for example we have a string I am studying python from our college all the O's in this string i.e. from O, college O, python O we want to replace all these O's from A's so we can simply write string.replace we will pass old value first i.e. we have to replace O with A so wherever O comes in string it will replace A let's try to run it so we have A in O's place A in from O's place and O in college O's place we can replace all the O's for example if we want to do JavaScript instead of python we can write python our old value and JavaScript our new value saved and run so we have started JavaScript from our college next we will talk about our find function to search for this word in our string find function search whether this word exists or not and if this word exists then wherever it exists we get its starting index return i.e. the first occurrence we get its first index return for example we want to search O in our string so where does O come O comes in python so we get its index return let's try to do it we are trying to search for character O let's save it and search character index is equal to 18 you can also count it if you want but i'm pretty sure python program is giving us the right thing we can search the word if i write i am from i am from we can search for from and wherever it exists i.e. the index number 5 we get its return 0, 1, 2, 3, 4 and 5 i.e. this is the 5th index where our word starts if we search for such things which doesn't exist for example i search for the letter Q in that case we get its return minus 1 because minus 1 is not a valid index whenever we talk about indexes we never think about negative indexes in our first thought negative indexes only exist for slicing we deal with normal strings always start with indexes 0 and go on to increase next we talk about another function this is our count function count function counts occurrences for a substring in a string i.e. if we pass any word then how many times the word exists in our string we get its count return for example if we write string.count and pass from so how many times the word exists in our string it exists twice once here once here so we get 2 print so we get 2 if we want to count how many times the letter O exists it exists 4 times once in from, once in python and once in our college in this way we get different functions in python in fact there are many other functions like if i write string. so all the functions visual studio code is suggesting these are all valid functions for string which we can explore but there is no point in reading all the functions we have seen all these functions so that we get a basic idea that strings are very powerful in fact if we learn better concepts we are using string functions or string properties now let's solve some practice questions let's come to our first practice question which says write a program to input user's first name and print its length i.e. first we have to take input of the user's first name we already learnt to take input in our first lecture and then we have to print the length of the input so before solving you have to pause and you have to try to solve this question after that if we can solve it or not, it doesn't matter but we have to try and after that we can see the solution let's remove all of it and first let's get our input enter your name and we will store it in a string named name and then we have to print the first thing we have to do length of your name is length of name let's save it and run let's suppose i write my name to be Shraddha then my string length will be 7k if we write Amman then string length will be 4k so we can write any name and we will have to print its length let's move on to the second question write a program to find the occurrence in a string how many times a dollar comes in a string we have to print the number of occurrences that is to print the count so we can simply use our count method we can use the count function let's take a string str is equal to high i am the dollar symbol dollar 99.99 we have made a string and we can print the occurrence of dollar so i know we have 3 times the dollar sign let's run it and we will have this number so in this way we can use our string functions next we are going to read another important concept conditional statements there are many different conditions in life for example for a DVD or for a license we can apply it only when our age is 18 or our marks are also condition for example if our marks are 90 then we may get grade A if we get grade A between 80 and 90 then we may get grade B so there are different conditions in life we can express all these conditions in the code to write conditions in the code we use if,elif and else we use syntax syntax means in programming rules of programming for example if we want to write a function for example we want to write a print statement we will write it like this in python there is syntax meaning the correct way to write the code so we are going to learn the right way to write conditional statements in conditional statements first we will talk about if whenever we want to write a function for example if our age is 18 then we can apply it for our license so if we can write this keyword and after that in parenthesis we can write a condition any condition can happen condition can happen like we have age variable and its value is greater than equal to 18 and what is this condition condition is basically anything which returns the true or false value we can write a boolean variable in which either it is true or false so if in statement there is a condition which returns the true value then any work in if i.e. statement 1 is executed we will write it practically for example we make a variable age equals 21 now if we want that if age is 18 then we have to decide whether we can apply for license or we can get driver's license so for that we can write if and after that in parenthesis in parenthesis we will write if age is greater than equal to 18 and then we will apply colon and then next line now here we have to keep in mind that the next line will start after colon we will start that line with a tab space or with 4 spaces in visual studio code by default tab means 4 spaces so either we will give 4 spaces here 1, 2, 3, 4 or in by default visual studio code as soon as we enter here then we will reach the distance of tab space and here we will write our next statement this means this statement will be executed only when our if statement i.e. if condition is true so in that case we want to print can, vote and apply for license we can print this kind of statement so we will save it and run it so here what will happen here condition as soon as it is true means age value is obviously greater than equal to 18 so it will give us true and in that case we will print can, vote and apply for license but here if our age we do 16 save and run so this time nothing is printed for us if we want as soon as statement is true then we need 2 things and we can also do our second work i.e. our first statement is done and here we can define our second statement so here we can write can, drive and can, vote so in this way we can execute 2 statements let's make our age greater than 18 save and we have both lines executed now in if statement we want we can write simply true instead of any condition simply if we write true in this way so these statements will be executed for us now as we have if if means if if this is true then this should be done similarly we have L if L if means if we want to read its expanded version then we can read it as else if if we believe if first statement is not true then we will check this statement in that case so here in next line we can write L if and we can execute any other statement for example let's take example of traffic lights for example our light its color is let's suppose we have taken green so here we can check if our light is its value is red then what we do we stop in traffic lights we have 3 colors red yellow and green means go and yellow means look so here if our light is red then we have to stop L if means if light is red then we can check for another condition that if our light is green if light is green then we will put colon again in next line again then we will print go in that case and if light is not green then we can write another L if statement if light is yellow then in that case we can print weight or look we can do this save and execute because light is green then how code execution will work in code this way execution will be that first we will check if light is red then obviously light is not red then we will come to this statement if light is green then we will print go in that case so here we have printed go in that case and as soon as a statement is executed then we will not see the code in the next statement means we will ignore this statement and come out so here in fact we can print in last end of code save and run so we have printed go and then end of code we want and how many L if can be written and how many L if can be written in one sequence if we wanted we could make this L if also then we could write 3 if statements and if we wanted we could make all these L if but whenever L if comes we have to write an if statement now what is the difference between if and L if there is only difference between if and L if that if statement will always means this if statement will always check for condition but L if statement will only check when if condition will give false for example let's comment this code once for example we have a number number is equal to 5 we want to check here if our number value is greater than 5 or greater than 3 or 2 then we will print in that case greater than 2 and if we check here if our number is greater than 3 then we will print in that case greater than 3 we save it and will execute so what will happen first we will check for our number of 5 is greater than 2 then we will print here greater than 2 then we will check if so we will check every time if 5 is greater than 3 we will print in greater than 3 so in this case when we use if I will execute two statements. But as soon as we write LF here, we will save and rerun. So only one statement will be true. That is, the first one is true, the second one is true. We will not check for the second condition. In the case of LF, we only check when our first statement is false. Now as soon as we have if and lf, we have an else statement. We can write if and lf many times. It always starts with if. But we only write the else statement once and we always write the else statement at the end. L statement means that no one checks the condition. L statement means that if all the conditions give us false, then else will be run. That is, in the case of traffic light, we come back. For example, in this code, if our light color is not red, green, or yellow, that means light is broken. Definitely, if we see blue color in traffic light, then it doesn't make any sense. In that case, we can write an else statement. We will put a colon. In that statement, we don't have to check any condition. And here we can print light is broken. For example, our traffic light color is pink. In that case, this condition will also give false, this will also give false, this will also give false. Then we will get this thing printed. If we execute it, then we will get this print. Light is broken. Similarly, if we yellow here, then in that case, we will get this print. Look. Because red condition will give false, this will give false. Here, as soon as it is true, it is printed. In that case, we won't have the else statement. We can use if and else only. For example, let's comment out this. Let's take our voting example. Let's suppose our age is equal to 24. So here we can check if our age value is greater than equal to 18. In that case, we can print can vote and write an else case. That is, if greater than equal to 18 is not there, if this statement gives false, then we have to print in that case, cannot vote. Let's save it. We can execute it. In this case, it will come can vote and as soon as age is equal to 14, in that case, we will get the print. So in this way, our if, elif and else statements work. Now these are very basic examples. Later, when we explore different concepts, we will write conditional statements many times. Now here, another thing is that whenever we give the space of four spaces in if statement, or in elfs, or in elfs, we call this thing as indentation. Indentation means proper spacing. Generally, if we are coming from the CEC plus java background, then we must have heard that block of or seen that we combine multiple statements with the help of block of code. That thing is not in python. In python, to write multiple statements, we are using indentation or not proper spacing instead of curly braces. That is why in python, indentation or not proper spacing is very important for programming point of view. So these are our basics of conditional statements. Now let's understand one more example through conditional statements. For example, we want to write a code, a program in which we want to grade our students based on their marks. That is, the way the student has 90 plus marks, he should get grade A. The way the student should get between 80 and 90, he should get B. The one who gets 80 to 70, he should get C. And if he gets less than 70, he should get D. Obviously, this is a very harsh way of assigning grades. But for simplicity, we assume that this system is running in some college. So how we will convert this system into a code? Basically, this can be a practical scenario. We have written a program of python in which we can do all the students' marks and for those students, grade grade system will be prepared according to the CGA system. So we have to create this system. To create it, we will use conditional statements. First, let's come to our first condition. In the first condition, let's suppose we already have marks. So we will check whether our marks are greater than or equal to 90. If marks are greater than or equal to 90, then in that case, what will be our grade? Our grade will be equal to A. After that, if this doesn't happen, then we will check the second condition, that is, in the elef, we will check whether marks are greater than 80 and less than 90. To check this, we will have to use our logical operators here. That is, we will first check whether our marks are greater than or equal to 80. Now, any value can be greater than or equal to 80. Then we will check and, that is, if we want to check in our range, we will write and marks are less than 90. So in this way, by using the logical operator, we can combine our two conditions. That is, marks should be greater than or equal to 80 plus marks should be less than 90. So this statement will also be true. This will also be true. That is, marks are in range of 80 to 90. Then our final statement will be true. In this way, we use the logical operators in our programming. That both statements are true, only then marks are in our range. In that case, what we will print out is, in that case, our grade will be BK equal. And in this way, we can write all our statements. Let's write its code once. For example, we have some marks. Let's suppose the marks are equal to 74. We can start writing our conditions. If our marks are greater than or equal to 90, in that case, our grade will be equal to A, L if our marks are greater than or equal to 80 and marks are less than 90. In that case, our grade will be BK equal. Next, we are going to write L if our marks are greater than or equal to 70 and marks are less than 80. In that case, grade is going to be C. And here we can write our L's case. L's grade is going to be equal to D. And lastly, we can print out grade of the student. And grade. Let's do that. Save and refresh. So grade is the student is going to be C. Now, we can take the marks from the user. Enter student marks. Save it and let's run it. Let's suppose our student marks are 94 equal. Let's cast it into int. Save and run. So the student marks are 94 and the grade is going to be A. We can check again. The student marks are 67 and the grade is going to be D. The student marks are 88 and the grade is going to be B. So in this way, we have created a whole program for ourselves in which something is being inputted. Then we have some operations being performed and then we are finally doing some output. Generally, programs work in programming languages in the same way. So first we are taking some input and then we perform some operations. And then finally, we send some output which we send out as a result of our program. Now with conditional statements, there is also something called nesting. Nesting means to write an if statement in an if. That is, in one statement, we write another statement. For example, we have written a condition. This is our if statement. And in this, when we write another if statement, that is, the proper spacing, with that, in some other condition, we can write another if statement. Then we have to give a gap from here and we can print something here. We call this phenomenon nesting in programming. Nesting is to write another statement in one statement. And this is completely valid in Python. For example, we have age. In age, let's suppose the age is equal to 34. First, we are checking if the age is greater than equal to 18. So in that case, let's suppose we are printing. Can drive. And in the other case, we are printing. Cannot drive. Now, in fact, there is no upper age limit for driving. But for example, we have an imaginary upper age limit. That 80 plus means that driving is not possible. In this way, we imagine a scenario. So here, if we have to check in this statement that if the age is greater than equal to 18, if we want to check in that, if the age is also greater than equal to 80, then here we want to print something. Let's suppose we want to print cannot drive. We want to print something like this. But if this thing is not true, then in that case, in the case of the other, we want to print this thing. So this code is completely valid. In fact, what are we using in this code? We are using nesting in this code. Nesting means to write the other statements in one statement. Let's save it. If the age is 34, then in that case, it will print and come. But as soon as we do our age, let's suppose 95, save and rerun. In that case, it will print and come. Cannot drive. So here, as soon as the first statement is true, it will come and then we will go inside and check the second statement again. If this is true, then we will print this thing. And if this thing is false, then we will print this statement. So in this way, nesting also works in programming. Here we have seen nesting in conditional statements. Further, we will read the important concept of loops in the next lectures. In which we can do nesting in loops. Now let's come to some practice questions. First of all, we have to try to solve these practice questions. And after that, we can see them with the class. First of all, practice question is, write a program to check if a number entered by the user is odd or even. Now to solve this question, let's think about odd and even numbers. Our odd numbers can start from 1. 1, 3, 5, 7, 9, 11, 13. All these are our odd numbers. We have even numbers like this. In even numbers, we have 2, 4, 6, 8, 10, 12, 14 and so on. Now there is a special property of odd and even numbers. All the even numbers, can we say that they are multiples of 2? All those even numbers come in the table of 2. Or there is a better way to say that all the even numbers are completely divided from 2. If we divide any even number from 2, then the remainder will always be 0. For example, if we divide 14 from 2, then the remainder is going to be equal to 0. So can we say that any number, if it is divided from 2 and gives zero, then it is an even number. We can definitely say that. If any number is used for remainder, for remainder, for the modular operator, that if any number is divided from 2 and gives zero to the remainder, then divide number from 2 and give the remainder. If its value is zero, then it means it is an even number. And any number that does not give zero to the remainder, the remaining numbers are our odd numbers. Let's check this, that is, let's convert it to a program. Let's suppose we have some number equal to 14. Now here we can find out a remainder, or at least a number, if our remainder is equal to zero, then we can print it in that case even. In the case of the other, we can print it like this. In fact, we can also take the input from the user. Enter number, save and run. First of all, we will enter our number 14. Our 14 is an even number. Or if we enter 1, then 1 is an odd number. So we can calculate this way, or directly, we can calculate the remainder here, instead of creating a new variable. Save, refresh, the number 24 is an even number, and the number 17 is an odd number. Let's come to the next question. The next question is, write a program to find the greatest of 3 numbers entered by the user. That is, the user will give us 3 numbers, A, B and C. We have to write a program which will find out the largest value of these 3. For example, let's suppose A has 4, B has 5 and C has 7. So we have 3 numbers in this way. First of all, we can check that A is greater than B. If A is greater than B, and A is greater than C, then what we can say in this case is that if A is greater than both numbers, then our greatest number A will come. Or if it doesn't happen, then A is not the greatest number. So in L, if we can check that B is greater than C. We obviously know that if the first statement is not true, then A is not the greatest number. So either B is the greatest or C is the greatest. So first check whether B is greater than C, if B is greater than C, then B is the greatest number. And in the case of L, it is C greater than number. Let's write this in the code once. Let's suppose we enter the number, input it from the user, or enter the first number, then we will store it in A. And in the same way, we will enter our 3 numbers. We will store A in B and store A in C. First check that if A is greater than B, and we can say greater than equal to B, and A is greater than equal to C, then in this case, we want to print it. First number is greatest or largest. And let's print the value of the first number, which is A. If L is greater than equal to C, then in this case, we will print the number, second is the largest. Second is largest and we will print the value of B. And in the case of L, we obviously know that our number C is the greatest. So third is largest and C. Let's save it and run. First, let's suppose we input 4, we input 5 in the second number and we input 7 in the third number. So the answer is third is largest, which is 7. If we want, we can run the code with some different values. Let's suppose first number is 99, second number is 201 and third number is 87. Our largest number will be second number, which is equal to 201. So our program is finished in this way. Here, I will give you a homework problem. As we have written the code to find out the largest of 3, you have to write the code to find out the largest of 4 numbers. And you have to think logically about this code yourself, and then we will convert it into Python code. Now let's come to our third question. In the third question, it says, Write a program to check if a number is a multiple of 7 or not. If a number is a multiple of some other number, when their remainder is 0, that is, if we take any number x, if we have to check if this is a multiple of 7, then we should have a remainder of 0. For example, x is equal to 7 or for 14, 21, 28, for all these numbers, their remainder will be 0 with 7. So all these numbers will become 7's multiples. We can write the code for this. For example, suppose we have taken a number input, let's call it x, enter number, and if our number is x, its remainder with 7 turns out to be 0, so in that case, we will print multiple of 7, and in the case of the other one, we will print not a multiple. Let's save it, let's enter. We have entered 21, so 21 is a multiple of 7, and if we enter again, let's suppose 16, so 16 is not a multiple of 7. And we can check for any number for only 7. For example, we can check if any number is a multiple of 5. Save, run, if we enter 25, so 25 is a multiple of 5, but if we enter 27, so 27 is not a multiple of 5. So basically, this is the basic code that we have practiced. Obviously, when we do real life programming, the logic we build there is more complex than that. But for that, as a beginner, we have many different concepts in Python that we have to learn. So I hope that from today's lecture, we will learn more concepts about Python language. That's all for today. See you in the next video. Till then, keep learning and keep practicing."
+}

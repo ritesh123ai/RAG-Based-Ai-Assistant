@@ -1,0 +1,1412 @@
+{
+    "chunks": [
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 0.0,
+            "end": 26.8,
+            "text": "Hi everyone and welcome to the complete Python series in which we will be covering all the important concepts of Python language. Today we will be reading our chapter 3, in which we will be covering the tuples and lists of Python. We will not only read the concepts, but we will also be writing our code related to the concepts. Along with that, we will be solving different practice questions related to the concepts. Now the notes of our lecture will be in the description box below. You will get them there. We can download them from there."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 26.8,
+            "end": 57.0,
+            "text": "And all the different lectures related to Python will be available in this playlist on this channel. So let's start with chapter 3. Hi everyone and now we will start with chapter 3 of Python. In chapter 3, we will be covering the lists and tuples in Python. Now let's talk about the list. Generally, if you have coded in any programming language, you will have to hear about arrays."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 57.0,
+            "end": 77.5,
+            "text": "That is, there is a data structure called arrays. Now, we have lists and tuples of the sort of equivalent in the Python of arrays. Now the list is a built-in data type that stores set of values. For example, we are a teacher of a class and we have to get a mark of many students of a class. Now there is one way to do it. We take our file of Python."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 77.5,
+            "end": 101.0,
+            "text": "Here we have made a file in our folder called lecture3.py. And in this file, we have, let's suppose, five students and five students to store marks. So the first variable is to make marks 1 is equal to 94.4. The second variable is to make marks 2 is equal to 87. The third variable is to make marks 3 is equal to 95."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 101.0,
+            "end": 121.5,
+            "text": "The fourth variable is to make marks 4 is equal to 66. And marks 5 is equal to 45. In this way, we have made five variables. In fact, we convert them to floating values. In this way, we have stored different marks."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 121.5,
+            "end": 142.0,
+            "text": "Now our class is limited, that is, only five students. Tomorrow, there may be 50 or 100 students in our class. Now for every student, for a simple thing like marks, if we start making a new variable, then we will have to track many variables whenever we are coding. So for this, we have a built-in data type to simplify this work."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 142.0,
+            "end": 160.0,
+            "text": "Built-in data type, that is, this data type and its related methods, that is, functions, are already written in Python, they are not required to be implemented. Now if I had to store these marks in the list, then simply we would make a single variable, marks."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 160.0,
+            "end": 171.5,
+            "text": "And as we simply write marks.something, then what happens with this? Marks is equal to 12, that means we have these marks, this is an integer variable. Similarly, if I want to store multiple lists of values,"
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 171.5,
+            "end": 190.5,
+            "text": "then to make a list, first we write our square brackets. And in square brackets, then we start writing our values. We can store as many values as we want in a single list. And we have to write those values by separating them from comma. For example, the first value we will have is 94.4,"
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 190.5,
+            "end": 208.5,
+            "text": "we can give spaces as we want, but not as we want. It's up to us 95.2, 66.4 and similarly, 45.1. So in this way, the built-in data type we have made, we call it a list in Python."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 208.5,
+            "end": 219.5,
+            "text": "Now we have this list of Python, we can print it if we want. Let us try to print our list. What is the name of the list? It's like a normal variable,"
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 219.5,
+            "end": 229.5,
+            "text": "we give it a normal name. We have named our list as marks. Let's save and run it. We have our list printed. We can print the type of the list."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 229.5,
+            "end": 245.5,
+            "text": "Type of marks, save and run. So what is the class? This is the type of the structure, this type of data is a list type. Now the list has many properties,"
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 245.5,
+            "end": 258.5,
+            "text": "we will look similar to strings. Like in strings, we had the concept of indexing, we could go to a particular index and print a character. Similarly, we can access a particular element by going to a particular index in the list."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 258.5,
+            "end": 271.5,
+            "text": "For example, if we have a list like this, if we write marks of 0, we will get the marks of 0th index. This will be the index of 1 index. 2 index, 3 index and 4 index."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 271.5,
+            "end": 287.5,
+            "text": "Let's try to print our values. We can print marks of 0. And let's try to print marks of 1. Let's save and run it. So our marks at 0th index is here,"
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 287.5,
+            "end": 300.5,
+            "text": "our marks at 1st index is here. And in this way, we can access all the indices. We can print the length of the list as well. For example, we can print the length of the string, if I do LEN."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 300.5,
+            "end": 310.5,
+            "text": "Similarly, we can print the length of the marks. Save and refresh. So what we have here? We have 5 here. Which is the length of this list?"
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 310.5,
+            "end": 322.5,
+            "text": "The list of Python is slightly different from the arrays that we created in C++ and Java. In C++ and Java, generally in programming languages, in the arrays,"
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 322.5,
+            "end": 337.5,
+            "text": "the data we can store in the arrays should be of the same type. But there is no such rule in the Python list. In our Python list, we can store elements of different types together. We can make a list of students like this,"
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 337.5,
+            "end": 348.5,
+            "text": "where we can store a particular student's details. This is its name, Karan. And what is this? This may be the string type, marks, or integer type."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 348.5,
+            "end": 359.5,
+            "text": "This may be location, place, state, so this is also our string type. We can add floating values, or some other values. So in this way, we can store the data of multiple types"
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 359.5,
+            "end": 373.5,
+            "text": "in a single list. For example, if I create a student list, we can save the student's name, we can save its marks, we can save its age,"
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 373.5,
+            "end": 388.5,
+            "text": "and we can save its location. We saved it and we can print it. We can save the student's information. And this is going to be a valid list in Python. I have said that string and Python lists are very similar."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 388.5,
+            "end": 400.5,
+            "text": "But there is a big difference between the two. And the difference is that in Python, we have strings. Strings are immutable in Python. This is a very important point."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 400.5,
+            "end": 413.5,
+            "text": "And lists are mutable in Python. What does mutable mean? Mutate means change. In English, mutable means something that can change."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 413.5,
+            "end": 426.5,
+            "text": "And immutable means something that can't change. For example, we have mortal and immortal. That is, the living, the dead, and the not. We have immutable and immutable things that can change and that cannot change."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 426.5,
+            "end": 441.5,
+            "text": "So in Python, like in strings, value was allowed to be accessed on index. But there, value was not allowed to be changed. That is, mutating was not allowed. But in the list, this is also allowed and this is also allowed."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 441.5,
+            "end": 453.5,
+            "text": "For example, if we take a string, let's take an example of a string. We have a string called hello. Now if we want, we can print it in hello. We can print str of 0."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 453.5,
+            "end": 466.5,
+            "text": "But if I say that I want to assign str of 0 to value, y is equal. This operation doesn't allow Python because strings can't be immutable. So if we want, we can print str of 0 to value,"
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 466.5,
+            "end": 479.5,
+            "text": "and string object does not support item assignment. We can't do this assignment. But this same thing is possible in the list. We can print student of 0. And tomorrow, it can be that student's name"
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 479.5,
+            "end": 496.5,
+            "text": "has changed its name and let's suppose it has been arjuned. So this is completely possible in Python. In this case, Python will not return any error. And we can print our new list. So we have a new list in which the value has changed."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 496.5,
+            "end": 509.5,
+            "text": "Because lists are mutable in Python. Also, like in strings, there is a limit of index. If we make a list here, let's take an example of this list. If index is 0, 1 and 2,"
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 509.5,
+            "end": 521.5,
+            "text": "then if we try to access index 3, it will give us an error. Like here, our list, we have 4 indices in it. This value is for index 0,"
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 521.5,
+            "end": 530.5,
+            "text": "this is index 1, this is index 2, this is index 3. So here, if I try to write 5, what will it give? It will give me an error. Here, we will have an error,"
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 530.5,
+            "end": 543.5,
+            "text": "list index out of range. So we can access our values in the range of indices. Like in strings, string slicing is possible. Similarly, in lists, slicing is possible."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 543.5,
+            "end": 552.5,
+            "text": "What was the fund behind slicing? We should have an index. Like in strings, index is there. Like in lists, index is there. Obviously, slicing is also possible here."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 552.5,
+            "end": 561.5,
+            "text": "So, to do slicing, there are the same rules that we had read in strings. We write the name of our list, then we write starting index, then we write ending index."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 561.5,
+            "end": 571.5,
+            "text": "So, we get a piece of our list, which we can call as a sub-list. Sub-list means, the piece of the list. What was the substring?"
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 571.5,
+            "end": 581.5,
+            "text": "It was the piece of the string. So, the list is the piece of the list. In the sub-list, from this starting index to this ending index, we get all the values of the list."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 581.5,
+            "end": 592.5,
+            "text": "Like in string slicing, in the list slicing, the ending index is not included. For example, we have this mark's list. If we write in this,"
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 592.5,
+            "end": 601.5,
+            "text": "1, 2, 4, we need all the sub-list. So, let's see the index once. This will be index 0, this will be index 1, this will be index 2, 3 and 4."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 601.5,
+            "end": 613.5,
+            "text": "So, from 1 to 4, it means that all the values from 1 to 3, we will get all of them back. Let's test it. Let's try to make another list"
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 613.5,
+            "end": 623.5,
+            "text": "called marks. In the marks, we have 85, 94, 76, 63, 48."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 623.5,
+            "end": 634.5,
+            "text": "We have stored different marks in this way. And now, if we want a sub-list, marks of 1 is to 4. From 1 to 4,"
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 634.5,
+            "end": 644.5,
+            "text": "we will get 94, 76, 63. Let's save and run. We will get these three values back. Like in string slicing, if we miss the starting index,"
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 644.5,
+            "end": 656.5,
+            "text": "it will automatically count from 0. If we refresh, it will get the value of 84. And if we give the starting index, we will mix the ending index. So, it will automatically become the last index."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 656.5,
+            "end": 669.5,
+            "text": "That means, we will get all the values of 94 and we will get all the values of 48. Now, here is another important thing. In string slicing, we had a negative index. Similarly, we have a negative index in this list."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 669.5,
+            "end": 682.5,
+            "text": "If we have made a list like this, then we will start with the negative index here from minus 1, then minus 2, then minus 3, then minus 4, then minus 5. So, we can also slice on the basis of the negative index."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 682.5,
+            "end": 701.5,
+            "text": "For example, if we want to go from minus 3 to minus 1, then minus 3 will be included in it and minus 2 will be included. So, here if we want to go from minus 3 to minus 1, then we will get the values of 76 and 63. Let's save it and refresh it."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 701.5,
+            "end": 715.5,
+            "text": "So, we will get these values printed. Now, we read the basics of strings in strings. After that, we read the slicing and after that, we read some methods. Similarly, we have read the basics of the list. We have read the slicing and now we are going to talk about"
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 715.5,
+            "end": 727.5,
+            "text": "some methods of the list. Methods are functions like we have used our print function till now. What is print function? Print function is for everyone. We can print anything in our print function."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 727.5,
+            "end": 740.5,
+            "text": "We have used our length function. Length means it will print our string length, it will print our list length. And when we read another data structure, it will print our tuple length."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 740.5,
+            "end": 752.5,
+            "text": "But what are the methods? Methods are specific. If we are reading a method for string, then it is not necessary to use the same method for the list. So, the list specific methods are functions like,"
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 752.5,
+            "end": 766.5,
+            "text": "which means we perform some work. But they are just list specific. We perform some work on the list. Now, later, we are going to read the functions and methods in detail. But if we start building some basic ideas like this,"
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 766.5,
+            "end": 787.5,
+            "text": "practical knowledge, because we already use methods and functions, then we will feel better if we know some basic things. For example, we have this list with values 2, 1 and 3. So, the first method we are reading is the append method. Append means to connect something in the last."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 787.5,
+            "end": 799.5,
+            "text": "So, the same thing does our append method. Whatever we pass the value, whatever element we pass, we can pass one element. We connect that element in the last."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 799.5,
+            "end": 813.5,
+            "text": "If we append in the list, then in the last, we will have 4 added in the list. We can check this. For example, let's create a list. We keep values in it, 2, 1 and 3."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 813.5,
+            "end": 826.5,
+            "text": "And if we want, then we can append value 4 in the list. And then, if we update our list, then the new value will be added in it. And our final output is 2, 1, 3 and 4."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 826.5,
+            "end": 837.5,
+            "text": "Now, here is another interesting thing. Like we added this element in our list, we call this thing mutating the list. Mutating means we changed our list. Its value has changed."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 837.5,
+            "end": 849.5,
+            "text": "So, this mutation is allowed in the list. The second method we have is the sort method. The work of sort is to sort things. Now, in sorting programming, there is a very important concept."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 849.5,
+            "end": 861.5,
+            "text": "Sorting means to arrange things in the right order. Generally, whenever we talk about sorting, it means that we are arranging things in the right order till the smallest and the biggest. So, we have two ways of sorting."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 861.5,
+            "end": 871.5,
+            "text": "One is ascending. One is descending. Assending order means small values will come first, then big values and then bigger values."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 871.5,
+            "end": 881.5,
+            "text": "Descending means first big values will come, then small values and then smaller values. For example, if there are numbers, then if we write 0, 1, 2, 1, 2, then this is ascending order."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 881.5,
+            "end": 891.5,
+            "text": "And if we write 2, 1, 2, 1, 0, then this is descending order. There is a sort method in the list. If we write list.sort, then what will our list do? It will automatically be sorted in ascending order."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 891.5,
+            "end": 904.5,
+            "text": "For example, here, if we write list.sort, then our list will be sorted. And we don't need to do anything like this."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 904.5,
+            "end": 915.5,
+            "text": "We think that the list is sorted here, but we don't know if it returns the sorted list or not. List.sort function doesn't return anything. It returns non-value. That is, if I try to print"
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 915.5,
+            "end": 927.5,
+            "text": "list.sort, let's remove it for once. What will we have to print? We will have non-print. None means nothing."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 927.5,
+            "end": 937.5,
+            "text": "We discussed this earlier. This sort function, sort method, I am not doing anything. What is this doing? It changes in the original string. That is why we have non-print here."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 937.5,
+            "end": 948.5,
+            "text": "Now, if we want to print our list after non-print, we can print it like this. Let's rerun it. We will have our list. It is automatically arranged in ascending order."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 948.5,
+            "end": 958.5,
+            "text": "If we want to append list.sort, then value 4 is also possible. But as soon as we call list.append4,"
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 958.5,
+            "end": 968.5,
+            "text": "what will we do? We will add 4 in the list. But this append method doesn't return anything. So what will I have here? I will have none print here."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 968.5,
+            "end": 978.5,
+            "text": "Let's save it and run it. So first, append4 is done. But the function didn't return the method. If we return non, then we have none print here."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 978.5,
+            "end": 990.5,
+            "text": "There was no value to return it. Generally, the string methods, which we have already read, those methods return the updated string value. Then the list sorted"
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 990.5,
+            "end": 1000.5,
+            "text": "but didn't return anything. And finally, if we print the list, then it is a sorted list. Now we can sort our list in descending order."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 1000.5,
+            "end": 1010.5,
+            "text": "How? We just have to write this statement in our method. Reverse equal to true. If we want to sort in reverse order,"
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 1010.5,
+            "end": 1020.5,
+            "text": "then we can simply write this value. If I have done reverse equal to true with a capital T. Many beginners try to write"
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 1020.5,
+            "end": 1030.5,
+            "text": "with small t. True comes to us. Let's save it. And let's run it. So now our list is sorted in descending order."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 1030.5,
+            "end": 1040.5,
+            "text": "Now the sorting doesn't apply only on numbers. That is, it applies on characters and strings. How? If we have 2, 1, 3 places,"
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 1040.5,
+            "end": 1050.5,
+            "text": "values are in the list. Let's suppose we have banana, we have leechi and we have mango."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 1050.5,
+            "end": 1060.5,
+            "text": "To make it simpler, we can save it. And let's comment it out. And let's run it."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 1060.5,
+            "end": 1070.5,
+            "text": "So here, if we sorted in descending order, then we have leechi, then banana, then apple. And here, if we sorted in ascending order, then apple"
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 1070.5,
+            "end": 1080.5,
+            "text": "then banana, then leechi. Because in apple, how will the sorting in strings be? The character that comes first, it will come first in ascending order. So if it comes first from A, B,"
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 1080.5,
+            "end": 1090.5,
+            "text": "then apple will also come first in ascending order. Now if it comes first from B, L, then banana will also come first in leechi. So in this way, it is possible to sort in strings."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 1090.5,
+            "end": 1100.5,
+            "text": "If we want, to make it simpler, we can write some characters. D, E, F,"
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 1100.5,
+            "end": 1112.5,
+            "text": "and C, and B. Let's save it. And as soon as we sort this list, then we will have all the characters A, B, C, D, E."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 1112.5,
+            "end": 1122.5,
+            "text": "So in this way, it is possible to sort the characters and strings. The next method that we will talk about is our reverse method. What does reverse method do? It turns the entire list."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 1122.5,
+            "end": 1132.5,
+            "text": "And these changes, the one that turns, the one that reverses, it does it in the original string. For example, if I have this list, if I have to completely opposite this list,"
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 1132.5,
+            "end": 1144.5,
+            "text": "then what we will do? We can do it. In fact, we can do the list.reverse. So in the original list, all these values"
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 1144.5,
+            "end": 1154.5,
+            "text": "will be reversed. Let's run it. If B was in the last, now we have B before, C in the second last, now C on the second. F in the third last, now F on the third."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 1154.5,
+            "end": 1164.5,
+            "text": "And in this way, we have the entire list reversed. The next method is the insert method. The work of the insert method is it is very similar to append."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 1164.5,
+            "end": 1174.5,
+            "text": "But it adds on a particular index. That is, if we have this list and somewhere in the middle, we want to insert a new value. So what we will do? We will use the insert method."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 1174.5,
+            "end": 1184.5,
+            "text": "We pass two values in it. First, we want to insert something on the index. And second, we want to add some element. For example,"
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 1184.5,
+            "end": 1194.5,
+            "text": "in this list, if we talk about index, this is index 0, this is index 1, this is index 2. If I want to add"
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 1194.5,
+            "end": 1204.5,
+            "text": "value on index 1, then we can write list.insert. I want value on index 1."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 1204.5,
+            "end": 1214.5,
+            "text": "So what will be the changes in the list? Everything will be the same before 1. If the index was 2, then it will be 2 here. Now if the index is 1,"
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 1214.5,
+            "end": 1224.5,
+            "text": "then we will have 5. And after that, the values, including index 1, will come later. In the same order, meaning 1 will also come here, 3 will also come here."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 1224.5,
+            "end": 1234.5,
+            "text": "So our new list will look something like this. Let's try it. For example, we have this list. 2, 1, 3."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 1234.5,
+            "end": 1244.5,
+            "text": "If we insert index 1 on the list, value 5, and print our list. So our list will be"
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 1244.5,
+            "end": 1254.5,
+            "text": "2, 5, 1 and 3 equal. So we have the same value as this list. Next method, which we will talk about, this is our remove method."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 1254.5,
+            "end": 1264.5,
+            "text": "Remove method is to remove the first occurrence of an element. If we have this list, 2, 1, 3, 1. If we want to remove 1, then what will we do with the remove method?"
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 1264.5,
+            "end": 1274.5,
+            "text": "We will search for the first 1 in this list. And remove it from the list. So we will have the final list. And from remove, we have pop method."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 1274.5,
+            "end": 1284.5,
+            "text": "It is a particular index to delete the value. If we have this index, 0, 1, 2 and 3. I want the element of index 2"
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 1284.5,
+            "end": 1294.5,
+            "text": "to be completely deleted. So the final list will be 2, 1, 1. For example, if we do list.pop, I want to pop the value at index 2."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 1294.5,
+            "end": 1304.5,
+            "text": "We will save and refresh. So we will save the elements in the list. 2, 1 and 1. So this is done in the Python list. There are many frequently used methods."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 1304.5,
+            "end": 1314.5,
+            "text": "In fact, if I write list and dot, then Visual Studio Code will suggest me many methods. I have already seen Append."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 1314.5,
+            "end": 1324.5,
+            "text": "Clear, Copy, Count, Extend, there are many different methods. We have more. The work of the copy method is that it returns the copy of a list."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 1324.5,
+            "end": 1334.5,
+            "text": "We can store it in any other variable. The same elements in the list come into the other. The work of the count method is to count the element and in this way, we have"
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 1334.5,
+            "end": 1344.5,
+            "text": "different methods. We can search for Python documentation. We can search on Google for Python documentation. And the official"
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 1344.5,
+            "end": 1354.5,
+            "text": "documentation of Python, we can search for different methods from there. By the way, we have covered many of the methods related to day to day maximum programming."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 1354.5,
+            "end": 1364.5,
+            "text": "In general, if you are programming, if you are developing, if you are learning machine, if we have a different method, which we know the logic but don't remember its exact name,"
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 1364.5,
+            "end": 1374.5,
+            "text": "then either we can take help of visual code suggestions. Otherwise, while developing practically, we can simply search on Google and all our answers are available online. Now, we have done this list."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 1374.5,
+            "end": 1384.5,
+            "text": "There is another built-in data type in Python, which we call tuples. We can understand the tuple in this way, that we have a brother of the list,"
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 1384.5,
+            "end": 1394.5,
+            "text": "the way the list works, almost the same way we have tuples. In fact, if we were studying any other programming language, then we would have used the list in it."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 1394.5,
+            "end": 1404.5,
+            "text": "It could have been that I don't teach you tuples in the tutorial. But because in Python, tuples are used so much, practically, they are used a lot in day to day programming."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 1404.5,
+            "end": 1414.5,
+            "text": "So, that's why we are covering tuples. In Python, tuple is a built-in data type that lets us create immutable sequence of values. So, this is the biggest"
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 1414.5,
+            "end": 1424.5,
+            "text": "difference between list and tuple. What is the list? We have already talked about that we have a mutable data type whose value can be changed."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 1424.5,
+            "end": 1436.5,
+            "text": "But what is the tuple? The tuple is immutable. Just like strings. What are strings? String is also immutable. That is, if you"
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 1436.5,
+            "end": 1446.5,
+            "text": "have made a tuple, then we cannot change its value. We cannot add new elements in it. We cannot delete old elements from it. So, what do we have to do to"
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 1446.5,
+            "end": 1456.5,
+            "text": "create tuples? The way we create a list is the same process but instead of square brackets we use parenthesis."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 1456.5,
+            "end": 1466.5,
+            "text": "So, if I want to convert this list to some tuple, then I don't have to do anything. I just need to put parenthesis here. So, what is this? I have this tuple."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 1466.5,
+            "end": 1476.5,
+            "text": "We can give the name of the tuple if we want. Let's give it a name tuple. And we will print type of this variable. Let's save it."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 1476.5,
+            "end": 1486.5,
+            "text": "What do we have? We have a class that is printed in tuple. What is this? This is a built-in data type. The type is tuple. Now, we can access our index"
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 1486.5,
+            "end": 1496.5,
+            "text": "like a list in tuple. If I want, I can print tuple of 0 or tuple of 1 in this way we can print the values."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 1496.5,
+            "end": 1506.5,
+            "text": "But like in the list we could write tuple of 0 equals 5. This operation cannot be allowed in our tuples."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 1506.5,
+            "end": 1516.5,
+            "text": "Because tuples are obviously immutable so we cannot allow for assignment in them. We cannot change the value by going to any index."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 1516.5,
+            "end": 1526.5,
+            "text": "For example, if we try to run this code we will have an error. Tuple object does not support item assignment. This error is very similar to the one that we got when we were trying to assign a new value"
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 1526.5,
+            "end": 1536.5,
+            "text": "on a string. We can create different types of tuple. For example, I can create an empty tuple. In this way, if we"
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 1536.5,
+            "end": 1546.5,
+            "text": "put parenthesis then it becomes an empty tuple. We can print this empty tuple also. And also, we can print the type of tuple."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 1546.5,
+            "end": 1556.5,
+            "text": "This is a valid tuple. There are no elements in it. When we run it, it will be empty and we will have a class that will be printed. When we have a single element"
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 1556.5,
+            "end": 1566.5,
+            "text": "we have a single element. For example, we have an element here. We will always separate a single element with a comma and create"
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 1566.5,
+            "end": 1576.5,
+            "text": "a tuple. So this is the correct way to create a single value tuple. If we save it and run it, this is our single value tuple"
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 1576.5,
+            "end": 1586.5,
+            "text": "and this is our type of this tuple. Now we can have a question in our mind that why not I remove this comma from here. Let me tell you what will happen in that case."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 1586.5,
+            "end": 1596.5,
+            "text": "In that case, this thing will consider this value as a integer. This is just an integer 1. For example, we don't write in python."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 1596.5,
+            "end": 1606.5,
+            "text": "We can write value in parenthesis. It is completely normal. By the way, the python will think that you have just written a normal integer with parenthesis."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 1606.5,
+            "end": 1616.5,
+            "text": "And now if we run the code, then it will have one print value. That is, it has ignored the bracket. So this type will be printed as integer. Similarly, if here was 1.0,"
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 1616.5,
+            "end": 1626.5,
+            "text": "then it would have taken a float type and here would have a string. Hello. So we would have taken a string type."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 1626.5,
+            "end": 1636.5,
+            "text": "But if we want it to be perceived as a tuple, then it is compulsory to put comma with single values in python. Now what we should do when we have multiple"
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 1636.5,
+            "end": 1646.5,
+            "text": "values? In the case of multiple values, we have a choice. If we want to separate our values from comma and write it like this, but in the end, putting comma is completely"
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 1646.5,
+            "end": 1656.5,
+            "text": "optional. If we put comma, then there will be no error. And if we don't, then there will be no error. But then, our data will be"
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 1656.5,
+            "end": 1666.5,
+            "text": "perceived as a tuple. So in this way, there are multiple ways to create multiple types of tuples. Now as we slice in strings, in lists, we do the same."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 1666.5,
+            "end": 1676.5,
+            "text": "It is possible to slice in tuples. Slicing in tuples is exactly the same way, like it works in lists or in strings. Like if I want"
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 1676.5,
+            "end": 1686.5,
+            "text": "I can print tuple off. If we take one and print three values, then we will have two and three and we will save and run. So this is"
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 1686.5,
+            "end": 1696.5,
+            "text": "the part of our tuple that we will have to print. Next we are going to talk about methods in tuple. So in tuple, we will cover two important methods. The first method is"
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 1696.5,
+            "end": 1706.5,
+            "text": "index method. If we want to find an element in a tuple that when did the first time that element came. So we can use our index method for that. Like in this tuple, if we write"
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 1706.5,
+            "end": 1716.5,
+            "text": "indices, this will be zero, one, two and three. If we want to find element one, we have done tuple.index one. So we have got value"
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 1716.5,
+            "end": 1726.5,
+            "text": "is equal to one. That is, element one is the first time on index one. Like in this tuple, if we want to find element two, we can write tuple.index"
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 1726.5,
+            "end": 1736.5,
+            "text": "of element two save and run. So we will have value is equal to one. That is, what is one? This is one index. What is two? This is two element."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 1736.5,
+            "end": 1746.5,
+            "text": "We want to search for it. Similarly, we have count method. In tuple.count, whatever we pass element, how many times it exists in tuple, its count"
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 1746.5,
+            "end": 1756.5,
+            "text": "returns to us. Like here if I pass tuple.count, then how many times it comes? It comes once. So I will have print one. But here"
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 1756.5,
+            "end": 1766.5,
+            "text": "if two comes three times, then we have print value equals three. So in this way our lists and tuples work in python. So these are our"
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 1766.5,
+            "end": 1776.5,
+            "text": "concepts which we have read. Now we are going to solve some practice questions based upon the same concepts. Let's look at the question first. Also, the questions we have to"
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 1776.5,
+            "end": 1786.5,
+            "text": "understand first, first question we have to pause the lecture once because we have to try to solve the questions by ourselves. Because until we try to solve the questions by ourselves"
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 1786.5,
+            "end": 1796.5,
+            "text": "in programming, until then our horses do not start running. The logic at the end in programming and coding is built only when we think about things by ourselves."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 1796.5,
+            "end": 1806.5,
+            "text": "It is possible that we think about the answer of the question and we solve it now. We may Google it and then we have to solve it now and finally we have to see the solution in the lecture."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 1806.5,
+            "end": 1816.5,
+            "text": "But that is not a problem. When we think about the questions, it is possible that we may not be able to solve the question completely but our logic is built because we learn to think in the terms"
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 1816.5,
+            "end": 1826.5,
+            "text": "of coding. So as a beginner, we have to try to solve things by ourselves. It is a good habit which we have to build along with. First question we are asking is to write a program to"
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 1826.5,
+            "end": 1836.5,
+            "text": "ask the user to enter the names of their three favorite movies and store them in a list. What we have to do is to enter three movies from the user. Number one, number"
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 1836.5,
+            "end": 1846.5,
+            "text": "two, number three and what are the three movies? These are the strings. We have to make a list by combining these three strings. So the way we can solve this"
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 1846.5,
+            "end": 1856.5,
+            "text": "can be that we will make the first movie, the second movie, the third movie and then we will append the three movies in our list."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 1856.5,
+            "end": 1870.5,
+            "text": "So let's do this and see. Let's input, enter, first movie. In this way, here we can store a movie one"
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 1870.5,
+            "end": 1880.5,
+            "text": "in the name variable. Then we will make another list. What will be the list in the beginning? In the beginning, the list will be an empty"
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 1880.5,
+            "end": 1890.5,
+            "text": "list. What can we do? In the movies or in fact we take all the values one at a time and input them. This will be movie one, this will be movie two."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 1890.5,
+            "end": 1900.5,
+            "text": "This will be movie two. This is going to be our second movie and this will be movie three. This will be our third movie."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 1900.5,
+            "end": 1910.5,
+            "text": "What will we do in the last movie? We will append our movie one in the movie. Then we will append our movie two in the movies."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 1910.5,
+            "end": 1929.86,
+            "text": "Then we will append our movie three in the movies. Let's save this. Let's run it. We will add our three favorite movies. I'll write Shutter Island and Lucy and probably Primer."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 1929.86,
+            "end": 1949.22,
+            "text": "In this way, okay. Lastly, we forgot to print our list. Let's try to print our movies list. Let's rerun our code. Let's add the same movies."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 1949.22,
+            "end": 1974.18,
+            "text": "This is our complete list. In this code, we can do one or two changes. For example, here, we can append our movie. And then, instead of making different variables, we assign the same variable. Same value here and same value here."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 1974.18,
+            "end": 1991.18,
+            "text": "Save and run. So, our output is the same. We can return it. Or, we can directly append it. Directly append means we don't need this movie variable."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 1991.18,
+            "end": 2009.18,
+            "text": "We can simply write movies.append. And then, we add our input. So, this is the way to append movies. Then, we don't need to write extra lines. I'm just telling you this."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 2009.18,
+            "end": 2023.18,
+            "text": "If you have solved the question yourself and we have written lines in the same way, then there is no problem in that. That means, that is the correct code. There is no issue at all. So, here we can delete these values in this way."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 2023.18,
+            "end": 2037.18,
+            "text": "And then, let's try to print our movies. First of all, enter the first movie. We will enter it. We will enter the second movie. We didn't write the input in front of the third movie."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 2037.18,
+            "end": 2057.18,
+            "text": "But, I hope you get the gist that this way, we can add all our movies in our list. Next question comes to you. And we are going to do something interesting in this question. We are being asked in the question, Write a program to check if a list contains a palindrome of elements or not."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 2057.18,
+            "end": 2073.18,
+            "text": "A palindrome can be a word. If we are programming for the first time, then we have heard it for the first time. What does palindrome mean? Palindrome means the same things that are in front and in the back. For example, if I talk about a string."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 2073.18,
+            "end": 2091.18,
+            "text": "I have a string called M-A-A-M. What does this mean? It is a palindrome. If we start from the beginning, then we will learn the M-A-M, and if we start from the end, we will learn the M-A-M. If I take a string, it is called Racecar. If we start from the beginning, then we will learn the Racecar."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 2091.18,
+            "end": 2104.18,
+            "text": "If we start from the end, then we will learn the Racecar. R-A-C-E-C-A-R. So what is this? It is called palindrome. A list of such a list can be a list of palindrome. For example, if we start from the beginning, then 1, 2, 3, 2, 1 will come."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 2104.18,
+            "end": 2124.18,
+            "text": "If we start from the end, then 1, 2, 3, 2, 1 will come. If we start from the beginning, then 1, then A-B-C will come. If we start from the end, then 1, 2, 3, 2, 1 will come. So palindromes are those lists in which we can see the same number of elements in the same order from the beginning and the end. So we have to check whether a list is a palindrome or not."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 2124.18,
+            "end": 2147.18,
+            "text": "And to do this, there is a hint that is given to us that we can use our copy method. What is the copy method in the list? We can search this in this code if we want. If I create a list of elements 1, 2, 3, then list.copy. We can click on this arrow and the list.copy method returns a shallow copy of the list."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 2147.18,
+            "end": 2165.18,
+            "text": "That is, our list will return to our shallow copy. What is shallow copy? What is deep copy? We will read this later. But for now we can think that if there was a list of elements 1, 2, 3, then we will have a duplicate of this in memory. 1, 2, 3. This will return to us."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 2165.18,
+            "end": 2185.18,
+            "text": "So we have to check whether a list is palindromic or not. Now, whether anything is palindrome or not, there is a simple way to check it. If anything is the same from the beginning and the end, then it is the same. So what does that mean? It is a palindrome. It is a palindromic thing. We already know this."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 2185.18,
+            "end": 2204.18,
+            "text": "But what do I say? I say that for example, this is a list that we have. If we make a copy of this list. This is original anyway. We made a copy of it. We got 1 in the copy, then we got 2, then we got 3, then we got 2, then we got 1. And if we reverse this copy."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 2204.18,
+            "end": 2229.18,
+            "text": "If we reverse the copy, then the last value that was there was there earlier. Then 2 came. Then 3 came. Then 2 came. In this way, and last we got 1. I say that if the original value and after copying and reversing the value, if both the values are the same, then any value becomes palindrome."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 2229.18,
+            "end": 2245.18,
+            "text": "And this is the way that we solve for palindromes in programming. We generally check for palindrome. Let's take another example of this. For example, there is a list that is not palindrome. I have 1, 2, 3. 1, 2, 3 is not palindrome. If we read from the front, then 1, 2, 3 will come."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 2245.18,
+            "end": 2258.18,
+            "text": "If we read from the end, then 3, 2, 1 will come. If I make a copy of this, then I will get 1, 2, 3. And then I reverse it. So, while reversing, 3, 2, 1 will come. Can 1, 2, 3 and 3, 2, 1 be the same?"
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 2258.18,
+            "end": 2273.18,
+            "text": "They can't be the same. So, what is this? This is not palindrome. But if there was 1, 2, 1, then there was 1, 2, 1, here too there was 1, 2, 1. These two were the same and this was palindrome. So, basically, reversing by making copies is the same."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 2273.18,
+            "end": 2287.18,
+            "text": "We are now learning to read things from the last. So, what can we do? We can make copies of any list, then reverse it, then check if it is original. And the copy list is not the same. If it is the same, then it is palindrome. If it is not the same, then it is not palindrome."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 2287.18,
+            "end": 2301.18,
+            "text": "For the same logic, we are going to write a code. Let's create this list 1. Let's save a palindrome in list 1. And this is my list 2. Let's save a non-palindrome in list 2. First, we will make a copy of list 1."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 2301.18,
+            "end": 2317.18,
+            "text": "Copy list 1. List 1.copy With this function, we will get a copy from this method. Then we will reverse this list, copy list. Copy of list 1.reverse."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 2317.18,
+            "end": 2332.18,
+            "text": "Like this. And now we will check. If the copy of list 1 is equal to my list 1. If both the values are the same, then what we have to do in that case? We can print in that case."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 2332.18,
+            "end": 2344.18,
+            "text": "Palindrome. And in the case of else, What we will do? We will print. Not. Palindrome."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 2344.18,
+            "end": 2355.18,
+            "text": "Let's save this and run it. We have printed out Palindrome. Because 1 to 1 is a palindrome. But the same value, if I do this in list 1. If we do 1 to 3 in list 1."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 2355.18,
+            "end": 2368.18,
+            "text": "In that case, what will be printed out? In that case, it will be printed out. Not. Let's write another palindrome. For example, if I write m a a m."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 2368.18,
+            "end": 2381.18,
+            "text": "Run it. This is a palindrome. We have a palindromic list. But in this, if there is a letter p, Then it becomes not palindrome."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 2381.18,
+            "end": 2394.18,
+            "text": "So in this way, we can solve our questions for our list. Let's move towards the next question. Next question is, Write a program to count the number of students with grade a in the following tuple. What is this?"
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 2394.18,
+            "end": 2405.18,
+            "text": "We have a tuple. We can give it the name of grades. All the students who have scored a in this, We have to bring their count. So for that, we can use the count method of tuple."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 2405.18,
+            "end": 2417.18,
+            "text": "Let's try to recreate this tuple. We will call it grade. And to create tuple, we will put parenthesis. Let's copy our grades. First c is coming, then d is coming."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 2417.18,
+            "end": 2444.18,
+            "text": "Then we have a another a, b another b and finally a. We can simply print grade.count of grade a. Save it, run it, we have the value 3k in the answer. Next question is, Store the above values in a list and sort them from a to d."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 2444.18,
+            "end": 2461.18,
+            "text": "So first, we have to create the same values in the form of a list. And then we have to sort them from a to d. What does a to d mean? A to d means ascending order. That means, a small character first, then a big character later."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 2461.18,
+            "end": 2482.18,
+            "text": "So here, we can create a list for this using our square brackets. And we can write grade. Or simply here, grade.sort. And then print our grade. Let's save it and run it."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 2482.18,
+            "end": 2496.18,
+            "text": "What are the values? We have arranged values in sorted order from a to d. So in this way, we work with lists and tuples in Python. So I hope that we have enjoyed today's lecture. We will read more new concepts in Python."
+        },
+        {
+            "number": "3",
+            "title": "List & Tuple in Python",
+            "start": 2496.18,
+            "end": 2505.18,
+            "text": "And the notes in today's lecture, the slides, you will find in the description box below. You can go there and access them. We will meet in the next lecture. Till then, keep learning and keep practicing."
+        }
+    ],
+    "text": " Hi everyone and welcome to the complete Python series in which we will be covering all the important concepts of Python language. Today we will be reading our chapter 3, in which we will be covering the tuples and lists of Python. We will not only read the concepts, but we will also be writing our code related to the concepts. Along with that, we will be solving different practice questions related to the concepts. Now the notes of our lecture will be in the description box below. You will get them there. We can download them from there. And all the different lectures related to Python will be available in this playlist on this channel. So let's start with chapter 3. Hi everyone and now we will start with chapter 3 of Python. In chapter 3, we will be covering the lists and tuples in Python. Now let's talk about the list. Generally, if you have coded in any programming language, you will have to hear about arrays. That is, there is a data structure called arrays. Now, we have lists and tuples of the sort of equivalent in the Python of arrays. Now the list is a built-in data type that stores set of values. For example, we are a teacher of a class and we have to get a mark of many students of a class. Now there is one way to do it. We take our file of Python. Here we have made a file in our folder called lecture3.py. And in this file, we have, let's suppose, five students and five students to store marks. So the first variable is to make marks 1 is equal to 94.4. The second variable is to make marks 2 is equal to 87. The third variable is to make marks 3 is equal to 95. The fourth variable is to make marks 4 is equal to 66. And marks 5 is equal to 45. In this way, we have made five variables. In fact, we convert them to floating values. In this way, we have stored different marks. Now our class is limited, that is, only five students. Tomorrow, there may be 50 or 100 students in our class. Now for every student, for a simple thing like marks, if we start making a new variable, then we will have to track many variables whenever we are coding. So for this, we have a built-in data type to simplify this work. Built-in data type, that is, this data type and its related methods, that is, functions, are already written in Python, they are not required to be implemented. Now if I had to store these marks in the list, then simply we would make a single variable, marks. And as we simply write marks.something, then what happens with this? Marks is equal to 12, that means we have these marks, this is an integer variable. Similarly, if I want to store multiple lists of values, then to make a list, first we write our square brackets. And in square brackets, then we start writing our values. We can store as many values as we want in a single list. And we have to write those values by separating them from comma. For example, the first value we will have is 94.4, we can give spaces as we want, but not as we want. It's up to us 95.2, 66.4 and similarly, 45.1. So in this way, the built-in data type we have made, we call it a list in Python. Now we have this list of Python, we can print it if we want. Let us try to print our list. What is the name of the list? It's like a normal variable, we give it a normal name. We have named our list as marks. Let's save and run it. We have our list printed. We can print the type of the list. Type of marks, save and run. So what is the class? This is the type of the structure, this type of data is a list type. Now the list has many properties, we will look similar to strings. Like in strings, we had the concept of indexing, we could go to a particular index and print a character. Similarly, we can access a particular element by going to a particular index in the list. For example, if we have a list like this, if we write marks of 0, we will get the marks of 0th index. This will be the index of 1 index. 2 index, 3 index and 4 index. Let's try to print our values. We can print marks of 0. And let's try to print marks of 1. Let's save and run it. So our marks at 0th index is here, our marks at 1st index is here. And in this way, we can access all the indices. We can print the length of the list as well. For example, we can print the length of the string, if I do LEN. Similarly, we can print the length of the marks. Save and refresh. So what we have here? We have 5 here. Which is the length of this list? The list of Python is slightly different from the arrays that we created in C++ and Java. In C++ and Java, generally in programming languages, in the arrays, the data we can store in the arrays should be of the same type. But there is no such rule in the Python list. In our Python list, we can store elements of different types together. We can make a list of students like this, where we can store a particular student's details. This is its name, Karan. And what is this? This may be the string type, marks, or integer type. This may be location, place, state, so this is also our string type. We can add floating values, or some other values. So in this way, we can store the data of multiple types in a single list. For example, if I create a student list, we can save the student's name, we can save its marks, we can save its age, and we can save its location. We saved it and we can print it. We can save the student's information. And this is going to be a valid list in Python. I have said that string and Python lists are very similar. But there is a big difference between the two. And the difference is that in Python, we have strings. Strings are immutable in Python. This is a very important point. And lists are mutable in Python. What does mutable mean? Mutate means change. In English, mutable means something that can change. And immutable means something that can't change. For example, we have mortal and immortal. That is, the living, the dead, and the not. We have immutable and immutable things that can change and that cannot change. So in Python, like in strings, value was allowed to be accessed on index. But there, value was not allowed to be changed. That is, mutating was not allowed. But in the list, this is also allowed and this is also allowed. For example, if we take a string, let's take an example of a string. We have a string called hello. Now if we want, we can print it in hello. We can print str of 0. But if I say that I want to assign str of 0 to value, y is equal. This operation doesn't allow Python because strings can't be immutable. So if we want, we can print str of 0 to value, and string object does not support item assignment. We can't do this assignment. But this same thing is possible in the list. We can print student of 0. And tomorrow, it can be that student's name has changed its name and let's suppose it has been arjuned. So this is completely possible in Python. In this case, Python will not return any error. And we can print our new list. So we have a new list in which the value has changed. Because lists are mutable in Python. Also, like in strings, there is a limit of index. If we make a list here, let's take an example of this list. If index is 0, 1 and 2, then if we try to access index 3, it will give us an error. Like here, our list, we have 4 indices in it. This value is for index 0, this is index 1, this is index 2, this is index 3. So here, if I try to write 5, what will it give? It will give me an error. Here, we will have an error, list index out of range. So we can access our values in the range of indices. Like in strings, string slicing is possible. Similarly, in lists, slicing is possible. What was the fund behind slicing? We should have an index. Like in strings, index is there. Like in lists, index is there. Obviously, slicing is also possible here. So, to do slicing, there are the same rules that we had read in strings. We write the name of our list, then we write starting index, then we write ending index. So, we get a piece of our list, which we can call as a sub-list. Sub-list means, the piece of the list. What was the substring? It was the piece of the string. So, the list is the piece of the list. In the sub-list, from this starting index to this ending index, we get all the values of the list. Like in string slicing, in the list slicing, the ending index is not included. For example, we have this mark's list. If we write in this, 1, 2, 4, we need all the sub-list. So, let's see the index once. This will be index 0, this will be index 1, this will be index 2, 3 and 4. So, from 1 to 4, it means that all the values from 1 to 3, we will get all of them back. Let's test it. Let's try to make another list called marks. In the marks, we have 85, 94, 76, 63, 48. We have stored different marks in this way. And now, if we want a sub-list, marks of 1 is to 4. From 1 to 4, we will get 94, 76, 63. Let's save and run. We will get these three values back. Like in string slicing, if we miss the starting index, it will automatically count from 0. If we refresh, it will get the value of 84. And if we give the starting index, we will mix the ending index. So, it will automatically become the last index. That means, we will get all the values of 94 and we will get all the values of 48. Now, here is another important thing. In string slicing, we had a negative index. Similarly, we have a negative index in this list. If we have made a list like this, then we will start with the negative index here from minus 1, then minus 2, then minus 3, then minus 4, then minus 5. So, we can also slice on the basis of the negative index. For example, if we want to go from minus 3 to minus 1, then minus 3 will be included in it and minus 2 will be included. So, here if we want to go from minus 3 to minus 1, then we will get the values of 76 and 63. Let's save it and refresh it. So, we will get these values printed. Now, we read the basics of strings in strings. After that, we read the slicing and after that, we read some methods. Similarly, we have read the basics of the list. We have read the slicing and now we are going to talk about some methods of the list. Methods are functions like we have used our print function till now. What is print function? Print function is for everyone. We can print anything in our print function. We have used our length function. Length means it will print our string length, it will print our list length. And when we read another data structure, it will print our tuple length. But what are the methods? Methods are specific. If we are reading a method for string, then it is not necessary to use the same method for the list. So, the list specific methods are functions like, which means we perform some work. But they are just list specific. We perform some work on the list. Now, later, we are going to read the functions and methods in detail. But if we start building some basic ideas like this, practical knowledge, because we already use methods and functions, then we will feel better if we know some basic things. For example, we have this list with values 2, 1 and 3. So, the first method we are reading is the append method. Append means to connect something in the last. So, the same thing does our append method. Whatever we pass the value, whatever element we pass, we can pass one element. We connect that element in the last. If we append in the list, then in the last, we will have 4 added in the list. We can check this. For example, let's create a list. We keep values in it, 2, 1 and 3. And if we want, then we can append value 4 in the list. And then, if we update our list, then the new value will be added in it. And our final output is 2, 1, 3 and 4. Now, here is another interesting thing. Like we added this element in our list, we call this thing mutating the list. Mutating means we changed our list. Its value has changed. So, this mutation is allowed in the list. The second method we have is the sort method. The work of sort is to sort things. Now, in sorting programming, there is a very important concept. Sorting means to arrange things in the right order. Generally, whenever we talk about sorting, it means that we are arranging things in the right order till the smallest and the biggest. So, we have two ways of sorting. One is ascending. One is descending. Assending order means small values will come first, then big values and then bigger values. Descending means first big values will come, then small values and then smaller values. For example, if there are numbers, then if we write 0, 1, 2, 1, 2, then this is ascending order. And if we write 2, 1, 2, 1, 0, then this is descending order. There is a sort method in the list. If we write list.sort, then what will our list do? It will automatically be sorted in ascending order. For example, here, if we write list.sort, then our list will be sorted. And we don't need to do anything like this. We think that the list is sorted here, but we don't know if it returns the sorted list or not. List.sort function doesn't return anything. It returns non-value. That is, if I try to print list.sort, let's remove it for once. What will we have to print? We will have non-print. None means nothing. We discussed this earlier. This sort function, sort method, I am not doing anything. What is this doing? It changes in the original string. That is why we have non-print here. Now, if we want to print our list after non-print, we can print it like this. Let's rerun it. We will have our list. It is automatically arranged in ascending order. If we want to append list.sort, then value 4 is also possible. But as soon as we call list.append4, what will we do? We will add 4 in the list. But this append method doesn't return anything. So what will I have here? I will have none print here. Let's save it and run it. So first, append4 is done. But the function didn't return the method. If we return non, then we have none print here. There was no value to return it. Generally, the string methods, which we have already read, those methods return the updated string value. Then the list sorted but didn't return anything. And finally, if we print the list, then it is a sorted list. Now we can sort our list in descending order. How? We just have to write this statement in our method. Reverse equal to true. If we want to sort in reverse order, then we can simply write this value. If I have done reverse equal to true with a capital T. Many beginners try to write with small t. True comes to us. Let's save it. And let's run it. So now our list is sorted in descending order. Now the sorting doesn't apply only on numbers. That is, it applies on characters and strings. How? If we have 2, 1, 3 places, values are in the list. Let's suppose we have banana, we have leechi and we have mango. To make it simpler, we can save it. And let's comment it out. And let's run it. So here, if we sorted in descending order, then we have leechi, then banana, then apple. And here, if we sorted in ascending order, then apple then banana, then leechi. Because in apple, how will the sorting in strings be? The character that comes first, it will come first in ascending order. So if it comes first from A, B, then apple will also come first in ascending order. Now if it comes first from B, L, then banana will also come first in leechi. So in this way, it is possible to sort in strings. If we want, to make it simpler, we can write some characters. D, E, F, and C, and B. Let's save it. And as soon as we sort this list, then we will have all the characters A, B, C, D, E. So in this way, it is possible to sort the characters and strings. The next method that we will talk about is our reverse method. What does reverse method do? It turns the entire list. And these changes, the one that turns, the one that reverses, it does it in the original string. For example, if I have this list, if I have to completely opposite this list, then what we will do? We can do it. In fact, we can do the list.reverse. So in the original list, all these values will be reversed. Let's run it. If B was in the last, now we have B before, C in the second last, now C on the second. F in the third last, now F on the third. And in this way, we have the entire list reversed. The next method is the insert method. The work of the insert method is it is very similar to append. But it adds on a particular index. That is, if we have this list and somewhere in the middle, we want to insert a new value. So what we will do? We will use the insert method. We pass two values in it. First, we want to insert something on the index. And second, we want to add some element. For example, in this list, if we talk about index, this is index 0, this is index 1, this is index 2. If I want to add value on index 1, then we can write list.insert. I want value on index 1. So what will be the changes in the list? Everything will be the same before 1. If the index was 2, then it will be 2 here. Now if the index is 1, then we will have 5. And after that, the values, including index 1, will come later. In the same order, meaning 1 will also come here, 3 will also come here. So our new list will look something like this. Let's try it. For example, we have this list. 2, 1, 3. If we insert index 1 on the list, value 5, and print our list. So our list will be 2, 5, 1 and 3 equal. So we have the same value as this list. Next method, which we will talk about, this is our remove method. Remove method is to remove the first occurrence of an element. If we have this list, 2, 1, 3, 1. If we want to remove 1, then what will we do with the remove method? We will search for the first 1 in this list. And remove it from the list. So we will have the final list. And from remove, we have pop method. It is a particular index to delete the value. If we have this index, 0, 1, 2 and 3. I want the element of index 2 to be completely deleted. So the final list will be 2, 1, 1. For example, if we do list.pop, I want to pop the value at index 2. We will save and refresh. So we will save the elements in the list. 2, 1 and 1. So this is done in the Python list. There are many frequently used methods. In fact, if I write list and dot, then Visual Studio Code will suggest me many methods. I have already seen Append. Clear, Copy, Count, Extend, there are many different methods. We have more. The work of the copy method is that it returns the copy of a list. We can store it in any other variable. The same elements in the list come into the other. The work of the count method is to count the element and in this way, we have different methods. We can search for Python documentation. We can search on Google for Python documentation. And the official documentation of Python, we can search for different methods from there. By the way, we have covered many of the methods related to day to day maximum programming. In general, if you are programming, if you are developing, if you are learning machine, if we have a different method, which we know the logic but don't remember its exact name, then either we can take help of visual code suggestions. Otherwise, while developing practically, we can simply search on Google and all our answers are available online. Now, we have done this list. There is another built-in data type in Python, which we call tuples. We can understand the tuple in this way, that we have a brother of the list, the way the list works, almost the same way we have tuples. In fact, if we were studying any other programming language, then we would have used the list in it. It could have been that I don't teach you tuples in the tutorial. But because in Python, tuples are used so much, practically, they are used a lot in day to day programming. So, that's why we are covering tuples. In Python, tuple is a built-in data type that lets us create immutable sequence of values. So, this is the biggest difference between list and tuple. What is the list? We have already talked about that we have a mutable data type whose value can be changed. But what is the tuple? The tuple is immutable. Just like strings. What are strings? String is also immutable. That is, if you have made a tuple, then we cannot change its value. We cannot add new elements in it. We cannot delete old elements from it. So, what do we have to do to create tuples? The way we create a list is the same process but instead of square brackets we use parenthesis. So, if I want to convert this list to some tuple, then I don't have to do anything. I just need to put parenthesis here. So, what is this? I have this tuple. We can give the name of the tuple if we want. Let's give it a name tuple. And we will print type of this variable. Let's save it. What do we have? We have a class that is printed in tuple. What is this? This is a built-in data type. The type is tuple. Now, we can access our index like a list in tuple. If I want, I can print tuple of 0 or tuple of 1 in this way we can print the values. But like in the list we could write tuple of 0 equals 5. This operation cannot be allowed in our tuples. Because tuples are obviously immutable so we cannot allow for assignment in them. We cannot change the value by going to any index. For example, if we try to run this code we will have an error. Tuple object does not support item assignment. This error is very similar to the one that we got when we were trying to assign a new value on a string. We can create different types of tuple. For example, I can create an empty tuple. In this way, if we put parenthesis then it becomes an empty tuple. We can print this empty tuple also. And also, we can print the type of tuple. This is a valid tuple. There are no elements in it. When we run it, it will be empty and we will have a class that will be printed. When we have a single element we have a single element. For example, we have an element here. We will always separate a single element with a comma and create a tuple. So this is the correct way to create a single value tuple. If we save it and run it, this is our single value tuple and this is our type of this tuple. Now we can have a question in our mind that why not I remove this comma from here. Let me tell you what will happen in that case. In that case, this thing will consider this value as a integer. This is just an integer 1. For example, we don't write in python. We can write value in parenthesis. It is completely normal. By the way, the python will think that you have just written a normal integer with parenthesis. And now if we run the code, then it will have one print value. That is, it has ignored the bracket. So this type will be printed as integer. Similarly, if here was 1.0, then it would have taken a float type and here would have a string. Hello. So we would have taken a string type. But if we want it to be perceived as a tuple, then it is compulsory to put comma with single values in python. Now what we should do when we have multiple values? In the case of multiple values, we have a choice. If we want to separate our values from comma and write it like this, but in the end, putting comma is completely optional. If we put comma, then there will be no error. And if we don't, then there will be no error. But then, our data will be perceived as a tuple. So in this way, there are multiple ways to create multiple types of tuples. Now as we slice in strings, in lists, we do the same. It is possible to slice in tuples. Slicing in tuples is exactly the same way, like it works in lists or in strings. Like if I want I can print tuple off. If we take one and print three values, then we will have two and three and we will save and run. So this is the part of our tuple that we will have to print. Next we are going to talk about methods in tuple. So in tuple, we will cover two important methods. The first method is index method. If we want to find an element in a tuple that when did the first time that element came. So we can use our index method for that. Like in this tuple, if we write indices, this will be zero, one, two and three. If we want to find element one, we have done tuple.index one. So we have got value is equal to one. That is, element one is the first time on index one. Like in this tuple, if we want to find element two, we can write tuple.index of element two save and run. So we will have value is equal to one. That is, what is one? This is one index. What is two? This is two element. We want to search for it. Similarly, we have count method. In tuple.count, whatever we pass element, how many times it exists in tuple, its count returns to us. Like here if I pass tuple.count, then how many times it comes? It comes once. So I will have print one. But here if two comes three times, then we have print value equals three. So in this way our lists and tuples work in python. So these are our concepts which we have read. Now we are going to solve some practice questions based upon the same concepts. Let's look at the question first. Also, the questions we have to understand first, first question we have to pause the lecture once because we have to try to solve the questions by ourselves. Because until we try to solve the questions by ourselves in programming, until then our horses do not start running. The logic at the end in programming and coding is built only when we think about things by ourselves. It is possible that we think about the answer of the question and we solve it now. We may Google it and then we have to solve it now and finally we have to see the solution in the lecture. But that is not a problem. When we think about the questions, it is possible that we may not be able to solve the question completely but our logic is built because we learn to think in the terms of coding. So as a beginner, we have to try to solve things by ourselves. It is a good habit which we have to build along with. First question we are asking is to write a program to ask the user to enter the names of their three favorite movies and store them in a list. What we have to do is to enter three movies from the user. Number one, number two, number three and what are the three movies? These are the strings. We have to make a list by combining these three strings. So the way we can solve this can be that we will make the first movie, the second movie, the third movie and then we will append the three movies in our list. So let's do this and see. Let's input, enter, first movie. In this way, here we can store a movie one in the name variable. Then we will make another list. What will be the list in the beginning? In the beginning, the list will be an empty list. What can we do? In the movies or in fact we take all the values one at a time and input them. This will be movie one, this will be movie two. This will be movie two. This is going to be our second movie and this will be movie three. This will be our third movie. What will we do in the last movie? We will append our movie one in the movie. Then we will append our movie two in the movies. Then we will append our movie three in the movies. Let's save this. Let's run it. We will add our three favorite movies. I'll write Shutter Island and Lucy and probably Primer. In this way, okay. Lastly, we forgot to print our list. Let's try to print our movies list. Let's rerun our code. Let's add the same movies. This is our complete list. In this code, we can do one or two changes. For example, here, we can append our movie. And then, instead of making different variables, we assign the same variable. Same value here and same value here. Save and run. So, our output is the same. We can return it. Or, we can directly append it. Directly append means we don't need this movie variable. We can simply write movies.append. And then, we add our input. So, this is the way to append movies. Then, we don't need to write extra lines. I'm just telling you this. If you have solved the question yourself and we have written lines in the same way, then there is no problem in that. That means, that is the correct code. There is no issue at all. So, here we can delete these values in this way. And then, let's try to print our movies. First of all, enter the first movie. We will enter it. We will enter the second movie. We didn't write the input in front of the third movie. But, I hope you get the gist that this way, we can add all our movies in our list. Next question comes to you. And we are going to do something interesting in this question. We are being asked in the question, Write a program to check if a list contains a palindrome of elements or not. A palindrome can be a word. If we are programming for the first time, then we have heard it for the first time. What does palindrome mean? Palindrome means the same things that are in front and in the back. For example, if I talk about a string. I have a string called M-A-A-M. What does this mean? It is a palindrome. If we start from the beginning, then we will learn the M-A-M, and if we start from the end, we will learn the M-A-M. If I take a string, it is called Racecar. If we start from the beginning, then we will learn the Racecar. If we start from the end, then we will learn the Racecar. R-A-C-E-C-A-R. So what is this? It is called palindrome. A list of such a list can be a list of palindrome. For example, if we start from the beginning, then 1, 2, 3, 2, 1 will come. If we start from the end, then 1, 2, 3, 2, 1 will come. If we start from the beginning, then 1, then A-B-C will come. If we start from the end, then 1, 2, 3, 2, 1 will come. So palindromes are those lists in which we can see the same number of elements in the same order from the beginning and the end. So we have to check whether a list is a palindrome or not. And to do this, there is a hint that is given to us that we can use our copy method. What is the copy method in the list? We can search this in this code if we want. If I create a list of elements 1, 2, 3, then list.copy. We can click on this arrow and the list.copy method returns a shallow copy of the list. That is, our list will return to our shallow copy. What is shallow copy? What is deep copy? We will read this later. But for now we can think that if there was a list of elements 1, 2, 3, then we will have a duplicate of this in memory. 1, 2, 3. This will return to us. So we have to check whether a list is palindromic or not. Now, whether anything is palindrome or not, there is a simple way to check it. If anything is the same from the beginning and the end, then it is the same. So what does that mean? It is a palindrome. It is a palindromic thing. We already know this. But what do I say? I say that for example, this is a list that we have. If we make a copy of this list. This is original anyway. We made a copy of it. We got 1 in the copy, then we got 2, then we got 3, then we got 2, then we got 1. And if we reverse this copy. If we reverse the copy, then the last value that was there was there earlier. Then 2 came. Then 3 came. Then 2 came. In this way, and last we got 1. I say that if the original value and after copying and reversing the value, if both the values are the same, then any value becomes palindrome. And this is the way that we solve for palindromes in programming. We generally check for palindrome. Let's take another example of this. For example, there is a list that is not palindrome. I have 1, 2, 3. 1, 2, 3 is not palindrome. If we read from the front, then 1, 2, 3 will come. If we read from the end, then 3, 2, 1 will come. If I make a copy of this, then I will get 1, 2, 3. And then I reverse it. So, while reversing, 3, 2, 1 will come. Can 1, 2, 3 and 3, 2, 1 be the same? They can't be the same. So, what is this? This is not palindrome. But if there was 1, 2, 1, then there was 1, 2, 1, here too there was 1, 2, 1. These two were the same and this was palindrome. So, basically, reversing by making copies is the same. We are now learning to read things from the last. So, what can we do? We can make copies of any list, then reverse it, then check if it is original. And the copy list is not the same. If it is the same, then it is palindrome. If it is not the same, then it is not palindrome. For the same logic, we are going to write a code. Let's create this list 1. Let's save a palindrome in list 1. And this is my list 2. Let's save a non-palindrome in list 2. First, we will make a copy of list 1. Copy list 1. List 1.copy With this function, we will get a copy from this method. Then we will reverse this list, copy list. Copy of list 1.reverse. Like this. And now we will check. If the copy of list 1 is equal to my list 1. If both the values are the same, then what we have to do in that case? We can print in that case. Palindrome. And in the case of else, What we will do? We will print. Not. Palindrome. Let's save this and run it. We have printed out Palindrome. Because 1 to 1 is a palindrome. But the same value, if I do this in list 1. If we do 1 to 3 in list 1. In that case, what will be printed out? In that case, it will be printed out. Not. Let's write another palindrome. For example, if I write m a a m. Run it. This is a palindrome. We have a palindromic list. But in this, if there is a letter p, Then it becomes not palindrome. So in this way, we can solve our questions for our list. Let's move towards the next question. Next question is, Write a program to count the number of students with grade a in the following tuple. What is this? We have a tuple. We can give it the name of grades. All the students who have scored a in this, We have to bring their count. So for that, we can use the count method of tuple. Let's try to recreate this tuple. We will call it grade. And to create tuple, we will put parenthesis. Let's copy our grades. First c is coming, then d is coming. Then we have a another a, b another b and finally a. We can simply print grade.count of grade a. Save it, run it, we have the value 3k in the answer. Next question is, Store the above values in a list and sort them from a to d. So first, we have to create the same values in the form of a list. And then we have to sort them from a to d. What does a to d mean? A to d means ascending order. That means, a small character first, then a big character later. So here, we can create a list for this using our square brackets. And we can write grade. Or simply here, grade.sort. And then print our grade. Let's save it and run it. What are the values? We have arranged values in sorted order from a to d. So in this way, we work with lists and tuples in Python. So I hope that we have enjoyed today's lecture. We will read more new concepts in Python. And the notes in today's lecture, the slides, you will find in the description box below. You can go there and access them. We will meet in the next lecture. Till then, keep learning and keep practicing."
+}

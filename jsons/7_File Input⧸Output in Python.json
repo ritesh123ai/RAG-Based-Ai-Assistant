@@ -1,0 +1,1839 @@
+{
+    "chunks": [
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 0.0,
+            "end": 14.72,
+            "text": "Hi, Coders and welcome to the complete Python series in which we will cover chapter 7 in which we will read about the file I.O. On the files, how can we perform different operations? How can we write data in a file? How can we read and delete the file?"
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 14.72,
+            "end": 29.36,
+            "text": "We will cover all the things today. We will not only read the concepts, but actually perform all the operations. Along with that, we will solve different practice questions. If we want to read any other topic related to Python, then all the topics are available on this playlist on this channel."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 29.439999999999998,
+            "end": 50.8,
+            "text": "We can also go and see them. And also, the links to download the slides and the class notes will be in the description box below. So, let's start with chapter 7. Hi, everyone. Now, we are going to start with chapter 7 in which we will read about the file I.O."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 50.8,
+            "end": 66.08,
+            "text": "What does file I.O. mean? I.O. means input and output. In the terms of files, we all know that we have made Python files. We have seen different types of files. The pictures we take, the videos we have,"
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 66.08,
+            "end": 82.0,
+            "text": "are stored in any system in the entire file format. In the file, I.O. means to output input means we are opening a file, reading some data, updating some data, writing some new data, closing the file, deleting it."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 82.08,
+            "end": 101.36,
+            "text": "Different operations like this come in the category of file I.O. So, basically, Python as a language can be used to perform operations on a file. For example, if a file is saved on your computer, we can perform operations on it. We can write the lines in our code like this."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 101.36,
+            "end": 114.8,
+            "text": "We can write the code like this. The file that will access it, can read the data, write it, update it, append the data in it, and more different operations. Before starting the file I.O.,"
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 114.8,
+            "end": 128.48,
+            "text": "there are some basic things that we might have read in the school. If we have a little background in computer science, then we will have a basic idea. This is a theoretical part. The maximum students must have heard of RAM,"
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 128.48,
+            "end": 144.88,
+            "text": "Random Access Memory. RAM is the memory of our computer that is fast in execution. When a code runs, all the variables that it creates are created in RAM. But the bad thing about RAM is that RAM is volatile."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 144.88,
+            "end": 158.16,
+            "text": "Volatile means that once we have closed our system, the data that is in RAM refreshes. That data will not be permanently stored forever. But if we want to store information permanently in our system, for example, whenever we open the system,"
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 158.16,
+            "end": 170.55999999999997,
+            "text": "we can see that information. We do not store that information in RAM. We can store that information in our files. There are different ways, but we can store it in the file. For example, we have written a Python code."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 170.55999999999997,
+            "end": 186.95999999999998,
+            "text": "Now we do not want to close our laptop and restart the system. Then our code will disappear completely. What we do is, we store the entire Python code in the files. Similarly, if we downloaded a photo in our system, then we do not want to restart our system as soon as it is closed."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 186.95999999999998,
+            "end": 202.39999999999998,
+            "text": "So our photo will disappear, our videos will disappear. So those videos and photos are not stored permanently in RAM. If we want to store them permanently and persist them, then what do we do? We store them in the form of files. For example, if we have a photo, it can be a PNG file,"
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 202.39999999999998,
+            "end": 221.12,
+            "text": "it can be a JPEG file, it can be a video, it can be a file in .mov format, it can be in .mp4 format. It can be a Python file, it can be in .py, it can be in .txt. So there are different files that are stored in our system. If these files are in our system, then it is stored in ssd,"
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 221.12,
+            "end": 235.12,
+            "text": "otherwise it is in sdd, then it is stored in ssd. So if we talk about files, Python can be used to perform different operations on a file. And these different operations, which are the major operations that we can read and write in the file,"
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 235.12,
+            "end": 249.28,
+            "text": "and rewrite the data in the file. These are the major operations that form the file I.O. in Python. So if we talk in a very simple language, then we will learn in this chapter how can we open a file, how can we read data from a file,"
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 249.28,
+            "end": 260.64,
+            "text": "how can we write some data to a file, how can we close a file, and at the end how can we delete a file. Now let's see the types of files. All the files can be divided into two types."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 260.64,
+            "end": 278.48,
+            "text": "One is our text files. Text files are the files in which the data is stored in the form of characters. For example, our .txt file, we get to see characters in this text file. Our .docs file, which we can make our word document on Microsoft Docs."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 278.48,
+            "end": 292.0,
+            "text": "That is what? That is a text file. .log, which is stored in our system's logs in this type of files, so what is this? This is also our text file. And our non-text files, which do not have a data stored in the form of characters,"
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 292.0,
+            "end": 304.0,
+            "text": "but can be stored in some other format, we call them binary files. For example, .mp4, which is our video files, which are also binary files, .mov, which is also our video file extension,"
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 304.0,
+            "end": 321.52,
+            "text": ".png, .jpeg, all these files are our binary files. So we can manipulate both types of files, access them, perform IO, using Python. Now here is one additional thing, that even if we access text files and binary files from Python code,"
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 321.52,
+            "end": 336.08,
+            "text": "they are different. But at the end, when all these files are stored in memory, they are all bits. That is, all the data, whether it is the binary file or the text file, go into the system, store them in the form of 0 and 1."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 336.08,
+            "end": 349.76,
+            "text": "So we can remember this thing, all the files are bits at the end, the bits have the data of 0 and 1. But we divide them into text and binary files on the upper surface level. Now let's talk about the basic operations on the file."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 349.76,
+            "end": 366.32000000000005,
+            "text": "Generally, the simplest operation we can perform on a file is, that we have opened a file. For example, you will have a lot of books, you will have a lot of academic files in the books. So how do we use the actual physical file day to day?"
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 366.32000000000005,
+            "end": 382.8,
+            "text": "First of all, we bring the file and open the file. After opening the file, we can read some data from it, write some data, then we close the etn file. So these are the same operations that we replicate in Python. So before reading any file,"
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 382.88,
+            "end": 397.68,
+            "text": "we have to open the file before writing anything. For that, we have existing built-in functions in Python. We simply write our open function, we have to pass two parameters in the open. First of all, we send our file's name in double quotes or single quotes."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 397.68,
+            "end": 415.03999999999996,
+            "text": "For example, my file's name is sample.txt. So what do I have to do? I have to write my entire file's name here. After that, we send our mode. Mode means, what format is going to be our file's IO performance? Are we going to read or write this file?"
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 415.03999999999996,
+            "end": 427.52,
+            "text": "Are we going to do data-append? What are we actually going to do by opening this file? So we have to tell that thing from the beginning. And if we don't tell anything, then by default, Python assumes that we are going to read the file."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 427.52,
+            "end": 444.88,
+            "text": "So if you are opening in read mode and you are trying to write in any file, then that thing will not be possible. We will have an error. Now there are a lot of modes. We will focus on the simple mode right now, which is my read mode. So this open method can assume on a surface level that we are returning our file."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 444.88,
+            "end": 460.64,
+            "text": "For example, if we try to open any file. For example, what we have done here is, we have made a folder. In the folder, we already have our Python file, Lecture7.py. In this, let's suppose I create another text file. I call the text file demo.txt."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 460.64,
+            "end": 476.32,
+            "text": "In this demo.txt, I have written some data. I, anything can be data. I am learning. Here, I have written Python from my college. In this way, I have written something. So this is my demo.txt file."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 476.32,
+            "end": 490.71999999999997,
+            "text": "Now to open this file, I can use my open method. And when we scroll on this, we will see the definition of this method. See, this is the entire Python syntax. Def, then the name of the method is open."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 490.71999999999997,
+            "end": 504.56,
+            "text": "There are different parameters in it, which we can take. But for now, our two main parameters are the description of our file or the path. And second thing is our mode. And it is written that if there is no other parameter, then this is the default parameter."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 504.56,
+            "end": 516.16,
+            "text": "We will open our file in read mode. So this is how our file opens. And what does return do? Returns text.io wrapper. We will not go into detail of this. We will assume that our file will return to us."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 516.16,
+            "end": 533.36,
+            "text": "In this way, it is written here, opens a file and returns a stream. Stream means stream of character. Stream of data comes back to us. So here, first thing is we will pass the name of our file. If I had not passed demo.txt in the same folder,"
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 533.36,
+            "end": 548.0,
+            "text": "then we would have to send the complete path of the file. Now in the same folder, where there is a Python file, where we are trying to access the txt, there is our txt file. So we can write demo.txt directly here. But if this is not the same folder,"
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 548.0,
+            "end": 565.36,
+            "text": "it is stored somewhere else in another folder, then we will have to pass the complete path of the file here. What is the complete path of any file? For example, if I copy the entire path of this file, then I will know where is demo.txt in the users,"
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 565.36,
+            "end": 577.6,
+            "text": "in Amandar Darwal, in the desktop, in Shradha, demo.txt. This is where our file is stored. Alright, here comes the name of our file. And now let's pass our mode. We have different modes."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 577.6800000000001,
+            "end": 594.0,
+            "text": "By the way, we will cover all the modes that are not used frequently. This is in our read mode, so we have typed R. And we have our file. So in this way, we open a file. Now after opening it, we can perform operations on it."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 594.0,
+            "end": 609.12,
+            "text": "The most basic operation is to read. So we can simply write f.read. And what will it return to us? It will return the entire data of our file in the form of a string. For example, I can write data is equal to f.read."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 610.32,
+            "end": 625.52,
+            "text": "Let's zoom in a little. And I can print my entire data along with the type of my data. Let's save it and let's run it. So here, my entire file data has come to me. What is the data I am learning, Python from my college?"
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 625.52,
+            "end": 641.12,
+            "text": "And its type has also come, which is string. And at the end, before executing the program, a good programmer's sign would be that whenever we are opening a file, we have to close it. Not to close it, we have started with f.close."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 641.12,
+            "end": 656.48,
+            "text": "Like we close real life files. What will happen if it remains open? Basically, there is a risk that any and every one of you can access your file. Any and every one of you can change that data. So what you have to do as a responsible programmer is to close this file."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 656.48,
+            "end": 674.24,
+            "text": "We have saved it and this is an entire program consisting of file I.O in Python. So here we have seen how we can write the name of the file. And along with that, we have different options available in the modes. For example, R option is open for reading. This is our default option."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 674.24,
+            "end": 685.84,
+            "text": "W is for writing. Truncating the file first. Truncating the file first means whenever we are trying to write in a file, then right means overwrite."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 685.84,
+            "end": 698.96,
+            "text": "That is, the entire file's data will be deleted. Then what you want to write, it will be written in the file. We will read this in detail. X is used to create a new file and open it for writing. A means here is append."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 698.96,
+            "end": 713.7600000000001,
+            "text": "We will see this later. It is used to open for writing and appending to the end of the file if it exists. If there is a file, then there is a data in it, ABC. We want to delete it and add new data, XYZ. So we use right for that."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 713.7600000000001,
+            "end": 732.7199999999999,
+            "text": "And if after ABC, we want to add new data, then we use append. Append means to add something at the end. We have two other formats. One is binary mode. If we are trying to open a binary file, then we will write B."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 732.7199999999999,
+            "end": 745.28,
+            "text": "If we are trying to open a text file, then we will write T. We didn't write T here. We didn't write T here. If we write T, then we can combine two modes. For combining R and T, we write RT."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 745.28,
+            "end": 761.6800000000001,
+            "text": "But text files are open by default. If you want to do a binary file, then you will have to write R. We will have to write W and A here. But if we are opening text files, then we will not have any problem if we remove T. What will happen here?"
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 761.6800000000001,
+            "end": 775.36,
+            "text": "The same code will work here without any error. So T is implicit. Already T is used by default in text mode. We have plus. Open the disk file for updating."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 775.36,
+            "end": 787.52,
+            "text": "That is reading and writing. If we want to do the same operation, then we can use plus. We can use plus. Suppose R means to read the file. So R plus means to read and write in this file."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 787.52,
+            "end": 802.96,
+            "text": "If we write W, then W means to write. W plus means to write in this file and read it. If we write A, then A means to append. A plus means to append the data in this file and read it. We will use plus in this way."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 802.96,
+            "end": 812.5600000000001,
+            "text": "But we will see it later. For now, we have learnt one mode which is R mode. Which is used for reading. It is the default mode. And we have the text mode as well."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 812.5600000000001,
+            "end": 825.2800000000001,
+            "text": "It is the default mode. Next, we want to read the reading in more detail. First of all, we have seen that to read the data from the file, we can use the read method. In this way. We can pass another parameter in the read method."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 825.2800000000001,
+            "end": 845.8399999999999,
+            "text": "For example, if I want to read a particular set of characters. We can pass it as a parameter. For example, I have passed an argument here that I have to read 5 letters. 5 letters means I, space, am, another space. Let's save it and run it."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 845.8399999999999,
+            "end": 860.0799999999999,
+            "text": "So we will have only I am printed. Nothing else will be printed. So we can specify the number of characters. We can also read the file line by line. To read line by line, we write read line."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 860.1600000000001,
+            "end": 875.0400000000001,
+            "text": "This second method which reads a file one line at a time. To use this, we can write line 1 here. And here we will write read line. Let's pass the argument. And we will print our line 1."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 875.0400000000001,
+            "end": 884.08,
+            "text": "We saved it. Run it. So we have got I am learning. The whole line came. The whole line was in our demo.txt."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 884.08,
+            "end": 900.08,
+            "text": "Whenever we are printing line 1, we get an extra space. Because in the file, when the data is I am learning and the next line is the data, then there is a character here, backslash n. Which brings the next line. The character which we can't see as such."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 900.08,
+            "end": 914.08,
+            "text": "But because of that, the next line comes. The character exists in this file. And because the character is read in line 1, then we have got a space for the next line. We can also read the second line."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 914.08,
+            "end": 926.08,
+            "text": "We will copy it. Here we read our first line. And now we will read our second line. So line 2 is done. We will save it."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 926.08,
+            "end": 938.08,
+            "text": "And let's re-execute. So our line 1 came. The next line character of the end came. And then our line 2 was displayed here. If we have already read any file here."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 938.08,
+            "end": 950.08,
+            "text": "Like I have written data is equal to f.read. And then I have printed the data. So in that case, when I look at my output. So my output, this will be a normal output print."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 950.08,
+            "end": 962.08,
+            "text": "And then when I will print line 1, I will get empty space. I will get empty space for line 2. This is coming because if we have read the data once. So to visualize it."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 962.08,
+            "end": 974.08,
+            "text": "For example, in my file, there is data abc. xyz. pyq. So here, let's suppose we have to read the data. So what we are doing is,"
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 974.08,
+            "end": 984.08,
+            "text": "as soon as we have read it. Our pointer. As soon as our cursor is there. As soon as we can imagine it is a cursor. So what does a cursor do?"
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 984.08,
+            "end": 994.08,
+            "text": "Each character has read it. Now that cursor has reached the last. As soon as we have executed the read, that cursor has reached the last. And now that cursor, when we try to read the line."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 994.08,
+            "end": 1004.08,
+            "text": "What will it read? The character of the next line will read. Nothing will come in it. So if we print the entire data once. So basically if the data is read once."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 1004.08,
+            "end": 1014.08,
+            "text": "Then it has nothing to do with reading the next line. So that's why if we read it first. Then things come in the read line. It comes empty print. Also, when we are doing read line."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 1014.08,
+            "end": 1024.08,
+            "text": "If we remove this thing. And each and every one is doing read line. So how things are working. So first of all what does the cursor do? It reads one line and comes to the end."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 1024.08,
+            "end": 1034.08,
+            "text": "Then it reads the second line and comes to the end. Then it reads the third line and comes to the end. So in this way, we can read our file line by line. We can read our file. Until our file ends."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 1034.08,
+            "end": 1044.08,
+            "text": "If our file ends at one point. For example, we have read-lined it twice. After that, if we read-line it for the third time. Then it doesn't have any data to print. So what will happen in that case?"
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 1044.08,
+            "end": 1056.08,
+            "text": "In that case, an empty next line will be printed for us. What is this? This is an empty next line. Which will get printed if we don't have any more data in the file. So this is going to happen. So there is a difference between read and read."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 1056.08,
+            "end": 1066.08,
+            "text": "So we can read the whole data together. But be careful that it moves the cursor. So next time we won't be able to read-line from the start. For that, we will have to close the file again. We will have to reopen it."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 1066.08,
+            "end": 1076.08,
+            "text": "So that we can read it line by line again. The next thing we are going to read is That is writing to a file. We have just seen how we can access the data stored in the file. Now we are going to write on the file."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 1076.08,
+            "end": 1088.08,
+            "text": "Before writing, we will have to open the file. And there are two ways to write. One is that we write our file in the right mode. In a different way, we open our file in A mode. When we open the file in W mode,"
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 1088.08,
+            "end": 1098.08,
+            "text": "This is my right mode. I will call the right over right mode. And A is our append mode. Append means add at the end. I will also write add at the end."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 1098.08,
+            "end": 1108.08,
+            "text": "So these are both different cases. Let's suppose we have opened the same file. We will have to write that we have to write The right over right mode. And we will also write add at the end."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 1108.08,
+            "end": 1132.58,
+            "text": "Add at the end. Let's suppose we opened the same file and now we open it in the right mode. Now by writing F.right, I can write any data in this file. I have to replace the entire data of this file. So I write here, let's suppose I want to write I am or I want to learn JavaScript tomorrow."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 1132.58,
+            "end": 1144.08,
+            "text": "I have written something like this. 1, 2, 3, some numbers are also written. And let's save it and close it. Now as soon as I run this code, Similarly, now we will go to demo.txt."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 1144.08,
+            "end": 1159.58,
+            "text": "So our whole data is overrided. And if we want to add things in this data, So I have to open the same file in the A mode. And now this data will be added, That is, it will be appended in that old data."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 1159.58,
+            "end": 1174.08,
+            "text": "So let's change some changes here. Let's change it and write. And then I will move to react.js. Let's save it and execute. So what happened?"
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 1174.08,
+            "end": 1186.58,
+            "text": "This new data is added in my file. Why did this data be added in the same line? Because we didn't give any next line character. So if I want to move my data in the next line, So I have to write backslash and give a next line character."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 1186.58,
+            "end": 1203.08,
+            "text": "For example, I want to add more data. After that, let's save node.js and run it. So now this data will come with a next line character. That is, it will come in this next line and come in demo.txt. So in this way, we can overwrite the data in any file."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 1203.08,
+            "end": 1214.58,
+            "text": "Or we can append the data. Another interesting thing, Whenever we open any file in A or W mode, And that file doesn't exist, Python automatically creates that file for us."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 1214.58,
+            "end": 1226.08,
+            "text": "For example, F is equal to open. I want to open this file called sample.txt. And I am opening it in the right mode. And then I didn't do anything."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 1226.08,
+            "end": 1238.08,
+            "text": "Then I closed it. Now in my folder, no such file exists. But as soon as I run this code, It will come here as sample.txt file. Same thing."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 1238.08,
+            "end": 1248.08,
+            "text": "Let's delete it once. Same thing. If I open the file in append mode, Then it will exist. Let's run it."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 1248.08,
+            "end": 1256.08,
+            "text": "What is this? Sample.txt file. We have created it. If we don't have any file, We can create it in this way."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 1256.08,
+            "end": 1269.08,
+            "text": "If we want to create and write in a file. Now let's suppose we want to combine our modes. I mean, I have to do reading and writing simultaneously. There are many different ways to do this. There is this one particular article,"
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 1269.08,
+            "end": 1278.58,
+            "text": "I will give the link of which. It is very interesting. They explained this in the stack overflow. 14 years ago, they explained that What are the differences between different modes?"
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 1278.58,
+            "end": 1291.58,
+            "text": "So we will get many ideas from this. A helpful, proper flowchart you can see. And different meanings are explained. If you want to read in more detail. We write some ways to combine modes."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 1291.58,
+            "end": 1303.58,
+            "text": "If we open in R mode, then we are reading. Writing in W, and then in A. This is the simplest thing. For example, if I show some data in demo.txt, This is a sample file."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 1303.58,
+            "end": 1313.58,
+            "text": "We have written the data in this way. If we open in R plus mode, What will it do? It will open it for reading and writing. In this case, our file does not truncate."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 1313.58,
+            "end": 1323.58,
+            "text": "Truncating the file means that the data is deleted. So in R plus mode, the file does not truncate. In W plus mode, the file truncates. There are some differences. We will do one by one."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 1323.58,
+            "end": 1334.58,
+            "text": "R plus is for reading and writing. The stream is positioned at the beginning of the file. This is basically like a pointer. It is positioned at the beginning of the file. For example, in demo.txt,"
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 1334.58,
+            "end": 1345.58,
+            "text": "This is a sample file. We have written this much. Let's open it once. We will understand it once we see it while working. Alright."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 1345.58,
+            "end": 1356.58,
+            "text": "Here we will write R plus. We opened in read mode. This is our sample file. Then what I did? I wrote in F, ABC."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 1356.58,
+            "end": 1366.58,
+            "text": "Then I closed the file. I did this much. Let's save it and run. What happened after running? In the file, ABC came first."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 1366.58,
+            "end": 1377.58,
+            "text": "ABC overrided the files. Because in R plus mode, things are overrided. But where did it overwrite? In the starting of the file. First, it was T-H-I-S."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 1377.58,
+            "end": 1386.58,
+            "text": "Now T-H-I is replaced with ABC. So, from the beginning, things should be overrided. So, what we do? We can open in R plus mode. I hope you understood what R plus means."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 1386.58,
+            "end": 1400.58,
+            "text": "In our stream, our pointer comes in the beginning. And then we can use it to write. Then we can read. If I want to print R, print F dot read. The entire file will be read."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 1400.58,
+            "end": 1410.58,
+            "text": "For example, ABC overrided ABC. Here we have ABC. Now where is pointer? Now pointer is here. It comes on S."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 1410.58,
+            "end": 1423.58,
+            "text": "All the things that are written in reading and writing. So, it is happening through pointer. If pointer writes ABC, it comes on S. And where pointer will come, it will start reading from there. So, when we call read, it will start printing from S."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 1423.58,
+            "end": 1432.58,
+            "text": "So, I hope we understand the concept of pointer in stream. So, this is R plus mode. We have already seen W plus. What is W plus mode? It is open for reading and writing."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 1432.58,
+            "end": 1444.58,
+            "text": "But in this case, our file will be truncated. Truncating means it will be completely wiped out. Like if I open this file in W plus. And then I want to read it. Let's comment it out."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 1444.58,
+            "end": 1452.58,
+            "text": "I opened this file in W plus mode and I want to read it. So, what will be printed? Nothing will be printed. Because what is the file? It is open in truncated mode."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 1452.58,
+            "end": 1466.58,
+            "text": "So, it will be completely wiped out. After that, we can write. For example, then I can write F dot write ABC. In this case, it is completely printed. But in the file, ABC is now written."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 1466.58,
+            "end": 1481.58,
+            "text": "Similarly, we have A plus mode which is append plus. These are the main modes. We don't need to go into detail. In this case, the stream is positioned at the end of the file. If I open it in A plus mode and then I tried to read it first,"
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 1481.58,
+            "end": 1490.58,
+            "text": "then nothing will be printed in that case. Because at the end, it places my pointer. We will save it. If we read it, nothing will be printed. And then ABC will be written in the file."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 1490.58,
+            "end": 1502.58,
+            "text": "But it will not be overwrite. It will be append. If we read it, nothing will be printed. In demo dot txt, we have written ABC again. So, we opened the file in append plus, read and append mode."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 1502.58,
+            "end": 1514.58,
+            "text": "So, let's summarize all the things. Our modes will be the most confusing. So, let's summarize them once. The important ones. Simple modes, read, write, append."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 1514.58,
+            "end": 1524.58,
+            "text": "This was the simplest to understand. We will understand this. Now, we have read three more. The first one we have read is read plus. What is read plus?"
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 1524.58,
+            "end": 1537.58,
+            "text": "We can read. And we can overwrite the existing data. And where is the pointer? The pointer is in start. The pointer starts from the starting."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 1537.58,
+            "end": 1549.58,
+            "text": "The second one is in write plus mode. What is in write plus mode? We can read and overwrite. In this case, no truncate. What happened in this case?"
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 1549.58,
+            "end": 1564.58,
+            "text": "Truncate is done. But in this case, if the file's data is deleted, then the pointer is in the start and end mode. It doesn't matter because the file is complete. The third mode is A plus mode."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 1564.58,
+            "end": 1580.58,
+            "text": "Read and append mode. And when it is in append mode, the pointer is in end mode. And in this mode, no truncate. The file's data is not deleted. So, these are the major differences."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 1580.58,
+            "end": 1591.58,
+            "text": "R plus, W plus, A plus. All the curves are the same. Read and write. We have to see where the pointer is. Who is truncating? We have to remember that. You can note down this thing in your notes."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 1591.58,
+            "end": 1603.58,
+            "text": "This is important. We will see how we can implement it later. So, these are our modes. And one more last thing we are going to cover. That is my with syntax."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 1603.58,
+            "end": 1616.58,
+            "text": "In files, we have to close and open the file. The entire process has to be written in a better syntax. Which is using the with keyword. First, we write with. Then, we write the entire function of the open."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 1616.58,
+            "end": 1628.58,
+            "text": "And then, we write asf. We have opened the file. Now, we will call the entire stream as f. And then, we can perform operations on f. Like we are writing things in a normal function."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 1628.58,
+            "end": 1639.58,
+            "text": "There are some syntaxes here. It's like a loop or a conditional statement. This is not it. The part that is parted in it, The part that is parted in it,"
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 1639.58,
+            "end": 1650.58,
+            "text": "It will depend on this stream. Like this same code. Like a normal code. We have to open the file. We have to read the data."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 1650.58,
+            "end": 1661.58,
+            "text": "And then, we have to close it. If I have to do this much code. This is a sample file. By our college. We have written something like this in the file."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 1661.58,
+            "end": 1671.58,
+            "text": "Now, we have to open this file. We have to read the data. So, we will write with syntax. Then, we will write with. The name of the file is demo.txt."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 1671.58,
+            "end": 1681.58,
+            "text": "We will open it in which mode. Let's open it in read mode. Asf. The thing that will come from here. As means, aliases."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 1681.58,
+            "end": 1691.58,
+            "text": "Aliases means Like, Clark Kent is an alias for Superman. Superman is an alias for Clark Kent. We have called it Clark Kent."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 1691.58,
+            "end": 1701.58,
+            "text": "We have called it Superman. Like, if you have seen Avengers. We have called it Tony Stark. We have called it Iron Man. Same thing is happening."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 1701.58,
+            "end": 1711.58,
+            "text": "We are calling it Shaktimaan. We are giving the same thing as another name. We call it alias in English. For the alias, that is f. Then, we will put colon."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 1711.58,
+            "end": 1721.58,
+            "text": "Now, we can work on f. This thing will return the value. We are giving it an alias. We are giving the name f. Now, I can read the data from f."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 1721.58,
+            "end": 1731.58,
+            "text": "And I can print this data. Let's store it in some variable. And let's try to print this data. Let's save it and run."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 1731.58,
+            "end": 1741.58,
+            "text": "So, our data is printed on our computer. Now, you can point out one thing. Ma'am, you said that it is a good programmer. We have to close the f dot. But, when we use width syntax."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 1741.58,
+            "end": 1751.58,
+            "text": "Compulsory is not there. Because, automatically, width automatically closes the file. So, whenever we use width, we don't have to think about closing the file."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 1751.58,
+            "end": 1761.58,
+            "text": "Because, that thing will automatically be done for us. If I want to open this file in the right. I can open it like this. Open the file demo.txt in right mode."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 1763.58,
+            "end": 1773.58,
+            "text": "And we will overwrite the data as f.f. right. New data. Let's save it."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 1773.58,
+            "end": 1783.58,
+            "text": "And let's execute. So, we have the old data. And now, we have stored the new data. So, we can use width syntax whenever we are working with our files."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 1783.58,
+            "end": 1793.58,
+            "text": "Now, the last operation which we are going to see. This is deleting a file. As such, we can't delete a file by deleting f dot."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 1793.58,
+            "end": 1803.58,
+            "text": "For that, we have to use a module. What are modules in Python? Modules are like a code library. Modules are basically someone else has written a Python file for us."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 1803.58,
+            "end": 1813.58,
+            "text": "There are some useful functions in it. To use any module we have to import it. We have a"
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 1813.58,
+            "end": 1823.58,
+            "text": "OS name module in Python. OS stands for Operating System. And what we do with this? First, we import it in our code and in our file."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 1823.58,
+            "end": 1833.58,
+            "text": "So, we write our import keyword. And then, our module name. We can import any module. There are some modules which are pre-installed in Python."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 1833.58,
+            "end": 1843.58,
+            "text": "For example, if I import OS and save it if I try to run my program there will be no issue. My code will run."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 1843.58,
+            "end": 1853.58,
+            "text": "There is no error at all. But there are many modules which are not pre-installed. For example, if I try to write tensorflow"
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 1853.58,
+            "end": 1863.58,
+            "text": "and save it if I try to run, we will have no module named tensorflow. Tenserflow is basically a module which we use when we do machine learning"
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 1863.58,
+            "end": 1873.58,
+            "text": "and use it while building neural networks. But what is it now? It is not installed yet. We have to install it from the internet. If we want to use modules like this"
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 1873.58,
+            "end": 1883.58,
+            "text": "which are not pre-installed in Python then we have to write PIP. PIP is package installer for Python. PIP install. And then, our module name."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 1883.58,
+            "end": 1895.58,
+            "text": "If you want to install tensorflow in your system then you have to write tensorflow and in the same way it can be done in your system depending upon which version"
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 1895.58,
+            "end": 1905.58,
+            "text": "you have installed. What is the way of installing it? It can be done if you don't use PIP command. Then you have to write PIP3 install"
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 1905.58,
+            "end": 1915.58,
+            "text": "tensorflow I am not able to write this because I am recording on the system this is not my own system. So basically, what can we do with this line?"
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 1915.58,
+            "end": 1925.58,
+            "text": "We can install any external module. Not just tensorflow. If you want to use any extra module. But here we are going to use our OS module which is pre-installed."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 1925.58,
+            "end": 1935.58,
+            "text": "So I will just write import OS. And now we can use any OS function. So in OS there is a function written from before. Someone else has written it."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 1935.58,
+            "end": 1945.58,
+            "text": "Remove function in which we can pass the name of our file. So that file will automatically be deleted for us. For example, if I write OS.remove"
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 1945.58,
+            "end": 1955.58,
+            "text": "and I want to remove this sample.txt file I will write sample.txt Let's save it. So what will happen?"
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 1955.58,
+            "end": 1965.58,
+            "text": "It is cross on sample.txt. It is deleted now. So this file is deleted. We can delete any file if we want."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 1965.58,
+            "end": 1975.58,
+            "text": "So this was all about file I.O. How we can open and perform operations. We can delete those files. Now we are going to solve some practice"
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 1975.58,
+            "end": 1985.58,
+            "text": "questions related to file I.O. So let's go to our practice questions. The first practice question is Create a new file practice.txt using python"
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 1985.58,
+            "end": 1995.58,
+            "text": "Add the following data in it. And we have to keep the format of this data in the same way. Where the data is coming in the next line. We have to come to the next line."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 1995.58,
+            "end": 2005.58,
+            "text": "So let's try to create this file. What can we do to do this? We can open it in the right mode. As soon as we open any file in the right mode it will be automatically created."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 2005.58,
+            "end": 2015.58,
+            "text": "So with open Let's cross this one. We want to create a file practice.txt name. In right mode."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 2015.58,
+            "end": 2025.58,
+            "text": "And in this as f in f.right Let's write the first line. Hi everyone"
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 2025.58,
+            "end": 2035.58,
+            "text": "Backslash n We are learning File I. Slash O"
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 2035.58,
+            "end": 2045.58,
+            "text": "Backslash end Second line Let's write another f.right Using Java"
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 2045.58,
+            "end": 2055.58,
+            "text": "Backslash end I Like Programming In"
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 2055.58,
+            "end": 2065.58,
+            "text": "Java Let's do this. Let's try to run our code. And practice.txt is created And all the text is in it"
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 2065.58,
+            "end": 2075.58,
+            "text": "As we said to create. Let's move to the next question. Write a function that replaces replaces"
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 2075.58,
+            "end": 2085.58,
+            "text": "all occurrences of Java with python. Where Java will come with J What we have to do In the same file"
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 2085.58,
+            "end": 2095.58,
+            "text": "In this practice.txt Wherever Java is coming We should get python. First of all we have to pause and think about the functions"
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 2095.58,
+            "end": 2105.58,
+            "text": "already inbuilt in some other data type which can help us to achieve our work. So what is the basic framework for us."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 2105.58,
+            "end": 2115.58,
+            "text": "First of all we have to replace all occurrences. So can I say we have to read some data first. Read means we have to know what is written in the file."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 2115.58,
+            "end": 2125.58,
+            "text": "After that we will overwrite the data in the file. That is already existing data First we will read it and then we will take out the data."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 2125.58,
+            "end": 2135.58,
+            "text": "Then we will do changes in the data. And then with the new changes we will overwrite the data in the file. So first of all what we can do is"
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 2135.58,
+            "end": 2145.58,
+            "text": "we can open the file in read mode. Now we will take a data variable in which we will read all the data in the file. Now I have to change"
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 2145.58,
+            "end": 2155.58,
+            "text": "the data. To change the data we will get the full data. If I have to replace Java with python."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 2155.58,
+            "end": 2165.58,
+            "text": "Because the data is a string. We have a replace method So we can simply write data.replace We want to replace Java"
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 2165.58,
+            "end": 2175.58,
+            "text": "with python. And then we can print it. The new data we are not leaving it. We will return the new data."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 2175.58,
+            "end": 2185.58,
+            "text": "So what we want here New data This is my new data. And we will print the new data. We saved it."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 2185.58,
+            "end": 2195.58,
+            "text": "We have the new data in which we have written the Java in python. Now with this data we have to overwrite the file. We will open the file."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 2197.58,
+            "end": 2207.58,
+            "text": "We will open it in write mode. And we will write the file with the new data. Let's save it. Let's run it."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 2207.58,
+            "end": 2217.58,
+            "text": "Now we will open the file. So wherever we went, now we have python print. So in this way we can overwrite the data in any file."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 2217.58,
+            "end": 2227.58,
+            "text": "Let's move to the next question. Search if the word learning exists in the file or not. We have to check if the word exists in the file"
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 2227.58,
+            "end": 2237.58,
+            "text": "or not. We already know that the word learning exists in the file. How to find out from the code. To solve this, what we will do is"
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 2237.58,
+            "end": 2247.58,
+            "text": "we will open the file. Practice.dxt in read mode. And first of all we will get the data."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 2247.58,
+            "end": 2257.58,
+            "text": "F. As ff.read And then if we call data.find"
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 2257.58,
+            "end": 2267.58,
+            "text": "because find is our method which we can find in any substring. So in find when we will find the word or in fact if I write"
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 2267.58,
+            "end": 2279.58,
+            "text": "word is equal to learning we want to find this word. So in find if we want to find this word we have"
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 2283.58,
+            "end": 2293.58,
+            "text": "minus 1. So we got a valid index. So in that case we will print found. And in other cases we can print"
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 2293.58,
+            "end": 2303.58,
+            "text": "not found. Let's save it and run it. Because learning exists in the file so for that we will print found. And if I search"
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 2303.58,
+            "end": 2313.58,
+            "text": "learning or x learning if I search something we will get not found. Last question and this question can be"
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 2313.58,
+            "end": 2323.58,
+            "text": "converted into function. Like in last question function was written but I wrote it directly. So to convert any normal thing into function we have to do nothing."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 2323.58,
+            "end": 2333.58,
+            "text": "We will just write def. Like this whole process check for word. So check for word. I gave it the name."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 2333.58,
+            "end": 2343.58,
+            "text": "And then we will write all the code into our function. So here we will write this code with proper indentation in our function."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 2343.58,
+            "end": 2355.58,
+            "text": "And whenever we need it we can call our check for word. This is very simple. Next question comes to you. Next question we are asking is write a function"
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 2355.58,
+            "end": 2365.58,
+            "text": "to find in which line of the file does the word learning occur first. So we have to tell the exact line in which line"
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 2365.58,
+            "end": 2375.58,
+            "text": "the word comes first. We have to write a function for that. So to check to find we have written another function."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 2375.58,
+            "end": 2385.58,
+            "text": "Let's say check for line. Whenever we want to check line wise the first thing that should be in mind is read line."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 2385.58,
+            "end": 2395.58,
+            "text": "This time we will not read the whole thing. We will read line by line. My word is going to be learning. After that we will open our file as"
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 2395.58,
+            "end": 2405.58,
+            "text": "usual. And now we will start reading the data line by line. How do we know that when we are reading the data line by line"
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 2405.58,
+            "end": 2415.58,
+            "text": "we have reached the last. We have to read the file completely until our word comes. So for that we can do one thing. What we will do is initialize the data"
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 2415.58,
+            "end": 2425.58,
+            "text": "with some value. This data is true in the beginning. And we will run our code until we put a loop."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 2425.58,
+            "end": 2435.58,
+            "text": "Until our data value is true and equal. Until then we will read the row line. I have to read the line F."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 2435.58,
+            "end": 2445.58,
+            "text": "And we will do the data value update. So this one line is read. After that we performed some operations. Then we will see if the data is true."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 2445.58,
+            "end": 2455.58,
+            "text": "We will read the next line again. And while data basically means that until there is a valid value in the data True is a valid value and the other"
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 2455.58,
+            "end": 2465.58,
+            "text": "values are also valid values. If our read line returns empty string that is not valid value. In that case we will run the loop. So we have read the first line."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 2465.58,
+            "end": 2475.58,
+            "text": "We can track the line number. My line number initially is 1. We have read the line. We will check"
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 2475.58,
+            "end": 2485.58,
+            "text": "whether the word exists in our line. So there is one way that I will try to find the word in the data. What does my word exist?"
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 2485.58,
+            "end": 2495.58,
+            "text": "By the way, there is another way to write it. I write if word in data. This means that basically Python automatically is checking whether the word exists in the string."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 2495.58,
+            "end": 2505.58,
+            "text": "So here we have written the whole code. We can convert it to this. Word in data. So the whole code will work as it is."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 2505.58,
+            "end": 2515.58,
+            "text": "In fact, this is a better syntax of writing things. Now let's come here. Check for line. If word exists in the data then what to do in that case?"
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 2515.58,
+            "end": 2525.58,
+            "text": "Print your line number. And if it doesn't do it, then it doesn't do it. We will update our line number by 1. So I hope we understand this logic."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 2525.58,
+            "end": 2535.58,
+            "text": "Let's see it once. Our normal function is check for line. We have to search this word. The value of data is true in the beginning."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 2535.58,
+            "end": 2545.58,
+            "text": "True is because we want to run the loop for the starting iteration. So if we initialize it with empty string then the loop won't run. The value of line number is 1."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 2545.58,
+            "end": 2555.58,
+            "text": "Then we will open our file and start reading. How will we read line by line? We will read it till the data is empty. We read the first line."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 2555.58,
+            "end": 2565.58,
+            "text": "Did you see that our word exists in it? If it does it, then print the line. And after printing it, we can return it directly from here. If it doesn't do it, then it's okay. Update the line and go to the next line."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 2565.58,
+            "end": 2575.58,
+            "text": "We went to the next line and read the line again. We checked again. If it doesn't do it, then update it again. Go to the next line. And at the end,"
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 2575.58,
+            "end": 2585.58,
+            "text": "if that word doesn't exist then I have to return it to minus 1. So at the end, if word doesn't exist then if our word doesn't exist then finally"
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 2585.58,
+            "end": 2595.58,
+            "text": "I will return it to minus 1. And if it does exist then the control is already returned. We have come out of this function from the first program."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 2595.58,
+            "end": 2605.58,
+            "text": "Let's call this function check for line. It will tell us the exact line number. This is our line number 1. This is our line number 2. We will search."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 2605.58,
+            "end": 2615.58,
+            "text": "The word exists in line number 2. If I want to search for something else for example, I want to search for programming. Let's program this word. This line number"
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 2615.58,
+            "end": 2625.58,
+            "text": "exists in line number 4. And if I search word PYQ then it doesn't exist. In that case, what am I getting? I am getting nothing."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 2625.58,
+            "end": 2635.58,
+            "text": "Because I have returned this minus 1. But I didn't print it. But I will definitely get minus 1."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 2635.58,
+            "end": 2645.58,
+            "text": "If I print it, then here is our minus 1. So in this way, we can combine these two and start performing some complex operations."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 2645.58,
+            "end": 2655.58,
+            "text": "Let's move towards the last question. From a file containing numbers separated by comma. For example, we have numbers 1, 2,"
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 2655.58,
+            "end": 2665.58,
+            "text": "45, 55, 86, 76. We will have some numbers separated by comma in a file."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 2665.58,
+            "end": 2675.58,
+            "text": "We have to print all the numbers. So this time, we are not going to print the numbers. First, let's read the data from the file."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 2675.58,
+            "end": 2685.58,
+            "text": "In practice.txt we can overwrite the entire data. Let's overwrite this data."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 2685.58,
+            "end": 2695.58,
+            "text": "1, 2, 76, 84, 90, 101. This is how we have written the data."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 2695.58,
+            "end": 2705.58,
+            "text": "We already know that we have given the data by separating the comma from the file. First, let's open the file and read the data. With"
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 2705.58,
+            "end": 2717.58,
+            "text": "openpractice.txt We are going to open it in read mode. And let's fetch our data f.read"
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 2719.58,
+            "end": 2729.58,
+            "text": "as f and print our data. We have got our proper data. The problem is this data is in the full string format."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 2729.58,
+            "end": 2739.58,
+            "text": "But we have to remove the individual number for numbers, odd or even. And we have to convert it into integer value."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 2739.58,
+            "end": 2749.58,
+            "text": "So the first thing we have to do is remove individual numbers. We have to remove individual numbers. Then we have to parse those individual numbers."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 2749.58,
+            "end": 2759.58,
+            "text": "Pars means we have to convert them. Or cast them. We have to type into integer value."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 2759.58,
+            "end": 2769.58,
+            "text": "Parsing is also the correct word. Casting is also the correct word. First remove the individual numbers. We will remove 1, 2, 45. These are substrings."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 2769.58,
+            "end": 2779.58,
+            "text": "Substring is substring. And then we have to cast the data to integer values. So in Python, if we have to"
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 2779.58,
+            "end": 2789.58,
+            "text": "split the list i.e. break it, then we have an already existing method called the split method."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 2789.58,
+            "end": 2799.58,
+            "text": "And if we are ever confused that does any method exist or not, we can simply search it. We can use this split method. Or in fact, I will show you"
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 2799.58,
+            "end": 2809.58,
+            "text": "without doing split method. Without doing split method, I have to remove the individual numbers from the string. And then how long will it take?"
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 2809.58,
+            "end": 2819.58,
+            "text": "The first part of the comma is a complete number. This is a complete number. And logically, if I don't write a loop without doing split method, then it can be done."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 2819.58,
+            "end": 2829.58,
+            "text": "For example, I can take some number and initialize the number with an empty string. And I will run my loop till then."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 2829.58,
+            "end": 2839.58,
+            "text": "I will run the loop till the data is not running and the value of i will keep on updating. Now we will check"
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 2839.58,
+            "end": 2849.58,
+            "text": "if my current item is i. The point where the comma is equal to that point, I have got a complete number."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 2849.58,
+            "end": 2859.58,
+            "text": "I have to assume. As soon as I reached the comma, I have got a complete number. Now I can check for this number. In fact, I can print my number here."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 2859.58,
+            "end": 2869.58,
+            "text": "And if we are not on the comma, then what should we do? We should do the number plus equal to the current character."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 2869.58,
+            "end": 2879.58,
+            "text": "If we are not on the comma then add 4 first, then add 5 in the number 4. Keep adding numbers until we reach the comma. So until we reach the comma,"
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 2879.58,
+            "end": 2889.58,
+            "text": "we have to do this. And as soon as we reach the comma, print your number and initialize the number again with an empty string. Let me show you how this is going to print"
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 2889.58,
+            "end": 2899.58,
+            "text": "all of my numbers. This is the basic code. Run, all of my numbers are printed. The problem is that they are printed with space. But I want to remove that space."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 2899.58,
+            "end": 2909.58,
+            "text": "But the basic gist we got is that one print, two print, 76 print, 84 print. Now you can type these numbers. For example, I can convert"
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 2909.58,
+            "end": 2919.58,
+            "text": "all of them to integer value before printing. I will convert them in integer, so that the space will be filled. Run, first one came, two came, 76 came, 84 came, 90 came."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 2919.58,
+            "end": 2929.58,
+            "text": "Now check if this is odd or even. This is the basic method. The complete, scratch logical method of doing things. But there will be a better method than this."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 2929.58,
+            "end": 2939.58,
+            "text": "We will make a list of numbers. In which I will write data.split. I have to split my numbers using this separator, the comma separator. And then I can print my list."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 2939.58,
+            "end": 2949.58,
+            "text": "This is my numbers list. Done. So all these numbers, what is comma? It was separator. I have taken out all my strings."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 2949.58,
+            "end": 2961.58,
+            "text": "Now, this individual string, you can type it in int. We can put a loop on this num. For value in nums. What will I do? I will check"
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 2961.58,
+            "end": 2971.58,
+            "text": "if my int of value modulo 2 equals"
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 2971.58,
+            "end": 2981.58,
+            "text": "0. In that case, I have to add my count. I will take the variable. In fact, I will take it here. Count is equal"
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 2981.58,
+            "end": 2991.58,
+            "text": "right now. Equal to 0. And here my count will be plus equal to 1. And in the last, we will print it."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 2991.58,
+            "end": 3001.58,
+            "text": "We will print our count. I have taken the count. I have read the data. Then I have split the data. Using my comma separator, I have created"
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 3001.58,
+            "end": 3011.58,
+            "text": "a list of numbers. After that, I have checked. I have run the loop and I have typecasted my values. What is my number?"
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 3011.58,
+            "end": 3021.58,
+            "text": "I have printed my count. Let's save it. Total number of even numbers is equal to 4. I have not checked. 2 is even."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 3021.58,
+            "end": 3031.58,
+            "text": "76 is even. 84 is even. 90 is even. So my count is completely alright. This way, we can use our file I.O."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 3031.58,
+            "end": 3041.58,
+            "text": "and operations on our files. I hope we have enjoyed this chapter. We will level up more interesting concepts in our next chapter."
+        },
+        {
+            "number": "7",
+            "title": "File Input⧸Output in Python",
+            "start": 3041.58,
+            "end": 3049.58,
+            "text": "In which we will cover the object orientation. That is all for today. See you in the next lecture. Till then keep learning and keep practicing."
+        }
+    ],
+    "text": " Hi, Coders and welcome to the complete Python series in which we will cover chapter 7 in which we will read about the file I.O. On the files, how can we perform different operations? How can we write data in a file? How can we read and delete the file? We will cover all the things today. We will not only read the concepts, but actually perform all the operations. Along with that, we will solve different practice questions. If we want to read any other topic related to Python, then all the topics are available on this playlist on this channel. We can also go and see them. And also, the links to download the slides and the class notes will be in the description box below. So, let's start with chapter 7. Hi, everyone. Now, we are going to start with chapter 7 in which we will read about the file I.O. What does file I.O. mean? I.O. means input and output. In the terms of files, we all know that we have made Python files. We have seen different types of files. The pictures we take, the videos we have, are stored in any system in the entire file format. In the file, I.O. means to output input means we are opening a file, reading some data, updating some data, writing some new data, closing the file, deleting it. Different operations like this come in the category of file I.O. So, basically, Python as a language can be used to perform operations on a file. For example, if a file is saved on your computer, we can perform operations on it. We can write the lines in our code like this. We can write the code like this. The file that will access it, can read the data, write it, update it, append the data in it, and more different operations. Before starting the file I.O., there are some basic things that we might have read in the school. If we have a little background in computer science, then we will have a basic idea. This is a theoretical part. The maximum students must have heard of RAM, Random Access Memory. RAM is the memory of our computer that is fast in execution. When a code runs, all the variables that it creates are created in RAM. But the bad thing about RAM is that RAM is volatile. Volatile means that once we have closed our system, the data that is in RAM refreshes. That data will not be permanently stored forever. But if we want to store information permanently in our system, for example, whenever we open the system, we can see that information. We do not store that information in RAM. We can store that information in our files. There are different ways, but we can store it in the file. For example, we have written a Python code. Now we do not want to close our laptop and restart the system. Then our code will disappear completely. What we do is, we store the entire Python code in the files. Similarly, if we downloaded a photo in our system, then we do not want to restart our system as soon as it is closed. So our photo will disappear, our videos will disappear. So those videos and photos are not stored permanently in RAM. If we want to store them permanently and persist them, then what do we do? We store them in the form of files. For example, if we have a photo, it can be a PNG file, it can be a JPEG file, it can be a video, it can be a file in .mov format, it can be in .mp4 format. It can be a Python file, it can be in .py, it can be in .txt. So there are different files that are stored in our system. If these files are in our system, then it is stored in ssd, otherwise it is in sdd, then it is stored in ssd. So if we talk about files, Python can be used to perform different operations on a file. And these different operations, which are the major operations that we can read and write in the file, and rewrite the data in the file. These are the major operations that form the file I.O. in Python. So if we talk in a very simple language, then we will learn in this chapter how can we open a file, how can we read data from a file, how can we write some data to a file, how can we close a file, and at the end how can we delete a file. Now let's see the types of files. All the files can be divided into two types. One is our text files. Text files are the files in which the data is stored in the form of characters. For example, our .txt file, we get to see characters in this text file. Our .docs file, which we can make our word document on Microsoft Docs. That is what? That is a text file. .log, which is stored in our system's logs in this type of files, so what is this? This is also our text file. And our non-text files, which do not have a data stored in the form of characters, but can be stored in some other format, we call them binary files. For example, .mp4, which is our video files, which are also binary files, .mov, which is also our video file extension, .png, .jpeg, all these files are our binary files. So we can manipulate both types of files, access them, perform IO, using Python. Now here is one additional thing, that even if we access text files and binary files from Python code, they are different. But at the end, when all these files are stored in memory, they are all bits. That is, all the data, whether it is the binary file or the text file, go into the system, store them in the form of 0 and 1. So we can remember this thing, all the files are bits at the end, the bits have the data of 0 and 1. But we divide them into text and binary files on the upper surface level. Now let's talk about the basic operations on the file. Generally, the simplest operation we can perform on a file is, that we have opened a file. For example, you will have a lot of books, you will have a lot of academic files in the books. So how do we use the actual physical file day to day? First of all, we bring the file and open the file. After opening the file, we can read some data from it, write some data, then we close the etn file. So these are the same operations that we replicate in Python. So before reading any file, we have to open the file before writing anything. For that, we have existing built-in functions in Python. We simply write our open function, we have to pass two parameters in the open. First of all, we send our file's name in double quotes or single quotes. For example, my file's name is sample.txt. So what do I have to do? I have to write my entire file's name here. After that, we send our mode. Mode means, what format is going to be our file's IO performance? Are we going to read or write this file? Are we going to do data-append? What are we actually going to do by opening this file? So we have to tell that thing from the beginning. And if we don't tell anything, then by default, Python assumes that we are going to read the file. So if you are opening in read mode and you are trying to write in any file, then that thing will not be possible. We will have an error. Now there are a lot of modes. We will focus on the simple mode right now, which is my read mode. So this open method can assume on a surface level that we are returning our file. For example, if we try to open any file. For example, what we have done here is, we have made a folder. In the folder, we already have our Python file, Lecture7.py. In this, let's suppose I create another text file. I call the text file demo.txt. In this demo.txt, I have written some data. I, anything can be data. I am learning. Here, I have written Python from my college. In this way, I have written something. So this is my demo.txt file. Now to open this file, I can use my open method. And when we scroll on this, we will see the definition of this method. See, this is the entire Python syntax. Def, then the name of the method is open. There are different parameters in it, which we can take. But for now, our two main parameters are the description of our file or the path. And second thing is our mode. And it is written that if there is no other parameter, then this is the default parameter. We will open our file in read mode. So this is how our file opens. And what does return do? Returns text.io wrapper. We will not go into detail of this. We will assume that our file will return to us. In this way, it is written here, opens a file and returns a stream. Stream means stream of character. Stream of data comes back to us. So here, first thing is we will pass the name of our file. If I had not passed demo.txt in the same folder, then we would have to send the complete path of the file. Now in the same folder, where there is a Python file, where we are trying to access the txt, there is our txt file. So we can write demo.txt directly here. But if this is not the same folder, it is stored somewhere else in another folder, then we will have to pass the complete path of the file here. What is the complete path of any file? For example, if I copy the entire path of this file, then I will know where is demo.txt in the users, in Amandar Darwal, in the desktop, in Shradha, demo.txt. This is where our file is stored. Alright, here comes the name of our file. And now let's pass our mode. We have different modes. By the way, we will cover all the modes that are not used frequently. This is in our read mode, so we have typed R. And we have our file. So in this way, we open a file. Now after opening it, we can perform operations on it. The most basic operation is to read. So we can simply write f.read. And what will it return to us? It will return the entire data of our file in the form of a string. For example, I can write data is equal to f.read. Let's zoom in a little. And I can print my entire data along with the type of my data. Let's save it and let's run it. So here, my entire file data has come to me. What is the data I am learning, Python from my college? And its type has also come, which is string. And at the end, before executing the program, a good programmer's sign would be that whenever we are opening a file, we have to close it. Not to close it, we have started with f.close. Like we close real life files. What will happen if it remains open? Basically, there is a risk that any and every one of you can access your file. Any and every one of you can change that data. So what you have to do as a responsible programmer is to close this file. We have saved it and this is an entire program consisting of file I.O in Python. So here we have seen how we can write the name of the file. And along with that, we have different options available in the modes. For example, R option is open for reading. This is our default option. W is for writing. Truncating the file first. Truncating the file first means whenever we are trying to write in a file, then right means overwrite. That is, the entire file's data will be deleted. Then what you want to write, it will be written in the file. We will read this in detail. X is used to create a new file and open it for writing. A means here is append. We will see this later. It is used to open for writing and appending to the end of the file if it exists. If there is a file, then there is a data in it, ABC. We want to delete it and add new data, XYZ. So we use right for that. And if after ABC, we want to add new data, then we use append. Append means to add something at the end. We have two other formats. One is binary mode. If we are trying to open a binary file, then we will write B. If we are trying to open a text file, then we will write T. We didn't write T here. We didn't write T here. If we write T, then we can combine two modes. For combining R and T, we write RT. But text files are open by default. If you want to do a binary file, then you will have to write R. We will have to write W and A here. But if we are opening text files, then we will not have any problem if we remove T. What will happen here? The same code will work here without any error. So T is implicit. Already T is used by default in text mode. We have plus. Open the disk file for updating. That is reading and writing. If we want to do the same operation, then we can use plus. We can use plus. Suppose R means to read the file. So R plus means to read and write in this file. If we write W, then W means to write. W plus means to write in this file and read it. If we write A, then A means to append. A plus means to append the data in this file and read it. We will use plus in this way. But we will see it later. For now, we have learnt one mode which is R mode. Which is used for reading. It is the default mode. And we have the text mode as well. It is the default mode. Next, we want to read the reading in more detail. First of all, we have seen that to read the data from the file, we can use the read method. In this way. We can pass another parameter in the read method. For example, if I want to read a particular set of characters. We can pass it as a parameter. For example, I have passed an argument here that I have to read 5 letters. 5 letters means I, space, am, another space. Let's save it and run it. So we will have only I am printed. Nothing else will be printed. So we can specify the number of characters. We can also read the file line by line. To read line by line, we write read line. This second method which reads a file one line at a time. To use this, we can write line 1 here. And here we will write read line. Let's pass the argument. And we will print our line 1. We saved it. Run it. So we have got I am learning. The whole line came. The whole line was in our demo.txt. Whenever we are printing line 1, we get an extra space. Because in the file, when the data is I am learning and the next line is the data, then there is a character here, backslash n. Which brings the next line. The character which we can't see as such. But because of that, the next line comes. The character exists in this file. And because the character is read in line 1, then we have got a space for the next line. We can also read the second line. We will copy it. Here we read our first line. And now we will read our second line. So line 2 is done. We will save it. And let's re-execute. So our line 1 came. The next line character of the end came. And then our line 2 was displayed here. If we have already read any file here. Like I have written data is equal to f.read. And then I have printed the data. So in that case, when I look at my output. So my output, this will be a normal output print. And then when I will print line 1, I will get empty space. I will get empty space for line 2. This is coming because if we have read the data once. So to visualize it. For example, in my file, there is data abc. xyz. pyq. So here, let's suppose we have to read the data. So what we are doing is, as soon as we have read it. Our pointer. As soon as our cursor is there. As soon as we can imagine it is a cursor. So what does a cursor do? Each character has read it. Now that cursor has reached the last. As soon as we have executed the read, that cursor has reached the last. And now that cursor, when we try to read the line. What will it read? The character of the next line will read. Nothing will come in it. So if we print the entire data once. So basically if the data is read once. Then it has nothing to do with reading the next line. So that's why if we read it first. Then things come in the read line. It comes empty print. Also, when we are doing read line. If we remove this thing. And each and every one is doing read line. So how things are working. So first of all what does the cursor do? It reads one line and comes to the end. Then it reads the second line and comes to the end. Then it reads the third line and comes to the end. So in this way, we can read our file line by line. We can read our file. Until our file ends. If our file ends at one point. For example, we have read-lined it twice. After that, if we read-line it for the third time. Then it doesn't have any data to print. So what will happen in that case? In that case, an empty next line will be printed for us. What is this? This is an empty next line. Which will get printed if we don't have any more data in the file. So this is going to happen. So there is a difference between read and read. So we can read the whole data together. But be careful that it moves the cursor. So next time we won't be able to read-line from the start. For that, we will have to close the file again. We will have to reopen it. So that we can read it line by line again. The next thing we are going to read is That is writing to a file. We have just seen how we can access the data stored in the file. Now we are going to write on the file. Before writing, we will have to open the file. And there are two ways to write. One is that we write our file in the right mode. In a different way, we open our file in A mode. When we open the file in W mode, This is my right mode. I will call the right over right mode. And A is our append mode. Append means add at the end. I will also write add at the end. So these are both different cases. Let's suppose we have opened the same file. We will have to write that we have to write The right over right mode. And we will also write add at the end. Add at the end. Let's suppose we opened the same file and now we open it in the right mode. Now by writing F.right, I can write any data in this file. I have to replace the entire data of this file. So I write here, let's suppose I want to write I am or I want to learn JavaScript tomorrow. I have written something like this. 1, 2, 3, some numbers are also written. And let's save it and close it. Now as soon as I run this code, Similarly, now we will go to demo.txt. So our whole data is overrided. And if we want to add things in this data, So I have to open the same file in the A mode. And now this data will be added, That is, it will be appended in that old data. So let's change some changes here. Let's change it and write. And then I will move to react.js. Let's save it and execute. So what happened? This new data is added in my file. Why did this data be added in the same line? Because we didn't give any next line character. So if I want to move my data in the next line, So I have to write backslash and give a next line character. For example, I want to add more data. After that, let's save node.js and run it. So now this data will come with a next line character. That is, it will come in this next line and come in demo.txt. So in this way, we can overwrite the data in any file. Or we can append the data. Another interesting thing, Whenever we open any file in A or W mode, And that file doesn't exist, Python automatically creates that file for us. For example, F is equal to open. I want to open this file called sample.txt. And I am opening it in the right mode. And then I didn't do anything. Then I closed it. Now in my folder, no such file exists. But as soon as I run this code, It will come here as sample.txt file. Same thing. Let's delete it once. Same thing. If I open the file in append mode, Then it will exist. Let's run it. What is this? Sample.txt file. We have created it. If we don't have any file, We can create it in this way. If we want to create and write in a file. Now let's suppose we want to combine our modes. I mean, I have to do reading and writing simultaneously. There are many different ways to do this. There is this one particular article, I will give the link of which. It is very interesting. They explained this in the stack overflow. 14 years ago, they explained that What are the differences between different modes? So we will get many ideas from this. A helpful, proper flowchart you can see. And different meanings are explained. If you want to read in more detail. We write some ways to combine modes. If we open in R mode, then we are reading. Writing in W, and then in A. This is the simplest thing. For example, if I show some data in demo.txt, This is a sample file. We have written the data in this way. If we open in R plus mode, What will it do? It will open it for reading and writing. In this case, our file does not truncate. Truncating the file means that the data is deleted. So in R plus mode, the file does not truncate. In W plus mode, the file truncates. There are some differences. We will do one by one. R plus is for reading and writing. The stream is positioned at the beginning of the file. This is basically like a pointer. It is positioned at the beginning of the file. For example, in demo.txt, This is a sample file. We have written this much. Let's open it once. We will understand it once we see it while working. Alright. Here we will write R plus. We opened in read mode. This is our sample file. Then what I did? I wrote in F, ABC. Then I closed the file. I did this much. Let's save it and run. What happened after running? In the file, ABC came first. ABC overrided the files. Because in R plus mode, things are overrided. But where did it overwrite? In the starting of the file. First, it was T-H-I-S. Now T-H-I is replaced with ABC. So, from the beginning, things should be overrided. So, what we do? We can open in R plus mode. I hope you understood what R plus means. In our stream, our pointer comes in the beginning. And then we can use it to write. Then we can read. If I want to print R, print F dot read. The entire file will be read. For example, ABC overrided ABC. Here we have ABC. Now where is pointer? Now pointer is here. It comes on S. All the things that are written in reading and writing. So, it is happening through pointer. If pointer writes ABC, it comes on S. And where pointer will come, it will start reading from there. So, when we call read, it will start printing from S. So, I hope we understand the concept of pointer in stream. So, this is R plus mode. We have already seen W plus. What is W plus mode? It is open for reading and writing. But in this case, our file will be truncated. Truncating means it will be completely wiped out. Like if I open this file in W plus. And then I want to read it. Let's comment it out. I opened this file in W plus mode and I want to read it. So, what will be printed? Nothing will be printed. Because what is the file? It is open in truncated mode. So, it will be completely wiped out. After that, we can write. For example, then I can write F dot write ABC. In this case, it is completely printed. But in the file, ABC is now written. Similarly, we have A plus mode which is append plus. These are the main modes. We don't need to go into detail. In this case, the stream is positioned at the end of the file. If I open it in A plus mode and then I tried to read it first, then nothing will be printed in that case. Because at the end, it places my pointer. We will save it. If we read it, nothing will be printed. And then ABC will be written in the file. But it will not be overwrite. It will be append. If we read it, nothing will be printed. In demo dot txt, we have written ABC again. So, we opened the file in append plus, read and append mode. So, let's summarize all the things. Our modes will be the most confusing. So, let's summarize them once. The important ones. Simple modes, read, write, append. This was the simplest to understand. We will understand this. Now, we have read three more. The first one we have read is read plus. What is read plus? We can read. And we can overwrite the existing data. And where is the pointer? The pointer is in start. The pointer starts from the starting. The second one is in write plus mode. What is in write plus mode? We can read and overwrite. In this case, no truncate. What happened in this case? Truncate is done. But in this case, if the file's data is deleted, then the pointer is in the start and end mode. It doesn't matter because the file is complete. The third mode is A plus mode. Read and append mode. And when it is in append mode, the pointer is in end mode. And in this mode, no truncate. The file's data is not deleted. So, these are the major differences. R plus, W plus, A plus. All the curves are the same. Read and write. We have to see where the pointer is. Who is truncating? We have to remember that. You can note down this thing in your notes. This is important. We will see how we can implement it later. So, these are our modes. And one more last thing we are going to cover. That is my with syntax. In files, we have to close and open the file. The entire process has to be written in a better syntax. Which is using the with keyword. First, we write with. Then, we write the entire function of the open. And then, we write asf. We have opened the file. Now, we will call the entire stream as f. And then, we can perform operations on f. Like we are writing things in a normal function. There are some syntaxes here. It's like a loop or a conditional statement. This is not it. The part that is parted in it, The part that is parted in it, It will depend on this stream. Like this same code. Like a normal code. We have to open the file. We have to read the data. And then, we have to close it. If I have to do this much code. This is a sample file. By our college. We have written something like this in the file. Now, we have to open this file. We have to read the data. So, we will write with syntax. Then, we will write with. The name of the file is demo.txt. We will open it in which mode. Let's open it in read mode. Asf. The thing that will come from here. As means, aliases. Aliases means Like, Clark Kent is an alias for Superman. Superman is an alias for Clark Kent. We have called it Clark Kent. We have called it Superman. Like, if you have seen Avengers. We have called it Tony Stark. We have called it Iron Man. Same thing is happening. We are calling it Shaktimaan. We are giving the same thing as another name. We call it alias in English. For the alias, that is f. Then, we will put colon. Now, we can work on f. This thing will return the value. We are giving it an alias. We are giving the name f. Now, I can read the data from f. And I can print this data. Let's store it in some variable. And let's try to print this data. Let's save it and run. So, our data is printed on our computer. Now, you can point out one thing. Ma'am, you said that it is a good programmer. We have to close the f dot. But, when we use width syntax. Compulsory is not there. Because, automatically, width automatically closes the file. So, whenever we use width, we don't have to think about closing the file. Because, that thing will automatically be done for us. If I want to open this file in the right. I can open it like this. Open the file demo.txt in right mode. And we will overwrite the data as f.f. right. New data. Let's save it. And let's execute. So, we have the old data. And now, we have stored the new data. So, we can use width syntax whenever we are working with our files. Now, the last operation which we are going to see. This is deleting a file. As such, we can't delete a file by deleting f dot. For that, we have to use a module. What are modules in Python? Modules are like a code library. Modules are basically someone else has written a Python file for us. There are some useful functions in it. To use any module we have to import it. We have a OS name module in Python. OS stands for Operating System. And what we do with this? First, we import it in our code and in our file. So, we write our import keyword. And then, our module name. We can import any module. There are some modules which are pre-installed in Python. For example, if I import OS and save it if I try to run my program there will be no issue. My code will run. There is no error at all. But there are many modules which are not pre-installed. For example, if I try to write tensorflow and save it if I try to run, we will have no module named tensorflow. Tenserflow is basically a module which we use when we do machine learning and use it while building neural networks. But what is it now? It is not installed yet. We have to install it from the internet. If we want to use modules like this which are not pre-installed in Python then we have to write PIP. PIP is package installer for Python. PIP install. And then, our module name. If you want to install tensorflow in your system then you have to write tensorflow and in the same way it can be done in your system depending upon which version you have installed. What is the way of installing it? It can be done if you don't use PIP command. Then you have to write PIP3 install tensorflow I am not able to write this because I am recording on the system this is not my own system. So basically, what can we do with this line? We can install any external module. Not just tensorflow. If you want to use any extra module. But here we are going to use our OS module which is pre-installed. So I will just write import OS. And now we can use any OS function. So in OS there is a function written from before. Someone else has written it. Remove function in which we can pass the name of our file. So that file will automatically be deleted for us. For example, if I write OS.remove and I want to remove this sample.txt file I will write sample.txt Let's save it. So what will happen? It is cross on sample.txt. It is deleted now. So this file is deleted. We can delete any file if we want. So this was all about file I.O. How we can open and perform operations. We can delete those files. Now we are going to solve some practice questions related to file I.O. So let's go to our practice questions. The first practice question is Create a new file practice.txt using python Add the following data in it. And we have to keep the format of this data in the same way. Where the data is coming in the next line. We have to come to the next line. So let's try to create this file. What can we do to do this? We can open it in the right mode. As soon as we open any file in the right mode it will be automatically created. So with open Let's cross this one. We want to create a file practice.txt name. In right mode. And in this as f in f.right Let's write the first line. Hi everyone Backslash n We are learning File I. Slash O Backslash end Second line Let's write another f.right Using Java Backslash end I Like Programming In Java Let's do this. Let's try to run our code. And practice.txt is created And all the text is in it As we said to create. Let's move to the next question. Write a function that replaces replaces all occurrences of Java with python. Where Java will come with J What we have to do In the same file In this practice.txt Wherever Java is coming We should get python. First of all we have to pause and think about the functions already inbuilt in some other data type which can help us to achieve our work. So what is the basic framework for us. First of all we have to replace all occurrences. So can I say we have to read some data first. Read means we have to know what is written in the file. After that we will overwrite the data in the file. That is already existing data First we will read it and then we will take out the data. Then we will do changes in the data. And then with the new changes we will overwrite the data in the file. So first of all what we can do is we can open the file in read mode. Now we will take a data variable in which we will read all the data in the file. Now I have to change the data. To change the data we will get the full data. If I have to replace Java with python. Because the data is a string. We have a replace method So we can simply write data.replace We want to replace Java with python. And then we can print it. The new data we are not leaving it. We will return the new data. So what we want here New data This is my new data. And we will print the new data. We saved it. We have the new data in which we have written the Java in python. Now with this data we have to overwrite the file. We will open the file. We will open it in write mode. And we will write the file with the new data. Let's save it. Let's run it. Now we will open the file. So wherever we went, now we have python print. So in this way we can overwrite the data in any file. Let's move to the next question. Search if the word learning exists in the file or not. We have to check if the word exists in the file or not. We already know that the word learning exists in the file. How to find out from the code. To solve this, what we will do is we will open the file. Practice.dxt in read mode. And first of all we will get the data. F. As ff.read And then if we call data.find because find is our method which we can find in any substring. So in find when we will find the word or in fact if I write word is equal to learning we want to find this word. So in find if we want to find this word we have minus 1. So we got a valid index. So in that case we will print found. And in other cases we can print not found. Let's save it and run it. Because learning exists in the file so for that we will print found. And if I search learning or x learning if I search something we will get not found. Last question and this question can be converted into function. Like in last question function was written but I wrote it directly. So to convert any normal thing into function we have to do nothing. We will just write def. Like this whole process check for word. So check for word. I gave it the name. And then we will write all the code into our function. So here we will write this code with proper indentation in our function. And whenever we need it we can call our check for word. This is very simple. Next question comes to you. Next question we are asking is write a function to find in which line of the file does the word learning occur first. So we have to tell the exact line in which line the word comes first. We have to write a function for that. So to check to find we have written another function. Let's say check for line. Whenever we want to check line wise the first thing that should be in mind is read line. This time we will not read the whole thing. We will read line by line. My word is going to be learning. After that we will open our file as usual. And now we will start reading the data line by line. How do we know that when we are reading the data line by line we have reached the last. We have to read the file completely until our word comes. So for that we can do one thing. What we will do is initialize the data with some value. This data is true in the beginning. And we will run our code until we put a loop. Until our data value is true and equal. Until then we will read the row line. I have to read the line F. And we will do the data value update. So this one line is read. After that we performed some operations. Then we will see if the data is true. We will read the next line again. And while data basically means that until there is a valid value in the data True is a valid value and the other values are also valid values. If our read line returns empty string that is not valid value. In that case we will run the loop. So we have read the first line. We can track the line number. My line number initially is 1. We have read the line. We will check whether the word exists in our line. So there is one way that I will try to find the word in the data. What does my word exist? By the way, there is another way to write it. I write if word in data. This means that basically Python automatically is checking whether the word exists in the string. So here we have written the whole code. We can convert it to this. Word in data. So the whole code will work as it is. In fact, this is a better syntax of writing things. Now let's come here. Check for line. If word exists in the data then what to do in that case? Print your line number. And if it doesn't do it, then it doesn't do it. We will update our line number by 1. So I hope we understand this logic. Let's see it once. Our normal function is check for line. We have to search this word. The value of data is true in the beginning. True is because we want to run the loop for the starting iteration. So if we initialize it with empty string then the loop won't run. The value of line number is 1. Then we will open our file and start reading. How will we read line by line? We will read it till the data is empty. We read the first line. Did you see that our word exists in it? If it does it, then print the line. And after printing it, we can return it directly from here. If it doesn't do it, then it's okay. Update the line and go to the next line. We went to the next line and read the line again. We checked again. If it doesn't do it, then update it again. Go to the next line. And at the end, if that word doesn't exist then I have to return it to minus 1. So at the end, if word doesn't exist then if our word doesn't exist then finally I will return it to minus 1. And if it does exist then the control is already returned. We have come out of this function from the first program. Let's call this function check for line. It will tell us the exact line number. This is our line number 1. This is our line number 2. We will search. The word exists in line number 2. If I want to search for something else for example, I want to search for programming. Let's program this word. This line number exists in line number 4. And if I search word PYQ then it doesn't exist. In that case, what am I getting? I am getting nothing. Because I have returned this minus 1. But I didn't print it. But I will definitely get minus 1. If I print it, then here is our minus 1. So in this way, we can combine these two and start performing some complex operations. Let's move towards the last question. From a file containing numbers separated by comma. For example, we have numbers 1, 2, 45, 55, 86, 76. We will have some numbers separated by comma in a file. We have to print all the numbers. So this time, we are not going to print the numbers. First, let's read the data from the file. In practice.txt we can overwrite the entire data. Let's overwrite this data. 1, 2, 76, 84, 90, 101. This is how we have written the data. We already know that we have given the data by separating the comma from the file. First, let's open the file and read the data. With openpractice.txt We are going to open it in read mode. And let's fetch our data f.read as f and print our data. We have got our proper data. The problem is this data is in the full string format. But we have to remove the individual number for numbers, odd or even. And we have to convert it into integer value. So the first thing we have to do is remove individual numbers. We have to remove individual numbers. Then we have to parse those individual numbers. Pars means we have to convert them. Or cast them. We have to type into integer value. Parsing is also the correct word. Casting is also the correct word. First remove the individual numbers. We will remove 1, 2, 45. These are substrings. Substring is substring. And then we have to cast the data to integer values. So in Python, if we have to split the list i.e. break it, then we have an already existing method called the split method. And if we are ever confused that does any method exist or not, we can simply search it. We can use this split method. Or in fact, I will show you without doing split method. Without doing split method, I have to remove the individual numbers from the string. And then how long will it take? The first part of the comma is a complete number. This is a complete number. And logically, if I don't write a loop without doing split method, then it can be done. For example, I can take some number and initialize the number with an empty string. And I will run my loop till then. I will run the loop till the data is not running and the value of i will keep on updating. Now we will check if my current item is i. The point where the comma is equal to that point, I have got a complete number. I have to assume. As soon as I reached the comma, I have got a complete number. Now I can check for this number. In fact, I can print my number here. And if we are not on the comma, then what should we do? We should do the number plus equal to the current character. If we are not on the comma then add 4 first, then add 5 in the number 4. Keep adding numbers until we reach the comma. So until we reach the comma, we have to do this. And as soon as we reach the comma, print your number and initialize the number again with an empty string. Let me show you how this is going to print all of my numbers. This is the basic code. Run, all of my numbers are printed. The problem is that they are printed with space. But I want to remove that space. But the basic gist we got is that one print, two print, 76 print, 84 print. Now you can type these numbers. For example, I can convert all of them to integer value before printing. I will convert them in integer, so that the space will be filled. Run, first one came, two came, 76 came, 84 came, 90 came. Now check if this is odd or even. This is the basic method. The complete, scratch logical method of doing things. But there will be a better method than this. We will make a list of numbers. In which I will write data.split. I have to split my numbers using this separator, the comma separator. And then I can print my list. This is my numbers list. Done. So all these numbers, what is comma? It was separator. I have taken out all my strings. Now, this individual string, you can type it in int. We can put a loop on this num. For value in nums. What will I do? I will check if my int of value modulo 2 equals 0. In that case, I have to add my count. I will take the variable. In fact, I will take it here. Count is equal right now. Equal to 0. And here my count will be plus equal to 1. And in the last, we will print it. We will print our count. I have taken the count. I have read the data. Then I have split the data. Using my comma separator, I have created a list of numbers. After that, I have checked. I have run the loop and I have typecasted my values. What is my number? I have printed my count. Let's save it. Total number of even numbers is equal to 4. I have not checked. 2 is even. 76 is even. 84 is even. 90 is even. So my count is completely alright. This way, we can use our file I.O. and operations on our files. I hope we have enjoyed this chapter. We will level up more interesting concepts in our next chapter. In which we will cover the object orientation. That is all for today. See you in the next lecture. Till then keep learning and keep practicing."
+}
