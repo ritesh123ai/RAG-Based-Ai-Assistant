@@ -1,0 +1,156 @@
+RAG AI ASSISTANT - QUICK SETUP
+==============================
+
+1. INSTALL / CHECK
+------------------
+
+Git:
+    git --version
+
+Python:
+    python --version
+
+Ollama:
+    ollama --version
+
+Agar koi installed nahi hai:
+
+GIT:
+1. Open: https://git-scm.com/install/windows
+2. Windows x64 installer download karo.
+3. Default settings ke saath install karo.
+4. VS Code/Terminal restart karo.
+5. Check:
+       git --version
+
+PYTHON:
+1. Open: https://www.python.org/downloads/windows/
+2. Python 3.x download karo.
+3. Install karte time "Add Python to PATH" select karo.
+4. VS Code/Terminal restart karo.
+5. Check:
+       python --version
+
+OLLAMA:
+1. Open: https://ollama.com/download
+2. Windows version download karo.
+3. Install karo.
+4. VS Code/Terminal restart karo.
+5. Check:
+       ollama --version
+
+
+2. DOWNLOAD PROJECT FROM GITHUB
+-------------------------------
+
+Open VS Code Terminal:
+
+    cd /d D:\
+    git clone https://github.com/ritesh123ai/RAG-Based-Ai-Assistant.git
+    cd RAG-Based-Ai-Assistant
+
+
+3. AGAR GITHUB AVAILABLE NA HO
+------------------------------
+
+Agar GitHub se clone nahi kar sakte, approved source se complete
+project folder computer par copy karo.
+
+Phir project folder mein terminal open karo.
+
+
+4. INSTALL PYTHON PACKAGES
+---------------------------
+
+    python -m pip install -r requirements.txt
+
+Main packages:
+
+    numpy
+    pandas
+    scikit-learn
+    requests
+    joblib
+
+
+5. CHECK OLLAMA MODELS
+----------------------
+
+    ollama list
+
+Required:
+
+    llama3.2:latest
+    bge-m3:latest
+
+DeepSeek-R1 required nahi hai.
+
+
+6. AGAR OLLAMA MODEL MISSING HO
+--------------------------------
+
+Internet allowed ho to:
+
+    ollama pull llama3.2:latest
+    ollama pull bge-m3:latest
+
+Phir:
+
+    ollama list
+
+Agar model download allowed nahi hai, to model ko approved method
+se pehle computer par install karna hoga.
+
+
+7. CHECK PROJECT FILES
+----------------------
+
+Ye files/folder hone chahiye:
+
+    process_incoming.py
+    embeddings_float32.joblib
+    jsons\
+    requirements.txt
+
+Videos/audio current demo ke liye required nahi hain.
+
+
+8. RUN PROJECT
+--------------
+
+Project folder mein:
+
+    python process_incoming.py
+
+Screen par:
+
+    Ask a Question:
+
+
+
+
+9. AGAR COMPUTER SLOW HO
+------------------------
+
+    ollama ps
+
+Demo ke liye llama3.2 use karo.
+
+
+
+
+10. QUICK CHECKLIST
+-------------------
+
+[ ] Git installed
+[ ] Python installed
+[ ] Ollama installed
+[ ] Project downloaded/cloned
+[ ] Python packages installed
+[ ] llama3.2:latest available
+[ ] bge-m3:latest available
+[ ] embeddings_float32.joblib present
+[ ] jsons folder present
+[ ] process_incoming.py works
+
+
