@@ -12,6 +12,8 @@ Python:
 
 Ollama:
     ollama --version
+    if not present then
+    1st download ollama from website then go to terminal and put ollama pull llama3.2
 
 Agar koi installed nahi hai:
 
@@ -21,7 +23,7 @@ GIT:
 3. Default settings ke saath install karo.
 4. VS Code/Terminal restart karo.
 5. Check:
-       git --version
+    git --version
 
 PYTHON:
 1. Open: https://www.python.org/downloads/windows/
@@ -29,7 +31,7 @@ PYTHON:
 3. Install karte time "Add Python to PATH" select karo.
 4. VS Code/Terminal restart karo.
 5. Check:
-       python --version
+    python --version
 
 OLLAMA:
 1. Open: https://ollama.com/download
@@ -37,7 +39,7 @@ OLLAMA:
 3. Install karo.
 4. VS Code/Terminal restart karo.
 5. Check:
-       ollama --version
+    ollama --version
 
 
 2. DOWNLOAD PROJECT FROM GITHUB
@@ -122,35 +124,13 @@ Project folder mein:
 
     python process_incoming.py
 
-Screen par:
-
-    Ask a Question:
 
 
-
-
-9. AGAR COMPUTER SLOW HO
-------------------------
-
-    ollama ps
-
-Demo ke liye llama3.2 use karo.
-
-
-
-
-10. QUICK CHECKLIST
--------------------
-
-[ ] Git installed
-[ ] Python installed
-[ ] Ollama installed
-[ ] Project downloaded/cloned
-[ ] Python packages installed
-[ ] llama3.2:latest available
-[ ] bge-m3:latest available
-[ ] embeddings_float32.joblib present
-[ ] jsons folder present
-[ ] process_incoming.py works
-
-
+=> Download ollama in internet computer
+=>Ollama list cmd pr
+=>After that ollama pull llama3.2:latest
+    ollama pull bge-m3:latest
+=>win+R click
+=> %USERPROFILE%\.ollama
+copy kro ise paste kro offline wale mai
+phir check ollama list uske run krdo project kko

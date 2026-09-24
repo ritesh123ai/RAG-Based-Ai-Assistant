@@ -4,7 +4,7 @@ import os
 
 model = whisper.load_model("small")
 
-# jsons folder agar nahi hai to bana do
+# jsons folder agar nahi hai to bana dov
 os.makedirs("jsons", exist_ok=True)
 
 audios = os.listdir("audios")
